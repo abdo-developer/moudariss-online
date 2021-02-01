@@ -1,0 +1,331 @@
+
+@import './fonts';
+@import './color';
+@import './images';
+
+// Styles Website
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    direction: ltr;
+    font-family: $font-write;
+    font-size: 18px;
+}
+
+header.top_header {
+    background-image: url(../images/header_top.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8px;
+}
+
+header.top_header nav ul {
+    padding: 0;
+}
+
+header.top_header nav ul li a {
+    color: $color-black;
+    transition: all 0.5s ease-in-out;
+}
+
+header.top_header nav ul li a:hover,
+header.top_header nav ul li a:active,
+header.top_header nav ul li a:focus {
+    color: $color-white;
+}
+
+header.top_header nav ul li {
+    transition: all 0.5s ease-in-out;
+}
+
+header.top_header nav ul li:hover,
+header.top_header nav ul li:active,
+header.top_header nav ul li:focus {
+    background: linear-gradient(120deg, $color-purple, $color-transition);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+
+header.top_header nav ul li a.lang {
+    font-family: $font-lang;
+}
+
+header.top_header nav ul li.item-anthor {
+    background: linear-gradient(45deg, $color-cyan, $color-transition);
+    margin-left: 15px;
+    border-radius: 25px;
+    padding: 0px 25px;
+}
+
+header.top_header nav ul li.item-anthor:hover,
+header.top_header nav ul li.item-anthor:active,
+header.top_header nav ul li.item-anthor:focus {
+    background: linear-gradient(120deg, $color-purple, $color-transition);
+}
+
+header.top_header nav ul li.item-anthor a {
+    color: $color-white;
+}
+
+header.top_header .image_eduction_one img {
+    margin: 50px 0;
+}
+
+header.top_header h3.text-heading {
+    margin-top: 15%;
+}
+
+header.top_header .description-text p {
+    margin-top: 7%;
+}
+
+header.top_header .link-sign-up a {
+    background: linear-gradient(45deg, $color-cyan, $color-transition);
+    padding: 18px 25px;
+    margin-right: 12px;
+    margin-top: 6%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: all 0.5s ease-in-out;
+}
+
+header.top_header .link-sign-up a:hover,
+header.top_header .link-sign-up a:active,
+header.top_header .link-sign-up a:focus {
+    color: $color-white;
+    background: linear-gradient(120deg, $color-purple, $color-transition);
+}
+
+header.top_header .icon-social-media ul {
+    padding: 0;
+    margin-top: 8%;
+}
+
+header.top_header .icon-social-media ul li {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, $color-cyan, $color-transition);
+    transition: all 0.5s ease-in-out;
+}
+
+header.top_header .icon-social-media ul li:hover,
+header.top_header .icon-social-media ul li:active,
+header.top_header .icon-social-media ul li:focus {
+    background: linear-gradient(120deg, $color-purple, $color-transition);
+}
+
+header.top_header .icon-social-media ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: $color-white;
+    transition: all 0.5s ease-in-out;
+}
+
+header.top_header .icon-social-media ul li a:hover,
+header.top_header .icon-social-media ul li a:active,
+header.top_header .icon-social-media ul li a:focus {
+    color: $color-wheat;
+}
+
+header.top_header #carouselSliderIndicators {
+    position: relative;
+}
+
+header.top_header #carouselSliderIndicators ol {
+    padding: 0;
+}
+
+header.top_header #carouselSliderIndicators ol li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+header.top_header #carouselSliderIndicators ol li.active {
+    background-color: $color-transition;
+}
+
+header.top_header #carouselSliderIndicators a img {
+    position: absolute;
+    height: 40px;
+    top: 90%;
+}
+
+// STYLES ABOUT US
+
+section .title_section {
+    margin: 45px 0;
+}
+
+.line {
+    height: 2px;
+    width: 130px;
+    margin: -25px auto 30px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+section.About_us .title_item h3 {
+    margin: 30px 0;
+}
+
+section.About_us .long-description p {
+    margin-bottom: 35px;
+}
+
+section.About_us .long-description h5.custom_heading {
+    margin-bottom: 15px;
+}
+
+section.About_us .long-description ul {
+    padding: 0;
+}
+
+section.About_us .long-description ul li {
+    margin-right: 25px;
+    margin-top: 20px;
+    background: linear-gradient(90deg, $color-cyan, $color-transition);
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;    
+    transition: all 0.5s ease-in-out;
+}
+
+section.About_us .long-description ul li:hover,
+section.About_us .long-description ul li:active,
+section.About_us .long-description ul li:focus {
+    background: linear-gradient(90deg, $color-Light-blue, $color-purple);
+}
+
+section.About_us .long-description ul li a {
+    color: $color-wheat;
+    transition: all 0.5s ease-in-out;
+}
+
+section.About_us .long-description ul li a:hover,
+section.About_us .long-description ul li a:active,
+section.About_us .long-description ul li a:focus {
+    text-decoration: none;
+    color: $color-white;
+}
+
+section.Features .featured-card {
+    position: relative;
+    margin-bottom: 50px;
+    background: $color-white;
+    text-align: center;
+    padding: 60px 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 45px 0px rgb(0 0 0 / 15%);
+    z-index: 1;
+}
+
+section.Features .featured-card h3 {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    background: linear-gradient(90deg, $color-Light-blue, $color-purple); 
+    font-size: 24px;
+    font-weight: 500;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: $color-white;
+}
+
+section.Features .featured-card img {
+    height: 150px;
+    background: $color-antiquewhite;
+    padding: 5px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    margin-bottom: 30px;
+}
+
+section.Features .featured-card p {
+    margin-top: 20px;
+}
+
+section.Features .show-more-features {
+    background: linear-gradient(190deg, $color-Light-blue, $color-purple); 
+    padding: 20px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0 20px 30px rgb(0 0 0 / 20%);
+    color: $color-wheat;
+    transition: all .5s ease-in-out;
+}
+
+section.Features .show-more-features svg {
+    font-size: 24px;
+    margin-right: 10px;
+    margin-bottom: -3px;
+}
+
+section.Features .show-more-features:hover,
+section.Features .show-more-features:active,
+section.Features .show-more-features:focus {
+    text-decoration: none;
+    color: $color-white;
+}
+
+section.how-it-works .title_section {
+    margin: 65px 0;
+}
+
+section.how-it-works .line {
+    height: 2px;
+    width: 185px;
+    margin: -50px auto 30px;
+    box-shadow: 0 0 0 3px rgb(3 102 214 / 30%);
+}
+
+section.how-it-works .how-to-use-website {
+    margin-top: 6%;
+}
+
+section.how-it-works .how-to-use-website .numbers h3 {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: linear-gradient( 90deg, $color-cyan, $color-transition);
+    font-size: 24px;
+    color: $color-white;
+    border-radius: 5px 20px 5px;
+}
+
+section.how-it-works .how-to-use-website .numbers .description {
+    display: inline;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+section.how-it-works .how-to-use-website .numbers .description a {
+    color: $color-Light-blue;
+    transition: all .5s ease-in-out;
+}
+
+section.how-it-works .how-to-use-website .numbers .description a:hover {
+    text-decoration: none;
+    color: $color-transition;
+}
+
+section.how-it-works .vedio_motion iframe {
+    border: 5px solid $color-Light-blue;
+}
+
+section.Choose-teacher .line {
+    width: 220px;
+}

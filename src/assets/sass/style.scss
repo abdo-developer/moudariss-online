@@ -99,12 +99,12 @@ header.top_header .link-sign-up a:focus {
     background: linear-gradient(120deg, $color-purple, $color-transition);
 }
 
-header.top_header .icon-social-media ul {
+.icon-social-media ul {
     padding: 0;
     margin-top: 8%;
 }
 
-header.top_header .icon-social-media ul li {
+.icon-social-media ul li {
     margin-left: 10px;
     width: 50px;
     height: 50px;
@@ -114,22 +114,22 @@ header.top_header .icon-social-media ul li {
     transition: all 0.5s ease-in-out;
 }
 
-header.top_header .icon-social-media ul li:hover,
-header.top_header .icon-social-media ul li:active,
-header.top_header .icon-social-media ul li:focus {
+.icon-social-media ul li:hover,
+.icon-social-media ul li:active,
+.icon-social-media ul li:focus {
     background: linear-gradient(120deg, $color-purple, $color-transition);
 }
 
-header.top_header .icon-social-media ul li a {
+.icon-social-media ul li a {
     text-decoration: none;
     font-size: 24px;
     color: $color-white;
     transition: all 0.5s ease-in-out;
 }
 
-header.top_header .icon-social-media ul li a:hover,
-header.top_header .icon-social-media ul li a:active,
-header.top_header .icon-social-media ul li a:focus {
+.icon-social-media ul li a:hover,
+.icon-social-media ul li a:active,
+.icon-social-media ul li a:focus {
     color: $color-wheat;
 }
 
@@ -328,4 +328,225 @@ section.how-it-works .vedio_motion iframe {
 
 section.Choose-teacher .line {
     width: 220px;
+}
+
+section.Choose-teacher .card-group .card {
+    position: relative;
+    margin: 25px 0 45px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 45px 0 rgb(0 0 0 / 15%);
+}
+
+section.Choose-teacher .card-group .card .get-started {
+    position: absolute;
+    background: linear-gradient(75deg, $color-purple, $color-Light-blue);
+    padding: 7px 15px;
+    right: 0;
+    border-bottom-left-radius: 10px;
+}
+
+section.Choose-teacher .card-group .card .get-started a {
+    color: $color-wheat;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+section.Choose-teacher .card-group .card .get-started a:hover {
+    text-decoration: none;
+    color: $color-white;
+}
+
+section.Choose-teacher .card-group .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 215px;
+}
+
+section.Choose-teacher .card-group .card h5 svg {
+    margin-right: 12px;
+    color: $color-transition;
+    font-size: 22px;
+}
+
+section.Choose-teacher .card-group .card .card-footer .star svg {
+    color:$color-star;
+}
+
+section.Choose-teacher .card-group .card .card-footer .star svg.active {
+    color: $color-star-active;
+}
+
+section.Choose-teacher .card-group .card .card-footer .star small {
+    font-weight: bold;
+}
+
+section.Choose-teacher .card-group .card .card-footer .student small {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+section.Choose-teacher .card-group .card .card-footer .student svg {
+    color: $color-transition;
+    font-size: 22px;
+}
+
+section.Choose-teacher .show-more-teachears {
+    background: linear-gradient(190deg, $color-Light-blue, $color-purple); 
+    padding: 20px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0 20px 30px rgb(0 0 0 / 20%);
+    color: $color-wheat;
+    transition: all .5s ease-in-out;
+}
+
+section.Choose-teacher .show-more-teachears svg {
+    font-size: 22px;
+    margin-bottom: -2px;
+    margin-right: 7px;
+}
+
+section.Choose-teacher .show-more-teachears:hover {
+    text-decoration: none;
+    color: $color-white;
+}
+
+footer.latest-footer {
+    background: linear-gradient(190deg, $color-Light-blue, $color-purple);
+    margin-top: 6%;
+}
+
+footer.latest-footer .title-column h4.custom-heading {
+    margin-top: 50px;
+    color: $color-antiquewhite;
+}
+
+footer.latest-footer .line {
+    height: 2px;
+    width: 125px;
+    margin: -5px auto 30px -3px;
+    box-shadow: $color-rgba-two 0px 5px, 
+    $color-rgba-one 0px 10px
+}
+
+footer.latest-footer .line.links {
+    width: 217px;
+}
+
+footer.latest-footer .line.info {
+    width: 175px;
+    margin: -5px auto 30px 0px;
+}
+
+footer.latest-footer .logo-website {
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+
+footer.latest-footer .about-description p {
+    color: $color-wheat;
+    margin-bottom: 10%;
+}
+
+footer.latest-footer .btn-link a {
+    font-weight: bold;
+    color: $color-black;
+    background-color: $color-rgba-one;
+    padding: 12px 25px;
+    border-radius: 25px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, 
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    transition: all 0.5s ease-in-out;
+}
+
+footer.latest-footer .btn-link a:hover,
+footer.latest-footer .btn-link a:active,
+footer.latest-footer .btn-link a:focus {
+    text-decoration: none;
+    background-color: $color-rgba-two;
+}
+
+footer.latest-footer .imortant-links {
+    margin: 12px 0;
+}
+
+footer.latest-footer .imortant-links a.link {
+    color: $color-wheat;
+    transition: all .5s ease-in-out;
+}
+
+footer.latest-footer .imortant-links a.link svg {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+footer.latest-footer .imortant-links a.link:hover,
+footer.latest-footer .imortant-links a.link:active,
+footer.latest-footer .imortant-links a.link:focus {
+    text-decoration: none;
+    color: $color-antiquewhite;
+}
+
+footer.latest-footer .info-contact {
+    margin: 18px 0;
+}
+
+footer.latest-footer .info-contact span {
+    font-weight: bold;
+}
+
+footer.latest-footer .info-contact svg {
+    font-size: 22px;
+    margin-right: 8px;
+    color: $color-rgba-one;
+}
+
+footer.latest-footer form {
+    width: 100%;
+    margin: 50px 0 5px 0;
+}
+
+footer.latest-footer form input {
+    height: 60px;
+}
+
+footer.latest-footer form button.btn-custom {
+    font-family: $font-write;
+    font-size: 18px;
+    font-weight: bold;
+    color: $color-black;
+    background-color: $color-rgba-one;
+    padding: 12px 25px;
+    border-radius: 25px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, 
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    transition: all 0.5s ease-in-out;
+}
+
+footer.latest-footer form button.btn-custom:hover,
+footer.latest-footer form button.btn-custom:active,
+footer.latest-footer form button.btn-custom:focus {
+    background-color: $color-rgba-two;
+}
+
+footer.latest-footer ul {
+    margin-top: 1%;
+}
+
+footer.latest-footer .copyright p {
+    font-weight: bold;
+    color: $color-white;
+}
+
+footer.latest-footer .copyright p a {
+    color: $color-rgba-one;
+    transition: all 0.5s ease-in-out;
+}
+
+footer.latest-footer .copyright p a:hover,
+footer.latest-footer .copyright p a:active,
+footer.latest-footer .copyright p a:focus {
+    color: $color-rgba-two;
+    text-decoration: none;
 }

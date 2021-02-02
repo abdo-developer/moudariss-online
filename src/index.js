@@ -10,6 +10,8 @@ import 'popper.js/dist/popper';
 
 import '@fortawesome/fontawesome-free/js/all';
 
+import 'normalize.css/normalize.css';
+
 // import 'video.js/dist/video.min.js';
 
 // import 'video.js/dist/video-js.min.css';

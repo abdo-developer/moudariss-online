@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-heading;
 }
 
-p, span, small, li, body, a{
+p, span, li, body, a{
     font-family: $font-write;
     font-size: 18px;
 }
@@ -33,5 +33,9 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+small {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 

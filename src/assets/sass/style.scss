@@ -20,11 +20,21 @@ header.top_header {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 8px;
+}
+
+nav button.navbar-toggler {
+    color: #fff;
+    font-size: 25px;
+    background: $color-transition;
+}
+
+header.top_header nav a img {
+    height: 75px;
 }
 
 header.top_header nav ul {
     padding: 0;
+    text-align: center;
 }
 
 header.top_header nav ul li a {
@@ -58,7 +68,7 @@ header.top_header nav ul li.item-anthor {
     background: linear-gradient(45deg, $color-cyan, $color-transition);
     margin-left: 15px;
     border-radius: 25px;
-    padding: 0px 25px;
+    padding: 0px 22px;
 }
 
 header.top_header nav ul li.item-anthor:hover,
@@ -362,6 +372,10 @@ section.Choose-teacher .card-group .card img {
     height: 215px;
 }
 
+section.Choose-teacher .card-group .card h5 {
+    font-size: 18px;
+}
+
 section.Choose-teacher .card-group .card h5 svg {
     margin-right: 12px;
     color: $color-transition;
@@ -370,10 +384,12 @@ section.Choose-teacher .card-group .card h5 svg {
 
 section.Choose-teacher .card-group .card .card-footer .star svg {
     color:$color-star;
+    font-size: 15px;
 }
 
 section.Choose-teacher .card-group .card .card-footer .star svg.active {
     color: $color-star-active;
+    font-size: 15px;
 }
 
 section.Choose-teacher .card-group .card .card-footer .star small {
@@ -439,9 +455,9 @@ footer.latest-footer .line.info {
     margin: -5px auto 30px 0px;
 }
 
-footer.latest-footer .logo-website {
+footer.latest-footer .logo-website a img {
+    height: 75px;
     margin-bottom: 25px;
-    margin-top: 35px;
 }
 
 footer.latest-footer .about-description p {
@@ -539,14 +555,220 @@ footer.latest-footer .copyright p {
     color: $color-white;
 }
 
-footer.latest-footer .copyright p a {
-    color: $color-rgba-one;
-    transition: all 0.5s ease-in-out;
+
+// Style Page About Us 
+
+header.top_header .image img {
+    height: 400px;
+    margin: 30px 0;
 }
 
-footer.latest-footer .copyright p a:hover,
-footer.latest-footer .copyright p a:active,
-footer.latest-footer .copyright p a:focus {
-    color: $color-rgba-two;
-    text-decoration: none;
+header.top_header .title-column h4 {
+    margin: 30px 0;
+}
+
+section.About_us .about-us-more .small-text p svg {
+    font-size: 20px;
+    margin-right: 10px;
+    color: $color-transition;
+}
+
+section.statistics {
+    background-image: url(../images/banner-education.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 35px;
+    margin-top: 30px;
+}
+
+section.statistics .icon img {
+    height: 120px;
+    margin: 25px 0;
+}
+
+
+// Responsive website 
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+    
+    header.top_header nav ul li.item-anthor {
+        margin-top: 20px;
+        padding: 10px 25px;
+    }
+
+    header.top_header .image_eduction_one img {
+        margin: 0;
+        height: 275px;
+    }
+
+    header.top_header .link-sign-up a {
+        display: block;
+        margin-top: 25px;
+    }
+
+    header.top_header .icon-social-media ul {
+        display: none;
+    }
+
+    header.top_header .link-sign-up.text-center {
+        margin-bottom: 25%;
+    }
+
+    header.top_header #carouselSliderIndicators a img {
+        height: 30px;
+        top: 94%;
+    }
+
+    section.About_us img {
+        height: 280px;
+    }
+
+    section.About_us .long-description ul li {
+        display: block;
+        text-align: center;
+    }
+
+    section.how-it-works .how-to-use-website .numbers h3 {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 17px;
+    }
+
+    section.how-it-works .how-to-use-website .numbers .description {
+        font-weight: normal; 
+        margin-left: 3px;
+        font-size: 15px;
+    }
+
+    section.how-it-works .vedio_motion iframe {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    footer.latest-footer {
+        margin-top: 30%;
+    }
+
+    footer.latest-footer h4.heading-mail {
+        font-size: 20px;
+    }
+
+    footer.latest-footer .title-column h4.custom-heading {
+        margin: 30px 0;
+        font-size: 20px;
+    }
+
+    footer.latest-footer .copyright p {
+        font-weight: normal;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    header.top_header nav ul li.item-anthor {
+        margin-top: 20px;
+        padding: 10px 25px;
+    }
+
+    header.top_header .image_eduction_one img {
+        margin: 15px 0;
+    }
+
+    header.top_header .link-sign-up a {
+        display: block;
+    }
+
+    .icon-social-media ul {
+        padding: 0;
+        margin: 12% 0;
+    }
+
+    header.top_header #carouselSliderIndicators a img {
+        top: 95%;
+    }
+
+    section.About_us .long-description ul li {
+        display: block;
+        text-align: center;
+    }
+
+    section.how-it-works .vedio_motion iframe {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    footer.latest-footer {
+        margin-top: 15%;
+    }
+
+    footer.latest-footer ul {
+        margin-top: 1%;
+        margin-bottom: 25px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    header.top_header nav ul li.item-anthor {
+        margin-top: 20px;
+        padding: 10px 25px;
+    }
+
+    header.top_header .image_eduction_one img {
+        margin: 15px 0;
+    }
+
+    header.top_header h3.text-heading {
+        margin-top: 0%;
+    }
+
+    .icon-social-media ul {
+        padding: 0;
+        margin: 10%;
+    }
+
+    header.top_header #carouselSliderIndicators a img {
+        top: 94.5%;
+    }
+
+    section.how-it-works .vedio_motion {
+        text-align: center;
+    }
+
+    section.how-it-works .vedio_motion iframe {
+        margin-top: 5%;
+    }
+
+    section.Choose-teacher .card-group .card img {
+        height: 250px;
+    }
+
+    footer.latest-footer ul {
+        margin-top: 1%;
+        margin-bottom: 25px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    section.About_us .long-description h5.custom_heading {
+        font-family: $font-write;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    section.how-it-works .vedio_motion iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+}
+
+@media (min-width: 1200px) { 
+    // Good Responsive
 }

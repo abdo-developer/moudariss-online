@@ -33,16 +33,6 @@ module.exports = {
                 ]
             },
 
-            // {
-            //     test: /\.(sa|sc|c)ss$/,
-            //     use: [
-            //         MiniCssExtractPlugin.loader,
-            //         'css-loader',
-            //         'postcss-loader',
-            //         'sass-loader'
-            //     ]
-            // },
-
             {
                 test: /\.(sa|sc|c)ss$/,
                   use: [
@@ -120,6 +110,12 @@ module.exports = {
         new HtmlWebpackPlugin({
           filename: "about.html",
           template: "./src/about.html"
-      })
+      }),
+
+        new HtmlWebpackPlugin({
+          filename: "how-it-works.html",
+          template: "./src/how-it-works.html"
+        })
+
     ]
-}
+  } 

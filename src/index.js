@@ -16,7 +16,9 @@ import 'normalize.css/normalize.css';
 
 import './assets/js/script.js';
 
-import 'jquery-count-to/build/jquery-countTo.js';
+// import 'jquery-count-to/build/jquery-countTo.js';
+
+import 'jquery-countto/jquery.countTo';
 
 
 

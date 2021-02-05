@@ -2,7 +2,7 @@
 // Dyanamique Date Year Footer -- Copyright
 
 
-$(document).ready(function(){
+jQuery(function () {
 
     $("#copyright").text(" © All Rights Reserved For website | 2020 - " + new Date().getFullYear());
 
@@ -16,6 +16,15 @@ $(document).ready(function(){
     });
 
 });
+
+
+// jQuery(function () {
+
+//     $("#copyright").text(" © All Rights Reserved For website | 2020 - " + new Date().getFullYear());
+
+//     $('.timer').countTo();
+
+// });
 
 
 

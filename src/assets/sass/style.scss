@@ -790,14 +790,65 @@ section.Pricing .line {
 }
 
 
+// Page contact
 
+section.Contact h4.heading-custom {
+    margin-top: 20px;
+}
 
+section.Contact .contact {
+    height: 2px;
+    width: 210px;
+    margin: 15px auto 30px;
+    box-shadow: 0 0 0 3px rgb(3 102 214 / 30%);
+}
 
+section.Contact label {
+    font-family: $font-heading;
+}
 
+section.Contact label svg {
+    font-size: 20px;
+    margin-right: 6px;
+    color: $color-Light-blue;
+}
 
+section.Contact input {
+    font-family: $font-write;
+}
 
+section.Contact .send-mail button {
+    background-color: transparent;
+    border-radius: 0;
+    border-color: transparent;
+}
 
+section.Contact .send-mail button.custom-btn {
+    font-weight: 600;
+    background: linear-gradient(75deg, $color-transition, $color-cyan);
+    border-color: #fff;
+    border-radius: 25px;
+    color: wheat;
+    font-family: ar-content;
+    padding: 14px 35px;
+    transition: all .6s ease-in-out;
+}
 
+section.Contact .send-mail button.custom-btn svg {
+    margin-right: 7px;
+    font-size: 20px;
+}
+
+section.Contact .send-mail button.custom-btn:hover,
+section.Contact .send-mail button.custom-btn:active,
+section.Contact .send-mail button.custom-btn:focus {
+    color: $color-e;
+}
+
+section.Contact .image-msg img {
+    height: 330px;
+    margin-top: 20%;
+}
 
 
 
@@ -904,6 +955,12 @@ section.Pricing .line {
         height: 275px;
     }
 
+    // Page contact-us
+    section.Contact .image-msg img {
+        height: 160px;
+        margin-top: 20%;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -952,6 +1009,11 @@ section.Pricing .line {
     // Responsive page about us 
     header.top_header .link-sign-up a {
         display: block;
+    }
+
+    // Page contact
+    section.Contact .image-msg img {
+        height: 280px;
     }
 
 }
@@ -1034,6 +1096,12 @@ section.Pricing .line {
     h4.heading-mail {
         font-size: 21px;
         color: $color-white;
+    }
+
+    // Page contact-us responsive
+
+    section.Contact .image-msg img {
+        height: 260px;
     }
 
 }

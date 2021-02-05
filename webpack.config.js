@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -104,6 +105,10 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
         new OptimizeCSSAssetsPlugin({}),
+        new webpack.ProvidePlugin({
+          $: "jquery",
+          jQuery: "jquery"
+        }),
         new MiniCssExtractPlugin({
             filename: "assets/css/styles.css"
         }),

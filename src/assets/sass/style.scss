@@ -587,6 +587,75 @@ section.statistics .icon img {
     margin: 25px 0;
 }
 
+section.statistics .icon img {
+    height: 120px;
+    margin: 25px 0 30px;
+}
+
+section.statistics span.timer {
+    font-family: $font-heading;
+    font-size: 30px;
+    border: 2px solid $color-oldlace;
+    padding: 8px;
+    margin-bottom: 18px;
+    color: $color-tan;
+}
+
+
+section.statistics p {
+    margin-top: 30px;
+    font-family: $font-heading;
+    font-size: 24px;
+    color: $color-antiquewhite;
+}
+
+section.Choose-teacher.Our-Teachers .line {
+    width: 175px;
+}
+
+section.more-features .icon-title-text img {
+    height: 60px;
+    margin: 50px 0 20px;
+}
+
+section.more-features .icon-title-text h5 {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Responsive website 
 
@@ -664,6 +733,15 @@ section.statistics .icon img {
         font-weight: normal;
     }
 
+    // Responsive page about us 
+    header.top_header .link-sign-up a {
+        display: block;
+    }
+
+    header.top_header .image img {
+        height: 275px;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -709,6 +787,11 @@ section.statistics .icon img {
         margin-bottom: 25px;
     }
 
+    // Responsive page about us 
+    header.top_header .link-sign-up a {
+        display: block;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
@@ -752,9 +835,22 @@ section.statistics .icon img {
         margin-bottom: 25px;
     }
 
+    // Responsive page about us 
+    header.top_header .link-sign-up a {
+        display: block;
+    }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+    header.top_header nav a img {
+        height: 60px;
+    }
+
+    header.top_header nav ul li a {
+        font-size: 17px;
+    }
 
     section.About_us .long-description h5.custom_heading {
         font-family: $font-write;
@@ -765,6 +861,17 @@ section.statistics .icon img {
     section.how-it-works .vedio_motion iframe {
         width: 100%;
         height: 250px;
+    }
+
+    // Responsive page .about-us
+
+    section.About_us .title_item h3 {
+        font-size: 23px;
+    }
+
+    h4.heading-mail {
+        font-size: 21px;
+        color: $color-white;
     }
 
 }

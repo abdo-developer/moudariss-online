@@ -122,5 +122,10 @@ module.exports = {
         template: "./src/teachers.html"
       }),
 
+      new HtmlWebpackPlugin({
+        filename: "Pricing.html",
+        template: "./src/Pricing.html"
+      })
+      
     ]
   } 

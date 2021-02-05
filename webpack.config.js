@@ -112,10 +112,15 @@ module.exports = {
           template: "./src/about.html"
       }),
 
-        new HtmlWebpackPlugin({
-          filename: "how-it-works.html",
-          template: "./src/how-it-works.html"
-        })
+      new HtmlWebpackPlugin({
+        filename: "how-it-works.html",
+        template: "./src/how-it-works.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "teachers.html",
+        template: "./src/teachers.html"
+      }),
 
     ]
   } 

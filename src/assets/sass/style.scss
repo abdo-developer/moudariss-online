@@ -1104,8 +1104,28 @@ section.Contact .image-msg img {
         height: 260px;
     }
 
+    // card teacher
+        .col-lg-4.col-md-6.col-sm-6.col-12.add-teacher {
+        display: none;
+    }
+
+    // pricing
+
+    .col-lg-4.col-md-6.col-sm-6.col-12.add-package {
+        display: none;
+    }
+
 }
 
 @media (min-width: 1200px) { 
     // Good Responsive
+        .col-lg-4.col-md-6.col-sm-6.col-12.add-teacher {
+        display: none;
+    }
+
+    // pricing
+
+    .col-lg-4.col-md-6.col-sm-6.col-12.add-package {
+        display: none;
+    }
 }

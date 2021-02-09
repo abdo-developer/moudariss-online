@@ -625,6 +625,22 @@ section.more-features .icon-title-text h5 {
 
 // Page Teachers Filters
 
+.bg-color {
+    background-color: $color-antiquewhite;
+    padding: 25px 0;
+}
+
+.form-check-input {
+    position: absolute;
+    margin-top: 2rem !important;
+    margin-left: 0 !important;
+}
+
+.form-check {
+    padding-left: 0 !important;
+}
+
+
 select.form-control {
     border-radius: 0;
     border-color: $color-Light-blue;
@@ -937,6 +953,15 @@ section.Contact .image-msg img {
         margin-top: 20%;
     }
 
+     // Responsive Rate Teachers page
+     h6.cst-title {
+        margin: 20px 0;
+    }
+
+    label.per-day {
+        margin: 10px 0;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -992,6 +1017,15 @@ section.Contact .image-msg img {
         height: 280px;
     }
 
+     // Responsive Rate Teachers page
+     h6.cst-title {
+        margin: 20px 0;
+    }
+
+    label.per-day {
+        margin: 10px 0;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
@@ -1038,6 +1072,15 @@ section.Contact .image-msg img {
     // Responsive page about us 
     header.top_header .link-sign-up a {
         display: block;
+    }
+
+    // Responsive Rate Teachers page
+    h6.cst-title {
+        margin: 20px 0;
+    }
+
+    label.per-day {
+        margin: 10px 0;
     }
 
 }

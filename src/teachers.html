@@ -103,9 +103,12 @@
             </div>
             <hr>
         </div>
-        <div class="container">
+
+        <!-- Filter Teachers with categories -->
+        <div class="container-fluid bg-color">
 
             <!-- Filter Teachers -->
+
             <div class="row">
                 <div class="col-lg-3 col-md-12">
                     <form action="">
@@ -168,34 +171,29 @@
             <div class="row">
                 <div class="col-lg-3 col-md-12">
                     <form action="">
-                        <div class="form-group">
-                            <label for="">No. of years experience from to</label>
-                            <select class="form-control" id="">
-                              <option selected disabled>Search by of years experience</option>
-                              <option>2 years experience</option>
-                              <option>3 years experience</option>
-                              <option>4 years experience</option>
-                              <option>5 years experience</option>
-                            </select>
+
+                        <div class="form-group form-check">
+                            <h6 class="cst-title">Years experience from :</h6>
+                            <hr>
+                            <input type="range" class="form-check-input" id="">
+                            <label class="form-check-label" for="">5 years</label>
+                          </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <form action="">
+                        <div class="form-group form-check">
+                            <h6 class="cst-title">Rate per class 30 min :</h6>
+                            <hr>
+                            <input type="range" class="form-check-input" id="">
+                            <label class="form-check-label" for="">25 Dollars</label>
                           </div>
                     </form>
                 </div>
                 <div class="col-lg-3 col-md-12">
                     <form action="">
                         <div class="form-group">
-                            <label for="">Rate per class 30 min</label>
-                            <select class="form-control" id="">
-                              <option selected disabled>Filter by Rate per class 30 min </option>
-                              <option>25 Dollar</option>
-                              <option>50 Dollar</option>
-                            </select>
-                          </div>
-                    </form>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                    <form action="">
-                        <div class="form-group">
-                            <label for="">Avilable by Per Day</label>
+                            <label class="per-day" for="">Avilable by Per Day</label>
                             <select class="form-control" id="">
                               <option selected disabled>Filter Avilable by Day</option>
                               <option>Monday</option>
@@ -216,8 +214,13 @@
                     </form>
                 </div>
             </div>
+            
             <!-- END Filter Teachers -->
-            <hr>
+
+        </div>
+        <!-- End Filter Teachers -->
+
+        <div class="container">
             <!-- List Teachers -->
 
             <div class="row">
@@ -860,8 +863,7 @@
 
                 </div>
             <!-- End List Teachers -->
-            <hr>
-            
+            <hr> 
         </div>
 
     </section>

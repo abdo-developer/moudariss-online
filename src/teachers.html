@@ -65,58 +65,18 @@
         </nav>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <div class="image text-center">
-                        <img src="./assets/images/teachers.svg" alt="teachers">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
+                <div class="col-12">
                     <div class="title-column">
                         <h4 class="custom-heading text-center">Title Lorem Test</h4>
                     </div>
                     <div class="description-paragraph">
-                        <p class="text-center">
+                        <p class="text-center mb-4">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Recusandae soluta ex harum, laudantium quam illum iusto. 
                             Accusantium dignissimos, est illo quaerat autem culpa quo 
                             minus aperiam voluptate, velit sed aut?
                         </p>
                     </div>
-
-                    <div class="link-sign-up text-center">
-                        <a href="#Choose-teacher" class="btn custom-btn scroll">
-                            Read more
-                        </a>
-                        <a href="#" class="btn custom-btn">
-                            Sign Up Now !
-                        </a>
-                    </div>
-
-                    <div class="icon-social-media text-center">
-                        <ul class="inline-item">
-                            <li class="list-inline-item">
-                                <a href="#">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                        </ul>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -124,7 +84,7 @@
    <!-- End Hedaer Page -->
 
     <!-- Star Choose a teacher -->
-    <section class="Choose-teacher gallery" id="Choose-teacher">
+    <section class="Choose-teacher" id="Choose-teacher">
         <div class="title_section">
             <h3 class="text-center">Choose a teacher</h3>
         </div>
@@ -145,232 +105,332 @@
         </div>
         <div class="container">
 
-            <div class="filter list-teachers text-center">
-                <input type="radio" id="item-type-all" name="radio-set-1" class="item-type-all" checked="checked">
-                <label for="item-type-all" class="label-type-all">All Teachers</label>
-
-                <input id="item-type-1" name="radio-set-1" type="radio" class="item-type-1">
-                <label for="item-type-1" class="label-type-1">Maths</label>
-
-                <input id="item-type-2" name="radio-set-1" type="radio" class="item-type-2">
-                <label for="item-type-2" class="label-type-2">Geographic</label>
-
-                <input id="item-type-3" name="radio-set-1" type="radio" class="item-type-3">
-                <label for="item-type-3" class="label-type-3">English</label>
+            <!-- Filter Teachers -->
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Teacher Country</label>
+                            <select class="form-control" id="">
+                              <option selected disabled>Search by country</option>
+                              <option>Saudi Arabie</option>
+                              <option>Maroc</option>
+                              <option>Egypt</option>
+                              <option>USA</option>
+                            </select>
+                          </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Choose a Gender</label>
+                            <select class="form-control" id="">
+                              <option selected disabled>Gender</option>
+                              <option>Male</option>
+                              <option>Female</option>
+                            </select>
+                          </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Subject to Teach</label>
+                            <select class="form-control" id="">
+                              <option selected disabled>Choose a Subject to teach</option>
+                              <option>Maths</option>
+                              <option>Pyshique</option>
+                              <option>Arabic</option>
+                              <option>English</option>
+                              <option>Geographic</option>
+                            </select>
+                          </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Grade to teach</label>
+                            <select class="form-control" id="">
+                              <option>Choose a grade to teach</option>
+                              <option>Primary</option>
+                              <option>Preparatory</option>
+                              <option>Secondary</option>
+                            </select>
+                          </div>
+                    </form>
+                </div>
             </div>
 
+            <hr>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">No. of years experience from to</label>
+                            <select class="form-control" id="">
+                              <option selected disabled>Search by of years experience</option>
+                              <option>2 years experience</option>
+                              <option>3 years experience</option>
+                              <option>4 years experience</option>
+                              <option>5 years experience</option>
+                            </select>
+                          </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Rate per class 30 min</label>
+                            <select class="form-control" id="">
+                              <option selected disabled>Filter by Rate per class 30 min </option>
+                              <option>25 Dollar</option>
+                              <option>50 Dollar</option>
+                            </select>
+                          </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Avilable by Per Day</label>
+                            <select class="form-control" id="">
+                              <option selected disabled>Filter Avilable by Day</option>
+                              <option>Monday</option>
+                              <option>Tuesday</option>
+                              <option>Wednesday</option>
+                              <option>Thursday</option>
+                              <option>Friday</option>
+                            </select>
+                          </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Click here to filter</label>
+                            <button type="submit" class="btn filter-btn form-control">Filter Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- END Filter Teachers -->
+            <hr>
             <!-- List Teachers -->
-                <div class="row">
 
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
-                data-aos-duration="3000">
-                   
-                    <div class="card-group">
-                        <div class="card">
-                          <img src="./assets/images/professor_one.jpg" class="card-img-top" alt="professor">
-                            <div class="get-started">
-                                <a href="#">Get Started</a>
+            <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+            data-aos-duration="3000">
+                
+                <div class="card-group">
+                    <div class="card">
+                        <img src="./assets/images/professor_one.jpg" class="card-img-top" alt="professor">
+                        <div class="get-started">
+                            <a href="#">Get Started</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-clipboard-list"></i>
+                                Professor:
+                                <span class="details-more">Maths</span>
+                            </h5>
+                            <h5 class="details-prof">
+                                <i class="fas fa-user-tie"></i>
+                                Name:
+                                <span class="details-more">Noura Hamdaan</span>
+                            </h5>
+                            <h5 class="details-prof">
+                                <i class="fas fa-flag"></i>
+                                Country:
+                                <span class="details-more">MAROC</span>
+                            </h5>
+                            <h5 class="details-prof">
+                                <i class="fas fa-id-card-alt"></i>
+                                Age:
+                                <span class="details-more">21 ans</span>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                        <div class="clearfix">
+                            <div class="float-left star">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star"></i>    
+                                <small>(18)</small>            
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <i class="fas fa-clipboard-list"></i>
-                                    Professor:
-                                    <span class="details-more">Maths</span>
-                                </h5>
-                                <h5 class="details-prof">
-                                    <i class="fas fa-user-tie"></i>
-                                    Name:
-                                    <span class="details-more">Noura Hamdaan</span>
-                                </h5>
-                                <h5 class="details-prof">
-                                    <i class="fas fa-flag"></i>
-                                    Country:
-                                    <span class="details-more">MAROC</span>
-                                </h5>
-                                <h5 class="details-prof">
-                                    <i class="fas fa-id-card-alt"></i>
-                                    Age:
-                                    <span class="details-more">21 ans</span>
-                                </h5>
+                            <div class="float-right student">
+                                <i class="fas fa-user-graduate"></i>
+                                <small>62 students</small>           
                             </div>
-                          <div class="card-footer">
-                            <div class="clearfix">
-                                <div class="float-left star">
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star"></i>    
-                                    <small>(18)</small>            
-                                </div>
-                                <div class="float-right student">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <small>62 students</small>           
-                                </div>
-                            </div>
-                          </div>
+                        </div>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
-                data-aos-duration="3000">
+            </div>
 
-                    <div class="card-group">
-                        <div class="card">
-                          <img src="./assets/images/professor_two.jpg" class="card-img-top" alt="professor">
-                            <div class="get-started">
-                                <a href="#">Get Started</a>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+            data-aos-duration="3000">
+
+                <div class="card-group">
+                    <div class="card">
+                        <img src="./assets/images/professor_two.jpg" class="card-img-top" alt="professor">
+                        <div class="get-started">
+                            <a href="#">Get Started</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-clipboard-list"></i>
+                                Professor:
+                                <span class="details-more">Geographic</span>
+                            </h5>
+                            <h5 class="details-prof">
+                                <i class="fas fa-user-tie"></i>
+                                Name:
+                                <span class="details-more">Mohammed Ali</span>
+                            </h5>
+                            <h5 class="details-prof">
+                                <i class="fas fa-flag"></i>
+                                Country:
+                                <span class="details-more">K.S.A</span>
+                            </h5>
+                            <h5 class="details-prof">
+                                <i class="fas fa-id-card-alt"></i>
+                                Age:
+                                <span class="details-more">30 ans</span>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                        <div class="clearfix">
+                            <div class="float-left star">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>    
+                                <small>(15)</small>            
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <i class="fas fa-clipboard-list"></i>
-                                    Professor:
-                                    <span class="details-more">Geographic</span>
-                                </h5>
-                                <h5 class="details-prof">
-                                    <i class="fas fa-user-tie"></i>
-                                    Name:
-                                    <span class="details-more">Mohammed Ali</span>
-                                </h5>
-                                <h5 class="details-prof">
-                                    <i class="fas fa-flag"></i>
-                                    Country:
-                                    <span class="details-more">K.S.A</span>
-                                </h5>
-                                <h5 class="details-prof">
-                                    <i class="fas fa-id-card-alt"></i>
-                                    Age:
-                                    <span class="details-more">30 ans</span>
-                                </h5>
+                            <div class="float-right student">
+                                <i class="fas fa-user-graduate"></i>
+                                <small>32 students</small>           
                             </div>
-                          <div class="card-footer">
-                            <div class="clearfix">
-                                <div class="float-left star">
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star"></i>    
-                                    <small>(15)</small>            
-                                </div>
-                                <div class="float-right student">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <small>32 students</small>           
-                                </div>
-                            </div>
-                          </div>
+                        </div>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
-                data-aos-duration="3000">
+            </div>
 
-                    <div class="card-group">
-                        <div class="card">
-                          <img src="./assets/images/professor_three.jpg" class="card-img-top" alt="professor">
-                            <div class="get-started">
-                                <a href="#">Get Started</a>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+            data-aos-duration="3000">
+
+                <div class="card-group">
+                    <div class="card">
+                        <img src="./assets/images/professor_three.jpg" class="card-img-top" alt="professor">
+                        <div class="get-started">
+                            <a href="#">Get Started</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-clipboard-list"></i>
+                                Professor:
+                                <span class="details-more">English</span>
+                            </h5>
+                            <h5 class="details-prof">
+                                <i class="fas fa-user-tie"></i>
+                                Name:
+                                <span class="details-more">Steven Rang</span>
+                            </h5>
+                            <h5 class="details-prof">
+                                <i class="fas fa-flag"></i>
+                                Country:
+                                <span class="details-more">U.S.A</span>
+                            </h5>
+                            <h5 class="details-prof">
+                                <i class="fas fa-id-card-alt"></i>
+                                Age:
+                                <span class="details-more">28 ans</span>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                        <div class="clearfix">
+                            <div class="float-left star">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>    
+                                <small>(19)</small>            
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <i class="fas fa-clipboard-list"></i>
-                                    Professor:
-                                    <span class="details-more">English</span>
-                                </h5>
-                                <h5 class="details-prof">
-                                    <i class="fas fa-user-tie"></i>
-                                    Name:
-                                    <span class="details-more">Steven Rang</span>
-                                </h5>
-                                <h5 class="details-prof">
-                                    <i class="fas fa-flag"></i>
-                                    Country:
-                                    <span class="details-more">U.S.A</span>
-                                </h5>
-                                <h5 class="details-prof">
-                                    <i class="fas fa-id-card-alt"></i>
-                                    Age:
-                                    <span class="details-more">28 ans</span>
-                                </h5>
+                            <div class="float-right student">
+                                <i class="fas fa-user-graduate"></i>
+                                <small>56 students</small>           
                             </div>
-                          <div class="card-footer">
-                            <div class="clearfix">
-                                <div class="float-left star">
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>    
-                                    <small>(19)</small>            
-                                </div>
-                                <div class="float-right student">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <small>56 students</small>           
-                                </div>
-                            </div>
-                          </div>
+                        </div>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 add-teacher" data-aos="fade-up"
-                data-aos-duration="3000">
+            </div>
 
-                    <div class="card-group">
-                        <div class="card">
-                          <img src="./assets/images/professor_two.jpg" class="card-img-top" alt="professor">
-                            <div class="get-started">
-                                <a href="#">Get Started</a>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 add-teacher" data-aos="fade-up"
+            data-aos-duration="3000">
+
+                <div class="card-group">
+                    <div class="card">
+                        <img src="./assets/images/professor_two.jpg" class="card-img-top" alt="professor">
+                        <div class="get-started">
+                            <a href="#">Get Started</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-clipboard-list"></i>
+                                Professor:
+                                <span class="details-more">Geographic</span>
+                            </h5>
+                            <h5 class="details-prof">
+                                <i class="fas fa-user-tie"></i>
+                                Name:
+                                <span class="details-more">Mohammed Ali</span>
+                            </h5>
+                            <h5 class="details-prof">
+                                <i class="fas fa-flag"></i>
+                                Country:
+                                <span class="details-more">K.S.A</span>
+                            </h5>
+                            <h5 class="details-prof">
+                                <i class="fas fa-id-card-alt"></i>
+                                Age:
+                                <span class="details-more">30 ans</span>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                        <div class="clearfix">
+                            <div class="float-left star">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star"></i>    
+                                <small>(15)</small>            
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <i class="fas fa-clipboard-list"></i>
-                                    Professor:
-                                    <span class="details-more">Geographic</span>
-                                </h5>
-                                <h5 class="details-prof">
-                                    <i class="fas fa-user-tie"></i>
-                                    Name:
-                                    <span class="details-more">Mohammed Ali</span>
-                                </h5>
-                                <h5 class="details-prof">
-                                    <i class="fas fa-flag"></i>
-                                    Country:
-                                    <span class="details-more">K.S.A</span>
-                                </h5>
-                                <h5 class="details-prof">
-                                    <i class="fas fa-id-card-alt"></i>
-                                    Age:
-                                    <span class="details-more">30 ans</span>
-                                </h5>
+                            <div class="float-right student">
+                                <i class="fas fa-user-graduate"></i>
+                                <small>32 students</small>           
                             </div>
-                          <div class="card-footer">
-                            <div class="clearfix">
-                                <div class="float-left star">
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star"></i>    
-                                    <small>(15)</small>            
-                                </div>
-                                <div class="float-right student">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <small>32 students</small>           
-                                </div>
-                            </div>
-                          </div>
+                        </div>
                         </div>
                     </div>
-
                 </div>
 
-                </div>
+            </div>
+
+            </div>
             <!-- End List Teachers -->
 
             <!-- List Teachers -->

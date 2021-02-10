@@ -20,6 +20,10 @@ import './assets/js/script.js';
 
 import 'jquery-countto/jquery.countTo';
 
+import 'jquery-ui-dist/jquery-ui';
+
+import 'jquery-ui-dist/jquery-ui.css';
+
 
 
 // import 'aos/dist/aos.js';

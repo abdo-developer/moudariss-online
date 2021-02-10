@@ -37,6 +37,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "jquery": "^3.5.1",
     "jquery-countto": "^1.2.0",
+    "jquery-ui-dist": "^1.12.1",
     "normalize.css": "^8.0.1",
     "popper.js": "^1.14.3"
   }

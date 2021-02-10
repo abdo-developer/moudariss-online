@@ -631,9 +631,31 @@ section.more-features .icon-title-text h5 {
 }
 
 .form-check-input {
-    position: absolute;
-    margin-top: 2rem !important;
+    position: static !important;
+    border: 0;
+    color: $color-Light-blue !important;
+    font-weight: bold;
+    left: 0;
+    bottom: 10px;
+    margin: 25px 0px;
+    margin-top: 0 !important;
     margin-left: 0 !important;
+    background-color: transparent !important;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid $color-Light-blue !important;
+    margin: -25px 0px;
+}
+
+.ui-slider-range.ui-corner-all.ui-widget-header {
+    background: linear-gradient(50deg, $color-purple, $color-xblue);
+}
+
+span.ui-slider-handle.ui-corner-all.ui-state-default {
+    background-color: $color-black;
+    border-radius: 3px;
+    border-color: transparent;
 }
 
 .form-check {
@@ -1024,6 +1046,15 @@ section.Contact .image-msg img {
 
     label.per-day {
         margin: 10px 0;
+    }
+
+    section.Choose-teacher .card-group .card h5 {
+        font-size: 16px;
+    }
+
+    span.details-more {
+        font-size: 14px;
+        font-weight: bold;
     }
 
 }

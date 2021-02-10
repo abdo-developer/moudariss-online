@@ -175,34 +175,46 @@
                         <div class="form-group form-check">
                             <h6 class="cst-title">Years experience from :</h6>
                             <hr>
-                            <input type="range" class="form-check-input" id="">
-                            <label class="form-check-label" for="">5 years</label>
+
+                            <p>
+                                <label for="experience">Years experience between:</label>
+                                <input type="text" id="experience" class="form-check-input" readonly>
+                            </p>
+                               
+                            <div id="slider-range"></div>
+
+                            <!-- <input type="range" class="form-check-input" id="">
+                            <label class="form-check-label" for="">5 years</label> -->
                           </div>
+
                     </form>
                 </div>
-                <div class="col-lg-3 col-md-12">
-                    <form action="">
-                        <div class="form-group form-check">
-                            <h6 class="cst-title">Rate per class 30 min :</h6>
-                            <hr>
-                            <input type="range" class="form-check-input" id="">
-                            <label class="form-check-label" for="">25 Dollars</label>
-                          </div>
-                    </form>
-                </div>
+
                 <div class="col-lg-3 col-md-12">
                     <form action="">
                         <div class="form-group">
-                            <label class="per-day" for="">Avilable by Per Day</label>
-                            <select class="form-control" id="">
-                              <option selected disabled>Filter Avilable by Day</option>
-                              <option>Monday</option>
-                              <option>Tuesday</option>
-                              <option>Wednesday</option>
-                              <option>Thursday</option>
-                              <option>Friday</option>
-                            </select>
-                          </div>
+                            <h6 class="cst-title">Rate per class 30 min :</h6>
+                            <hr>
+                            <p class="between">Between : </p>
+                            <input type="number" class="form-control" name="" id="" placeholder="30 Dollar">
+                            <hr>
+                            <p class="between">and : </p>
+                            <input type="number" class="form-control" name="" id="" placeholder="100 Dollar">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-3 col-md-12">
+                    <form action="">
+                        <div class="form-group">
+                            <h6 class="cst-title">Date From and To :</h6>
+                            <hr>
+                            <p class="between">From : </p>
+                            <input type="date" class="form-control" name="" id="" placeholder="13/05/2020">
+                            <hr>
+                            <p class="between">To : </p>
+                            <input type="date" class="form-control" name="" id="" placeholder="15/5/2021">
+                        </div>
                     </form>
                 </div>
                 <div class="col-lg-3 col-md-12">
@@ -210,6 +222,10 @@
                         <div class="form-group">
                             <label for="">Click here to filter</label>
                             <button type="submit" class="btn filter-btn form-control">Filter Now</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Reset and try again</label>
+                            <button type="reset" class="btn filter-btn form-control">Try Again</button>
                         </div>
                     </form>
                 </div>
@@ -868,6 +884,7 @@
 
     </section>
    <!-- End Choose a teacher -->
+
 
    <!-- Footer Page -->
    <footer class="latest-footer" id="latest-footer">

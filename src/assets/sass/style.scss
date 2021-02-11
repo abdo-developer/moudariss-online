@@ -673,6 +673,7 @@ select.form-control:hover {
 }
 
 .form-group button.filter-btn {
+    margin: 50px 0 0;
     font-weight: 600;
     background: linear-gradient(75deg, $color-purple, $color-Light-blue);
     color: $color-oldlace;
@@ -686,6 +687,14 @@ select.form-control:hover {
 .form-group button.filter-btn:focus {
     color: $color-wheat;
     font-weight: bold;
+}
+
+.From-To-Date {
+    margin: 25px 0px;
+}
+
+.From-To-Date p.between {
+    margin: 0 15px;
 }
 
 // Page Pricing html

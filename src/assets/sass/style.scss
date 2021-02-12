@@ -336,6 +336,10 @@ section.how-it-works .vedio_motion iframe {
     border: 5px solid $color-Light-blue;
 }
 
+section.Choose-teacher {
+    position: relative;
+}
+
 section.Choose-teacher .line {
     width: 220px;
 }
@@ -673,13 +677,17 @@ select.form-control:hover {
 }
 
 .form-group button.filter-btn {
-    margin: 50px 0 0;
+    margin: 15px 0 0;
     font-weight: 600;
     background: linear-gradient(75deg, $color-purple, $color-Light-blue);
     color: $color-oldlace;
     border-radius: 0;
     border-color: transparent;
     transition: all 0.5s ease-in-out;
+}
+
+.form-group button.filter-btn.more-main {
+    margin: 0;
 }
 
 .form-group button.filter-btn:hover,
@@ -689,8 +697,13 @@ select.form-control:hover {
     font-weight: bold;
 }
 
-.From-To-Date {
-    margin: 25px 0px;
+// .From-To-Date {
+//     margin: 25px 0px;
+// }
+
+.From-to-time {
+    position: absolute;
+    margin: 10% 0;
 }
 
 .From-To-Date p.between {
@@ -986,11 +999,26 @@ section.Contact .image-msg img {
 
      // Responsive Rate Teachers page
      h6.cst-title {
-        margin: 20px 0;
+        margin: 35px 0;
     }
 
     label.per-day {
         margin: 10px 0;
+    }
+
+    // Filter Date Time
+
+    .From-To-Date p.between {
+        margin: 3px 15px;
+    }
+
+    .From-to-time {
+        position: absolute;
+        margin: 65% 0;
+    }
+
+    .form-group button.filter-btn {
+        margin: 140px 0 0;
     }
 
 }
@@ -1050,7 +1078,7 @@ section.Contact .image-msg img {
 
      // Responsive Rate Teachers page
      h6.cst-title {
-        margin: 20px 0;
+        margin: 35px 0;
     }
 
     label.per-day {
@@ -1064,6 +1092,12 @@ section.Contact .image-msg img {
     span.details-more {
         font-size: 14px;
         font-weight: bold;
+    }
+
+    // Filter Teachers
+
+    .form-group button.filter-btn {
+        margin: 15px 0 0;
     }
 
 }
@@ -1117,10 +1151,25 @@ section.Contact .image-msg img {
     // Responsive Rate Teachers page
     h6.cst-title {
         margin: 20px 0;
+        margin-top: 35px;
     }
 
     label.per-day {
         margin: 10px 0;
+    }
+
+    // Filter Teachers
+
+    form.form-inline {
+        display: inline-block !important;
+    }
+
+    .From-to-time {
+        margin: 0;
+    }
+
+    .form-group button.filter-btn {
+        margin: 65px 0 0;
     }
 
 }
@@ -1172,6 +1221,12 @@ section.Contact .image-msg img {
 
     .col-lg-4.col-md-6.col-sm-6.col-12.add-package {
         display: none;
+    }
+
+    // Filter Teachers
+
+    .From-To-Date p.between {
+        margin: 0px 3px;
     }
 
 }

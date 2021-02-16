@@ -1,4 +1,3 @@
-
 @font-face {
     src: url(../fonts/NotoSansHK-content.otf);
     font-family: "ar-content";
@@ -18,11 +17,22 @@ $font-write: "ar-content";
 $font-heading: "ar-heading";
 $font-lang: "ar-font";
 
-h1, h2, h3, h4, h5, h6, label {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
     font-family: $font-heading;
 }
 
-p, span, li, body, a, option{
+p,
+span,
+li,
+body,
+a,
+option {
     font-family: $font-write;
     font-size: 18px;
 }
@@ -38,4 +48,3 @@ a:hover {
 small {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-

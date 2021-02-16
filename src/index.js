@@ -16,25 +16,8 @@ import 'normalize.css/normalize.css';
 
 import './assets/js/script.js';
 
-// import 'jquery-count-to/build/jquery-countTo.js';
-
 import 'jquery-countto/jquery.countTo';
 
 import 'jquery-ui-dist/jquery-ui';
 
 import 'jquery-ui-dist/jquery-ui.css';
-
-
-
-// import 'aos/dist/aos.js';
-
-// import 'aos/dist/aos.css';
-
-// import 'aos/src/js/aos.js';
-
-
-// import 'video.js/dist/video.min.js';
-
-// import 'video.js/dist/video-js.min.css';
-
-//  add normalize css

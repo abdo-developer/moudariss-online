@@ -8,9 +8,11 @@
 @import './features';
 @import './how';
 @import './teachers';
+@import './teacher';
 @import './filter';
 @import './pricing';
 @import './contact';
+@import './pagination';
 @import './footer';
 
 
@@ -98,7 +100,7 @@ section.more-features .icon-title-text h5 {
 
 // Responsive website 
 
-@media (min-width: 320px) and (max-width: 575.98px) {
+@media (min-width: 300px) and (max-width: 575.98px) {
 
     header.top_header nav ul li.item-anthor {
         margin-top: 20px;
@@ -205,12 +207,48 @@ section.more-features .icon-title-text h5 {
     .From-to-time {
         position: relative;
         margin: 15px 0;
+        display: contents;
     }
 
     .form-group button.filter-btn {
         margin: -10px 0;
     }
 
+}
+
+@media (min-width: 417px) and (max-width: 575px) {
+
+    .form-inline {
+        display: block !important;
+        position: relative !important;
+    }
+
+    footer.latest-footer .line {
+        width: 108px;
+        margin: -30px auto 30px -3px;
+    }
+
+    footer.latest-footer .title-column h4.custom-heading {
+        margin: 40px 0;
+    }
+
+    footer.latest-footer .line.links {
+        width: 185px;
+    }
+
+    footer.latest-footer .line.info {
+        width: 145px;
+        margin: -35px auto 30px 0;
+    }
+
+    footer.latest-footer .title-column h4.custom-heading.more-style {
+        margin: 10px 0;
+    }
+
+    footer.latest-footer .line.info {
+        width: 145px;
+        margin: 0 auto 30px 0;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {

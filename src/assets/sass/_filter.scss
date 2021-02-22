@@ -30,9 +30,10 @@
 }
 
 span.ui-slider-handle.ui-corner-all.ui-state-default {
-    background-color: $color-black;
-    border-radius: 3px;
+    background-color: $color-star;
+    border-radius: 50%;
     border-color: transparent;
+    box-shadow: 0px -2px 5px $color-oldlace;
 }
 
 .form-check {

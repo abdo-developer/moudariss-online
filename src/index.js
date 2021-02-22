@@ -21,3 +21,7 @@ import 'jquery-countto/jquery.countTo';
 import 'jquery-ui-dist/jquery-ui';
 
 import 'jquery-ui-dist/jquery-ui.css';
+
+import 'country-select-js/build/css/countrySelect.css';
+
+import 'country-select-js/build/js/countrySelect.js';

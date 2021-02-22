@@ -1,0 +1,224 @@
+
+// Style new page teachers
+
+.bg-fliter {
+    background-color: $color-bg-filter;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+form.filter-search .title-form h4 {
+    margin: 30px 0;
+    color: $color-black;
+}
+
+form.filter-search input.form-check-input {
+    margin: 0 3px;
+    color: black !important;
+    font-weight: bold;
+}
+
+form.filter-search label.form-check-label {
+    margin: 0 8px;
+} 
+
+form.filter-search label.form-check-label img {
+    height: 25px;
+}
+
+.teach-me {
+    margin: 20px 0 8px 0;
+}
+
+.ui-widget.ui-widget-content {
+    margin: 0 !important;
+}
+
+button.btn.filter-btn.form-control {
+    margin: 20px 0;
+    font-family: $font-write;
+    color: $color-black;
+    font-weight: bold;
+    padding: 7px 18px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, $color-purple, $color-blue);
+    transition: all 0.3s ease-in-out;
+}
+
+button.btn.filter-btn.form-control:hover,
+button.btn.filter-btn.form-control:active, 
+button.btn.filter-btn.form-control:focus {
+    background: $color-filter;
+    color: $color-white;
+    font-weight: 500;
+}
+
+a.btn.filter-btn {
+    margin: 20px 0;
+    font-family: $font-write;
+    color: $color-antiquewhite;
+    font-weight: bold;
+    border-radius: 5px;
+    background: linear-gradient(90deg, $color-purple, $color-blue);
+    transition: all 0.6s ease-in-out;
+}
+
+a.btn.filter-btn:hover,
+a.btn.filter-btn:active,
+a.btn.filter-btn:focus {
+    background: $color-blue;
+    color: $color-white;
+    font-weight: 500;
+}
+
+a.btn.custom-btn-more.text-center {
+    font-family: $font-write;
+    color: $color-black;
+    transition: all 0.3s ease-in-out;
+}
+
+a.btn.custom-btn-more.text-center:active,
+a.btn.custom-btn-more.text-center:hover,
+a.btn.custom-btn-more.text-center:focus {
+    font-weight: bold;
+}
+
+.form-check-label svg {
+    color: $color-star;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.form-check-label svg.active {
+    color: $color-rgba-two;
+}
+
+.form-inline.time {
+    margin: 20px 0 5px 0;
+}
+
+input, label {
+    color: $color-black;
+}
+
+// List Tecahers
+
+.card.card-teachers {
+    border-radius: 12px;
+    margin: 25px 0;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.card .card-header svg {
+    font-size: 14px;
+    color: $color-star;
+}
+
+.card .card-header svg.active {
+    color: $color-rgba-two;
+}
+
+.card .card-header .name-country p {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0 4px 0;
+}
+
+.card .card-header .name-country p span.country {
+    color: $color-star;
+    font-size: 16px;
+}
+
+.Price-class p {
+    font-size: 16px;
+    color: $color-blue;
+    font-weight: bold;
+}
+
+.Price-class p span {
+    font-size: 18px;
+}
+
+.Price-class p small {
+    color: $color-oldlace;
+    background: linear-gradient(45deg, $color-blue, $color-purple);
+    padding: 5px 5px;
+    font-weight: bolder;
+
+}
+
+.card .card-body .model {
+    margin: 8px 0;
+}
+
+.card .card-body .model svg {
+    color: $color-blue;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+// Private page techers
+
+.image-teachers img {
+    margin: 40px 0 15px 0;
+}
+
+.details-meta ul {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.details-meta ul li {
+    font-family: $font-write;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.details-meta ul li svg {
+    margin-right: 2.5px;
+    color: $color-blue;
+    font-size: 18px;
+}
+
+.cv-detailed p {
+    text-align: justify;
+}
+
+ul li.list-study {
+    font-family: $font-write;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul li.list-study svg {
+    font-size: 18px;
+    color: $color-blue;
+}
+
+p.ratings {
+    font-weight: bold;
+}
+
+.stars .star svg {
+    color: $color-star;
+    margin-right: 3px;
+    font-size: 18px;
+}
+
+.stars .star svg.active {
+    color: $color-rgba-two;
+}
+
+.stars .star small {
+    font-weight: bold;
+    font-family: $font-write;
+}
+
+.students p {
+    font-weight: bold;
+}
+
+.students p svg {
+    color: $color-blue;
+    font-size: 20px;
+    margin-right: 3px;
+}

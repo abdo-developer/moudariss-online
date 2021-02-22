@@ -1,0 +1,19 @@
+
+// Style pagination link
+
+nav ul.pagination li a {
+    color: $color-Light-blue;
+    transition: all .5s ease-in-out;
+}
+
+nav ul.pagination li a.active {
+    background: linear-gradient(50deg, $color-Light-blue, $color-purple);
+    color: $color-white;
+}
+
+nav ul.pagination li a:hover,
+nav ul.pagination li a:focus,
+nav ul.pagination li a:active {
+    background-color: $color-purple;
+    color: $color-wheat;
+}

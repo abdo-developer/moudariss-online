@@ -49,5 +49,12 @@ jQuery(function () {
     });
     $("#Price").val($("#slider-range-one").slider("values", 0) + " Dollar" +
         "  -  " + $("#slider-range-one").slider("values", 1) + " Dollar ");
+
+        // CountrySelector
+
+        $("#country").countrySelect();
+
+        // More country
+        $("#country-more").countrySelect();
 });
 

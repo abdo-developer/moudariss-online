@@ -123,6 +123,16 @@ module.exports = {
       }),
 
       new HtmlWebpackPlugin({
+        filename: "teacher.html",
+        template: "./src/teacher.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "page-teacher.html",
+        template: "./src/page-teacher.html"
+      }),
+
+      new HtmlWebpackPlugin({
         filename: "Pricing.html",
         template: "./src/Pricing.html"
       }),

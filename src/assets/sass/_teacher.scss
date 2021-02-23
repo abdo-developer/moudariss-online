@@ -147,7 +147,7 @@ input, label {
 .Price-class p span {
     color: $color-oldlace;
     background: linear-gradient(45deg, $color-blue, $color-purple);
-    padding: 0px 22px;
+    padding: 0px 10px;
     margin-right: 11px;
     font-weight: bolder;
     text-align: left !important;
@@ -155,6 +155,7 @@ input, label {
 
 .Price-class p small {
     font-weight: bold;
+    margin-right: 10px;
 }
 
 .card .card-body {

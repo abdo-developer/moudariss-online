@@ -242,3 +242,30 @@ p.ratings {
     font-size: 20px;
     margin-right: 3px;
 }
+
+.btn-custom-page .a.btn.filter-btn {
+    padding: 10px 20px;
+}
+
+.col-lg-6.link-btn {
+    margin-top: 25%;
+}
+
+.add-column {
+    border-right: 1px solid $color-silver;
+}
+
+section.card {
+    margin-top: 30px;
+    padding: 25px;
+}
+
+section.card .link_important.more-add-main {
+    margin-top: -25px;
+}
+
+section.card .card-text svg {
+    color: $color-transition;
+    font-size: 20px;
+    margin-right: 4px;
+}

@@ -67,20 +67,20 @@
         </nav>
         <div class="container">
             <div class="row">
-                <div class="col-9">
+                <div class="col-lg-9 col-12">
                     <div class="title-column">
-                        <h4 class="custom-heading">Choose your teachers</h4>
+                        <h4 class="custom-heading text-center">Choose your teachers</h4>
                     </div>
                     <div class="description-paragraph">
-                        <p class="mb-4">
+                        <p class="mb-4 text-center">
                             Learning has NO limitation, though your mobile or PC, you can book your private teacher and
                             start your interactive virtual class from your home .
                         </p>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-12">
                     <div class="link-teache-me text-center">
-                        <a href="#" class="btn filter-btn more-main">
+                        <a href="#" class="btn filter-btn more-main" style="margin-top: 12%;">
                             If you don't find what you
                             are looking for Please click here
                         </a>
@@ -126,46 +126,59 @@
                     </div>
 
                     <hr>
-                    
+
                     <!-- Start Levels, we have Six levels -->
                     <div class="form-group form-check">
                         <label for="">Study in</label>
 
-                        <br>
-                        <!-- I am Male : Student -->
-                        <input type="radio" class="form-check-input" id="exampleRadios1" name="exampleRadios">
-                        <label class="form-check-label" for="exampleRadios1">
-                           Level First 
-                        </label>
-                        <!-- I am Female : student -->
-                        <input type="radio" class="form-check-input" id="exampleRadios2" name="exampleRadios">
-                        <label class="form-check-label" for="exampleRadios2">
+                        <div class="content-radio">
+                            <!-- I am Male : Student -->
+                            <input type="radio" class="form-check-input" id="exampleRadios1" name="exampleRadios">
+                            <label class="form-check-label" for="exampleRadios1">
+                            Level First 
+                            </label>
+                        </div>
+
+                        <div class="content-radio">
+                            <!-- I am Male : Student -->
+                            <input type="radio" class="form-check-input" id="exampleRadios1" name="exampleRadios">
+                            <label class="form-check-label" for="exampleRadios1">
                             Level Second 
-                        </label>
-
-                        <br>
-
-                        <input type="radio" class="form-check-input" id="exampleRadios3" name="exampleRadios">
-                        <label class="form-check-label" for="exampleRadios3">
+                            </label>
+                        </div>
+                        
+                        <div class="content-radio">
+                            <!-- I am Male : Student -->
+                            <input type="radio" class="form-check-input" id="exampleRadios1" name="exampleRadios">
+                            <label class="form-check-label" for="exampleRadios1">
                             Level Third 
-                        </label>
-                        <!-- I am Female : student -->
-                        <input type="radio" class="form-check-input" id="exampleRadios4" name="exampleRadios">
-                        <label class="form-check-label" for="exampleRadios4">
+                            </label>
+                        </div>
+
+                        <div class="content-radio">
+                            <!-- I am Male : Student -->
+                            <input type="radio" class="form-check-input" id="exampleRadios1" name="exampleRadios">
+                            <label class="form-check-label" for="exampleRadios1">
                             Level Fourth 
-                        </label>
+                            </label>
+                        </div>
 
-                        <br>
+                        <div class="content-radio">
+                            <!-- I am Male : Student -->
+                            <input type="radio" class="form-check-input" id="exampleRadios1" name="exampleRadios">
+                            <label class="form-check-label" for="exampleRadios1">
+                            Level Fifth 
+                            </label>
+                        </div>
 
-                        <input type="radio" class="form-check-input" id="exampleRadios5" name="exampleRadios">
-                        <label class="form-check-label" for="exampleRadios5">
-                           Level Fifth 
-                        </label>
-                        <!-- I am Female : student -->
-                        <input type="radio" class="form-check-input" id="exampleRadios6" name="exampleRadios">
-                        <label class="form-check-label" for="exampleRadios6">
-                           Level Sixth 
-                        </label>
+                        <div class="content-radio">
+                            <!-- I am Male : Student -->
+                            <input type="radio" class="form-check-input" id="exampleRadios1" name="exampleRadios">
+                            <label class="form-check-label" for="exampleRadios1">
+                            Level Sixth 
+                            </label>
+                        </div>
+                        
                     </div>
                     <!-- End Levels, we have Six levels -->
 
@@ -190,7 +203,7 @@
                         <!-- I am Male : teacher -->
                         <div class="text-center">
                             <label for="RadioStudent1">Teacher</label>
-                            <input type="radio" class="form-check-input" id="RadioStudent1" name="RadioStudent">
+                            <input type="checkbox" class="form-check-input" id="" name="">
                         </div>
                         <div class="text-center">
                             <img src="./assets/images/teacher-famme.svg" alt="Teacher" style="height: 50px;">
@@ -199,8 +212,8 @@
 
                         <!-- I am Female : teacher -->
                         <div class="text-center">
-                            <label for="RadioStudent2">Teacher</label>
-                            <input type="radio" class="form-check-input" id="RadioStudent2" name="RadioStudent">
+                            <label for="">Teacher</label>
+                            <input type="checkbox" class="form-check-input" id="" name="">
                         </div>
                         <div class="text-center">
                             <img src="./assets/images/teacher-homme.svg" alt="teacher" style="height: 50px;">
@@ -262,7 +275,7 @@
                     <!-- Link i don't teache me -->
                     <div class="link-teache-me text-center">
                         <a href="#" class="btn filter-btn more-main">
-                            If you don't find what you
+                            If you don't find the subject you
                             are looking for Please click here
                         </a>
                     </div>
@@ -272,6 +285,8 @@
 
                     <p>
                         <input type="text" id="Price" class="form-check-input" readonly>
+                        <br>
+                        <span style="font-weight: bold;">Per one class</span>
                     </p>
 
                     <div id="slider-range-one"></div>
@@ -294,7 +309,7 @@
                         <!-- Collaspe Show  Adevanced search -->
                         <div class="collapse" id="collapseShow">
                             <p>
-                                <label for="experience">With experience years:</label>
+                                <label for="experience">With experience years</label>
                                 <input type="text" id="experience" class="form-check-input" readonly>
                             </p>
 
@@ -303,7 +318,7 @@
                             <br>
 
                             <!-- Star filter with stars -->
-                            <label> Ratings :</label>
+                            <label> With stars rating</label>
 
                             <!-- Get stars -->
 
@@ -361,7 +376,6 @@
                                 <input type="date" class="form-control" name="" id="" style="width: 100%;">
                             </div>
                             <!-- End from date -->
-
                             <br>
 
                             <!-- From date avaible -->
@@ -382,11 +396,14 @@
 
                             <br>
 
-                            <div class="form-inline time">
-                                <input type="time" class="form-control" name="" id="">
-                                <label style="margin: 0 8px;">To</label>
-                                <input type="time" class="form-control" name="" id="">
+                            <div class="form-group">
+                                <div class="form-inline time" id="">
+                                    <input type="time" class="form-control" name="datetimepicker" id="datetimepicker">
+                                    <label style="margin: 0 8px;">To</label>
+                                    <input type="time" class="form-control" name="datetimepicker" id="datetimepicker">
+                                </div>
                             </div>
+            
                             <!-- End from date -->
 
                             <!-- Search now -->
@@ -447,8 +464,6 @@
                                             <p>
                                                 <span>2 USD</span>
                                                 <br>
-                                                <small>Per class</small>
-                                                <br>
                                                 <small>Contract Price</small>
                                             </p>
                                         </div>
@@ -457,8 +472,6 @@
                                         <div class="Price-class text-center">
                                             <p>
                                                 <span>9 USD</span>
-                                                <br>
-                                                <small>Per class</small>
                                                 <br>
                                                 <small>One class price</small>
                                             </p>
@@ -475,7 +488,6 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
-                                <hr>
                                 <!-- Models -->
                                 <div class="model">
                                     <span>
@@ -538,8 +550,6 @@
                                             <p>
                                                 <span>2 USD</span>
                                                 <br>
-                                                <small>Per class</small>
-                                                <br>
                                                 <small>Contract Price</small>
                                             </p>
                                         </div>
@@ -548,8 +558,6 @@
                                         <div class="Price-class text-center">
                                             <p>
                                                 <span>9 USD</span>
-                                                <br>
-                                                <small>Per class</small>
                                                 <br>
                                                 <small>One class price</small>
                                             </p>
@@ -566,7 +574,6 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
-                                <hr>
                                 <!-- Models -->
                                 <div class="model">
                                     <span>
@@ -629,8 +636,6 @@
                                             <p>
                                                 <span>2 USD</span>
                                                 <br>
-                                                <small>Per class</small>
-                                                <br>
                                                 <small>Contract Price</small>
                                             </p>
                                         </div>
@@ -639,8 +644,6 @@
                                         <div class="Price-class text-center">
                                             <p>
                                                 <span>9 USD</span>
-                                                <br>
-                                                <small>Per class</small>
                                                 <br>
                                                 <small>One class price</small>
                                             </p>
@@ -657,7 +660,6 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
-                                <hr>
                                 <!-- Models -->
                                 <div class="model">
                                     <span>
@@ -726,8 +728,6 @@
                                             <p>
                                                 <span>2 USD</span>
                                                 <br>
-                                                <small>Per class</small>
-                                                <br>
                                                 <small>Contract Price</small>
                                             </p>
                                         </div>
@@ -736,8 +736,6 @@
                                         <div class="Price-class text-center">
                                             <p>
                                                 <span>9 USD</span>
-                                                <br>
-                                                <small>Per class</small>
                                                 <br>
                                                 <small>One class price</small>
                                             </p>
@@ -754,7 +752,6 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
-                                <hr>
                                 <!-- Models -->
                                 <div class="model">
                                     <span>
@@ -817,8 +814,6 @@
                                             <p>
                                                 <span>2 USD</span>
                                                 <br>
-                                                <small>Per class</small>
-                                                <br>
                                                 <small>Contract Price</small>
                                             </p>
                                         </div>
@@ -827,8 +822,6 @@
                                         <div class="Price-class text-center">
                                             <p>
                                                 <span>9 USD</span>
-                                                <br>
-                                                <small>Per class</small>
                                                 <br>
                                                 <small>One class price</small>
                                             </p>
@@ -845,7 +838,6 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
-                                <hr>
                                 <!-- Models -->
                                 <div class="model">
                                     <span>
@@ -908,8 +900,6 @@
                                             <p>
                                                 <span>2 USD</span>
                                                 <br>
-                                                <small>Per class</small>
-                                                <br>
                                                 <small>Contract Price</small>
                                             </p>
                                         </div>
@@ -918,8 +908,6 @@
                                         <div class="Price-class text-center">
                                             <p>
                                                 <span>9 USD</span>
-                                                <br>
-                                                <small>Per class</small>
                                                 <br>
                                                 <small>One class price</small>
                                             </p>
@@ -936,7 +924,6 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
-                                <hr>
                                 <!-- Models -->
                                 <div class="model">
                                     <span>
@@ -1005,8 +992,6 @@
                                             <p>
                                                 <span>2 USD</span>
                                                 <br>
-                                                <small>Per class</small>
-                                                <br>
                                                 <small>Contract Price</small>
                                             </p>
                                         </div>
@@ -1015,8 +1000,6 @@
                                         <div class="Price-class text-center">
                                             <p>
                                                 <span>9 USD</span>
-                                                <br>
-                                                <small>Per class</small>
                                                 <br>
                                                 <small>One class price</small>
                                             </p>
@@ -1033,7 +1016,6 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
-                                <hr>
                                 <!-- Models -->
                                 <div class="model">
                                     <span>
@@ -1096,8 +1078,6 @@
                                             <p>
                                                 <span>2 USD</span>
                                                 <br>
-                                                <small>Per class</small>
-                                                <br>
                                                 <small>Contract Price</small>
                                             </p>
                                         </div>
@@ -1106,8 +1086,6 @@
                                         <div class="Price-class text-center">
                                             <p>
                                                 <span>9 USD</span>
-                                                <br>
-                                                <small>Per class</small>
                                                 <br>
                                                 <small>One class price</small>
                                             </p>
@@ -1124,7 +1102,6 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
-                                <hr>
                                 <!-- Models -->
                                 <div class="model">
                                     <span>
@@ -1187,8 +1164,6 @@
                                             <p>
                                                 <span>2 USD</span>
                                                 <br>
-                                                <small>Per class</small>
-                                                <br>
                                                 <small>Contract Price</small>
                                             </p>
                                         </div>
@@ -1197,8 +1172,6 @@
                                         <div class="Price-class text-center">
                                             <p>
                                                 <span>9 USD</span>
-                                                <br>
-                                                <small>Per class</small>
                                                 <br>
                                                 <small>One class price</small>
                                             </p>
@@ -1215,7 +1188,6 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
-                                <hr>
                                 <!-- Models -->
                                 <div class="model">
                                     <span>
@@ -1455,9 +1427,7 @@
         </div>
     </footer>
     <!-- End Footer Page -->
-
     <script type="text/html" src="{require{'./index.js'}}"></script>
-
 </body>
 
 </html>

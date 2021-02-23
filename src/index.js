@@ -25,3 +25,8 @@ import 'jquery-ui-dist/jquery-ui.css';
 import 'country-select-js/build/css/countrySelect.css';
 
 import 'country-select-js/build/js/countrySelect.js';
+
+// import 'jquery-datetimepicker/build/jquery.datetimepicker.full';
+
+// import 'bootstrap-datepicker/js/bootstrap-datepicker.js';
+

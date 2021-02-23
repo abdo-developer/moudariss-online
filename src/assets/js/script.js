@@ -57,11 +57,11 @@ jQuery(function () {
             max: 5,
             values: [1, 5],
             slide: function (event, ui) {
-                $("#Ratings").val(ui.values[0] + " Ratings " + "  -  " + ui.values[1] + " Ratings ");
+                $("#Ratings").val(ui.values[0] + " Stars " + "  -  " + ui.values[1] + " Stars ");
             }
         });
-        $("#Ratings").val($("#slider-range-two").slider("values", 0) + " Ratings" +
-            "  -  " + $("#slider-range-two").slider("values", 1) + " Ratings ");
+        $("#Ratings").val($("#slider-range-two").slider("values", 0) + " Star" +
+            "  -  " + $("#slider-range-two").slider("values", 1) + " Stars ");
 
         // CountrySelector
 
@@ -69,5 +69,7 @@ jQuery(function () {
 
         // More country
         $("#country-more").countrySelect();
+
+        // Time x:00
 });
 

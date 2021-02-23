@@ -50,6 +50,19 @@ jQuery(function () {
     $("#Price").val($("#slider-range-one").slider("values", 0) + " Dollar" +
         "  -  " + $("#slider-range-one").slider("values", 1) + " Dollar ");
 
+        // Ratings
+        $("#slider-range-two").slider({
+            range: true,
+            min: 1,
+            max: 5,
+            values: [1, 5],
+            slide: function (event, ui) {
+                $("#Ratings").val(ui.values[0] + " Ratings " + "  -  " + ui.values[1] + " Ratings ");
+            }
+        });
+        $("#Ratings").val($("#slider-range-two").slider("values", 0) + " Ratings" +
+            "  -  " + $("#slider-range-two").slider("values", 1) + " Ratings ");
+
         // CountrySelector
 
         $("#country").countrySelect();

@@ -6,9 +6,10 @@
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
-form.filter-search .title-form h4 {
-    margin: 30px 0;
+form.filter-search label {
     color: $color-black;
+    font-family: $font-heading;
+    font-size: 18px;
 }
 
 form.filter-search input.form-check-input {
@@ -62,6 +63,10 @@ a.btn.filter-btn {
     transition: all 0.6s ease-in-out;
 }
 
+a.btn.filter-btn.more-main {
+    margin: 0;
+}
+
 a.btn.filter-btn:hover,
 a.btn.filter-btn:active,
 a.btn.filter-btn:focus {
@@ -111,6 +116,7 @@ input, label {
 .card .card-header svg {
     font-size: 14px;
     color: $color-star;
+    margin-bottom: 8px;
 }
 
 .card .card-header svg.active {
@@ -138,12 +144,16 @@ input, label {
     font-size: 18px;
 }
 
-.Price-class p small {
+.Price-class p span {
     color: $color-oldlace;
     background: linear-gradient(45deg, $color-blue, $color-purple);
-    padding: 5px 5px;
+    padding: 2px 8px;
     font-weight: bolder;
+    text-align: left !important;
+}
 
+.Price-class p small {
+    font-weight: bold;
 }
 
 .card .card-body .model {

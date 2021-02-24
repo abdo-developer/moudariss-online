@@ -258,7 +258,11 @@ p.ratings {
 section.card {
     margin-top: 30px;
     padding: 25px;
+    border: transparent;
+    border-radius: 15px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
+
 
 section.card .link_important.more-add-main {
     margin-top: -25px;
@@ -268,4 +272,59 @@ section.card .card-text svg {
     color: $color-transition;
     font-size: 20px;
     margin-right: 4px;
+}
+
+// Page one teacher
+
+.votes {
+    margin: 0 0 8px 0;
+}
+
+.votes .form-inline svg {
+    color: $color-silver;
+}
+
+.votes .form-inline svg.active {
+    color: $color-rgba-two;
+}
+
+.votes .form-inline .star span {
+    font-family: $font-heading;
+    margin-left: 4px;
+}
+
+.form-inline .by p svg {
+    font-size: 22px;
+    margin-right: 4px;
+    color: $color-blue;
+}
+
+.form-inline .by p.name span {
+    font-size: 18px;
+    font-weight: bold;
+    color: $color-purple;
+    margin-right: 30px;
+    margin-left: 1px;
+}
+
+.form-inline .country p svg {
+    margin-right: 3px;
+    color: $color-blue;
+    font-size: 22px;
+}
+
+.form-inline .country p span.country {
+    font-family: $font-heading;
+}
+
+.teach-in-the-world svg {
+    color: $color-blue;
+    font-size: 22px;
+    margin-right: 8px;
+    float: left;
+}
+
+// bg-color-one page teachers
+body.one-page-teacher {
+    background: linear-gradient(45deg, $color-purple, $color-filter);
 }

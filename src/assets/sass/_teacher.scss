@@ -259,8 +259,11 @@ section.card {
     margin-top: 30px;
     padding: 25px;
     border: transparent;
-    border-radius: 15px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    border-radius: 0;
+}
+
+section.up-card {
+    border-right: 1px solid gray;
 }
 
 

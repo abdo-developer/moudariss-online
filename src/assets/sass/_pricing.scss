@@ -3,6 +3,10 @@
 
 // Page Pricing html
 
+div.pricing-table {
+    background-color: $color-oldlace;
+}
+
 section.Pricing form {
     margin: 10px 0;
 }
@@ -12,7 +16,6 @@ section.Pricing .line {
 }
 
 .pricing-table {
-    background-color: $color-e;
     padding: 10px;
 }
 
@@ -35,8 +38,11 @@ section.Pricing .line {
 
 .pricing-table .heading {
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px;
     border-bottom: 1px solid $color-ram;
+    background: linear-gradient(90deg, $color-purple, $color-transition);
+    color: $color-oldlace;
+    border-radius: 15px;
 }
 
 .pricing-table .item {
@@ -115,4 +121,11 @@ section.Pricing .line {
     margin: auto;
     font-weight: 600;
     padding: 9px 0;
+}
+
+// btn pro
+
+a.btn.filter-btn.pro-btn {
+    margin: 20px 0 -5px 0;
+    padding: 12px 20px;
 }

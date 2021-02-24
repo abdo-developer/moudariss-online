@@ -63,6 +63,19 @@ jQuery(function () {
         $("#Ratings").val($("#slider-range-two").slider("values", 0) + " Star" +
             "  -  " + $("#slider-range-two").slider("values", 1) + " Stars ");
 
+        // Slide range promotions
+        $("#slider-range-promotion").slider({
+            range: true,
+            min: 50,
+            max: 1000,
+            values: [50, 1000],
+            slide: function (event, ui) {
+                $("#Promotions").val(ui.values[0] + " Dollar " + "  -  " + ui.values[1] + " Dollar ");
+            }
+        });
+        $("#Promotions").val($("#slider-range-promotion").slider("values", 0) + " Dollar" +
+            "  -  " + $("#slider-range-promotion").slider("values", 1) + " Dollar ");
+
         // CountrySelector
 
         $("#country").countrySelect();

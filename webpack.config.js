@@ -118,13 +118,8 @@ module.exports = {
       }),
 
       new HtmlWebpackPlugin({
-        filename: "teachers.html",
-        template: "./src/teachers.html"
-      }),
-
-      new HtmlWebpackPlugin({
-        filename: "teacher.html",
-        template: "./src/teacher.html"
+        filename: "list-teachers.html",
+        template: "./src/list-teachers.html"
       }),
 
       new HtmlWebpackPlugin({
@@ -133,18 +128,28 @@ module.exports = {
       }),
 
       new HtmlWebpackPlugin({
-        filename: "Pricing.html",
-        template: "./src/Pricing.html"
+        filename: "promotions.html",
+        template: "./src/promotions.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "teachers_reservation_page.html",
+        template: "./src/teachers_reservation_page.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "one_promotions_page.html",
+        template: "./src/one_promotions_page.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "promotions_select_teacher.html",
+        template: "./src/promotions_select_teacher.html"
       }),
 
       new HtmlWebpackPlugin({
         filename: "contact.html",
         template: "./src/contact.html"
-      }),
-
-      new HtmlWebpackPlugin({
-        filename: "promotions.html",
-        template: "./src/promotions.html"
       })
       
     ]

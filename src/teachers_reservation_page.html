@@ -7,7 +7,7 @@
     <title>Moudariss | Teachers reservation page</title>
 </head>
 
-<body>
+<body style="background-color: #5ec1fa;">
 
     <!-- Strat Header Page -->
     <header class="top_header">
@@ -79,10 +79,11 @@
         </div>
         <!-- End booking submit -->
 
-        <div class="row">
+        <div class="row bg-light mt-4">
             <!--  -->
             <div class="col-lg-8 col-md-12">
-                <div class="card" style="border: 0; margin-top: 12px; border-right: 1px solid gray; padding: 0px  10px 5px 0; border-radius: 0.5px;">
+                <div class="card"
+                    style="border: 0; margin-top: 12px; border-right: 1px solid gray; padding: 0px  10px 5px 0; border-radius: 0.5px;">
                     <form class="filter-search">
                         <div class="form-group form-check">
                             <label for="" style="margin-top: 15px;">I am </label>
@@ -180,29 +181,29 @@
                             <div class="check-language text-center">
 
                                 <!-- Arabic -->
-                                <input type="checkbox" class="form-check-input" id="" name="">
-                                <label class="form-check-label" for="">
+                                <input type="radio" class="form-check-input" id="RadinLanguage1" name="RadinLanguage">
+                                <label class="form-check-label" for="RadinLanguage1">
                                     Arabic
                                 </label>
                                 <!-- End input arabic -->
 
                                 <!-- English -->
-                                <input type="checkbox" class="form-check-input" id="" name="">
-                                <label class="form-check-label" for="">
+                                <input type="radio" class="form-check-input" id="RadinLanguage2" name="RadinLanguage">
+                                <label class="form-check-label" for="RadinLanguage2">
                                     English
                                 </label>
                                 <!-- End input English -->
 
                                 <!-- French -->
-                                <input type="checkbox" class="form-check-input" id="" name="">
-                                <label class="form-check-label" for="">
+                                <input type="radio" class="form-check-input" id="RadinLanguage3" name="RadinLanguage">
+                                <label class="form-check-label" for="RadinLanguage3">
                                     French
                                 </label>
                                 <!-- End input French -->
 
                                 <!-- Hindi -->
-                                <input type="checkbox" class="form-check-input" id="" name="">
-                                <label class="form-check-label" for="">
+                                <input type="radio" class="form-check-input" id="RadinLanguage4" name="RadinLanguage">
+                                <label class="form-check-label" for="RadinLanguage4">
                                     Hindi
                                 </label>
                                 <!-- End input Hindi -->
@@ -229,7 +230,8 @@
                             <!-- For number -->
                             <div class="for-number">
                                 <label for="">For number of</label>
-                                <input type="number" class="form-control d-inline" name="" id="" style="height: 35px; width: 20%; margin: 0 8px;">
+                                <input type="number" class="form-control d-inline" name="" id=""
+                                    style="height: 35px; width: 20%; margin: 0 8px;">
                                 <label for="" class="d-inline">Classes</label>
                             </div>
                             <!-- End For number -->
@@ -247,18 +249,16 @@
                             <!-- Term and conditaion -->
                             <div class="term-condition">
                                 <label for="">Term and conditaion</label>
-                                <textarea class="form-control" name="" id="" cols="14" rows="7" placeholder="Please, Here write the terms and conditions..."></textarea>
+                                <textarea class="form-control" name="" id="" cols="14" rows="7"
+                                    placeholder="Please, Here write the terms and conditions..."></textarea>
                                 <!-- Agree or i don't agree -->
                                 <div class="radio-agreed-not mt-2">
-                                    <input type="radio" class="form-check-input" id="RadioAgreed" name="RadioNotAgreed1">
+                                    <input type="checkbox" class="form-check-input" id="RadioAgreed"
+                                        name="RadioNotAgreed1">
                                     <label class="form-check-label" for="RadioAgreed1">
                                         I'm agreed
                                     </label>
                                     <!-- Radio Two // up and down -->
-                                    <input type="radio" class="form-check-input" id="RadioNotAgreed" name="RadioNotAgreed1">
-                                    <label class="form-check-label" for="RadioNotAgreed1">
-                                        I'm not agreed
-                                    </label>
                                 </div>
                                 <!-- End agree or i dont't ... -->
                             </div>
@@ -269,27 +269,27 @@
                                 <label for="">Total classes booked : </label>
                                 <span>15 Classes</span>
 
-                                <hr>
+                                <br>
 
                                 <label for="">Price per one class : </label>
                                 <span>10.99 USD</span>
 
-                                <hr>
+                                <br>
 
                                 <label for="">Total contract amount : </label>
                                 <span>164.85 USD</span>
 
-                                <hr>
-                                
+                                <br>
+
                                 <label for="">Available balance : </label>
                                 <span>54.85 USD</span>
 
-                                <hr>
-                                
+                                <br>
+
                                 <label for="">Amount to pay : </label>
                                 <span>110.00 USD</span>
-                                
-                                <hr>
+
+                                <br>
 
                                 <button type="submit" class="btn filter-btn form-control">
                                     BUY NOW
@@ -308,7 +308,8 @@
             <div class="col-lg-4 col-md-12">
                 <div class="card text-center" style="border: 0; margin-top: 12px;">
                     <div class="card-body">
-                        <img src="./assets/images/professor_one.jpg" alt="professor_one" style="height: 120px; border-radius: 50%; margin: 20px 0;">
+                        <img src="./assets/images/professor_one.jpg" alt="professor_one"
+                            style="height: 120px; border-radius: 50%; margin: 20px 0;">
                         <h5 class="card-title">Noura Hamdaan</h5>
                         <p class="card-text">
                             <i class="fas fa-map-marker-alt mr-1" style="color: dodgerblue;"></i>
@@ -326,19 +327,17 @@
                             </div>
                         </div>
 
-                        <hr>
+                        <br>
 
                         <!-- I have experience -->
                         <h6 class="title-larg text-center">
-                            <i class="fas fa-medal mr-1" style="color: dodgerblue; font-size: 20px;"></i>
+                            <img src="./assets/images/badge.svg" class="float-left" alt="badge" style="height: 45px;">
                             I have 8 years of experience
                             <br>
                             I am in advanced level
                         </h6>
                         <!-- End I have ... -->
-
-                        <hr>
-
+                        <br>
                         <!-- ID teacher -->
                         <div class="ID-num">
                             <p class="id-teacher" style="font-weight: bold;">
@@ -351,35 +350,37 @@
 
                         <!-- Student info -->
                         <div class="info-student text-left">
+                            <label for="">Student info</label>
                             <!-- Student info and image -->
                             <p class="type-student">
-                                Student 
-                                <img src="./assets/images/student-male.svg" alt="Student" style="height: 50px; margin-left: 12px;">
+                                Student
+                                <img src="./assets/images/student-male.svg" alt="Student"
+                                    style="height: 50px; margin-left: 12px;">
                             </p>
-                            <hr>
+                            <br>
                             <!-- Label info -->
                             <label for="">Name : </label>
                             <span class="info-details">Mohammed ali</span>
-                            <hr>
+                            <br>
                             <!-- Level -->
                             <label for="">Level : </label>
                             <span class="info-details">Second level</span>
-                            <hr>
+                            <br>
                             <!-- Country -->
                             <label for="">Country : </label>
                             <span class="info-details">Saudi Arabia</span>
-                            <hr>
+                            <br>
                             <!-- teaching language -->
                             <label for="">Teaching language : </label>
                             <span class="info-details">Arabic</span>
-                            <hr>
+                            <br>
                             <!-- Subject -->
                             <label for="">Subject : </label>
                             <span class="info-details">History</span>
-                            <hr>
+                            <br>
                         </div>
                         <!--End Student info -->
-
+                        <hr>
                         <!-- User account info -->
                         <div class="user-account-info text-left">
                             <label for="">User account info</label>
@@ -409,14 +410,14 @@
                             </label>
                             <!-- icon link and whatssapp -->
                             <span>
-                               <a href="#">
-                               <i class="fab fa-whatsapp ml-3" style="font-size: 20px;"></i>
-                               </a>
+                                <a href="#">
+                                    <i class="fab fa-whatsapp ml-3" style="font-size: 20px;"></i>
+                                </a>
                             </span>
                             <!-- Link share -->
                             <span>
                                 <a href="#">
-                                   <i class="fas fa-link ml-2" style="font-size: 20px;"></i>
+                                    <i class="fas fa-link ml-2" style="font-size: 20px;"></i>
                                 </a>
                             </span>
                             <!--Finish icon link and whatssapp -->
@@ -430,9 +431,6 @@
 
     </div>
     <!-- End Teachers reservation page-->
-
-    <hr>
-
 
     <!-- Footer Page -->
     <footer class="latest-footer" id="latest-footer">

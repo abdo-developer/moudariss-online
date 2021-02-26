@@ -8,7 +8,7 @@
     <title>Moudariss | Promotion Reservation</title>
 </head>
 
-<body>
+<body style="background-color: #5ec1fa;">
 
     <!-- Strat Header Page -->
     <header class="top_header">
@@ -80,7 +80,7 @@
         </div>
         <!-- End booking submit -->
 
-        <div class="row">
+        <div class="row bg-light mt-4">
             <!--  -->
             <div class="col-lg-8 col-md-12">
                 <div class="card"
@@ -182,29 +182,29 @@
                             <div class="check-language text-center">
 
                                 <!-- Arabic -->
-                                <input type="checkbox" class="form-check-input" id="" name="">
-                                <label class="form-check-label" for="">
+                                <input type="radio" class="form-check-input" id="RadinLanguage1" name="RadinLanguage">
+                                <label class="form-check-label" for="RadinLanguage1">
                                     Arabic
                                 </label>
                                 <!-- End input arabic -->
 
                                 <!-- English -->
-                                <input type="checkbox" class="form-check-input" id="" name="">
-                                <label class="form-check-label" for="">
+                                <input type="radio" class="form-check-input" id="RadinLanguage2" name="RadinLanguage">
+                                <label class="form-check-label" for="RadinLanguage2">
                                     English
                                 </label>
                                 <!-- End input English -->
 
                                 <!-- French -->
-                                <input type="checkbox" class="form-check-input" id="" name="">
-                                <label class="form-check-label" for="">
+                                <input type="radio" class="form-check-input" id="RadinLanguage3" name="RadinLanguage">
+                                <label class="form-check-label" for="RadinLanguage3">
                                     French
                                 </label>
                                 <!-- End input French -->
 
                                 <!-- Hindi -->
-                                <input type="checkbox" class="form-check-input" id="" name="">
-                                <label class="form-check-label" for="">
+                                <input type="radio" class="form-check-input" id="RadinLanguage4" name="RadinLanguage">
+                                <label class="form-check-label" for="RadinLanguage4">
                                     Hindi
                                 </label>
                                 <!-- End input Hindi -->
@@ -245,17 +245,12 @@
                                     placeholder="Please, Here write the terms and conditions..."></textarea>
                                 <!-- Agree or i don't agree -->
                                 <div class="radio-agreed-not mt-2">
-                                    <input type="radio" class="form-check-input" id="RadioAgreed"
+                                    <input type="checkbox" class="form-check-input" id="RadioAgreed"
                                         name="RadioNotAgreed1">
                                     <label class="form-check-label" for="RadioAgreed1">
                                         I'm agreed
                                     </label>
                                     <!-- Radio Two // up and down -->
-                                    <input type="radio" class="form-check-input" id="RadioNotAgreed"
-                                        name="RadioNotAgreed1">
-                                    <label class="form-check-label" for="RadioNotAgreed1">
-                                        I'm not agreed
-                                    </label>
                                 </div>
                                 <!-- End agree or i dont't ... -->
                             </div>
@@ -265,19 +260,13 @@
                             <div class="total-price">
                                 <label for="">Total amount : </label>
                                 <span>164.85 USD</span>
-
-                                <hr>
-
+                                <br>
                                 <label for="">Available balance : </label>
                                 <span>10.99 USD</span>
-
-                                <hr>
-
+                                <br>
                                 <label for="">Amount to pay : </label>
                                 <span>110.00 USD</span>
-
-                                <hr>
-
+                                <br>
                                 <button type="submit" class="btn filter-btn form-control">
                                     BUY NOW
                                     <span class="ml-4">110.00 USD</span>
@@ -310,25 +299,31 @@
                        </div>
                         <!-- End Number of classes -->
 
-                        <hr>
+                        <!-- All classes -->
+                        <div class="all-classes text-left">
+                            <label for="">All classes valid within:</label>
+                            <span>30 days</span>
+                        </div>
+                        <!-- End all classes -->
 
                         <!-- Classes days -->
                         <div class="classes-days text-left">
                             <label for="">Classes days :</label>
-                            <span>Saturday, Sunday, Monday, Tuesday</span>
+                            <span style="font-size: 14px;">Saturday, Sunday, Monday, Tuesday</span>
                         </div>
-                        <hr>
+
                         <div class="classes-days text-left">
-                            <label for="">Maximum number of classes per day : 3</label>
+                            <label for="">
+                                Maximum number of classes per day : 
+                                <span>3</span>
+                            </label>
                         </div>
-                        <hr>
+
                         <div class="classes-days text-left">
                             <label for="">Package ref. no.</label>
                             <span>66543</span>
                         </div>
                         <!-- Classes days ... -->
-
-                        <hr>
 
                         <!-- ID teacher -->
                         <div class="ID-num">
@@ -342,36 +337,36 @@
 
                         <!-- Student info -->
                         <div class="info-student text-left">
+                            <label for="">Student info</label>
                             <!-- Student info and image -->
                             <p class="type-student">
                                 Student
                                 <img src="./assets/images/student-male.svg" alt="Student"
                                     style="height: 50px; margin-left: 12px;">
                             </p>
-                            <hr>
                             <!-- Label info -->
                             <label for="">Name : </label>
                             <span class="info-details">Mohammed ali</span>
-                            <hr>
+                            <br>
                             <!-- Level -->
                             <label for="">Level : </label>
                             <span class="info-details">Second level</span>
-                            <hr>
+                            <br>
                             <!-- Country -->
                             <label for="">Country : </label>
                             <span class="info-details">Saudi Arabia</span>
-                            <hr>
+                            <br>
                             <!-- teaching language -->
                             <label for="">Teaching language : </label>
                             <span class="info-details">Arabic</span>
-                            <hr>
+                            <br>
                             <!-- Subject -->
                             <label for="">Subject : </label>
                             <span class="info-details">History</span>
-                            <hr>
+
                         </div>
                         <!--End Student info -->
-
+                        <hr>
                         <!-- User account info -->
                         <div class="user-account-info text-left">
                             <label for="">User account info</label>
@@ -422,9 +417,6 @@
 
     </div>
     <!-- End Teachers reservation page-->
-
-    <hr>
-
 
     <!-- Footer Page -->
     <footer class="latest-footer" id="latest-footer">

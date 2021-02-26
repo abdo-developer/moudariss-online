@@ -43,11 +43,12 @@ section.Pricing .line {
     background: linear-gradient(90deg, $color-purple, $color-transition);
     color: $color-oldlace;
     border-radius: 15px;
+    margin-top: 10px;
 }
 
 .pricing-table .item {
     background-color: $color-white;
-    padding: 30px;
+    padding: 0 30px;
     overflow: hidden;
     position: relative;
     border-radius: 12px;

@@ -148,6 +148,11 @@ module.exports = {
       }),
 
       new HtmlWebpackPlugin({
+        filename: "promotion_reservation.html",
+        template: "./src/promotion_reservation.html"
+      }),
+
+      new HtmlWebpackPlugin({
         filename: "contact.html",
         template: "./src/contact.html"
       })

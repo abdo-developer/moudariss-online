@@ -153,6 +153,11 @@ module.exports = {
       }),
 
       new HtmlWebpackPlugin({
+        filename: "teacher_time_booking.html",
+        template: "./src/teacher_time_booking.html"
+      }),
+
+      new HtmlWebpackPlugin({
         filename: "contact.html",
         template: "./src/contact.html"
       })

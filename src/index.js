@@ -26,6 +26,15 @@ import 'country-select-js/build/css/countrySelect.css';
 
 import 'country-select-js/build/js/countrySelect.js';
 
+
+// import 'intl-tel-input/build/css/intlTelInput.min.css';
+
+import 'intl-tel-input/build/js/intlTelInput.js';
+
+import 'intl-tel-input/build/js/intlTelInput-jquery.js';
+
+import 'intl-tel-input/build/js/utils.js';
+
 // import 'jquery-datetimepicker/build/jquery.datetimepicker.full';
 
 // import 'bootstrap-datepicker/js/bootstrap-datepicker.js';

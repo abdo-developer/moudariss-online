@@ -157,6 +157,40 @@ module.exports = {
         template: "./src/teacher_time_booking.html"
       }),
 
+      // More_pages
+      new HtmlWebpackPlugin({
+        filename: "teacher_sign_up.html",
+        template: "./src/teacher_sign_up.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "student_sign_up.html",
+        template: "./src/student_sign_up.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "sign_in.html",
+        template: "./src/sign_in.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "ask_for_teacher.html",
+        template: "./src/ask_for_teacher.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "student_profile.html",
+        template: "./src/student_profile.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "teacher_profile.html",
+        template: "./src/teacher_profile.html"
+      }),
+
+
+      // End More Pages
+
       new HtmlWebpackPlugin({
         filename: "contact.html",
         template: "./src/contact.html"

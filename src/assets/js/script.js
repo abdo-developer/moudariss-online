@@ -84,5 +84,7 @@ jQuery(function () {
         $("#country-more").countrySelect();
 
         // Time x:00
+        // $("#number").intlTelInput(); 
+
 });
 

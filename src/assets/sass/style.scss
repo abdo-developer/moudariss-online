@@ -97,6 +97,21 @@ section.more-features .icon-title-text h5 {
 }
 
 
+// Downlaod file PDF
+
+
+.file_pdf a {
+    text-decoration: none;
+    background-color: $color-blue;
+    color: $color-e;
+    transition: all 0.3s ease-in-out;
+}
+
+.file_pdf a:hover {
+    text-decoration: none;
+    color: $color-antiquewhite;
+}
+
 
 // Responsive website 
 

@@ -179,6 +179,16 @@ module.exports = {
       }),
 
       new HtmlWebpackPlugin({
+        filename: "teacher_time_booking_normal.html",
+        template: "./src/teacher_time_booking_normal.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "teacher_availability_time.html",
+        template: "./src/teacher_availability_time.html"
+      }),
+
+      new HtmlWebpackPlugin({
         filename: "student_profile.html",
         template: "./src/student_profile.html"
       }),

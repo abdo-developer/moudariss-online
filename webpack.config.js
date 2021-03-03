@@ -215,6 +215,27 @@ module.exports = {
         template: "./src/teacher_interface.html"
       }),
 
+      // Four Pagee more
+      new HtmlWebpackPlugin({
+        filename: "teacher_time_booking_pop.html",
+        template: "./src/teacher_time_booking_pop.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "teacher_time_booking_map.html",
+        template: "./src/teacher_time_booking_map.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "teacher_availability_pop.html",
+        template: "./src/teacher_availability_pop.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "teacher_availability_map.html",
+        template: "./src/teacher_availability_map.html"
+      }),
+
 
       // End More Pages
 

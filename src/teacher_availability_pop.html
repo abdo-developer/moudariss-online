@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moudariss | Teacher Time Booking</title>
+    <title>Moudariss | Teacher Time Booking Pop</title>
 </head>
 
 <body style="background-color: #5ec1fa;">
@@ -154,16 +154,11 @@
                         <hr>
 
                         <!-- Select Time : -->
-                        <!-- Title -->
-                        <div class="title">
-                            <h4 class="heading">Select time :</h4>
-                        </div>
-                        <br>
-                        <div class="row">                        
+                        <div class="row">
                             <!-- Card One -->
                             <div class="col-lg-3 col-md-12">
                                 <div class="content text-center"
-                                    style="padding:18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                    style="padding: 18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
                                     <div class="time">
                                         <p>1:00 PM</p>
                                     </div>
@@ -182,10 +177,53 @@
                                     <!-- All days -->
                                     <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
                                     <!-- Button sumbit -->
-                                    <button type="submit" class="btn btn-click"
+                                    <button type="button" class="btn btn-click" data-toggle="modal"
+                                        data-target="#CheckeModal"
                                         style="background-color: black; padding: 5px 43px; color: white; font-weight: bold;">
                                         View
                                     </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="CheckeModal" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header card-text">
+                                                    <h5 class="modal-title" id="exampleModalLabel"
+                                                        style="background-color: dodgerblue; padding: 7px 14px;">
+                                                        Available | 1:30 PM
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Time booked -->
+                                                    <span class="mr-3" style="color: black;">Saturday 20 Feb</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Sunday 27 Feb</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Wednesday 03 Mar</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Friday 5 Mar</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Thursday 7 Mar</span>
+
+                                                    <!-- End -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Modal -->
+
                                 </div>
                             </div>
 
@@ -194,7 +232,7 @@
                                 <div class="content text-center"
                                     style="padding: 18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
                                     <div class="time">
-                                        <p>1:30 PM</p>
+                                        <p>1:00 PM</p>
                                     </div>
                                     <!-- All days -->
                                     <p class="all-days" style="line-height: 5px; color: black;">All days</p>
@@ -206,24 +244,67 @@
                                 <div class="content text-center"
                                     style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
                                     <div class="time">
-                                        <p>1:30 PM</p>
+                                        <p>1:00 PM</p>
                                     </div>
                                     <!-- All days -->
                                     <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
                                     <!-- Button sumbit -->
-                                    <button type="submit" class="btn btn-click"
+                                    <button type="button" class="btn btn-click" data-toggle="modal"
+                                        data-target="#CheckeModal"
                                         style="background-color: black; padding: 5px 43px; color: white; font-weight: bold;">
                                         View
                                     </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="CheckeModal" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header card-text">
+                                                    <h5 class="modal-title" id="exampleModalLabel"
+                                                        style="background-color: dodgerblue; padding: 7px 14px;">
+                                                        Available | 1:30 PM
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Time booked -->
+                                                    <span class="mr-3" style="color: black;">Saturday 20 Feb</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Sunday 27 Feb</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Wednesday 03 Mar</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Friday 5 Mar</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Thursday 7 Mar</span>
+
+                                                    <!-- End -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Modal -->
+
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row row mt-4 mb-4">                        
+                        <div class="row mt-4">
                             <!-- Card One -->
                             <div class="col-lg-3 col-md-12">
                                 <div class="content text-center"
-                                    style="padding:18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                    style="padding: 18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
                                     <div class="time">
                                         <p>1:00 PM</p>
                                     </div>
@@ -242,10 +323,53 @@
                                     <!-- All days -->
                                     <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
                                     <!-- Button sumbit -->
-                                    <button type="submit" class="btn btn-click"
+                                    <button type="button" class="btn btn-click" data-toggle="modal"
+                                        data-target="#CheckeModal"
                                         style="background-color: black; padding: 5px 43px; color: white; font-weight: bold;">
                                         View
                                     </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="CheckeModal" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header card-text">
+                                                    <h5 class="modal-title" id="exampleModalLabel"
+                                                        style="background-color: dodgerblue; padding: 7px 14px;">
+                                                        Available | 1:30 PM
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Time booked -->
+                                                    <span class="mr-3" style="color: black;">Saturday 20 Feb</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Sunday 27 Feb</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Wednesday 03 Mar</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Friday 5 Mar</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Thursday 7 Mar</span>
+
+                                                    <!-- End -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Modal -->
+
                                 </div>
                             </div>
 
@@ -254,7 +378,7 @@
                                 <div class="content text-center"
                                     style="padding: 18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
                                     <div class="time">
-                                        <p>1:30 PM</p>
+                                        <p>1:00 PM</p>
                                     </div>
                                     <!-- All days -->
                                     <p class="all-days" style="line-height: 5px; color: black;">All days</p>
@@ -266,24 +390,67 @@
                                 <div class="content text-center"
                                     style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
                                     <div class="time">
-                                        <p>1:30 PM</p>
+                                        <p>1:00 PM</p>
                                     </div>
                                     <!-- All days -->
                                     <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
                                     <!-- Button sumbit -->
-                                    <button type="submit" class="btn btn-click"
+                                    <button type="button" class="btn btn-click" data-toggle="modal"
+                                        data-target="#CheckeModal"
                                         style="background-color: black; padding: 5px 43px; color: white; font-weight: bold;">
                                         View
                                     </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="CheckeModal" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header card-text">
+                                                    <h5 class="modal-title" id="exampleModalLabel"
+                                                        style="background-color: dodgerblue; padding: 7px 14px;">
+                                                        Available | 1:30 PM
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Time booked -->
+                                                    <span class="mr-3" style="color: black;">Saturday 20 Feb</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Sunday 27 Feb</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Wednesday 03 Mar</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Friday 5 Mar</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Thursday 7 Mar</span>
+
+                                                    <!-- End -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Modal -->
+
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row">                        
+                        <div class="row mt-4 mb-4">
                             <!-- Card One -->
                             <div class="col-lg-3 col-md-12">
                                 <div class="content text-center"
-                                    style="padding:18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                    style="padding: 18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
                                     <div class="time">
                                         <p>1:00 PM</p>
                                     </div>
@@ -302,10 +469,53 @@
                                     <!-- All days -->
                                     <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
                                     <!-- Button sumbit -->
-                                    <button type="submit" class="btn btn-click"
+                                    <button type="button" class="btn btn-click" data-toggle="modal"
+                                        data-target="#CheckeModal"
                                         style="background-color: black; padding: 5px 43px; color: white; font-weight: bold;">
                                         View
                                     </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="CheckeModal" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header card-text">
+                                                    <h5 class="modal-title" id="exampleModalLabel"
+                                                        style="background-color: dodgerblue; padding: 7px 14px;">
+                                                        Available | 1:30 PM
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Time booked -->
+                                                    <span class="mr-3" style="color: black;">Saturday 20 Feb</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Sunday 27 Feb</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Wednesday 03 Mar</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Friday 5 Mar</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Thursday 7 Mar</span>
+
+                                                    <!-- End -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Modal -->
+
                                 </div>
                             </div>
 
@@ -314,7 +524,7 @@
                                 <div class="content text-center"
                                     style="padding: 18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
                                     <div class="time">
-                                        <p>1:30 PM</p>
+                                        <p>1:00 PM</p>
                                     </div>
                                     <!-- All days -->
                                     <p class="all-days" style="line-height: 5px; color: black;">All days</p>
@@ -326,21 +536,62 @@
                                 <div class="content text-center"
                                     style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
                                     <div class="time">
-                                        <p>1:30 PM</p>
+                                        <p>1:00 PM</p>
                                     </div>
                                     <!-- All days -->
                                     <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
                                     <!-- Button sumbit -->
-                                    <button type="submit" class="btn btn-click"
+                                    <button type="button" class="btn btn-click" data-toggle="modal"
+                                        data-target="#CheckeModal"
                                         style="background-color: black; padding: 5px 43px; color: white; font-weight: bold;">
                                         View
                                     </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="CheckeModal" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header card-text">
+                                                    <h5 class="modal-title" id="exampleModalLabel"
+                                                        style="background-color: dodgerblue; padding: 7px 14px;">
+                                                        Available | 1:30 PM
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Time booked -->
+                                                    <span class="mr-3" style="color: black;">Saturday 20 Feb</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Sunday 27 Feb</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Wednesday 03 Mar</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Friday 5 Mar</span>
+                                                    <hr>
+
+                                                    <span class="mr-3" style="color: black;">Thursday 7 Mar</span>
+
+                                                    <!-- End -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Modal -->
+
                                 </div>
                             </div>
                         </div>
                         <!-- End Select Time -->
-                        <hr>
-                        <!-- End -->
                     </form>
                 </div>
             </div>

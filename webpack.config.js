@@ -198,6 +198,23 @@ module.exports = {
         template: "./src/teacher_profile.html"
       }),
 
+      new HtmlWebpackPlugin({
+        filename: "use_easy_mode.html",
+        template: "./src/use_easy_mode.html"
+      }),
+
+      // Student and teaher interface 
+      
+      new HtmlWebpackPlugin({
+        filename: "student_interface.html",
+        template: "./src/student_interface.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "teacher_interface.html",
+        template: "./src/teacher_interface.html"
+      }),
+
 
       // End More Pages
 

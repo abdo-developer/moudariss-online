@@ -56,6 +56,23 @@ header.top_header nav ul li.item-anthor {
     padding: 0px 22px;
 }
 
+header.top_header nav ul .dropdown {
+    background: linear-gradient(45deg, $color-cyan, $color-transition);
+    margin-left: 15px;
+    border-radius: 25px;
+    padding: 0px 22px;
+}
+
+header.top_header nav ul .dropdown a {
+    color: white;
+    text-decoration: none;
+    line-height: 2;
+}
+
+header.top_header nav ul .dropdown a.dropdown-item {
+    color: black;
+}
+
 header.top_header nav ul li.item-anthor:hover,
 header.top_header nav ul li.item-anthor:active,
 header.top_header nav ul li.item-anthor:focus {

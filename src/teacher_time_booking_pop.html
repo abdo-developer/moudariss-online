@@ -84,20 +84,22 @@
                     style="border: 0; margin-top: 12px; border-right: 1px solid gray; padding: 0px  10px 5px 0; border-radius: 0.5px;">
                     <form class="filter-search">
                         <div class="form-datetime">
-                            <p class="mt-2 mb-2" style="color: black;">From</p>
-                            <input type="date" class="form-control" name="" id="" style="width: 100%;">
-                            <p class="mt-2 mb-2" style="color: black;">To</p>
-                            <input type="date" class="form-control" name="" id="" style="width: 100%;">
-                        </div>
-
-                        <!-- Use Time map -->
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <a href="#" class="btn filter-btn pro-btn mb-4" style="background-color: black;">
+                            <div class="form-inline">
+                                <p class="mt-2 mb-2 mr-3" style="color: black;">From</p>
+                                <input type="date" class="form-control" name="" id="" style="width: 50%;">
+                                <a href="#" class="btn filter-btn pro-btn mb-4 ml-4" style="background-color: black;">
                                     Use time map
                                 </a>
                             </div>
+
+                            <!-- fORM TO -->
+                            <div class="form-inline">
+                                <p class="mt-2 mb-2" style="color: black; margin-right: 36px;">To</p>
+                                <input type="date" class="form-control" name="" id="" style="width: 50%;">    
+                            </div>
                         </div>
+
+                        <br>
 
 
                         <!-- Select Days -->
@@ -154,6 +156,7 @@
                         <hr>
 
                         <!-- Select Time : -->
+                        <label for="">Select time :</label>
                         <div class="row">
                             <!-- Card One -->
                             <div class="col-lg-3 col-md-12">
@@ -200,18 +203,36 @@
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body text-left">
                                                     <!-- Time booked -->
-                                                    <span class="mr-3" style="color: black;">Saturday</span>
+                                                    <div class="form-inline">
+                                                        <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Book</button>
                                                     <hr>
 
-                                                    <span class="mr-3" style="color: black;">Sunday</span>
+                                                    <div class="form-inline">
+                                                        <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Book</button>
                                                     <hr>
 
-                                                    <span class="mr-3" style="color: black;">Wednesday</span>
+                                                    <div class="form-inline">
+                                                        <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Book</button>
                                                     <hr>
 
-                                                    <span class="mr-3" style="color: black;">Friday</span>
+                                                    <div class="form-inline">
+                                                        <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Book</button>
+                                                    <hr>
+
+                                                    <div class="form-inline">
+                                                        <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Book</button>
                                                     <!-- End -->
                                                 </div>
                                                 <div class="modal-footer">
@@ -754,9 +775,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px; background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
 
@@ -771,9 +855,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px; background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
                             </div>
@@ -793,9 +940,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px; background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
 
@@ -810,9 +1020,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px; background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
                             </div>
@@ -832,9 +1105,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px; background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
 
@@ -849,9 +1185,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px; background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
                             </div>
@@ -871,9 +1270,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px; background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
 
@@ -888,9 +1350,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px; background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
                             </div>
@@ -910,9 +1435,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px; background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
 
@@ -927,9 +1515,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px; background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
                             </div>
@@ -949,9 +1600,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px; background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
 
@@ -966,9 +1680,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px; background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
                             </div>
@@ -988,9 +1765,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px; background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
 
@@ -1005,9 +1845,72 @@
                                         <!-- Button sumbit -->
                                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                                             data-toggle="modal"
-                                            style="background-color: black; padding: 5px 33px; color: white; font-weight: bold;">
-                                            Cancel
+                                            style="font-size: 11px;background-color: black; padding: 5px 16px; color: white; font-weight: bold;">
+                                            View & manage
                                         </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="CheckModalManage" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header card-text">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                                            Booked | 1:30 PM
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-left">
+                                                        <!-- Time booked -->
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sat 21 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Sun 22 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Mon 23 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Tue 24 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <hr>
+
+                                                        <div class="form-inline">
+                                                            <span class="mr-3" style="color: black;">Thur 25 Feb</span>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-black" style="color: white;background-color: black;">Cancel</button>
+                                                        <!-- End -->
+                                                    </div>
+                                                    <!-- btn -->
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Cancel all</button>
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal -->
+
                                     </div>
                                 </div>
                             </div>

@@ -80,514 +80,624 @@
 
             <!-- End booking submit -->
             <div class="col-lg-8 col-md-12" style="padding: 0 30px;">
-                <div class="card"
-                    style="border: 0; margin-top: 12px; border-right: 1px solid gray; padding: 0px  10px 5px 0; border-radius: 0.5px;">
-                    <form class="filter-search">
+                <!-- Header section -->
+                <div class="card" style="border: 0; padding: 0px  10px 5px 0; border-radius: 0.5px; margin-top: -19px;">
+                    <form class="filter-search" style="margin-top: 10%;">
                         <div class="form-datetime">
-                            <p class="mt-2 mb-2" style="color: black;">From</p>
-                            <input type="date" class="form-control" name="" id="" style="width: 100%;">
-                            <p class="mt-2 mb-2" style="color: black;">To</p>
-                            <input type="date" class="form-control" name="" id="" style="width: 100%;">
-                        </div>
-
-                        <!-- Use Time map -->
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <a href="#" class="btn filter-btn pro-btn mb-4" style="background-color: black;">
-                                    Use easy mode
+                            <div class="form-inline">
+                                <p class="mt-2 mb-2 mr-3" style="color: black;">From</p>
+                                <input type="date" class="form-control" name="" id="" style="width: 50%;">
+                                <a href="#" class="btn filter-btn pro-btn mb-4 ml-4" style="background-color: black;">
+                                    Use time map
                                 </a>
                             </div>
+
+                            <!-- fORM TO -->
+                            <div class="form-inline">
+                                <p class="mt-2 mb-2" style="color: black; margin-right: 36px;">To</p>
+                                <input type="date" class="form-control" name="" id="" style="width: 50%;">
+                            </div>
                         </div>
 
-
-                        <!-- Select Days -->
-                        <label for="">Select Days: </label>
-                        <br>
-                        <input type="checkbox" class="form-check-input" id="">
-                        <label class="form-check-label" for="">
-                            Saturday
-                        </label>
-
                         <br>
 
-                        <input type="checkbox" class="form-check-input" id="">
-                        <label class="form-check-label" for="">
-                            Sunday
-                        </label>
+                        <!-- Select day -->
+                        <div class="select-day">
+                            <label for="">Select Days: </label>
 
-                        <br>
+                            <div class="form-inline">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Saturday
+                                </label>
 
-                        <input type="checkbox" class="form-check-input" id="">
-                        <label class="form-check-label" for="">
-                            Monday
-                        </label>
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Sunday
+                                </label>
 
-                        <br>
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Monday
+                                </label>
 
-                        <input type="checkbox" class="form-check-input" id="">
-                        <label class="form-check-label" for="">
-                            Tuesday
-                        </label>
 
-                        <br>
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Tuesday
+                                </label>
+                            </div>
 
-                        <input type="checkbox" class="form-check-input" id="">
-                        <label class="form-check-label" for="">
-                            Wednesday
-                        </label>
+                            <div class="form-inline mt-1">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Wednesday
+                                </label>
 
-                        <br>
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Thursday
+                                </label>
 
-                        <input type="checkbox" class="form-check-input" id="">
-                        <label class="form-check-label" for="">
-                            Thursday
-                        </label>
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Friday
+                                </label>
+                            </div>
+                        </div>
+                        <!-- end select day -->
+                    </form>
+                    <div class="line-bottom"
+                        style="border-bottom: 0.5px solid gray; margin-top: 5%; width: 120%; margin-left: -31px;">
+                    </div>
+                </div>
+                <!-- End Header top -->
 
-                        <br>
+                <!-- Title -->
+                <label for="" class="mt-2 mb-3">Select time :</label>
 
-                        <input type="checkbox" class="form-check-input" id="">
-                        <label class="form-check-label" for="">
-                            Friday
-                        </label>
-                        <!-- end -->
-
-                        <hr>
-
-                        <label for="">Select time : </label>
-                        <br>
-
-                        <!-- Select Time : -->
-
-                        <!-- Card one -->
+                <!-- Select Time -->
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
                         <p class="">Saturday</p>
-                        <div class="row">
-                            <div class="form-inline">
-                                <div class="time-date mr-2"
-                                    style="border: 3px solid rgb(34, 125, 245); padding: 0px 22px;">
-                                    <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                        1:00
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
-                                <!-- Card Two -->
-                                <div class="time-date mr-2"
-                                    style="background-color: rgb(34, 125, 245); padding: 3px 25px">
-                                    <p class="time" style="margin-top: 10px;color: floralwhite;">
-                                        1:30
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
-                                <!-- Card Three -->
-                                <div class="time-date" style="border: 3px solid rgb(34, 125, 245); padding: 0px 22px;">
-                                    <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                        2:00
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="time-date mr-2 text-center"
+                                style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
+                                <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                                    1:00
+                                    <br>
+                                    PM
+                                </p>
                             </div>
-                        </div>
+                        </a>
+                    </div>
 
-                        <br>
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="background-color: rgb(34, 125, 245); padding: 3px 25px">
+                                <p class="time" style="margin-top: 10px;color: white;">
+                                    1:30
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
 
-                        <!-- Card Two -->
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
+                                <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                                    2:00
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row mt-4 mb-3">
+                    <div class="col-lg-3 col-md-12">
                         <p class="">Sunday</p>
-                        <div class="row">
-                            <div class="form-inline">
-                                <div class="time-date mr-2"
-                                    style="border: 3px solid rgb(34, 125, 245); padding: 0px 22px;">
-                                    <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                        1:00
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
-                                <!-- Card Two -->
-                                <div class="time-date mr-2"
-                                    style="background-color: rgb(34, 125, 245); padding: 3px 25px">
-                                    <p class="time" style="margin-top: 10px;color: floralwhite;">
-                                        1:30
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
-                                <!-- Card Three -->
-                                <div class="time-date mr-2"
-                                    style="border: 3px solid rgb(34, 125, 245); padding: 0px 22px;">
-                                    <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                        2:00
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
-                                <!-- Card Four -->
-                                <div class="time-date mr-2"
-                                    style="background-color: rgb(34, 125, 245); padding: 3px 25px">
-                                    <p class="time" style="margin-top: 10px;color: floralwhite;">
-                                        2:00
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="time-date mr-2 text-center"
+                                style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
+                                <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                                    1:00
+                                    <br>
+                                    PM
+                                </p>
                             </div>
-                        </div>
+                        </a>
+                    </div>
 
-                        <br>
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="background-color: rgb(34, 125, 245); padding: 3px 25px">
+                                <p class="time" style="margin-top: 10px;color: white;">
+                                    1:30
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
 
-                        <!-- Card Three -->
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
+                                <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                                    2:00
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row mt-4 mb-3">
+                    <div class="col-lg-3 col-md-12">
                         <p class="">Monday</p>
-                        <div class="row">
-                            <div class="form-inline">
-                                <div class="time-date mr-2"
-                                    style="border: 3px solid rgb(34, 125, 245); padding: 0px 22px;">
-                                    <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                        1:00
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
-                                <!-- Card Three -->
-                                <div class="time-date mr-2"
-                                    style="background-color: rgb(34, 125, 245); padding: 3px 25px">
-                                    <p class="time" style="margin-top: 10px;color: floralwhite;">
-                                        1:30
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
-                                <!-- Card Four -->
-                                <div class="time-date" style="border: 3px solid rgb(34, 125, 245); padding: 0px 22px;">
-                                    <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                        2:30
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="time-date mr-2 text-center"
+                                style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
+                                <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                                    1:00
+                                    <br>
+                                    PM
+                                </p>
                             </div>
-                        </div>
+                        </a>
+                    </div>
 
-                        <br>
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
+                                <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                                    2:00
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
 
-                        <!-- Card Four -->
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="background-color: rgb(34, 125, 245); padding: 3px 25px">
+                                <p class="time" style="margin-top: 10px;color: white;">
+                                    1:30
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row mt-4 mb-3">
+                    <div class="col-lg-3 col-md-12">
                         <p class="">Tuesday</p>
-                        <div class="row">
-                            <div class="form-inline">
-                                <div class="time-date mr-2"
-                                    style="background-color: rgb(34, 125, 245); padding: 3px 25px">
-                                    <p class="time" style="margin-top: 10px;color: floralwhite;">
-                                        1:30
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
-                                <!-- Card Three -->
-                                <div class="time-date mr-2"
-                                    style="border: 3px solid rgb(34, 125, 245); padding: 0px 22px;">
-                                    <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                        2:00
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
-                                <!-- Card Four -->
-                                <div class="time-date" style="border: 3px solid rgb(34, 125, 245); padding: 0px 22px;">
-                                    <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                        2:30
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="background-color: rgb(34, 125, 245); padding: 3px 25px">
+                                <p class="time" style="margin-top: 10px;color: white;">
+                                    1:30
+                                    <br>
+                                    PM
+                                </p>
                             </div>
-                        </div>
+                        </a>
+                    </div>
 
-                        <br>
-
-                        <!-- Card Five -->
-                        <p class="">Wednesday</p>
-                        <div class="row">
-                            <div class="form-inline">
-                                <div class="time-date mr-2"
-                                    style="border: 3px solid rgb(34, 125, 245); padding: 0px 22px;">
-                                    <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                        1:00
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
-                                <!-- Card Three -->
-                                <div class="time-date mr-2"
-                                    style="background-color: rgb(34, 125, 245); padding: 3px 25px">
-                                    <p class="time" style="margin-top: 10px;color: floralwhite;">
-                                        1:30
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
-                                <!-- Card Four -->
-                                <div class="time-date" style="border: 3px solid rgb(34, 125, 245); padding: 0px 22px;">
-                                    <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                        2:30
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="time-date mr-2 text-center"
+                                style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
+                                <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                                    1:00
+                                    <br>
+                                    PM
+                                </p>
                             </div>
-                        </div>
+                        </a>
+                    </div>
 
-                        <!-- Card Six -->
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
+                                <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                                    2:00
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row mt-4 mb-3">
+                    <div class="col-lg-3 col-md-12">
                         <p class="">Thursday</p>
-                        <div class="row">
-                            <div class="form-inline">
-                                <div class="time-date mr-2"
-                                    style="background-color: rgb(34, 125, 245); padding: 3px 25px">
-                                    <p class="time" style="margin-top: 10px;color: floralwhite;">
-                                        1:30
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
-                                <!-- Card Three -->
-                                <div class="time-date mr-2"
-                                    style="border: 3px solid rgb(34, 125, 245); padding: 0px 22px;">
-                                    <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                        2:00
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
-                                <!-- Card Four -->
-                                <div class="time-date" style="border: 3px solid rgb(34, 125, 245); padding: 0px 22px;">
-                                    <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                        2:30
-                                        <br>
-                                        PM
-                                    </p>
-                                </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="time-date mr-2 text-center"
+                                style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
+                                <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                                    1:00
+                                    <br>
+                                    PM
+                                </p>
                             </div>
-                        </div>
+                        </a>
+                    </div>
 
-                        <!-- End Select Time -->
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="background-color: rgb(34, 125, 245); padding: 3px 25px">
+                                <p class="time" style="margin-top: 10px;color: white;">
+                                    1:30
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
 
-                        <hr>
 
-                        <!-- Total booked classes -->
-                        <label for="">Total booked classes : 22</label>
-                        <br>
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="background-color: rgb(34, 125, 245); padding: 3px 25px">
+                                <p class="time" style="margin-top: 10px;color: white;">
+                                    1:30
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
 
-                        <!-- Button -->
-                        <div class="row">
-                            <div class="col-12">
-                                <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#CheckModalPlan"
-                                    style="padding: 7px 22px; background-color: dodgerblue;">
-                                    Classes time plan
-                                </button>
+                </div>
 
-                                <!-- Modal -->
-                                <div class="modal fade" id="CheckModalPlan" tabindex="-1" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header card-text">
-                                                <h5 class="modal-title" id="exampleModalLabel"
-                                                    style=" color: white; background-color: dodgerblue; padding: 7px 14px;">
-                                                    Classes time plan
-                                                </h5>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
+                <div class="row mt-4 mb-3">
+                    <div class="col-lg-3 col-md-12">
+                        <p class="">Friday</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="time-date mr-2 text-center"
+                                style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
+                                <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                                    1:00
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="background-color: rgb(34, 125, 245); padding: 3px 25px">
+                                <p class="time" style="margin-top: 10px;color: white;">
+                                    1:30
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
+                                <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                                    2:00
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row mt-4 mb-3">
+                    <div class="col-lg-3 col-md-12">
+                        <p class="">Wednesday</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="time-date mr-2 text-center"
+                                style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
+                                <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                                    1:00
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="background-color: rgb(34, 125, 245); padding: 3px 25px">
+                                <p class="time" style="margin-top: 10px;color: white;">
+                                    1:30
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <a href="#">
+                            <div class="time-date mr-2 text-center"
+                                style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
+                                <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                                    2:00
+                                    <br>
+                                    PM
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- End section select time -->
+                
+                <hr>
+
+                <!-- Total booked classes -->
+                <label for="">Total booked classes : 22</label>
+                <br>
+
+                <!-- Button -->
+                <div class="row">
+                    <div class="col-12">
+                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#CheckModalPlan"
+                            style="padding: 7px 22px; background-color: dodgerblue;">
+                            Classes time plan
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="CheckModalPlan" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header card-text">
+                                        <h5 class="modal-title" id="exampleModalLabel"
+                                            style=" color: white; background-color: dodgerblue; padding: 7px 14px;">
+                                            Classes time plan
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <!-- Plan -->
+                                        <label for="">Mon 1 March</label>
+                                        <br>
+                                        <div class="form-inline">
+                                            <div class="col-lg-3 col-md-12">
+                                                <div class="content text-center"
+                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="time">
+                                                        <p>1:00 PM</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="modal-body">
 
-                                                <!-- Plan -->
-                                                <label for="">Mon 1 March</label>
-                                                <br>
-                                                <div class="form-inline">
-                                                    <div class="col-lg-3 col-md-12">
-                                                        <div class="content text-center"
-                                                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
-                                                            <div class="time">
-                                                                <p>1:00 PM</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-3 col-md-12">
-                                                        <div class="content text-center"
-                                                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
-                                                            <div class="time">
-                                                                <p>1:30 PM</p>
-                                                            </div>
-                                                        </div>
+                                            <div class="col-lg-3 col-md-12">
+                                                <div class="content text-center"
+                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="time">
+                                                        <p>1:30 PM</p>
                                                     </div>
                                                 </div>
-                                                <!-- End -->
-
-                                                <label for="">Tue 2 March</label>
-                                                <br>
-                                                <div class="form-inline">
-                                                    <div class="col-lg-3 col-md-12">
-                                                        <div class="content text-center"
-                                                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
-                                                            <div class="time">
-                                                                <p>1:00 PM</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-3 col-md-12">
-                                                        <div class="content text-center"
-                                                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
-                                                            <div class="time">
-                                                                <p>1:30 PM</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End -->
-
-                                                <label for="">Wen 3 March</label>
-                                                <br>
-                                                <div class="form-inline">
-                                                    <div class="col-lg-3 col-md-12">
-                                                        <div class="content text-center"
-                                                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
-                                                            <div class="time">
-                                                                <p>1:00 PM</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-3 col-md-12">
-                                                        <div class="content text-center"
-                                                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
-                                                            <div class="time">
-                                                                <p>1:30 PM</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End -->
-
-                                                <label for="">Thu 4 March</label>
-                                                <br>
-                                                <div class="form-inline">
-                                                    <div class="col-lg-3 col-md-12">
-                                                        <div class="content text-center"
-                                                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
-                                                            <div class="time">
-                                                                <p>1:00 PM</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-3 col-md-12">
-                                                        <div class="content text-center"
-                                                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
-                                                            <div class="time">
-                                                                <p>1:30 PM</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End -->
-
-                                                <label for="">Fri 5 March</label>
-                                                <br>
-                                                <div class="form-inline">
-                                                    <div class="col-lg-3 col-md-12">
-                                                        <div class="content text-center"
-                                                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
-                                                            <div class="time">
-                                                                <p>1:00 PM</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-3 col-md-12">
-                                                        <div class="content text-center"
-                                                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
-                                                            <div class="time">
-                                                                <p>1:30 PM</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End -->
-
-                                                <label for="">Sun 6 March</label>
-                                                <br>
-                                                <div class="form-inline">
-                                                    <div class="col-lg-3 col-md-12">
-                                                        <div class="content text-center"
-                                                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
-                                                            <div class="time">
-                                                                <p>1:00 PM</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-3 col-md-12">
-                                                        <div class="content text-center"
-                                                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
-                                                            <div class="time">
-                                                                <p>1:30 PM</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End -->
-
-                                                <hr>
-
-                                                <!-- Total Booked Classes -->
-                                                <label for="">Total booked classes : 22</label>
-                                                <br>
-
-                                                <div class="form-inline">
-                                                    <a href="#" class="mr-4">
-                                                        <i class="fas fa-print fa-2x"></i>
-                                                    </a>
-
-                                                    <a href="#" class="mr-4">
-                                                        <i class="fas fa-file-pdf fa-2x"></i>
-                                                    </a>
-
-                                                    <a href="#"">
-                                                        <i class=" fas fa-file-csv fa-2x"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- End -->
-
-                                                <!-- End Booked Classes-->
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-dismiss="modal">Close</button>
                                             </div>
                                         </div>
+                                        <!-- End -->
+
+                                        <label for="">Tue 2 March</label>
+                                        <br>
+                                        <div class="form-inline">
+                                            <div class="col-lg-3 col-md-12">
+                                                <div class="content text-center"
+                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="time">
+                                                        <p>1:00 PM</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-12">
+                                                <div class="content text-center"
+                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="time">
+                                                        <p>1:30 PM</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End -->
+
+                                        <label for="">Wen 3 March</label>
+                                        <br>
+                                        <div class="form-inline">
+                                            <div class="col-lg-3 col-md-12">
+                                                <div class="content text-center"
+                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="time">
+                                                        <p>1:00 PM</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-12">
+                                                <div class="content text-center"
+                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="time">
+                                                        <p>1:30 PM</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End -->
+
+                                        <label for="">Thu 4 March</label>
+                                        <br>
+                                        <div class="form-inline">
+                                            <div class="col-lg-3 col-md-12">
+                                                <div class="content text-center"
+                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="time">
+                                                        <p>1:00 PM</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-12">
+                                                <div class="content text-center"
+                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="time">
+                                                        <p>1:30 PM</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End -->
+
+                                        <label for="">Fri 5 March</label>
+                                        <br>
+                                        <div class="form-inline">
+                                            <div class="col-lg-3 col-md-12">
+                                                <div class="content text-center"
+                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="time">
+                                                        <p>1:00 PM</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-12">
+                                                <div class="content text-center"
+                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="time">
+                                                        <p>1:30 PM</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End -->
+
+                                        <label for="">Sun 6 March</label>
+                                        <br>
+                                        <div class="form-inline">
+                                            <div class="col-lg-3 col-md-12">
+                                                <div class="content text-center"
+                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="time">
+                                                        <p>1:00 PM</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-12">
+                                                <div class="content text-center"
+                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="time">
+                                                        <p>1:30 PM</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End -->
+
+                                        <hr>
+
+                                        <!-- Total Booked Classes -->
+                                        <label for="">Total booked classes : 22</label>
+                                        <br>
+
+                                        <div class="form-inline">
+                                            <a href="#" class="mr-4">
+                                                <img src="./assets/images/printer.png" alt="printer" style="height: 45px;">
+                                            </a>
+
+                                            <a href="#" class="mr-4">
+                                                <img src="./assets/images/excel.png" alt="excel" style="height: 45px;">
+                                            </a>
+
+                                            <a href="#">
+                                                <img src="./assets/images/pdf.png" alt="pdf" style="height: 45px;">
+                                            </a>
+                                        </div>
+                                        <!-- End -->
+
+                                        <!-- End Booked Classes-->
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
-                                <!-- End Modal -->
+                            </div>
+                        </div>
+                        <!-- End Modal -->
 
-                            </div>
-                        </div>
-                        <!-- Button -->
-                        <div class="row mb-4">
-                            <div class="col-12">
-                                <a href="#" class="btn filter-btn pro-btn" style="padding: 0 31.5px;">Confirm & pay <br>
-                                    110.00 USD</a>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
+                <!-- Button -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <a href="#" class="btn filter-btn pro-btn" style="padding: 0 31.5px;">Confirm & pay <br>
+                            110.00 USD</a>
+                    </div>
+                </div>
+                
             </div>
 
-            <!--  -->
+            <!-- Teacher info -->
             <div class="col-lg-4 col-md-12">
-                <div class="card text-center" style="border: 0; margin-top: 12px;">
+                <div class="card text-center" style=" border-left: 1px solid gray; margin-top: 12px;">
                     <div class="card-body">
                         <img src="./assets/images/professor_one.jpg" alt="professor_one"
                             style="height: 120px; border-radius: 50%; margin: 20px 0;">
@@ -613,10 +723,14 @@
                             <span>9987604</span>
                         </label>
                         <!-- end -->
-                        <hr>
                     </div>
                 </div>
+
+                <div class="line-bottom" style="border-bottom: 1px solid gray;"></div>
+
+
             </div>
+            <!-- End teacher info -->
         </div>
 
     </div>

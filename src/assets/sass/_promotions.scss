@@ -66,6 +66,11 @@ section.Pricing .line {
     transition: all 0.6s ease-in-out;
 }
 
+.pricing-table .item button.close,
+button.btn.btn-secondary {
+    border-radius: 0;
+}
+
 .pricing-table .item button:hover,
 .pricing-table .item button:active,
 .pricing-table .item button:focus {

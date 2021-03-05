@@ -51,7 +51,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mr-auto">
-                    
+
                     <div class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign up</a>
                         <div class="dropdown-menu">
@@ -388,13 +388,13 @@
                         <a href="#" class="btn filter-btn pro-btn">Weekly package</a>
                     </div>
                 </div>
-
+                <!-- List Promotions -->
                 <section class="pricing-table">
-                    <!-- Card Promotions -->
 
+                    <!-- Card Promotions -->
                     <div class="row">
                         <!-- Card One -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="col-lg-4 col-md-12">
                             <div class="item">
                                 <div class="heading">
                                     <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
@@ -435,9 +435,10 @@
 
                                     <br>
 
-                                    <span style="font-size: 15px;"> 
-                                        Math, Chimi, History and 
-                                        <a href="#" style="font-size: 16px; text-decoration: none;">more</a>
+                                    <span style="font-size: 15px;">
+                                        Math, Chimi, History and
+                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlan">more</a>
                                     </span>
 
                                 </div>
@@ -451,12 +452,15 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">For student in</p>
-                                    <span style="font-size: 15px;">
+                                    <p class="title text-left" style="margin:0;">
                                         <i class="fas fa-graduation-cap"
                                             style="font-size: 20px; color: dodgerblue;"></i>
+                                        For student in
+                                    </p>
+                                    <span style="font-size: 15px;">
                                         1st GradeBiginner level and
-                                        <a href="#" style="font-size: 15px; text-decoration: none;">more</a> 
+                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlan">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -496,22 +500,156 @@
                                 </div>
 
                                 <!-- Link list inline -->
-                                <ul class="list-inline mt-3">
+                                <ul class="list-inline mt-3 text-center text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" class="btn btn-primary">Buy now</a>
+                                        <button href="#" type="submit" class="btn btn-primary"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Buy now
+                                        </button>
                                     </li>
 
                                     <li class="list-inline-item">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapsePromotions"
-                                            role="button" aria-expanded="false">Read more</a>
+                                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#CheckModalPlan"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Read more
+                                        </button>
                                     </li>
                                 </ul>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="CheckModalPlan" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header card-text">
+                                                <h5 class="modal-title mt-2" id="exampleModalLabel"
+                                                    style="font-size: 19px;">Semesterly package</h5>
+                                                <br>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                    22 Classes
+                                                </p>
+                                                <!-- Start Counrty and price -->
+                                                <div class="clearfix" style="margin: -14px 0;">
+                                                    <div class="float-left">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt"
+                                                            style="height: 60px; margin-top: 10px;">
+                                                        <br>
+                                                        <small style="font-weight: bold;">Local teachers</small>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <div class="Price-class text-center">
+                                                            <p>
+                                                                <span>2.99 USD</span>
+                                                                <br>
+                                                                <small>Per class</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- To teach -->
+                                                <br>
+                                                <div class="to-teach text-left">
+                                                    <span class="title">
+                                                        <i class="fas fa-clipboard-list"
+                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        To teach
+                                                    </span>
+
+                                                    <br>
+
+                                                    <span style="font-size: 15px;">
+                                                        Math, Chimi, History
+                                                        Philo, English, French
+                                                    </span>
+
+                                                </div>
+                                                <!-- Learning by language of -->
+                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                    <p class="text-center"
+                                                        style="font-size: 15px; color: white; margin: 3px 0;">
+                                                        Learning by english language,
+                                                        French and Arabic
+                                                    </p>
+                                                </div>
+                                                <!-- Learning by language of -->
+
+                                                <!-- For student in -->
+                                                <div class="student-in text-left">
+                                                    <p class="title text-left" style="margin:0;">
+                                                        <i class="fas fa-graduation-cap"
+                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                        For student in
+                                                    </p>
+                                                    <span style="font-size: 15px;">
+                                                        1st GradeBiginner level and Level second
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <!-- More Details -->
+                                                    <label for="" class="mb-0">Classes can be in</label>
+                                                    <br>
+                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                        Saturday, Sunday, Monday,
+                                                        Tuesday and Wednesday
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <div class="have-up">
+                                                        <label for="" class="mb-0">Can have up to</label>
+                                                        <br>
+                                                        <span class="have-up-classes">3 Classes per day</span>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="ref">
+                                                        <label for="">Ref. no. 66557</label>
+                                                    </div>
+
+                                                    <!-- END -->
+
+                                                    <!-- Price Promotion -->
+                                                    <div class="price">
+                                                        <h4>
+                                                            $25
+                                                            <small>.99</small>
+                                                        </h4>
+                                                    </div>
+                                                    <!-- End Price Promotion -->
+
+                                                    <div class="buy-now text-center">
+                                                        <button href="#" type="submit" class="btn btn-primary"
+                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                            Buy now
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal -->
+
                                 <!-- End Link list inline -->
                             </div>
                         </div>
 
-                        <!-- Two card -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <!-- Card two -->
+                        <div class="col-lg-4 col-md-12">
                             <div class="item">
                                 <div class="heading">
                                     <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
@@ -526,10 +664,10 @@
                                 <!-- Start Counrty and price -->
                                 <div class="clearfix" style="margin: -14px 0;">
                                     <div class="float-left">
-                                        <img src="./assets/images/globe.svg" alt="globe"
+                                        <img src="./assets/images/globe.svg" alt="Global"
                                             style="height: 60px; margin-top: 10px;">
                                         <br>
-                                        <small style="font-weight: bold;">Global teachers</small>
+                                        <small style="font-weight: bold;">Local teachers</small>
                                     </div>
                                     <div class="float-right">
                                         <div class="Price-class text-center">
@@ -549,11 +687,15 @@
                                             style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
                                         To teach
                                     </span>
+
                                     <br>
-                                    <span style="font-size: 15px;"> 
-                                        Math, Chimi, History and 
-                                        <a href="#" style="font-size: 16px; text-decoration: none;">more</a>
+
+                                    <span style="font-size: 15px;">
+                                        Math, Chimi, History and
+                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanOne">more</a>
                                     </span>
+
                                 </div>
                                 <!-- Learning by language of -->
                                 <div class="learning-by text-center" style="background: dodgerblue;">
@@ -565,12 +707,15 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">For student in</p>
-                                    <span style="font-size: 15px;">
+                                    <p class="title text-left" style="margin:0;">
                                         <i class="fas fa-graduation-cap"
                                             style="font-size: 20px; color: dodgerblue;"></i>
-                                            1st GradeBiginner level and
-                                            <a href="#" style="font-size: 15px; text-decoration: none;">more</a>     
+                                        For student in
+                                    </p>
+                                    <span style="font-size: 15px;">
+                                        1st GradeBiginner level and
+                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanOne">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -586,7 +731,7 @@
                                 <!-- End For student in -->
 
                                 <!-- Collapse Promotion -->
-                                <div class="collapse" id="collapsePromotions1">
+                                <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
                                     <span class="week-day text-left" style="font-size: 15px;">
@@ -610,22 +755,156 @@
                                 </div>
 
                                 <!-- Link list inline -->
-                                <ul class="list-inline mt-3">
+                                <ul class="list-inline mt-3 text-center text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" class="btn btn-primary">Buy now</a>
+                                        <button href="#" type="submit" class="btn btn-primary"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Buy now
+                                        </button>
                                     </li>
 
                                     <li class="list-inline-item">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapsePromotions1"
-                                            role="button" aria-expanded="false">Read more</a>
+                                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#CheckModalPlanOne"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Read more
+                                        </button>
                                     </li>
                                 </ul>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="CheckModalPlanOne" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header card-text">
+                                                <h5 class="modal-title mt-2" id="exampleModalLabel"
+                                                    style="font-size: 19px;">Semesterly package</h5>
+                                                <br>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                    22 Classes
+                                                </p>
+                                                <!-- Start Counrty and price -->
+                                                <div class="clearfix" style="margin: -14px 0;">
+                                                    <div class="float-left">
+                                                        <img src="./assets/images/globe.svg" alt="Global"
+                                                            style="height: 60px; margin-top: 10px;">
+                                                        <br>
+                                                        <small style="font-weight: bold;">Local teachers</small>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <div class="Price-class text-center">
+                                                            <p>
+                                                                <span>2.99 USD</span>
+                                                                <br>
+                                                                <small>Per class</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- To teach -->
+                                                <br>
+                                                <div class="to-teach text-left">
+                                                    <span class="title">
+                                                        <i class="fas fa-clipboard-list"
+                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        To teach
+                                                    </span>
+
+                                                    <br>
+
+                                                    <span style="font-size: 15px;">
+                                                        Math, Chimi, History
+                                                        Philo, English, French
+                                                    </span>
+
+                                                </div>
+                                                <!-- Learning by language of -->
+                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                    <p class="text-center"
+                                                        style="font-size: 15px; color: white; margin: 3px 0;">
+                                                        Learning by english language,
+                                                        French and Arabic
+                                                    </p>
+                                                </div>
+                                                <!-- Learning by language of -->
+
+                                                <!-- For student in -->
+                                                <div class="student-in text-left">
+                                                    <p class="title text-left" style="margin:0;">
+                                                        <i class="fas fa-graduation-cap"
+                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                        For student in
+                                                    </p>
+                                                    <span style="font-size: 15px;">
+                                                        1st GradeBiginner level and Level second
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <!-- More Details -->
+                                                    <label for="" class="mb-0">Classes can be in</label>
+                                                    <br>
+                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                        Saturday, Sunday, Monday,
+                                                        Tuesday and Wednesday
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <div class="have-up">
+                                                        <label for="" class="mb-0">Can have up to</label>
+                                                        <br>
+                                                        <span class="have-up-classes">3 Classes per day</span>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="ref">
+                                                        <label for="">Ref. no. 66557</label>
+                                                    </div>
+
+                                                    <!-- END -->
+
+                                                    <!-- Price Promotion -->
+                                                    <div class="price">
+                                                        <h4>
+                                                            $25
+                                                            <small>.99</small>
+                                                        </h4>
+                                                    </div>
+                                                    <!-- End Price Promotion -->
+
+                                                    <div class="buy-now text-center">
+                                                        <button href="#" type="submit" class="btn btn-primary"
+                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                            Buy now
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal -->
+
                                 <!-- End Link list inline -->
                             </div>
                         </div>
 
                         <!-- Card Three -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="col-lg-4 col-md-12">
                             <div class="item">
                                 <div class="heading">
                                     <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
@@ -663,11 +942,15 @@
                                             style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
                                         To teach
                                     </span>
+
                                     <br>
-                                    <span style="font-size: 15px;"> 
-                                        Math, Chimi, History and 
-                                        <a href="#" style="font-size: 16px; text-decoration: none;">more</a>
+
+                                    <span style="font-size: 15px;">
+                                        Math, Chimi, History and
+                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanTwo">more</a>
                                     </span>
+
                                 </div>
                                 <!-- Learning by language of -->
                                 <div class="learning-by text-center" style="background: dodgerblue;">
@@ -679,12 +962,15 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">For student in</p>
-                                    <span style="font-size: 15px;">
+                                    <p class="title text-left" style="margin:0;">
                                         <i class="fas fa-graduation-cap"
                                             style="font-size: 20px; color: dodgerblue;"></i>
-                                            1st GradeBiginner level and
-                                            <a href="#" style="font-size: 15px; text-decoration: none;">more</a>     
+                                        For student in
+                                    </p>
+                                    <span style="font-size: 15px;">
+                                        1st GradeBiginner level and
+                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanTwo">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -700,7 +986,7 @@
                                 <!-- End For student in -->
 
                                 <!-- Collapse Promotion -->
-                                <div class="collapse" id="collapsePromotions2">
+                                <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
                                     <span class="week-day text-left" style="font-size: 15px;">
@@ -724,17 +1010,151 @@
                                 </div>
 
                                 <!-- Link list inline -->
-                                <ul class="list-inline mt-3">
+                                <ul class="list-inline mt-3 text-center text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" class="btn btn-primary">Buy now</a>
+                                        <button href="#" type="submit" class="btn btn-primary"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Buy now
+                                        </button>
                                     </li>
 
                                     <li class="list-inline-item">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapsePromotions2"
-                                            role="button" aria-expanded="false">Read more</a>
+                                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#CheckModalPlan"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Read more
+                                        </button>
                                     </li>
                                 </ul>
                                 <!-- End Link list inline -->
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="CheckModalPlanTwo" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header card-text">
+                                                <h5 class="modal-title mt-2" id="exampleModalLabel"
+                                                    style="font-size: 19px;">Semesterly package</h5>
+                                                <br>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                    22 Classes
+                                                </p>
+                                                <!-- Start Counrty and price -->
+                                                <div class="clearfix" style="margin: -14px 0;">
+                                                    <div class="float-left">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt"
+                                                            style="height: 60px; margin-top: 10px;">
+                                                        <br>
+                                                        <small style="font-weight: bold;">Local teachers</small>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <div class="Price-class text-center">
+                                                            <p>
+                                                                <span>2.99 USD</span>
+                                                                <br>
+                                                                <small>Per class</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- To teach -->
+                                                <br>
+                                                <div class="to-teach text-left">
+                                                    <span class="title">
+                                                        <i class="fas fa-clipboard-list"
+                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        To teach
+                                                    </span>
+
+                                                    <br>
+
+                                                    <span style="font-size: 15px;">
+                                                        Math, Chimi, History
+                                                        Philo, English, French
+                                                    </span>
+
+                                                </div>
+                                                <!-- Learning by language of -->
+                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                    <p class="text-center"
+                                                        style="font-size: 15px; color: white; margin: 3px 0;">
+                                                        Learning by english language,
+                                                        French and Arabic
+                                                    </p>
+                                                </div>
+                                                <!-- Learning by language of -->
+
+                                                <!-- For student in -->
+                                                <div class="student-in text-left">
+                                                    <p class="title text-left" style="margin:0;">
+                                                        <i class="fas fa-graduation-cap"
+                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                        For student in
+                                                    </p>
+                                                    <span style="font-size: 15px;">
+                                                        1st GradeBiginner level and Level second
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <!-- More Details -->
+                                                    <label for="" class="mb-0">Classes can be in</label>
+                                                    <br>
+                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                        Saturday, Sunday, Monday,
+                                                        Tuesday and Wednesday
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <div class="have-up">
+                                                        <label for="" class="mb-0">Can have up to</label>
+                                                        <br>
+                                                        <span class="have-up-classes">3 Classes per day</span>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="ref">
+                                                        <label for="">Ref. no. 66557</label>
+                                                    </div>
+
+                                                    <!-- END -->
+
+                                                    <!-- Price Promotion -->
+                                                    <div class="price">
+                                                        <h4>
+                                                            $25
+                                                            <small>.99</small>
+                                                        </h4>
+                                                    </div>
+                                                    <!-- End Price Promotion -->
+
+                                                    <div class="buy-now text-center">
+                                                        <button href="#" type="submit" class="btn btn-primary"
+                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                            Buy now
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal -->
+
                             </div>
                         </div>
                     </div>
@@ -743,7 +1163,7 @@
 
                     <div class="row">
                         <!-- Card One -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="col-lg-4 col-md-12">
                             <div class="item">
                                 <div class="heading">
                                     <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
@@ -781,11 +1201,15 @@
                                             style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
                                         To teach
                                     </span>
+
                                     <br>
-                                    <span style="font-size: 15px;"> 
-                                        Math, Chimi, History and 
-                                        <a href="#" style="font-size: 16px; text-decoration: none;">more</a>
+
+                                    <span style="font-size: 15px;">
+                                        Math, Chimi, History and
+                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlan">more</a>
                                     </span>
+
                                 </div>
                                 <!-- Learning by language of -->
                                 <div class="learning-by text-center" style="background: dodgerblue;">
@@ -797,12 +1221,15 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">For student in</p>
-                                    <span style="font-size: 15px;">
+                                    <p class="title text-left" style="margin:0;">
                                         <i class="fas fa-graduation-cap"
                                             style="font-size: 20px; color: dodgerblue;"></i>
-                                            1st GradeBiginner level and
-                                            <a href="#" style="font-size: 15px; text-decoration: none;">more</a>     
+                                        For student in
+                                    </p>
+                                    <span style="font-size: 15px;">
+                                        1st GradeBiginner level and
+                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlan">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -818,7 +1245,7 @@
                                 <!-- End For student in -->
 
                                 <!-- Collapse Promotion -->
-                                <div class="collapse" id="collapsePromotions3">
+                                <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
                                     <span class="week-day text-left" style="font-size: 15px;">
@@ -842,22 +1269,156 @@
                                 </div>
 
                                 <!-- Link list inline -->
-                                <ul class="list-inline mt-3">
+                                <ul class="list-inline mt-3 text-center text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" class="btn btn-primary">Buy now</a>
+                                        <button href="#" type="submit" class="btn btn-primary"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Buy now
+                                        </button>
                                     </li>
 
                                     <li class="list-inline-item">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapsePromotions3"
-                                            role="button" aria-expanded="false">Read more</a>
+                                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#CheckModalPlan"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Read more
+                                        </button>
                                     </li>
                                 </ul>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="CheckModalPlan" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header card-text">
+                                                <h5 class="modal-title mt-2" id="exampleModalLabel"
+                                                    style="font-size: 19px;">Semesterly package</h5>
+                                                <br>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                    22 Classes
+                                                </p>
+                                                <!-- Start Counrty and price -->
+                                                <div class="clearfix" style="margin: -14px 0;">
+                                                    <div class="float-left">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt"
+                                                            style="height: 60px; margin-top: 10px;">
+                                                        <br>
+                                                        <small style="font-weight: bold;">Local teachers</small>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <div class="Price-class text-center">
+                                                            <p>
+                                                                <span>2.99 USD</span>
+                                                                <br>
+                                                                <small>Per class</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- To teach -->
+                                                <br>
+                                                <div class="to-teach text-left">
+                                                    <span class="title">
+                                                        <i class="fas fa-clipboard-list"
+                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        To teach
+                                                    </span>
+
+                                                    <br>
+
+                                                    <span style="font-size: 15px;">
+                                                        Math, Chimi, History
+                                                        Philo, English, French
+                                                    </span>
+
+                                                </div>
+                                                <!-- Learning by language of -->
+                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                    <p class="text-center"
+                                                        style="font-size: 15px; color: white; margin: 3px 0;">
+                                                        Learning by english language,
+                                                        French and Arabic
+                                                    </p>
+                                                </div>
+                                                <!-- Learning by language of -->
+
+                                                <!-- For student in -->
+                                                <div class="student-in text-left">
+                                                    <p class="title text-left" style="margin:0;">
+                                                        <i class="fas fa-graduation-cap"
+                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                        For student in
+                                                    </p>
+                                                    <span style="font-size: 15px;">
+                                                        1st GradeBiginner level and Level second
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <!-- More Details -->
+                                                    <label for="" class="mb-0">Classes can be in</label>
+                                                    <br>
+                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                        Saturday, Sunday, Monday,
+                                                        Tuesday and Wednesday
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <div class="have-up">
+                                                        <label for="" class="mb-0">Can have up to</label>
+                                                        <br>
+                                                        <span class="have-up-classes">3 Classes per day</span>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="ref">
+                                                        <label for="">Ref. no. 66557</label>
+                                                    </div>
+
+                                                    <!-- END -->
+
+                                                    <!-- Price Promotion -->
+                                                    <div class="price">
+                                                        <h4>
+                                                            $25
+                                                            <small>.99</small>
+                                                        </h4>
+                                                    </div>
+                                                    <!-- End Price Promotion -->
+
+                                                    <div class="buy-now text-center">
+                                                        <button href="#" type="submit" class="btn btn-primary"
+                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                            Buy now
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal -->
+
                                 <!-- End Link list inline -->
                             </div>
                         </div>
 
-                        <!-- Two card -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <!-- Card two -->
+                        <div class="col-lg-4 col-md-12">
                             <div class="item">
                                 <div class="heading">
                                     <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
@@ -872,10 +1433,10 @@
                                 <!-- Start Counrty and price -->
                                 <div class="clearfix" style="margin: -14px 0;">
                                     <div class="float-left">
-                                        <img src="./assets/images/globe.svg" alt="globe"
+                                        <img src="./assets/images/globe.svg" alt="Global"
                                             style="height: 60px; margin-top: 10px;">
                                         <br>
-                                        <small style="font-weight: bold;">Global teachers</small>
+                                        <small style="font-weight: bold;">Local teachers</small>
                                     </div>
                                     <div class="float-right">
                                         <div class="Price-class text-center">
@@ -895,11 +1456,15 @@
                                             style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
                                         To teach
                                     </span>
+
                                     <br>
-                                    <span style="font-size: 15px;"> 
-                                        Math, Chimi, History and 
-                                        <a href="#" style="font-size: 16px; text-decoration: none;">more</a>
+
+                                    <span style="font-size: 15px;">
+                                        Math, Chimi, History and
+                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanOne">more</a>
                                     </span>
+
                                 </div>
                                 <!-- Learning by language of -->
                                 <div class="learning-by text-center" style="background: dodgerblue;">
@@ -911,12 +1476,15 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">For student in</p>
-                                    <span style="font-size: 15px;">
+                                    <p class="title text-left" style="margin:0;">
                                         <i class="fas fa-graduation-cap"
                                             style="font-size: 20px; color: dodgerblue;"></i>
-                                            1st GradeBiginner level and
-                                            <a href="#" style="font-size: 15px; text-decoration: none;">more</a>     
+                                        For student in
+                                    </p>
+                                    <span style="font-size: 15px;">
+                                        1st GradeBiginner level and
+                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanOne">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -932,7 +1500,7 @@
                                 <!-- End For student in -->
 
                                 <!-- Collapse Promotion -->
-                                <div class="collapse" id="collapsePromotions4">
+                                <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
                                     <span class="week-day text-left" style="font-size: 15px;">
@@ -956,22 +1524,156 @@
                                 </div>
 
                                 <!-- Link list inline -->
-                                <ul class="list-inline mt-3">
+                                <ul class="list-inline mt-3 text-center text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" class="btn btn-primary">Buy now</a>
+                                        <button href="#" type="submit" class="btn btn-primary"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Buy now
+                                        </button>
                                     </li>
 
                                     <li class="list-inline-item">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapsePromotions4"
-                                            role="button" aria-expanded="false">Read more</a>
+                                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#CheckModalPlanOne"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Read more
+                                        </button>
                                     </li>
                                 </ul>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="CheckModalPlanOne" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header card-text">
+                                                <h5 class="modal-title mt-2" id="exampleModalLabel"
+                                                    style="font-size: 19px;">Semesterly package</h5>
+                                                <br>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                    22 Classes
+                                                </p>
+                                                <!-- Start Counrty and price -->
+                                                <div class="clearfix" style="margin: -14px 0;">
+                                                    <div class="float-left">
+                                                        <img src="./assets/images/globe.svg" alt="Global"
+                                                            style="height: 60px; margin-top: 10px;">
+                                                        <br>
+                                                        <small style="font-weight: bold;">Local teachers</small>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <div class="Price-class text-center">
+                                                            <p>
+                                                                <span>2.99 USD</span>
+                                                                <br>
+                                                                <small>Per class</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- To teach -->
+                                                <br>
+                                                <div class="to-teach text-left">
+                                                    <span class="title">
+                                                        <i class="fas fa-clipboard-list"
+                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        To teach
+                                                    </span>
+
+                                                    <br>
+
+                                                    <span style="font-size: 15px;">
+                                                        Math, Chimi, History
+                                                        Philo, English, French
+                                                    </span>
+
+                                                </div>
+                                                <!-- Learning by language of -->
+                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                    <p class="text-center"
+                                                        style="font-size: 15px; color: white; margin: 3px 0;">
+                                                        Learning by english language,
+                                                        French and Arabic
+                                                    </p>
+                                                </div>
+                                                <!-- Learning by language of -->
+
+                                                <!-- For student in -->
+                                                <div class="student-in text-left">
+                                                    <p class="title text-left" style="margin:0;">
+                                                        <i class="fas fa-graduation-cap"
+                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                        For student in
+                                                    </p>
+                                                    <span style="font-size: 15px;">
+                                                        1st GradeBiginner level and Level second
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <!-- More Details -->
+                                                    <label for="" class="mb-0">Classes can be in</label>
+                                                    <br>
+                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                        Saturday, Sunday, Monday,
+                                                        Tuesday and Wednesday
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <div class="have-up">
+                                                        <label for="" class="mb-0">Can have up to</label>
+                                                        <br>
+                                                        <span class="have-up-classes">3 Classes per day</span>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="ref">
+                                                        <label for="">Ref. no. 66557</label>
+                                                    </div>
+
+                                                    <!-- END -->
+
+                                                    <!-- Price Promotion -->
+                                                    <div class="price">
+                                                        <h4>
+                                                            $25
+                                                            <small>.99</small>
+                                                        </h4>
+                                                    </div>
+                                                    <!-- End Price Promotion -->
+
+                                                    <div class="buy-now text-center">
+                                                        <button href="#" type="submit" class="btn btn-primary"
+                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                            Buy now
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal -->
+
                                 <!-- End Link list inline -->
                             </div>
                         </div>
 
                         <!-- Card Three -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="col-lg-4 col-md-12">
                             <div class="item">
                                 <div class="heading">
                                     <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
@@ -1009,11 +1711,15 @@
                                             style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
                                         To teach
                                     </span>
+
                                     <br>
-                                    <span style="font-size: 15px;"> 
-                                        Math, Chimi, History and 
-                                        <a href="#" style="font-size: 16px; text-decoration: none;">more</a>
+
+                                    <span style="font-size: 15px;">
+                                        Math, Chimi, History and
+                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanTwo">more</a>
                                     </span>
+
                                 </div>
                                 <!-- Learning by language of -->
                                 <div class="learning-by text-center" style="background: dodgerblue;">
@@ -1025,12 +1731,15 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">For student in</p>
-                                    <span style="font-size: 15px;">
+                                    <p class="title text-left" style="margin:0;">
                                         <i class="fas fa-graduation-cap"
                                             style="font-size: 20px; color: dodgerblue;"></i>
-                                            1st GradeBiginner level and
-                                            <a href="#" style="font-size: 15px; text-decoration: none;">more</a>     
+                                        For student in
+                                    </p>
+                                    <span style="font-size: 15px;">
+                                        1st GradeBiginner level and
+                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanTwo">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -1046,7 +1755,7 @@
                                 <!-- End For student in -->
 
                                 <!-- Collapse Promotion -->
-                                <div class="collapse" id="collapsePromotions5">
+                                <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
                                     <span class="week-day text-left" style="font-size: 15px;">
@@ -1070,17 +1779,151 @@
                                 </div>
 
                                 <!-- Link list inline -->
-                                <ul class="list-inline mt-3">
+                                <ul class="list-inline mt-3 text-center text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" class="btn btn-primary">Buy now</a>
+                                        <button href="#" type="submit" class="btn btn-primary"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Buy now
+                                        </button>
                                     </li>
 
                                     <li class="list-inline-item">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapsePromotions5"
-                                            role="button" aria-expanded="false">Read more</a>
+                                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#CheckModalPlan"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Read more
+                                        </button>
                                     </li>
                                 </ul>
                                 <!-- End Link list inline -->
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="CheckModalPlanTwo" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header card-text">
+                                                <h5 class="modal-title mt-2" id="exampleModalLabel"
+                                                    style="font-size: 19px;">Semesterly package</h5>
+                                                <br>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                    22 Classes
+                                                </p>
+                                                <!-- Start Counrty and price -->
+                                                <div class="clearfix" style="margin: -14px 0;">
+                                                    <div class="float-left">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt"
+                                                            style="height: 60px; margin-top: 10px;">
+                                                        <br>
+                                                        <small style="font-weight: bold;">Local teachers</small>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <div class="Price-class text-center">
+                                                            <p>
+                                                                <span>2.99 USD</span>
+                                                                <br>
+                                                                <small>Per class</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- To teach -->
+                                                <br>
+                                                <div class="to-teach text-left">
+                                                    <span class="title">
+                                                        <i class="fas fa-clipboard-list"
+                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        To teach
+                                                    </span>
+
+                                                    <br>
+
+                                                    <span style="font-size: 15px;">
+                                                        Math, Chimi, History
+                                                        Philo, English, French
+                                                    </span>
+
+                                                </div>
+                                                <!-- Learning by language of -->
+                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                    <p class="text-center"
+                                                        style="font-size: 15px; color: white; margin: 3px 0;">
+                                                        Learning by english language,
+                                                        French and Arabic
+                                                    </p>
+                                                </div>
+                                                <!-- Learning by language of -->
+
+                                                <!-- For student in -->
+                                                <div class="student-in text-left">
+                                                    <p class="title text-left" style="margin:0;">
+                                                        <i class="fas fa-graduation-cap"
+                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                        For student in
+                                                    </p>
+                                                    <span style="font-size: 15px;">
+                                                        1st GradeBiginner level and Level second
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <!-- More Details -->
+                                                    <label for="" class="mb-0">Classes can be in</label>
+                                                    <br>
+                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                        Saturday, Sunday, Monday,
+                                                        Tuesday and Wednesday
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <div class="have-up">
+                                                        <label for="" class="mb-0">Can have up to</label>
+                                                        <br>
+                                                        <span class="have-up-classes">3 Classes per day</span>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="ref">
+                                                        <label for="">Ref. no. 66557</label>
+                                                    </div>
+
+                                                    <!-- END -->
+
+                                                    <!-- Price Promotion -->
+                                                    <div class="price">
+                                                        <h4>
+                                                            $25
+                                                            <small>.99</small>
+                                                        </h4>
+                                                    </div>
+                                                    <!-- End Price Promotion -->
+
+                                                    <div class="buy-now text-center">
+                                                        <button href="#" type="submit" class="btn btn-primary"
+                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                            Buy now
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal -->
+
                             </div>
                         </div>
                     </div>
@@ -1089,7 +1932,7 @@
 
                     <div class="row">
                         <!-- Card One -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="col-lg-4 col-md-12">
                             <div class="item">
                                 <div class="heading">
                                     <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
@@ -1127,11 +1970,15 @@
                                             style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
                                         To teach
                                     </span>
+
                                     <br>
-                                    <span style="font-size: 15px;"> 
-                                        Math, Chimi, History and 
-                                        <a href="#" style="font-size: 16px; text-decoration: none;">more</a>
+
+                                    <span style="font-size: 15px;">
+                                        Math, Chimi, History and
+                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlan">more</a>
                                     </span>
+
                                 </div>
                                 <!-- Learning by language of -->
                                 <div class="learning-by text-center" style="background: dodgerblue;">
@@ -1143,12 +1990,15 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">For student in</p>
-                                    <span style="font-size: 15px;">
+                                    <p class="title text-left" style="margin:0;">
                                         <i class="fas fa-graduation-cap"
                                             style="font-size: 20px; color: dodgerblue;"></i>
-                                            1st GradeBiginner level and
-                                            <a href="#" style="font-size: 15px; text-decoration: none;">more</a>     
+                                        For student in
+                                    </p>
+                                    <span style="font-size: 15px;">
+                                        1st GradeBiginner level and
+                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlan">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -1164,7 +2014,7 @@
                                 <!-- End For student in -->
 
                                 <!-- Collapse Promotion -->
-                                <div class="collapse" id="collapsePromotions6">
+                                <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
                                     <span class="week-day text-left" style="font-size: 15px;">
@@ -1188,22 +2038,156 @@
                                 </div>
 
                                 <!-- Link list inline -->
-                                <ul class="list-inline mt-3">
+                                <ul class="list-inline mt-3 text-center text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" class="btn btn-primary">Buy now</a>
+                                        <button href="#" type="submit" class="btn btn-primary"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Buy now
+                                        </button>
                                     </li>
 
                                     <li class="list-inline-item">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapsePromotions6"
-                                            role="button" aria-expanded="false">Read more</a>
+                                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#CheckModalPlan"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Read more
+                                        </button>
                                     </li>
                                 </ul>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="CheckModalPlan" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header card-text">
+                                                <h5 class="modal-title mt-2" id="exampleModalLabel"
+                                                    style="font-size: 19px;">Semesterly package</h5>
+                                                <br>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                    22 Classes
+                                                </p>
+                                                <!-- Start Counrty and price -->
+                                                <div class="clearfix" style="margin: -14px 0;">
+                                                    <div class="float-left">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt"
+                                                            style="height: 60px; margin-top: 10px;">
+                                                        <br>
+                                                        <small style="font-weight: bold;">Local teachers</small>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <div class="Price-class text-center">
+                                                            <p>
+                                                                <span>2.99 USD</span>
+                                                                <br>
+                                                                <small>Per class</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- To teach -->
+                                                <br>
+                                                <div class="to-teach text-left">
+                                                    <span class="title">
+                                                        <i class="fas fa-clipboard-list"
+                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        To teach
+                                                    </span>
+
+                                                    <br>
+
+                                                    <span style="font-size: 15px;">
+                                                        Math, Chimi, History
+                                                        Philo, English, French
+                                                    </span>
+
+                                                </div>
+                                                <!-- Learning by language of -->
+                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                    <p class="text-center"
+                                                        style="font-size: 15px; color: white; margin: 3px 0;">
+                                                        Learning by english language,
+                                                        French and Arabic
+                                                    </p>
+                                                </div>
+                                                <!-- Learning by language of -->
+
+                                                <!-- For student in -->
+                                                <div class="student-in text-left">
+                                                    <p class="title text-left" style="margin:0;">
+                                                        <i class="fas fa-graduation-cap"
+                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                        For student in
+                                                    </p>
+                                                    <span style="font-size: 15px;">
+                                                        1st GradeBiginner level and Level second
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <!-- More Details -->
+                                                    <label for="" class="mb-0">Classes can be in</label>
+                                                    <br>
+                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                        Saturday, Sunday, Monday,
+                                                        Tuesday and Wednesday
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <div class="have-up">
+                                                        <label for="" class="mb-0">Can have up to</label>
+                                                        <br>
+                                                        <span class="have-up-classes">3 Classes per day</span>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="ref">
+                                                        <label for="">Ref. no. 66557</label>
+                                                    </div>
+
+                                                    <!-- END -->
+
+                                                    <!-- Price Promotion -->
+                                                    <div class="price">
+                                                        <h4>
+                                                            $25
+                                                            <small>.99</small>
+                                                        </h4>
+                                                    </div>
+                                                    <!-- End Price Promotion -->
+
+                                                    <div class="buy-now text-center">
+                                                        <button href="#" type="submit" class="btn btn-primary"
+                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                            Buy now
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal -->
+
                                 <!-- End Link list inline -->
                             </div>
                         </div>
 
-                        <!-- Two card -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <!-- Card two -->
+                        <div class="col-lg-4 col-md-12">
                             <div class="item">
                                 <div class="heading">
                                     <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
@@ -1218,10 +2202,10 @@
                                 <!-- Start Counrty and price -->
                                 <div class="clearfix" style="margin: -14px 0;">
                                     <div class="float-left">
-                                        <img src="./assets/images/globe.svg" alt="globe"
+                                        <img src="./assets/images/globe.svg" alt="Global"
                                             style="height: 60px; margin-top: 10px;">
                                         <br>
-                                        <small style="font-weight: bold;">Global teachers</small>
+                                        <small style="font-weight: bold;">Local teachers</small>
                                     </div>
                                     <div class="float-right">
                                         <div class="Price-class text-center">
@@ -1241,11 +2225,15 @@
                                             style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
                                         To teach
                                     </span>
+
                                     <br>
-                                    <span style="font-size: 15px;"> 
-                                        Math, Chimi, History and 
-                                        <a href="#" style="font-size: 16px; text-decoration: none;">more</a>
+
+                                    <span style="font-size: 15px;">
+                                        Math, Chimi, History and
+                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanOne">more</a>
                                     </span>
+
                                 </div>
                                 <!-- Learning by language of -->
                                 <div class="learning-by text-center" style="background: dodgerblue;">
@@ -1257,12 +2245,15 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">For student in</p>
-                                    <span style="font-size: 15px;">
+                                    <p class="title text-left" style="margin:0;">
                                         <i class="fas fa-graduation-cap"
                                             style="font-size: 20px; color: dodgerblue;"></i>
-                                            1st GradeBiginner level and
-                                            <a href="#" style="font-size: 15px; text-decoration: none;">more</a>     
+                                        For student in
+                                    </p>
+                                    <span style="font-size: 15px;">
+                                        1st GradeBiginner level and
+                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanOne">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -1278,7 +2269,7 @@
                                 <!-- End For student in -->
 
                                 <!-- Collapse Promotion -->
-                                <div class="collapse" id="collapsePromotions7">
+                                <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
                                     <span class="week-day text-left" style="font-size: 15px;">
@@ -1302,22 +2293,156 @@
                                 </div>
 
                                 <!-- Link list inline -->
-                                <ul class="list-inline mt-3">
+                                <ul class="list-inline mt-3 text-center text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" class="btn btn-primary">Buy now</a>
+                                        <button href="#" type="submit" class="btn btn-primary"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Buy now
+                                        </button>
                                     </li>
 
                                     <li class="list-inline-item">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapsePromotions7"
-                                            role="button" aria-expanded="false">Read more</a>
+                                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#CheckModalPlanOne"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Read more
+                                        </button>
                                     </li>
                                 </ul>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="CheckModalPlanOne" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header card-text">
+                                                <h5 class="modal-title mt-2" id="exampleModalLabel"
+                                                    style="font-size: 19px;">Semesterly package</h5>
+                                                <br>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                    22 Classes
+                                                </p>
+                                                <!-- Start Counrty and price -->
+                                                <div class="clearfix" style="margin: -14px 0;">
+                                                    <div class="float-left">
+                                                        <img src="./assets/images/globe.svg" alt="Global"
+                                                            style="height: 60px; margin-top: 10px;">
+                                                        <br>
+                                                        <small style="font-weight: bold;">Local teachers</small>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <div class="Price-class text-center">
+                                                            <p>
+                                                                <span>2.99 USD</span>
+                                                                <br>
+                                                                <small>Per class</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- To teach -->
+                                                <br>
+                                                <div class="to-teach text-left">
+                                                    <span class="title">
+                                                        <i class="fas fa-clipboard-list"
+                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        To teach
+                                                    </span>
+
+                                                    <br>
+
+                                                    <span style="font-size: 15px;">
+                                                        Math, Chimi, History
+                                                        Philo, English, French
+                                                    </span>
+
+                                                </div>
+                                                <!-- Learning by language of -->
+                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                    <p class="text-center"
+                                                        style="font-size: 15px; color: white; margin: 3px 0;">
+                                                        Learning by english language,
+                                                        French and Arabic
+                                                    </p>
+                                                </div>
+                                                <!-- Learning by language of -->
+
+                                                <!-- For student in -->
+                                                <div class="student-in text-left">
+                                                    <p class="title text-left" style="margin:0;">
+                                                        <i class="fas fa-graduation-cap"
+                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                        For student in
+                                                    </p>
+                                                    <span style="font-size: 15px;">
+                                                        1st GradeBiginner level and Level second
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <!-- More Details -->
+                                                    <label for="" class="mb-0">Classes can be in</label>
+                                                    <br>
+                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                        Saturday, Sunday, Monday,
+                                                        Tuesday and Wednesday
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <div class="have-up">
+                                                        <label for="" class="mb-0">Can have up to</label>
+                                                        <br>
+                                                        <span class="have-up-classes">3 Classes per day</span>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="ref">
+                                                        <label for="">Ref. no. 66557</label>
+                                                    </div>
+
+                                                    <!-- END -->
+
+                                                    <!-- Price Promotion -->
+                                                    <div class="price">
+                                                        <h4>
+                                                            $25
+                                                            <small>.99</small>
+                                                        </h4>
+                                                    </div>
+                                                    <!-- End Price Promotion -->
+
+                                                    <div class="buy-now text-center">
+                                                        <button href="#" type="submit" class="btn btn-primary"
+                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                            Buy now
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal -->
+
                                 <!-- End Link list inline -->
                             </div>
                         </div>
 
                         <!-- Card Three -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="col-lg-4 col-md-12">
                             <div class="item">
                                 <div class="heading">
                                     <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
@@ -1355,11 +2480,15 @@
                                             style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
                                         To teach
                                     </span>
+
                                     <br>
-                                    <span style="font-size: 15px;"> 
-                                        Math, Chimi, History and 
-                                        <a href="#" style="font-size: 16px; text-decoration: none;">more</a>
+
+                                    <span style="font-size: 15px;">
+                                        Math, Chimi, History and
+                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanTwo">more</a>
                                     </span>
+
                                 </div>
                                 <!-- Learning by language of -->
                                 <div class="learning-by text-center" style="background: dodgerblue;">
@@ -1371,12 +2500,15 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">For student in</p>
-                                    <span style="font-size: 15px;">
+                                    <p class="title text-left" style="margin:0;">
                                         <i class="fas fa-graduation-cap"
                                             style="font-size: 20px; color: dodgerblue;"></i>
-                                            1st GradeBiginner level and
-                                            <a href="#" style="font-size: 15px; text-decoration: none;">more</a>     
+                                        For student in
+                                    </p>
+                                    <span style="font-size: 15px;">
+                                        1st GradeBiginner level and
+                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanTwo">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -1392,7 +2524,7 @@
                                 <!-- End For student in -->
 
                                 <!-- Collapse Promotion -->
-                                <div class="collapse" id="collapsePromotions8">
+                                <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
                                     <span class="week-day text-left" style="font-size: 15px;">
@@ -1416,17 +2548,151 @@
                                 </div>
 
                                 <!-- Link list inline -->
-                                <ul class="list-inline mt-3">
+                                <ul class="list-inline mt-3 text-center text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" class="btn btn-primary">Buy now</a>
+                                        <button href="#" type="submit" class="btn btn-primary"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Buy now
+                                        </button>
                                     </li>
 
                                     <li class="list-inline-item">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapsePromotions8"
-                                            role="button" aria-expanded="false">Read more</a>
+                                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#CheckModalPlan"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Read more
+                                        </button>
                                     </li>
                                 </ul>
                                 <!-- End Link list inline -->
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="CheckModalPlanTwo" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header card-text">
+                                                <h5 class="modal-title mt-2" id="exampleModalLabel"
+                                                    style="font-size: 19px;">Semesterly package</h5>
+                                                <br>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                    22 Classes
+                                                </p>
+                                                <!-- Start Counrty and price -->
+                                                <div class="clearfix" style="margin: -14px 0;">
+                                                    <div class="float-left">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt"
+                                                            style="height: 60px; margin-top: 10px;">
+                                                        <br>
+                                                        <small style="font-weight: bold;">Local teachers</small>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <div class="Price-class text-center">
+                                                            <p>
+                                                                <span>2.99 USD</span>
+                                                                <br>
+                                                                <small>Per class</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- To teach -->
+                                                <br>
+                                                <div class="to-teach text-left">
+                                                    <span class="title">
+                                                        <i class="fas fa-clipboard-list"
+                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        To teach
+                                                    </span>
+
+                                                    <br>
+
+                                                    <span style="font-size: 15px;">
+                                                        Math, Chimi, History
+                                                        Philo, English, French
+                                                    </span>
+
+                                                </div>
+                                                <!-- Learning by language of -->
+                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                    <p class="text-center"
+                                                        style="font-size: 15px; color: white; margin: 3px 0;">
+                                                        Learning by english language,
+                                                        French and Arabic
+                                                    </p>
+                                                </div>
+                                                <!-- Learning by language of -->
+
+                                                <!-- For student in -->
+                                                <div class="student-in text-left">
+                                                    <p class="title text-left" style="margin:0;">
+                                                        <i class="fas fa-graduation-cap"
+                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                        For student in
+                                                    </p>
+                                                    <span style="font-size: 15px;">
+                                                        1st GradeBiginner level and Level second
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <!-- More Details -->
+                                                    <label for="" class="mb-0">Classes can be in</label>
+                                                    <br>
+                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                        Saturday, Sunday, Monday,
+                                                        Tuesday and Wednesday
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <div class="have-up">
+                                                        <label for="" class="mb-0">Can have up to</label>
+                                                        <br>
+                                                        <span class="have-up-classes">3 Classes per day</span>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="ref">
+                                                        <label for="">Ref. no. 66557</label>
+                                                    </div>
+
+                                                    <!-- END -->
+
+                                                    <!-- Price Promotion -->
+                                                    <div class="price">
+                                                        <h4>
+                                                            $25
+                                                            <small>.99</small>
+                                                        </h4>
+                                                    </div>
+                                                    <!-- End Price Promotion -->
+
+                                                    <div class="buy-now text-center">
+                                                        <button href="#" type="submit" class="btn btn-primary"
+                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                            Buy now
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal -->
+
                             </div>
                         </div>
                     </div>
@@ -1435,7 +2701,7 @@
 
                     <div class="row">
                         <!-- Card One -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="col-lg-4 col-md-12">
                             <div class="item">
                                 <div class="heading">
                                     <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
@@ -1473,11 +2739,15 @@
                                             style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
                                         To teach
                                     </span>
+
                                     <br>
-                                    <span style="font-size: 15px;"> 
-                                        Math, Chimi, History and 
-                                        <a href="#" style="font-size: 16px; text-decoration: none;">more</a>
+
+                                    <span style="font-size: 15px;">
+                                        Math, Chimi, History and
+                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlan">more</a>
                                     </span>
+
                                 </div>
                                 <!-- Learning by language of -->
                                 <div class="learning-by text-center" style="background: dodgerblue;">
@@ -1489,12 +2759,15 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">For student in</p>
-                                    <span style="font-size: 15px;">
+                                    <p class="title text-left" style="margin:0;">
                                         <i class="fas fa-graduation-cap"
                                             style="font-size: 20px; color: dodgerblue;"></i>
-                                            1st GradeBiginner level and
-                                            <a href="#" style="font-size: 15px; text-decoration: none;">more</a>     
+                                        For student in
+                                    </p>
+                                    <span style="font-size: 15px;">
+                                        1st GradeBiginner level and
+                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlan">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -1510,7 +2783,7 @@
                                 <!-- End For student in -->
 
                                 <!-- Collapse Promotion -->
-                                <div class="collapse" id="collapsePromotions9y">
+                                <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
                                     <span class="week-day text-left" style="font-size: 15px;">
@@ -1534,22 +2807,156 @@
                                 </div>
 
                                 <!-- Link list inline -->
-                                <ul class="list-inline mt-3">
+                                <ul class="list-inline mt-3 text-center text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" class="btn btn-primary">Buy now</a>
+                                        <button href="#" type="submit" class="btn btn-primary"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Buy now
+                                        </button>
                                     </li>
 
                                     <li class="list-inline-item">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapsePromotions9y"
-                                            role="button" aria-expanded="false">Read more</a>
+                                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#CheckModalPlan"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Read more
+                                        </button>
                                     </li>
                                 </ul>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="CheckModalPlan" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header card-text">
+                                                <h5 class="modal-title mt-2" id="exampleModalLabel"
+                                                    style="font-size: 19px;">Semesterly package</h5>
+                                                <br>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                    22 Classes
+                                                </p>
+                                                <!-- Start Counrty and price -->
+                                                <div class="clearfix" style="margin: -14px 0;">
+                                                    <div class="float-left">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt"
+                                                            style="height: 60px; margin-top: 10px;">
+                                                        <br>
+                                                        <small style="font-weight: bold;">Local teachers</small>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <div class="Price-class text-center">
+                                                            <p>
+                                                                <span>2.99 USD</span>
+                                                                <br>
+                                                                <small>Per class</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- To teach -->
+                                                <br>
+                                                <div class="to-teach text-left">
+                                                    <span class="title">
+                                                        <i class="fas fa-clipboard-list"
+                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        To teach
+                                                    </span>
+
+                                                    <br>
+
+                                                    <span style="font-size: 15px;">
+                                                        Math, Chimi, History
+                                                        Philo, English, French
+                                                    </span>
+
+                                                </div>
+                                                <!-- Learning by language of -->
+                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                    <p class="text-center"
+                                                        style="font-size: 15px; color: white; margin: 3px 0;">
+                                                        Learning by english language,
+                                                        French and Arabic
+                                                    </p>
+                                                </div>
+                                                <!-- Learning by language of -->
+
+                                                <!-- For student in -->
+                                                <div class="student-in text-left">
+                                                    <p class="title text-left" style="margin:0;">
+                                                        <i class="fas fa-graduation-cap"
+                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                        For student in
+                                                    </p>
+                                                    <span style="font-size: 15px;">
+                                                        1st GradeBiginner level and Level second
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <!-- More Details -->
+                                                    <label for="" class="mb-0">Classes can be in</label>
+                                                    <br>
+                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                        Saturday, Sunday, Monday,
+                                                        Tuesday and Wednesday
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <div class="have-up">
+                                                        <label for="" class="mb-0">Can have up to</label>
+                                                        <br>
+                                                        <span class="have-up-classes">3 Classes per day</span>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="ref">
+                                                        <label for="">Ref. no. 66557</label>
+                                                    </div>
+
+                                                    <!-- END -->
+
+                                                    <!-- Price Promotion -->
+                                                    <div class="price">
+                                                        <h4>
+                                                            $25
+                                                            <small>.99</small>
+                                                        </h4>
+                                                    </div>
+                                                    <!-- End Price Promotion -->
+
+                                                    <div class="buy-now text-center">
+                                                        <button href="#" type="submit" class="btn btn-primary"
+                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                            Buy now
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal -->
+
                                 <!-- End Link list inline -->
                             </div>
                         </div>
 
-                        <!-- Two card -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <!-- Card two -->
+                        <div class="col-lg-4 col-md-12">
                             <div class="item">
                                 <div class="heading">
                                     <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
@@ -1564,10 +2971,10 @@
                                 <!-- Start Counrty and price -->
                                 <div class="clearfix" style="margin: -14px 0;">
                                     <div class="float-left">
-                                        <img src="./assets/images/globe.svg" alt="globe"
+                                        <img src="./assets/images/globe.svg" alt="Global"
                                             style="height: 60px; margin-top: 10px;">
                                         <br>
-                                        <small style="font-weight: bold;">Global teachers</small>
+                                        <small style="font-weight: bold;">Local teachers</small>
                                     </div>
                                     <div class="float-right">
                                         <div class="Price-class text-center">
@@ -1587,11 +2994,15 @@
                                             style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
                                         To teach
                                     </span>
+
                                     <br>
-                                    <span style="font-size: 15px;"> 
-                                        Math, Chimi, History and 
-                                        <a href="#" style="font-size: 16px; text-decoration: none;">more</a>
+
+                                    <span style="font-size: 15px;">
+                                        Math, Chimi, History and
+                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanOne">more</a>
                                     </span>
+
                                 </div>
                                 <!-- Learning by language of -->
                                 <div class="learning-by text-center" style="background: dodgerblue;">
@@ -1603,12 +3014,15 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">For student in</p>
-                                    <span style="font-size: 15px;">
+                                    <p class="title text-left" style="margin:0;">
                                         <i class="fas fa-graduation-cap"
                                             style="font-size: 20px; color: dodgerblue;"></i>
-                                            1st GradeBiginner level and
-                                            <a href="#" style="font-size: 15px; text-decoration: none;">more</a>     
+                                        For student in
+                                    </p>
+                                    <span style="font-size: 15px;">
+                                        1st GradeBiginner level and
+                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanOne">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -1624,7 +3038,7 @@
                                 <!-- End For student in -->
 
                                 <!-- Collapse Promotion -->
-                                <div class="collapse" id="collapsePromotions9x">
+                                <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
                                     <span class="week-day text-left" style="font-size: 15px;">
@@ -1648,22 +3062,156 @@
                                 </div>
 
                                 <!-- Link list inline -->
-                                <ul class="list-inline mt-3">
+                                <ul class="list-inline mt-3 text-center text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" class="btn btn-primary">Buy now</a>
+                                        <button href="#" type="submit" class="btn btn-primary"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Buy now
+                                        </button>
                                     </li>
 
                                     <li class="list-inline-item">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapsePromotions9x"
-                                            role="button" aria-expanded="false">Read more</a>
+                                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#CheckModalPlanOne"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Read more
+                                        </button>
                                     </li>
                                 </ul>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="CheckModalPlanOne" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header card-text">
+                                                <h5 class="modal-title mt-2" id="exampleModalLabel"
+                                                    style="font-size: 19px;">Semesterly package</h5>
+                                                <br>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                    22 Classes
+                                                </p>
+                                                <!-- Start Counrty and price -->
+                                                <div class="clearfix" style="margin: -14px 0;">
+                                                    <div class="float-left">
+                                                        <img src="./assets/images/globe.svg" alt="Global"
+                                                            style="height: 60px; margin-top: 10px;">
+                                                        <br>
+                                                        <small style="font-weight: bold;">Local teachers</small>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <div class="Price-class text-center">
+                                                            <p>
+                                                                <span>2.99 USD</span>
+                                                                <br>
+                                                                <small>Per class</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- To teach -->
+                                                <br>
+                                                <div class="to-teach text-left">
+                                                    <span class="title">
+                                                        <i class="fas fa-clipboard-list"
+                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        To teach
+                                                    </span>
+
+                                                    <br>
+
+                                                    <span style="font-size: 15px;">
+                                                        Math, Chimi, History
+                                                        Philo, English, French
+                                                    </span>
+
+                                                </div>
+                                                <!-- Learning by language of -->
+                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                    <p class="text-center"
+                                                        style="font-size: 15px; color: white; margin: 3px 0;">
+                                                        Learning by english language,
+                                                        French and Arabic
+                                                    </p>
+                                                </div>
+                                                <!-- Learning by language of -->
+
+                                                <!-- For student in -->
+                                                <div class="student-in text-left">
+                                                    <p class="title text-left" style="margin:0;">
+                                                        <i class="fas fa-graduation-cap"
+                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                        For student in
+                                                    </p>
+                                                    <span style="font-size: 15px;">
+                                                        1st GradeBiginner level and Level second
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <!-- More Details -->
+                                                    <label for="" class="mb-0">Classes can be in</label>
+                                                    <br>
+                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                        Saturday, Sunday, Monday,
+                                                        Tuesday and Wednesday
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <div class="have-up">
+                                                        <label for="" class="mb-0">Can have up to</label>
+                                                        <br>
+                                                        <span class="have-up-classes">3 Classes per day</span>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="ref">
+                                                        <label for="">Ref. no. 66557</label>
+                                                    </div>
+
+                                                    <!-- END -->
+
+                                                    <!-- Price Promotion -->
+                                                    <div class="price">
+                                                        <h4>
+                                                            $25
+                                                            <small>.99</small>
+                                                        </h4>
+                                                    </div>
+                                                    <!-- End Price Promotion -->
+
+                                                    <div class="buy-now text-center">
+                                                        <button href="#" type="submit" class="btn btn-primary"
+                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                            Buy now
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal -->
+
                                 <!-- End Link list inline -->
                             </div>
                         </div>
 
                         <!-- Card Three -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="col-lg-4 col-md-12">
                             <div class="item">
                                 <div class="heading">
                                     <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
@@ -1701,11 +3249,15 @@
                                             style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
                                         To teach
                                     </span>
+
                                     <br>
-                                    <span style="font-size: 15px;"> 
-                                        Math, Chimi, History and 
-                                        <a href="#" style="font-size: 16px; text-decoration: none;">more</a>
+
+                                    <span style="font-size: 15px;">
+                                        Math, Chimi, History and
+                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanTwo">more</a>
                                     </span>
+
                                 </div>
                                 <!-- Learning by language of -->
                                 <div class="learning-by text-center" style="background: dodgerblue;">
@@ -1717,12 +3269,15 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">For student in</p>
-                                    <span style="font-size: 15px;">
+                                    <p class="title text-left" style="margin:0;">
                                         <i class="fas fa-graduation-cap"
                                             style="font-size: 20px; color: dodgerblue;"></i>
-                                            1st GradeBiginner level and
-                                            <a href="#" style="font-size: 15px; text-decoration: none;">more</a>     
+                                        For student in
+                                    </p>
+                                    <span style="font-size: 15px;">
+                                        1st GradeBiginner level and
+                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
+                                            data-target="#CheckModalPlanTwo">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -1738,7 +3293,7 @@
                                 <!-- End For student in -->
 
                                 <!-- Collapse Promotion -->
-                                <div class="collapse" id="collapsePromotions9">
+                                <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
                                     <span class="week-day text-left" style="font-size: 15px;">
@@ -1762,23 +3317,158 @@
                                 </div>
 
                                 <!-- Link list inline -->
-                                <ul class="list-inline mt-3">
+                                <ul class="list-inline mt-3 text-center text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" class="btn btn-primary">Buy now</a>
+                                        <button href="#" type="submit" class="btn btn-primary"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Buy now
+                                        </button>
                                     </li>
 
                                     <li class="list-inline-item">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapsePromotions9"
-                                            role="button" aria-expanded="false">Read more</a>
+                                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#CheckModalPlan"
+                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                            Read more
+                                        </button>
                                     </li>
                                 </ul>
                                 <!-- End Link list inline -->
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="CheckModalPlanTwo" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header card-text">
+                                                <h5 class="modal-title mt-2" id="exampleModalLabel"
+                                                    style="font-size: 19px;">Semesterly package</h5>
+                                                <br>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                    22 Classes
+                                                </p>
+                                                <!-- Start Counrty and price -->
+                                                <div class="clearfix" style="margin: -14px 0;">
+                                                    <div class="float-left">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt"
+                                                            style="height: 60px; margin-top: 10px;">
+                                                        <br>
+                                                        <small style="font-weight: bold;">Local teachers</small>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <div class="Price-class text-center">
+                                                            <p>
+                                                                <span>2.99 USD</span>
+                                                                <br>
+                                                                <small>Per class</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- To teach -->
+                                                <br>
+                                                <div class="to-teach text-left">
+                                                    <span class="title">
+                                                        <i class="fas fa-clipboard-list"
+                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        To teach
+                                                    </span>
+
+                                                    <br>
+
+                                                    <span style="font-size: 15px;">
+                                                        Math, Chimi, History
+                                                        Philo, English, French
+                                                    </span>
+
+                                                </div>
+                                                <!-- Learning by language of -->
+                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                    <p class="text-center"
+                                                        style="font-size: 15px; color: white; margin: 3px 0;">
+                                                        Learning by english language,
+                                                        French and Arabic
+                                                    </p>
+                                                </div>
+                                                <!-- Learning by language of -->
+
+                                                <!-- For student in -->
+                                                <div class="student-in text-left">
+                                                    <p class="title text-left" style="margin:0;">
+                                                        <i class="fas fa-graduation-cap"
+                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                        For student in
+                                                    </p>
+                                                    <span style="font-size: 15px;">
+                                                        1st GradeBiginner level and Level second
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <!-- More Details -->
+                                                    <label for="" class="mb-0">Classes can be in</label>
+                                                    <br>
+                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                        Saturday, Sunday, Monday,
+                                                        Tuesday and Wednesday
+                                                    </span>
+
+                                                    <hr>
+
+                                                    <div class="have-up">
+                                                        <label for="" class="mb-0">Can have up to</label>
+                                                        <br>
+                                                        <span class="have-up-classes">3 Classes per day</span>
+                                                    </div>
+
+                                                    <hr>
+
+                                                    <div class="ref">
+                                                        <label for="">Ref. no. 66557</label>
+                                                    </div>
+
+                                                    <!-- END -->
+
+                                                    <!-- Price Promotion -->
+                                                    <div class="price">
+                                                        <h4>
+                                                            $25
+                                                            <small>.99</small>
+                                                        </h4>
+                                                    </div>
+                                                    <!-- End Price Promotion -->
+
+                                                    <div class="buy-now text-center">
+                                                        <button href="#" type="submit" class="btn btn-primary"
+                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                            Buy now
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal -->
+
                             </div>
                         </div>
                     </div>
-
                     <!-- End Promotions -->
+
                 </section>
+                <!-- End List Promotions -->
             </div>
 
         </div>

@@ -148,7 +148,8 @@ input, label {
     color: $color-oldlace;
     background: linear-gradient(45deg, $color-blue, $color-purple);
     padding: 0px 10px;
-    margin-right: 11px;
+    margin-right: 0;
+    margin-left: 8px;
     font-weight: bolder;
     text-align: left !important;
 }

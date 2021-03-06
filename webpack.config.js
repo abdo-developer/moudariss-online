@@ -236,6 +236,10 @@ module.exports = {
         template: "./src/teacher_availability_map.html"
       }),
 
+      new HtmlWebpackPlugin({
+        filename: "time_teacher_booking_promo.html",
+        template: "./src/time_teacher_booking_promo.html"
+      }),
 
       // End More Pages
 

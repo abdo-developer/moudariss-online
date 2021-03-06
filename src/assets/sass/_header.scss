@@ -50,14 +50,14 @@ header.top_header nav ul li a.lang {
 }
 
 header.top_header nav ul li.item-anthor {
-    background: linear-gradient(45deg, $color-cyan, $color-transition);
+    background-color: $color-transition;
     margin-left: 15px;
     border-radius: 25px;
     padding: 0px 22px;
 }
 
 header.top_header nav ul .dropdown {
-    background: linear-gradient(45deg, $color-cyan, $color-transition);
+    background-color: $color-transition;
     margin-left: 15px;
     border-radius: 25px;
     padding: 0px 22px;

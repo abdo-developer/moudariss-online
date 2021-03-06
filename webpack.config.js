@@ -215,6 +215,17 @@ module.exports = {
         template: "./src/teacher_interface.html"
       }),
 
+      // Interface White
+      new HtmlWebpackPlugin({
+        filename: "student_interface_white.html",
+        template: "./src/student_interface_white.html"
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "teacher_interface_white.html",
+        template: "./src/teacher_interface_white.html"
+      }),
+
       // Four Pagee more
       new HtmlWebpackPlugin({
         filename: "teacher_time_booking_pop.html",

@@ -56,6 +56,15 @@ header.top_header nav ul li.item-anthor {
     padding: 0px 22px;
 }
 
+// Navbar white
+header.top_header nav ul .dropdown.navbar-white {
+    background-color: $color-white;
+}
+header.top_header nav ul .dropdown.navbar-white a {
+    color: $color-black;
+}
+
+
 header.top_header nav ul .dropdown {
     background-color: $color-transition;
     margin-left: 15px;

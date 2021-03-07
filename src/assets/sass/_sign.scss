@@ -1,0 +1,23 @@
+
+// Pages sign in and sign up and ask for teacher and student and teacher
+
+header.top_header .title-heading h5 {
+    margin: 35px 0;
+}
+
+header.top_header .sign_up {
+    margin-top: 8%;
+}
+
+.card.sign_up {
+    padding: 60px;
+    margin-top: 30px;
+    background-color: $color-e;
+    border-radius: 3px;
+}
+
+.card.sign_up .form-group input {
+    height: 50px;
+    border-radius: 20px;
+    border-color: $color-transition;
+}

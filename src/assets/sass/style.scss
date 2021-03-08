@@ -153,7 +153,7 @@ small.local-global-teacher {
     font-size: 10px;
 }
 
-// Model 
+    // Model 
     h5#exampleModalLabel {
         font-size: 19px;
         background: linear-gradient( 90deg ,#7476f3,#0aa9da);
@@ -163,6 +163,55 @@ small.local-global-teacher {
 
     .local-and-global-teacher {
         margin-left: 32%;
+    }
+
+    .content-section {
+        width: 990px;
+    }
+
+    .btn-page-teacher {
+        margin-top: 50%;
+    }
+
+    .card-body.professor_teach img {
+        height: 120px;
+        border-radius: 50%; 
+        margin: 20px 0;
+    }
+
+    .list-button .link_important.more-add-main {
+        padding: 8px 17px;
+    }
+
+    .card.teach-in-the-world {
+        margin-top: 35px;
+    }
+
+    .title-larg img {
+        height: 35px; 
+        float: left;
+    }
+
+    .list-study img {
+        height: 25px;
+    }
+
+    .custom-h6.teach-in-the-world img {
+        height: 35px; 
+        margin-right: 5px;
+    }
+
+    .id.teacher {
+        font-weight: bolder;
+    }
+
+    .teach-in-the-world.add-top {
+        margin-top: 35px;
+    }
+
+    .badge img {
+        height: 35px; 
+        float: left;
     }
 
 // Responsive website 
@@ -335,6 +384,18 @@ small.local-global-teacher {
         display: none;
     }
 
+    .content-section {
+        width: 100%;
+    }
+
+    .btn-page-teacher {
+        margin-top: 0;
+    }
+
+    section.card {
+        padding: 10px;
+    }
+
 }
 
 @media (min-width: 417px) and (max-width: 575px) {
@@ -494,6 +555,12 @@ small.local-global-teacher {
         margin-left: 25%;
     }
 
+    
+    .btn-page-teacher {
+        margin-top: 0;
+    }
+
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -607,6 +674,12 @@ small.local-global-teacher {
     .filter-desktop {
         display: none;
     }
+
+    
+    .btn-page-teacher {
+        margin-top: 0;
+    }
+
 
 }
 

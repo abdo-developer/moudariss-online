@@ -254,6 +254,12 @@ module.exports = {
 
       // End More Pages
 
+      // Filter-deive-mobile
+      new HtmlWebpackPlugin({
+        filename: "filter_phone.html",
+        template: "./src/filter_phone.html"
+      }),
+
       new HtmlWebpackPlugin({
         filename: "contact.html",
         template: "./src/contact.html"

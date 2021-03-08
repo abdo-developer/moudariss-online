@@ -134,6 +134,36 @@ a.dropdown-item.line-drop {
     margin-top: -25px;
 }
 
+// Card teacher
+.col-lg-6.col-md-12.image_prof img {
+    height: 100px; 
+    border-radius: 50%;
+}
+
+// Promotions
+
+.learning-by p {
+    font-size: 15px; 
+    color: white; 
+    margin: 15px 0;
+}
+
+small.local-global-teacher {
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+// Model 
+    h5#exampleModalLabel {
+        font-size: 19px;
+        background: linear-gradient( 90deg ,#7476f3,#0aa9da);
+        color: white;
+        padding: 15px 30px;
+    }
+
+    .local-and-global-teacher {
+        margin-left: 32%;
+    }
 
 // Responsive website 
 
@@ -269,6 +299,42 @@ a.dropdown-item.line-drop {
         padding: 10px 20px;
     }
 
+    // List teacher
+    .col-lg-6.col-md-12.image_prof {
+        text-align: center;
+    }
+
+    .star-teachers {
+        text-align: center;
+    }
+
+    .Price-class {
+        text-align: center;
+    }
+
+    // Promo Flags
+    .image-flags {
+        text-align: center;
+    }
+
+      // Btn promotions
+      ul.list-inline.mt-3.text-center li {
+        display: block;
+    }
+    ul.list-inline.mt-3.text-center li a {
+        display: block;
+        margin-top: 15px;
+    }
+
+    h5#exampleModalLabel {
+        padding: 10px;
+    }
+
+     // Filter desktop none
+     .filter-desktop {
+        display: none;
+    }
+
 }
 
 @media (min-width: 417px) and (max-width: 575px) {
@@ -401,6 +467,33 @@ a.dropdown-item.line-drop {
         padding: 10px 20px;
     }
 
+    // List teacher
+    .col-lg-6.col-md-12.image_prof {
+        text-align: center;
+    }
+
+    .star-teachers {
+        text-align: center;
+    }
+
+    .Price-class {
+        text-align: center;
+    }
+
+    // Promo Flags
+    .image-flags {
+        text-align: center;
+    }
+
+     // Filter desktop none
+     .filter-desktop {
+        display: none;
+    }
+
+    .local-and-global-teacher {
+        margin-left: 25%;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -492,6 +585,29 @@ a.dropdown-item.line-drop {
         padding: 10px 20px;
     }
 
+    // List teacher
+    .col-lg-6.col-md-12.image_prof {
+        text-align: center;
+    }
+
+    .star-teachers {
+        text-align: center;
+    }
+
+    .Price-class {
+        text-align: center;
+    }
+
+    // Promo Flags
+    .image-flags {
+        text-align: center;
+    }
+
+    // Filter desktop none
+    .filter-desktop {
+        display: none;
+    }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -549,6 +665,46 @@ a.dropdown-item.line-drop {
         margin: 0px 3px;
     }
 
+    // List teacher
+
+    .Price-class p small {
+        margin-right: -10px;
+    }
+
+    .Price-class p span {
+        margin-left: 20px;
+    }
+
+    .star-teachers {
+        text-align: center;
+    }
+
+    // Promotions page
+    
+    .Price-class p.promo-perfect span.promo-card-top {
+        margin-left: -13px;
+        font-size: 16px;
+        padding: 0 3px;
+    }
+
+    .Price-class p small.per-class {
+        margin-right: 0px;
+    }
+
+    // Btn promotions
+    ul.list-inline.mt-3.text-center li {
+        display: block;
+    }
+    ul.list-inline.mt-3.text-center li a {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .filter-phone {
+        display: none;
+    }
+
+
 }
 
 @media (max-width: 1351px) and (min-width: 1200px) {
@@ -561,6 +717,20 @@ a.dropdown-item.line-drop {
     // pricing
 
     .col-lg-4.col-md-6.col-sm-6.col-12.add-package {
+        display: none;
+    }
+
+    .filter-phone {
+        display: none;
+    }
+}
+
+@media (max-width: 2000px) and (min-width: 1400px) {
+    .Price-class.text-center.more-main {
+        margin: 10px;
+    }
+
+    .filter-phone {
         display: none;
     }
 }

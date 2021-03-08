@@ -51,7 +51,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mr-auto">
-                    
+
                     <div class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign up</a>
                         <div class="dropdown-menu">
@@ -77,10 +77,10 @@
             <div class="row">
                 <div class="col-lg-9 col-12">
                     <div class="title-column">
-                        <h4 class="custom-heading text-center" style="margin-top: -5px;">Choose your teachers</h4>
+                        <h4 class="custom-heading text-center">Choose your teachers</h4>
                     </div>
                     <div class="description-paragraph">
-                        <p class="mb-4 text-center"  style="margin-top: -8px;">
+                        <p class="mb-4 text-center" style="margin-top: -8px;">
                             Learning has NO limitation, though your mobile or PC, you can book your private teacher and
                             start your interactive virtual class from your home .
                         </p>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="col-lg-3 col-12">
                     <div class="link-teache-me text-center">
-                        <a href="#" class="btn filter-btn more-main" style="margin-top: 12%;">
+                        <a href="#" class="btn filter-btn more-main mt-3 mb-4">
                             If you don't find what you
                             are looking for Please click here
                         </a>
@@ -103,8 +103,321 @@
     <div class="container-fluid">
         <div class="row">
 
+
+            <!-- Star Filter Phone -->
+            <div class="filter-phone">
+                <a class="btn btn-primary mt-4 mb-2 ml-2" data-toggle="collapse" href="#ShowFilter" role="button"
+                    aria-expanded="false">
+                    <i class="fas fa-filter"></i>
+                    Filter Or Search
+                </a>
+
+                <div class="col-12 col-lg-3 bg-white collapse" id="ShowFilter" style="height: 100%;">
+
+                    <form class="filter-search">
+                        <div class="form-group form-check">
+                            <label for="" style="margin-top: 15px;">I am </label>
+
+                            <br>
+
+                            <div class="form-inline">
+                                <!-- I am Male : Student -->
+                                <div class="text-center">
+                                    <img src="./assets/images/student-male.svg" alt="aaa" style="height: 50px;">
+                                </div>
+                                <div class="text-center">
+                                    <label for="RadioStudent1">Student</label>
+                                    <input type="radio" class="form-check-input" id="RadioStudent1" name="RadioStudent">
+                                </div>
+
+                                <!-- I am Female : Student -->
+                                <div class="text-center">
+                                    <img src="./assets/images/student.svg" alt="aaa" style="height: 50px;">
+                                </div>
+                                <div class="text-center">
+                                    <label for="RadioStudent2">Student</label>
+                                    <input type="radio" class="form-check-input" id="RadioStudent2" name="RadioStudent">
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- Start Levels, we have Six levels -->
+                        <div class="form-group form-check">
+                            <label for="">Study in</label>
+
+                            <div class="content-radio">
+                                <!-- I am Male : Student -->
+                                <input type="radio" class="form-check-input" id="exampleRadios1" name="exampleRadios">
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Level First
+                                </label>
+                            </div>
+
+                            <div class="content-radio">
+                                <!-- I am Male : Student -->
+                                <input type="radio" class="form-check-input" id="exampleRadios1" name="exampleRadios">
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Level Second
+                                </label>
+                            </div>
+
+                            <div class="content-radio">
+                                <!-- I am Male : Student -->
+                                <input type="radio" class="form-check-input" id="exampleRadios1" name="exampleRadios">
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Level Third
+                                </label>
+                            </div>
+
+                            <div class="content-radio">
+                                <!-- I am Male : Student -->
+                                <input type="radio" class="form-check-input" id="exampleRadios1" name="exampleRadios">
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Level Fourth
+                                </label>
+                            </div>
+
+                            <div class="content-radio">
+                                <!-- I am Male : Student -->
+                                <input type="radio" class="form-check-input" id="exampleRadios1" name="exampleRadios">
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Level Fifth
+                                </label>
+                            </div>
+
+                            <div class="content-radio">
+                                <!-- I am Male : Student -->
+                                <input type="radio" class="form-check-input" id="exampleRadios1" name="exampleRadios">
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Level Sixth
+                                </label>
+                            </div>
+
+                        </div>
+                        <!-- End Levels, we have Six levels -->
+
+                        <!-- Start List the pays -->
+                        <div class="form-group">
+                            <label for="">Living in</label>
+                            <input class="form-control type=" text" id="country" />
+                            <!-- <input class="form-control type="hidden" id="country_code" />                             -->
+                        </div>
+                        <!-- End List the pays -->
+                    </form>
+
+                    <hr>
+
+                    <form class="filter-search">
+                        <div class="title-form">
+                            <h4 class="custom-title">Serach for</h4>
+                        </div>
+
+                        <div class="form-group form-check">
+                            <div class="form-inline">
+                                <!-- I am Male : teacher -->
+                                <div class="text-center">
+                                    <label for="RadioStudent1">Teacher</label>
+                                    <input type="checkbox" class="form-check-input" id="" name="">
+                                </div>
+                                <div class="text-center">
+                                    <img src="./assets/images/teacher-famme.svg" alt="Teacher" style="height: 50px;">
+                                </div>
+
+
+                                <!-- I am Female : teacher -->
+                                <div class="text-center">
+                                    <label for="">Teacher</label>
+                                    <input type="checkbox" class="form-check-input" id="" name="">
+                                </div>
+                                <div class="text-center">
+                                    <img src="./assets/images/teacher-homme.svg" alt="teacher" style="height: 50px;">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Start List the pays -->
+                        <div class="form-group">
+                            <label for="">In</label>
+                            <br>
+                            <input class="form-control type=" text" id="country-more" />
+                            <!-- <input class="form-control type="hidden" id="country_code" /> -->
+                        </div>
+                        <!-- End List the pays -->
+                        <br>
+                        <!-- The tech me by language of -->
+                        <label for="">Teach me by language of</label>
+
+                        <br>
+
+                        <input type="checkbox" class="form-check-input" id="">
+                        <label class="form-check-label" for="">
+                            Arabic
+                        </label>
+
+                        <input type="checkbox" class="form-check-input" id="">
+                        <label class="form-check-label" for="">
+                            English
+                        </label>
+
+                        <br>
+
+                        <input type="checkbox" class="form-check-input" id="">
+                        <label class="form-check-label" for="">
+                            French
+                        </label>
+
+                        <input type="checkbox" class="form-check-input" id="">
+                        <label class="form-check-label" for="">
+                            Hindi
+                        </label>
+                        <!-- End The tech me by language of -->
+                        <br>
+                        <!-- Star To teach me -->
+                        <label for="" class="teach-me">To teach me</label>
+                        <br>
+                        <select name="" id="" class="form-control">
+                            <option value="" disabled selected>Select to teach me</option>
+                            <option value="">English</option>
+                            <option value="">Arabic</option>
+                            <option value="">Math</option>
+                            <option value="">History</option>
+                            <option value="">Geographic</option>
+                        </select>
+                        <!-- End To teach me -->
+                        <br>
+                        <!-- Link i don't teache me -->
+                        <div class="link-teache-me text-center">
+                            <a href="#" class="btn filter-btn more-main">
+                                If you don't find the subject you
+                                are looking for Please click here
+                            </a>
+                        </div>
+                        <!-- Start Within the cost of -->
+                        <label for="" style="margin-top: 20px;">Within the cost of </label>
+                        <br>
+
+                        <p>
+                            <input type="text" id="Price" class="form-check-input" readonly>
+                            <br>
+                            <span style="font-weight: bold;">Per one class</span>
+                        </p>
+
+                        <div id="slider-range-one"></div>
+                        <!-- End Within the cost of -->
+
+                        <!-- Search now -->
+                        <button type="submit" class="btn filter-btn form-control">Search Now</button>
+                        <!-- End Search now -->
+                    </form>
+
+                    <hr>
+
+                    <form class="filter-search">
+                        <div class="show-details">
+                            <a class="btn custom-btn-more text-center" data-toggle="collapse" href="#collapseShow"
+                                role="button" aria-expanded="false">
+                                Advanced Search
+                                <i class="fas fa-chevron-down ml-1"></i>
+                            </a>
+                            <!-- Collaspe Show  Adevanced search -->
+                            <div class="collapse" id="collapseShow">
+                                <p>
+                                    <label for="experience">With experience years</label>
+                                    <input type="text" id="experience" class="form-check-input" readonly>
+                                </p>
+
+                                <div id="slider-range"></div>
+
+                                <br>
+
+                                <!-- Star filter with stars -->
+                                <label> With stars rating</label>
+
+                                <!-- Get stars -->
+
+                                <p>
+                                    <input type="text" id="Ratings" class="form-check-input" readonly>
+                                </p>
+
+                                <div id="slider-range-two"></div>
+
+                                <!-- End filter with stars -->
+                                <br>
+                                <!-- From date avaible -->
+                                <label for="">Who is Available from</label>
+                                <br>
+
+                                <div class="form-datetime">
+                                    <input type="date" class="form-control" name="" id="" style="width: 100%;">
+                                    <p class="mt-2 mb-2" style="color: black;">To</p>
+                                    <input type="date" class="form-control" name="" id="" style="width: 100%;">
+                                </div>
+                                <!-- End from date -->
+                                <br>
+
+                                <!-- From date avaible -->
+
+                                <!-- Flexible with time -->
+                                <input type="radio" class="form-check-input" id="RadioExample1" name="RadioExample">
+                                <label class="form-check-label" for="RadioExample1">
+                                    I am Flexible with Time
+                                </label>
+
+                                <br>
+
+                                <!-- I have a specific time from : -->
+                                <input type="radio" class="form-check-input" id="RadioExample2" name="RadioExample">
+                                <label class="form-check-label" for="RadioExample2">
+                                    I have a specific time
+                                </label>
+
+                                <br>
+
+                                <div class="form-group">
+                                    <div class="time" id="" style="margin-top: 10px;">
+                                        <label style="margin: 8px 0;">From</label>
+                                        <input type="time" class="form-control" name="datetimepicker"
+                                            id="datetimepicker">
+                                        <label style="margin: 8px 0;">To</label>
+                                        <input type="time" class="form-control" name="datetimepicker"
+                                            id="datetimepicker">
+                                    </div>
+                                </div>
+                                <!-- End from date -->
+
+                                <!-- Teacher ID no. -->
+                                <label for="">Teacher ID no.</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="ID number">
+                                </div>
+                                <!-- End Teacher ID -->
+
+                                <!-- Search now -->
+                                <button type="submit" class="btn filter-btn form-control">Search Now</button>
+
+                                <!-- i don"t .... -->
+                                <div class="link-teache-me text-center">
+                                    <a href="#" class="btn filter-btn more-main">
+                                        If you don't find what you
+                                        are looking for Please click here
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <br>
+
+                </div>
+            </div>
+            <!-- Star Filter Phone -->
+
+
             <!-- Star Filter -->
-            <div class="col-12 col-lg-3 bg-fliter" style="height: 100%;">
+            <div class="col-12 col-lg-3 bg-fliter filter-desktop" style="height: 100%;">
 
                 <form class="filter-search">
                     <div class="form-group form-check">
@@ -336,42 +649,6 @@
 
                             <div id="slider-range-two"></div>
 
-                            <!-- <div class="form-check">
-                                <input type="radio" class="form-check-input" name="radio-2" id="radio-two">
-                                <label class="form-check-label" for="radio-two">
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star-half-alt active"></i>
-                                    <i class="fas fa-star"></i>
-                                    <span>4.5 & up</span>
-                                </label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" name="radio-2" id="radio-two">
-                                <label class="form-check-label" for="radio-two">
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star-half-alt active"></i>
-                                    <i class="fas fa-star"></i>
-                                    <span>3.5 & up</span>
-                                </label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" name="radio-3" id="radio-three">
-                                <label class="form-check-label" for="radio-three">
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star-half-alt active"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <span>2.5 & up</span>
-                                </label>
-                            </div> -->
-
                             <!-- End filter with stars -->
                             <br>
                             <!-- From date avaible -->
@@ -445,7 +722,7 @@
 
                 <!-- Select teacher -->
                 <div class="row text-center">
-                    <ul class="list-inline text-center" style="margin-left: 32%;">
+                    <ul class="list-inline text-center local-and-global-teacher">
                         <li class="list-inline-item">
                             <a href="#" class="btn filter-btn pro-btn">Local teachers</a>
                         </li>
@@ -460,13 +737,12 @@
                 <div class="row">
 
                     <!-- First Techers -->
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_one.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-6 col-md-12 image_prof">
+                                        <img src="./assets/images/professor_one.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -477,7 +753,7 @@
                                     </div>
                                     <!-- Price and stars -->
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
+                                        <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -488,7 +764,7 @@
                                         <br>
 
                                         <!-- Price per class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class more-main">
                                             <p>
                                                 <span>2.99 USD</span>
                                                 <br>
@@ -497,7 +773,7 @@
                                         </div>
 
                                         <!-- Price one class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class">
                                             <p>
                                                 <span>9.99 USD</span>
                                                 <br>
@@ -511,7 +787,7 @@
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-center">
+                                    <p class="text-small">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -545,13 +821,12 @@
                     </div>
 
                     <!-- Seconde teacher -->
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_two.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-6 col-md-12 image_prof">
+                                        <img src="./assets/images/professor_two.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Mohammed ali
@@ -562,7 +837,7 @@
                                     </div>
                                     <!-- Price and stars -->
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
+                                        <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -573,7 +848,7 @@
                                         <br>
 
                                         <!-- Price per class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class more-main">
                                             <p>
                                                 <span>2.00 USD</span>
                                                 <br>
@@ -582,7 +857,7 @@
                                         </div>
 
                                         <!-- Price one class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class">
                                             <p>
                                                 <span>9.99 USD</span>
                                                 <br>
@@ -597,93 +872,7 @@
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-center">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </p>
-                                </div>
-                                <!-- Models -->
-                                <div class="model">
-                                    <span>
-                                        <i class="fas fa-clipboard-list"></i>
-                                        Math, Chimi,
-                                    </span>
-                                </div>
-                                <!-- Level -->
-                                <div class="model">
-                                    <span>
-                                        <i class="fas fa-graduation-cap"></i>
-                                        1st GradeBiginner level,
-                                    </span>
-                                </div>
-                            </div>
-                            <!-- Footer Card -->
-                            <div class="card-footer">
-                                <div class="clearfix">
-                                    <div class="float-right">
-                                        <a href="#" class="btn filter-btn">Read more</a>
-                                    </div>
-                                    <div class="float-left">
-                                        <a href="#" class="btn filter-btn">Book teacher</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Three teacher -->
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="card card-teachers">
-                            <div class="card-header">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_three.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
-                                        <div class="name-country text-center">
-                                            <p class="name-prof">
-                                                Ali Nsre
-                                                <br>
-                                                <span class="country">Saudi Arabie</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                        </div>
-
-                                        <br>
-
-                                        <!-- Price per class -->
-                                        <div class="Price-class text-center">
-                                            <p>
-                                                <span>2.99 USD</span>
-                                                <br>
-                                                <small>Contract Price</small>
-                                            </p>
-                                        </div>
-
-                                        <!-- Price one class -->
-                                        <div class="Price-class text-center">
-                                            <p>
-                                                <span>9.99 USD</span>
-                                                <br>
-                                                <small>One class price</small>
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card body -->
-                            <div class="card-body">
-                                <!-- Description -->
-                                <div class="description-cv">
-                                    <p class="text-center">
+                                    <p class="text-small">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -723,13 +912,12 @@
                 <div class="row">
 
                     <!-- First Techers -->
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_one.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-6 col-md-12 image_prof">
+                                        <img src="./assets/images/professor_one.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -740,7 +928,7 @@
                                     </div>
                                     <!-- Price and stars -->
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
+                                        <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -751,7 +939,7 @@
                                         <br>
 
                                         <!-- Price per class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class more-main">
                                             <p>
                                                 <span>2.00 USD</span>
                                                 <br>
@@ -760,7 +948,7 @@
                                         </div>
 
                                         <!-- Price one class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class">
                                             <p>
                                                 <span>9.00 USD</span>
                                                 <br>
@@ -775,7 +963,7 @@
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-center">
+                                    <p class="text-small">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -809,13 +997,12 @@
                     </div>
 
                     <!-- Seconde teacher -->
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_two.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-6 col-md-12 image_prof">
+                                        <img src="./assets/images/professor_two.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Mohammed ali
@@ -826,7 +1013,7 @@
                                     </div>
                                     <!-- Price and stars -->
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
+                                        <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -837,7 +1024,7 @@
                                         <br>
 
                                         <!-- Price per class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class more-main">
                                             <p>
                                                 <span>2.99 USD</span>
                                                 <br>
@@ -846,7 +1033,7 @@
                                         </div>
 
                                         <!-- Price one class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class">
                                             <p>
                                                 <span>9.99 USD</span>
                                                 <br>
@@ -861,93 +1048,7 @@
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-center">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </p>
-                                </div>
-                                <!-- Models -->
-                                <div class="model">
-                                    <span>
-                                        <i class="fas fa-clipboard-list"></i>
-                                        Math, Chimi,
-                                    </span>
-                                </div>
-                                <!-- Level -->
-                                <div class="model">
-                                    <span>
-                                        <i class="fas fa-graduation-cap"></i>
-                                        1st GradeBiginner level,
-                                    </span>
-                                </div>
-                            </div>
-                            <!-- Footer Card -->
-                            <div class="card-footer">
-                                <div class="clearfix">
-                                    <div class="float-right">
-                                        <a href="#" class="btn filter-btn">Read more</a>
-                                    </div>
-                                    <div class="float-left">
-                                        <a href="#" class="btn filter-btn">Book teacher</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Three teacher -->
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="card card-teachers">
-                            <div class="card-header">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_three.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
-                                        <div class="name-country text-center">
-                                            <p class="name-prof">
-                                                Ali Nsre
-                                                <br>
-                                                <span class="country">Saudi Arabie</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                        </div>
-
-                                        <br>
-
-                                        <!-- Price per class -->
-                                        <div class="Price-class text-center">
-                                            <p>
-                                                <span>2.00 USD</span>
-                                                <br>
-                                                <small>Contract Price</small>
-                                            </p>
-                                        </div>
-
-                                        <!-- Price one class -->
-                                        <div class="Price-class text-center">
-                                            <p>
-                                                <span>9.00 USD</span>
-                                                <br>
-                                                <small>One class price</small>
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card body -->
-                            <div class="card-body">
-                                <!-- Description -->
-                                <div class="description-cv">
-                                    <p class="text-center">
+                                    <p class="text-small">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -987,13 +1088,12 @@
                 <div class="row">
 
                     <!-- First Techers -->
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_one.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-6 col-md-12 image_prof">
+                                        <img src="./assets/images/professor_one.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -1004,7 +1104,7 @@
                                     </div>
                                     <!-- Price and stars -->
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
+                                        <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -1015,7 +1115,7 @@
                                         <br>
 
                                         <!-- Price per class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class more-main">
                                             <p>
                                                 <span>2.00 USD</span>
                                                 <br>
@@ -1024,7 +1124,7 @@
                                         </div>
 
                                         <!-- Price one class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class">
                                             <p>
                                                 <span>9.99 USD</span>
                                                 <br>
@@ -1039,7 +1139,7 @@
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-center">
+                                    <p class="text-small">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -1073,13 +1173,12 @@
                     </div>
 
                     <!-- Seconde teacher -->
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_two.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-6 col-md-12 image_prof">
+                                        <img src="./assets/images/professor_two.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Mohammed ali
@@ -1090,7 +1189,7 @@
                                     </div>
                                     <!-- Price and stars -->
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
+                                        <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -1101,7 +1200,7 @@
                                         <br>
 
                                         <!-- Price per class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class more-main">
                                             <p>
                                                 <span>2.99 USD</span>
                                                 <br>
@@ -1110,7 +1209,7 @@
                                         </div>
 
                                         <!-- Price one class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class">
                                             <p>
                                                 <span>9.00 USD</span>
                                                 <br>
@@ -1125,93 +1224,7 @@
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-center">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </p>
-                                </div>
-                                <!-- Models -->
-                                <div class="model">
-                                    <span>
-                                        <i class="fas fa-clipboard-list"></i>
-                                        Math, Chimi,
-                                    </span>
-                                </div>
-                                <!-- Level -->
-                                <div class="model">
-                                    <span>
-                                        <i class="fas fa-graduation-cap"></i>
-                                        1st GradeBiginner level,
-                                    </span>
-                                </div>
-                            </div>
-                            <!-- Footer Card -->
-                            <div class="card-footer">
-                                <div class="clearfix">
-                                    <div class="float-right">
-                                        <a href="#" class="btn filter-btn">Read more</a>
-                                    </div>
-                                    <div class="float-left">
-                                        <a href="#" class="btn filter-btn">Book teacher</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Three teacher -->
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="card card-teachers">
-                            <div class="card-header">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_three.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
-                                        <div class="name-country text-center">
-                                            <p class="name-prof">
-                                                Ali Nsre
-                                                <br>
-                                                <span class="country">Saudi Arabie</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                        </div>
-
-                                        <br>
-
-                                        <!-- Price per class -->
-                                        <div class="Price-class text-center">
-                                            <p>
-                                                <span>2.00 USD</span>
-                                                <br>
-                                                <small>Contract Price</small>
-                                            </p>
-                                        </div>
-
-                                        <!-- Price one class -->
-                                        <div class="Price-class text-center">
-                                            <p>
-                                                <span>9.99 USD</span>
-                                                <br>
-                                                <small>One class price</small>
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card body -->
-                            <div class="card-body">
-                                <!-- Description -->
-                                <div class="description-cv">
-                                    <p class="text-center">
+                                    <p class="text-small">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -1251,13 +1264,12 @@
                 <div class="row">
 
                     <!-- First Techers -->
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_one.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-6 col-md-12 image_prof">
+                                        <img src="./assets/images/professor_one.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -1268,7 +1280,7 @@
                                     </div>
                                     <!-- Price and stars -->
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
+                                        <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -1279,7 +1291,7 @@
                                         <br>
 
                                         <!-- Price per class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class more-main">
                                             <p>
                                                 <span>2.00 USD</span>
                                                 <br>
@@ -1288,7 +1300,7 @@
                                         </div>
 
                                         <!-- Price one class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class">
                                             <p>
                                                 <span>9.99 USD</span>
                                                 <br>
@@ -1303,7 +1315,7 @@
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-center">
+                                    <p class="text-small">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -1337,13 +1349,12 @@
                     </div>
 
                     <!-- Seconde teacher -->
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_two.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-6 col-md-12 image_prof">
+                                        <img src="./assets/images/professor_two.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Mohammed ali
@@ -1354,7 +1365,7 @@
                                     </div>
                                     <!-- Price and stars -->
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
+                                        <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -1365,7 +1376,7 @@
                                         <br>
 
                                         <!-- Price per class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class more-main">
                                             <p>
                                                 <span>2.99 USD</span>
                                                 <br>
@@ -1374,7 +1385,7 @@
                                         </div>
 
                                         <!-- Price one class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class">
                                             <p>
                                                 <span>9.00 USD</span>
                                                 <br>
@@ -1389,93 +1400,7 @@
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-center">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </p>
-                                </div>
-                                <!-- Models -->
-                                <div class="model">
-                                    <span>
-                                        <i class="fas fa-clipboard-list"></i>
-                                        Math, Chimi,
-                                    </span>
-                                </div>
-                                <!-- Level -->
-                                <div class="model">
-                                    <span>
-                                        <i class="fas fa-graduation-cap"></i>
-                                        1st GradeBiginner level,
-                                    </span>
-                                </div>
-                            </div>
-                            <!-- Footer Card -->
-                            <div class="card-footer">
-                                <div class="clearfix">
-                                    <div class="float-right">
-                                        <a href="#" class="btn filter-btn">Read more</a>
-                                    </div>
-                                    <div class="float-left">
-                                        <a href="#" class="btn filter-btn">Book teacher</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Three teacher -->
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="card card-teachers">
-                            <div class="card-header">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_three.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
-                                        <div class="name-country text-center">
-                                            <p class="name-prof">
-                                                Ali Nsre
-                                                <br>
-                                                <span class="country">Saudi Arabie</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                        </div>
-
-                                        <br>
-
-                                        <!-- Price per class -->
-                                        <div class="Price-class text-center">
-                                            <p>
-                                                <span>2.00 USD</span>
-                                                <br>
-                                                <small>Contract Price</small>
-                                            </p>
-                                        </div>
-
-                                        <!-- Price one class -->
-                                        <div class="Price-class text-center">
-                                            <p>
-                                                <span>9.99 USD</span>
-                                                <br>
-                                                <small>One class price</small>
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card body -->
-                            <div class="card-body">
-                                <!-- Description -->
-                                <div class="description-cv">
-                                    <p class="text-center">
+                                    <p class="text-small">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -1513,13 +1438,12 @@
                 <div class="row">
 
                     <!-- First Techers -->
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_one.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-6 col-md-12 image_prof">
+                                        <img src="./assets/images/professor_one.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -1530,7 +1454,7 @@
                                     </div>
                                     <!-- Price and stars -->
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
+                                        <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -1541,7 +1465,7 @@
                                         <br>
 
                                         <!-- Price per class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class more-main">
                                             <p>
                                                 <span>2.00 USD</span>
                                                 <br>
@@ -1550,7 +1474,7 @@
                                         </div>
 
                                         <!-- Price one class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class">
                                             <p>
                                                 <span>9.99 USD</span>
                                                 <br>
@@ -1565,7 +1489,7 @@
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-center">
+                                    <p class="text-small">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -1599,13 +1523,12 @@
                     </div>
 
                     <!-- Seconde teacher -->
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-6 col-md-12">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_two.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-6 col-md-12 image_prof">
+                                        <img src="./assets/images/professor_two.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Mohammed ali
@@ -1616,7 +1539,7 @@
                                     </div>
                                     <!-- Price and stars -->
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
+                                        <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -1627,7 +1550,7 @@
                                         <br>
 
                                         <!-- Price per class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class more-main">
                                             <p>
                                                 <span>2.99 USD</span>
                                                 <br>
@@ -1636,7 +1559,7 @@
                                         </div>
 
                                         <!-- Price one class -->
-                                        <div class="Price-class text-center">
+                                        <div class="Price-class">
                                             <p>
                                                 <span>9.00 USD</span>
                                                 <br>
@@ -1651,93 +1574,7 @@
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-center">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </p>
-                                </div>
-                                <!-- Models -->
-                                <div class="model">
-                                    <span>
-                                        <i class="fas fa-clipboard-list"></i>
-                                        Math, Chimi,
-                                    </span>
-                                </div>
-                                <!-- Level -->
-                                <div class="model">
-                                    <span>
-                                        <i class="fas fa-graduation-cap"></i>
-                                        1st GradeBiginner level,
-                                    </span>
-                                </div>
-                            </div>
-                            <!-- Footer Card -->
-                            <div class="card-footer">
-                                <div class="clearfix">
-                                    <div class="float-right">
-                                        <a href="#" class="btn filter-btn">Read more</a>
-                                    </div>
-                                    <div class="float-left">
-                                        <a href="#" class="btn filter-btn">Book teacher</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Three teacher -->
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="card card-teachers">
-                            <div class="card-header">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_three.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
-                                        <div class="name-country text-center">
-                                            <p class="name-prof">
-                                                Ali Nsre
-                                                <br>
-                                                <span class="country">Saudi Arabie</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star">
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                            <i class="fas fa-star active"></i>
-                                        </div>
-
-                                        <br>
-
-                                        <!-- Price per class -->
-                                        <div class="Price-class text-center">
-                                            <p>
-                                                <span>2.00 USD</span>
-                                                <br>
-                                                <small>Contract Price</small>
-                                            </p>
-                                        </div>
-
-                                        <!-- Price one class -->
-                                        <div class="Price-class text-center">
-                                            <p>
-                                                <span>9.99 USD</span>
-                                                <br>
-                                                <small>One class price</small>
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card body -->
-                            <div class="card-body">
-                                <!-- Description -->
-                                <div class="description-cv">
-                                    <p class="text-center">
+                                    <p class="text-small">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>

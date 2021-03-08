@@ -9,6 +9,7 @@
 
 <body>
 
+
     <!-- Strat Header Page -->
     <header class="top_header">
         <nav class="navbar navbar-expand-lg">
@@ -31,26 +32,35 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="how-it-works.html" class="nav-link">How</a>
+                        <a href="how-it-works.html" class="nav-link">How?</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="teachers.html" class="nav-link">Teachers</a>
+                        <a href="list-teachers.html" class="nav-link">Teachers</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="Pricing.html" class="nav-link">Pricing</a>
+                        <a href="promotions.html" class="nav-link">Pricing</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="contact.html" class="nav-link">Contact us</a>
                     </li>
 
                 </ul>
             </div>
-            
-            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mr-auto">
+
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign up</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">As student</a>
+                            <a href="#" class="dropdown-item">As teacher</a>
+                        </div>
+                    </div>
+
                     <li class="nav-item item-anthor active">
                         <a href="#" class="nav-link">
                             Login
@@ -62,135 +72,129 @@
                         </a>
                     </li>
                 </ul>
-            </div> -->
-        </nav>
-
-        <nav class="navbar navbar-expand-lg">
-            <a href="#" class="navbar-brand ">
-                <img src="./assets/images/logo-brand.svg" alt="logo-brand">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mr-auto">
-
-                    <li class="nav-item active">
-                        <a href="index.html" class="nav-link">Classes</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">Contract</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="how-it-works.html" class="nav-link">Profile</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="teachers.html" class="nav-link">Balance</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="Pricing.html" class="nav-link">Reports</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="Pricing.html" class="nav-link">Logout</a>
-                    </li>
-                </ul>
             </div>
-
         </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="image text-center">
+                        <img src="./assets/images/header_sign_up.svg" alt="sign up">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 sign_up">
+                    <div class="title-heading">
+                        <h5 class="custom-heading text-center">Sign up for students</h5>
+                    </div>
+                    <!-- Text -->
+                    <div class="text-sign-up">
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veniam cum dignissimos ea
+                            cumque.
+                            Obcaecati placeat reprehenderit enim cum consequatur, ut, ducimus at odio maxime nulla,
+                            quisquam assumenda
+                            dignissimos est?
+                        </p>
+                    </div>
+                    <!-- End  -->
+                </div>
+            </div>
+        </div>
     </header>
     <!-- End Hedaer Page -->
 
-    <!-- Teachers teacher sign up & how it work -->
+    <!-- Form sign up students -->
     <div class="container">
-        <!-- Form Sign up a teacher -->
-        <div class="row">
-            <!-- Title -->
-            <div class="title sign_up">
-                <h3 class="custom-heading mt-4 mb-2" style="color: dodgerblue;">Student profile</h3>
-                <hr>
-            </div>
-            <!-- End -->
-            <div class="col-12">
-                <form action="">
-                    <!-- First name -->
-                    <div class="form-group">
-                        <label for="">First name</label>
-                        <input type="text" class="form-control" id="" placeholder="First name" required>
-                    </div>
-        
-                    <!-- Last name -->
-                    <div class="form-group">
-                        <label for="">Last name</label>
-                        <input type="text" class="form-control" id="" placeholder="Last name" required>
-                    </div>
-        
-                    <!-- E-mail -->
-                    <div class="form-group">
-                        <label for="">Email address</label>
-                        <input type="email" class="form-control" id="" placeholder="Email address" required>
-                    </div>
-        
-                    <!-- Country -->
-                    <div class="form-group">
-                        <label for="">Country</label>
-                        <br>
-                        <input class="form-control type=" text" id="country-more" />
-                    </div>
-        
-                    <!-- Mobile -->
-                    <div class="form-group">
-                        <label for="">Mobile</label>
-                        <input type="tel" class="form-control" id="" placeholder="Mobile" required>
-                    </div>
-
-                    <!-- Gender -->
-                    <div class="form-group">
-                        <label for="">Gender</label>
-                        <select class="form-control" name="" id="" style="border-radius: .25rem; border-color: #ced4da;">
-                            <option value="" selected disabled>Gender</option>
-                            <option value="">Male</option>
-                            <option value="">Female</option>
-                        </select>
-                    </div>
-                    
-                    <!-- Grade -->
-                    <div class="form-group">
-                        <label for="">Grade</label>
-                        <input type="text" class="form-control" id="" placeholder="Grade" required>
-                    </div>
-        
-        
-                    <!-- Password -->
-                    <div class="form-group">
-                        <label for="">Password</label>
-                        <input type="password" class="form-control" id="" placeholder="Password" required>
-                    </div>
-
-                    <!-- Confirmation Password -->
-                    <div class="form-group">
-                        <label for="">Confirmation password</label>
-                        <input type="password" class="form-control" id="" placeholder="Confirmation password" required>
-                    </div>  
-
-        
-                    <!-- Refferal Code -->
-                    <div class="form-group">
-                        <label for="">Referral code</label>
-                        <input type="number" class="form-control" id="" placeholder="Referral code" required>
-                    </div>
-
-                    <!-- Btn -->
-                    <div class="form-group">
-                        <button class="btn btn-primary">Update</button>
-                    </div>
-                </form>
-            </div>
+        <!-- Title -->
+        <div class="title-heading mt-4">
+            <h5 class="custom-heading text-center">Sign up for students</h5>
         </div>
         <!-- End -->
+        <div class="card sign_up text-center">
+            <!-- Logo Sign up -->
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="logo-sign_up">
+                        <img src="./assets/images/Sign_in_logo.svg" alt="logo-brand" style="height: 120px;">
+                    </div>
+                </div>
+            </div>
+            <!-- Form sign up -->
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">First Name</label>
+                            <input type="text" class="form-control" placeholder="First Name" name="" id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Last Name" name="" id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">E-mail</label>
+                            <input type="email" class="form-control" placeholder="E-mail address" name="" id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Country</label>
+                            <select class="form-control" name="" id="">
+                                <option value="" disabled selected> Choose your country</option>
+                                <option value="">Saudi Arabic</option>
+                                <option value="">USA</option>
+                                <option value="">Maroc</option>
+                                <option value="">Hind</option>
+                                <option value="">Egypt</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Mobile</label>
+                            <input type="tel" class="form-control" placeholder="Number Phone" name="" id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Gender</label>
+                            <select class="form-control" name="" id="">
+                                <option value="" disabled selected> Choose your gender</option>
+                                <option value="">Male</option>
+                                <option value="">Famele</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <input type="Password" class="form-control" placeholder="Password" name="" id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Confirmation Password</label>
+                            <input type="Password" class="form-control" placeholder="Confirmation Password" name=""
+                                id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Code Refferal</label>
+                            <input type="number" class="form-control" placeholder="Code Refferal" name="" id="">
+                        </div>
+
+                        <button class="btn btn-sign-up"> Update Now </button>
+
+                    </form>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="image text-center">
+                        <img src="./assets/images/image_sign_up.svg" alt="image Sign Up">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Teachers teacher sign up & how it work -->
+    <!-- End Form sign up students -->
 
     <!-- Footer Page -->
     <footer class="latest-footer" id="latest-footer">

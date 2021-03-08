@@ -114,9 +114,34 @@ section.more-features .icon-title-text h5 {
 }
 
 
+// Dropdpwn 
+.dropdown-menu.show {
+    width: 100%;
+    background-color: $color-transition;
+}
+
+header.top_header nav ul .dropdown a.dropdown-item {
+    color: white;
+}
+
+a.dropdown-item.line-drop {
+    border-bottom: 1px solid antiquewhite;
+}
+
+// Interface
+.interface nav ul {
+    margin-left:21%; 
+    margin-top: -25px;
+}
+
+
 // Responsive website 
 
 @media (min-width: 300px) and (max-width: 575.98px) {
+
+    nav.navbar.navbar-expand-lg.fixed-top {
+        background-color: $color-e;
+    }
 
     header.top_header nav ul li.item-anthor {
         margin-top: 20px;
@@ -124,7 +149,7 @@ section.more-features .icon-title-text h5 {
     }
 
     header.top_header .image_eduction_one img {
-        margin: 0;
+        margin: 40% 0 0 0;
         height: 275px;
     }
 
@@ -230,6 +255,20 @@ section.more-features .icon-title-text h5 {
         margin: -10px 0;
     }
 
+     // Interface
+     .interface nav ul {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .interface nav ul .dropdown {
+        margin-top: 12px;
+    }
+
+    header.top_header nav ul .dropdown {
+        padding: 10px 20px;
+    }
+
 }
 
 @media (min-width: 417px) and (max-width: 575px) {
@@ -269,13 +308,17 @@ section.more-features .icon-title-text h5 {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 
+    nav.navbar.navbar-expand-lg.fixed-top {
+        background-color: $color-e;
+    }
+
     header.top_header nav ul li.item-anthor {
         margin-top: 20px;
         padding: 10px 25px;
     }
 
     header.top_header .image_eduction_one img {
-        margin: 15px 0;
+        margin: 20% 0 0 0;
     }
 
     header.top_header .link-sign-up a {
@@ -344,6 +387,20 @@ section.more-features .icon-title-text h5 {
         margin: 15px 0 0;
     }
 
+     // Interface
+     .interface nav ul {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .interface nav ul .dropdown {
+        margin-top: 12px;
+    }
+
+    header.top_header nav ul .dropdown {
+        padding: 10px 20px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -353,8 +410,13 @@ section.more-features .icon-title-text h5 {
         padding: 10px 25px;
     }
 
+    // Fixed Top
     header.top_header .image_eduction_one img {
-        margin: 15px 0;
+        margin: 16% 0 5% 0;
+    }
+
+    nav.navbar.navbar-expand-lg.fixed-top {
+        background-color: $color-e;
     }
 
     header.top_header h3.text-heading {
@@ -416,6 +478,20 @@ section.more-features .icon-title-text h5 {
         margin: 0;
     }
 
+    // Interface
+    .interface nav ul {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .interface nav ul .dropdown {
+        margin-top: 12px;
+    }
+
+    header.top_header nav ul .dropdown {
+        padding: 10px 20px;
+    }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -425,7 +501,7 @@ section.more-features .icon-title-text h5 {
     }
 
     header.top_header nav ul li a {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     section.About_us .long-description h5.custom_heading {
@@ -475,7 +551,7 @@ section.more-features .icon-title-text h5 {
 
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1351px) and (min-width: 1200px) {
 
     // Good Responsive
     .col-lg-4.col-md-6.col-sm-6.col-12.add-teacher {

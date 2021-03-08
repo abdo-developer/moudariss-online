@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moudariss | Student sign up</title>
+    <title>Moudariss | Ask for teacher</title>
 </head>
 
 <body>
@@ -31,19 +31,19 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="how-it-works.html" class="nav-link">How it works?</a>
+                        <a href="how-it-works.html" class="nav-link">How?</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="teachers.html" class="nav-link">Teachers</a>
+                        <a href="list-teachers.html" class="nav-link">Teachers</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="Pricing.html" class="nav-link">Pricing</a>
+                        <a href="promotions.html" class="nav-link">Pricing</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="contact.html" class="nav-link">Contact us</a>
                     </li>
 
                 </ul>
@@ -51,6 +51,15 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mr-auto">
+
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign up</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">As student</a>
+                            <a href="#" class="dropdown-item">As teacher</a>
+                        </div>
+                    </div>
+
                     <li class="nav-item item-anthor active">
                         <a href="#" class="nav-link">
                             Login
@@ -63,63 +72,97 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="image text-center">
+                        <img src="./assets/images/header_sign_up.svg" alt="sign up">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 sign_up">
+                    <div class="title-heading">
+                        <h5 class="custom-heading text-center">Sign up for students</h5>
+                    </div>
+                    <!-- Text -->
+                    <div class="text-sign-up">
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veniam cum dignissimos ea
+                            cumque.
+                            Obcaecati placeat reprehenderit enim cum consequatur, ut, ducimus at odio maxime nulla,
+                            quisquam assumenda
+                            dignissimos est?
+                        </p>
+                    </div>
+                    <!-- End  -->
+                </div>
+            </div>
+        </div>
     </header>
     <!-- End Hedaer Page -->
 
-    <!-- Teachers teacher sign up & how it work -->
+
+    <!-- Form ask for teacher -->
     <div class="container">
-        <!-- Form Sign up a teacher -->
-        <div class="row">
-            <!-- Title -->
-            <div class="title sign_up">
-                <h3 class="custom-heading mt-4 mb-2" style="color: dodgerblue;">Ask For Teacher</h3>
-                <hr>
-            </div>
-            <!-- End -->
-            <div class="col-12">
-                <form action="">
-                    <!-- First name -->
-                    <div class="form-group">
-                        <label for="">Subject</label>
-                        <input type="text" class="form-control" id="" placeholder="Subject" required>
-                    </div>
-
-                    <!-- Last name -->
-                    <div class="form-group">
-                        <label for="">Grade</label>
-                        <input type="text" class="form-control" id="" placeholder="Grade" required>
-                    </div>
-
-                    <!-- E-mail -->
-                    <div class="form-group">
-                        <label for="">Period</label>
-                        <input type="email" class="form-control" id="" placeholder="Period" required>
-                    </div>
-
-                    <!-- Mobile -->
-                    <div class="form-group">
-                        <label for="">number of days in the week</label>
-                        <input type="number" class="form-control" id="" placeholder="number of days in the week" required>
-                    </div>
-
-                    <!-- Password -->
-                    <div class="form-group">
-                        <label for="">Other note</label>
-                        <textarea class="form-control" name="" id="" rows="8" placeholder="Please, write an other note"></textarea>
-                    </div>
-
-                    <!-- Btn -->
-                    <div class="form-group">
-                        <button class="btn btn-primary">Submit Now</button>
-                    </div>
-                </form>
-            </div>
+        <!-- Title -->
+        <div class="title-heading mt-4">
+            <h5 class="custom-heading text-center">Ask for teachers</h5>
         </div>
         <!-- End -->
+        <div class="card sign_up text-center">
+            <!-- Logo Sign up -->
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="logo-sign_up">
+                        <img src="./assets/images/Sign_in_logo.svg" alt="logo-brand" style="height: 120px;">
+                    </div>
+                </div>
+            </div>
+            <!-- Form sign up -->
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Subject</label>
+                            <input type="text" class="form-control" placeholder="Subject" name="" id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Grade</label>
+                            <input type="text" class="form-control" placeholder="Grade" name="" id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Period</label>
+                            <input type="text" class="form-control" placeholder="Period" name="" id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">number of days in the week</label>
+                            <input type="number" class="form-control" placeholder="number of days in the week" name="" id="">
+                        </div>
+
+                      <div class="form-group">
+                          <textarea class="form-control" name="" id="" cols="30" rows="7" placeholder="Please, writer anthor notes here..."></textarea>
+                      </div>
+
+                        <button class="btn btn-sign-up"> Submit </button>
+
+                    </form>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="image text-center">
+                        <img src="./assets/images/image_sign_up.svg" alt="image Sign Up">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Teachers teacher sign up & how it work -->
+    <!-- End Form ask for teacher  -->
+
+
 
     <!-- Footer Page -->
     <footer class="latest-footer" id="latest-footer">

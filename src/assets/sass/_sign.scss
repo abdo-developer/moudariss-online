@@ -12,12 +12,34 @@ header.top_header .sign_up {
 .card.sign_up {
     padding: 60px;
     margin-top: 30px;
-    background-color: $color-e;
-    border-radius: 3px;
+    background-color: azure;
+    border-radius: 25px;
+    box-shadow: 0 0 45px 0 rgb(0 0 0 / 15%);
 }
 
-.card.sign_up .form-group input {
+.card.sign_up .form-group input,
+.card.sign_up .form-group select {
     height: 50px;
-    border-radius: 20px;
     border-color: $color-transition;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.card.sign_up .btn-sign-up {
+    background-color: $color-transition;
+    padding: 12px 40px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.card.sign_up .btn-sign-up:hover,
+.card.sign_up .btn-sign-up:active,
+.card.sign_up .btn-sign-up:focus {
+    color: $color-white;
+}
+
+.card.sign_up .image img {
+    margin-top: 35%;
 }

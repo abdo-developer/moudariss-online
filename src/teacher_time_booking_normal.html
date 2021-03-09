@@ -7,7 +7,7 @@
     <title>Moudariss | Teacher Time Booking</title>
 </head>
 
-<body style="background-color: #5ec1fa;">
+<body class="body-booking">
 
     <!-- Strat Header Page -->
     <header class="top_header">
@@ -69,7 +69,7 @@
     <!-- End Hedaer Page -->
 
     <!-- Teachers reservation page -->
-    <div class="container" style="width: 990px;">
+    <div class="container content-section">
         <div class="row bg-white mt-4">
             <!--  booking confirmation -->
             <div class="col-12 text-center">
@@ -79,23 +79,23 @@
             <br>
 
             <!-- End booking submit -->
-            <div class="col-lg-8 col-md-12" style="padding: 0 30px;">
+            <div class="col-lg-8 col-md-12 booking-section">
                 <!-- Header section -->
-                <div class="card" style="border: 0; padding: 0px  10px 5px 0; border-radius: 0.5px; margin-top: -19px;">
-                    <form class="filter-search" style="margin-top: 10%;">
+                <div class="card form-card">
+                    <form class="filter-search filter-search-now">
                         <div class="form-datetime">
                             <div class="form-inline">
-                                <p class="mt-2 mb-2 mr-3" style="color: black;">From</p>
-                                <input type="date" class="form-control" name="" id="" style="width: 50%;">
-                                <a href="#" class="btn filter-btn pro-btn mb-4 ml-4" style="background-color: black;">
+                                <p class="mt-2 mb-2 mr-3 writer">From</p>
+                                <input type="date" class="form-control from-date-top" name="" id="">
+                                <a href="#" class="btn filter-btn pro-btn pro-easy-mode mb-4 ml-4">
                                     Use time map
                                 </a>
                             </div>
 
                             <!-- fORM TO -->
                             <div class="form-inline">
-                                <p class="mt-2 mb-2" style="color: black; margin-right: 36px;">To</p>
-                                <input type="date" class="form-control" name="" id="" style="width: 50%;">
+                                <p class="mt-2 mb-2 writer more-writer">To</p>
+                                <input type="date" class="form-control from-date-top" name="" id="">
                             </div>
                         </div>
 
@@ -147,7 +147,7 @@
                         </div>
                         <!-- end select day -->
                     </form>
-                    <div class="line-bottom" style="border-bottom: 0.5px solid gray; margin-top: 5%; width: 120%; margin-left: -31px;"></div>
+                    <div class="line-bottom xline"></div>
                 </div>
                 <!-- End Header top -->
                 
@@ -157,32 +157,32 @@
                 <!-- Select time -->
                 <div class="row">
                     <!-- Card One -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                            >
                             <div class="time">
                                 <p>1:00 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">All days</p>
+                            <p class="all-days"  >All days</p>
                             <!-- Button sumbit -->
                             <button type="submit" class="btn btn-click"
-                                style="background-color: black; padding: 5px 43px; color: white; font-weight: bold;">Book</button>
+                                 >Book</button>
                         </div>
                     </div>
                 
                     <!-- Card Two -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                            >
                             <div class="time">
                                 <p>1:00 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
+                            <p class="all-days"  >Some days</p>
                             <!-- Button sumbit -->
                             <button type="button" class="btn btn-click" data-toggle="modal" data-target="#CheckeModal"
-                                style="background-color: black; padding: 5px 9px; color: white; font-weight: bold;">
+                                 >
                                 Check & Book
                             </button>
                 
@@ -192,7 +192,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header card-text">
                                             <h5 class="modal-title" id="exampleModalLabel"
-                                                style="background-color: dodgerblue; padding: 7px 14px;">
+                                                 >
                                                 Available  1:00 PM
                                             </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -201,37 +201,37 @@
                                         </div>
                                         <div class="modal-body">
                                             <!-- Time booked -->
-                                            <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                            <span class="mr-3"  >Mon 17 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                            <span class="mr-3"  >Tue 18 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                            <span class="mr-3"  >Wed 19 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                            <span class="mr-3"  >Thu 20 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                            <span class="mr-3"  >Frid 21 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                            <span class="mr-3"  >Sat 22 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                            <span class="mr-3"  >Sun 23 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
@@ -252,32 +252,32 @@
                     </div>
                 
                     <!-- Card Three -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                             >
                             <div class="time">
                                 <p>1:30 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">All days</p>
+                            <p class="all-days"  >All days</p>
                             <!-- Button sumbit -->
                             <button type="submit" class="btn btn-click"
-                                style="background-color: black; padding: 5px 43px; color: white; font-weight: bold;">Book</button>
+                                 >Book</button>
                         </div>
                     </div>
                 
                     <!-- Card Four -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-md-none d-lg-block">
+                        <div class="content-modal-card text-center"
+                             >
                             <div class="time">
                                 <p>1:30 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
+                            <p class="all-days"  >Some days</p>
                             <!-- Button sumbit -->
                             <button type="button" class="btn btn-click" data-toggle="modal" data-target="#ChekModalOne"
-                                style="background-color: black; padding: 5px 9px; color: white; font-weight: bold;">
+                                 >
                                 Check & Book
                             </button>
                 
@@ -287,7 +287,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header card-text">
                                             <h5 class="modal-title" id="exampleModalLabel"
-                                                style="background-color: dodgerblue; padding: 7px 14px;">
+                                                 >
                                                 Available  1:00 PM
                                             </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -296,37 +296,37 @@
                                         </div>
                                         <div class="modal-body">
                                             <!-- Time booked -->
-                                            <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                            <span class="mr-3"  >Mon 17 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                            <span class="mr-3"  >Tue 18 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                            <span class="mr-3"  >Wed 19 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                            <span class="mr-3"  >Thu 20 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                            <span class="mr-3"  >Frid 21 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                            <span class="mr-3"  >Sat 22 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                            <span class="mr-3"  >Sun 23 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
@@ -349,32 +349,32 @@
                 
                 <div class="row mt-4 mb-4">
                     <!-- Card One -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                             >
                             <div class="time">
                                 <p>1:00 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">All days</p>
+                            <p class="all-days"  >All days</p>
                             <!-- Button sumbit -->
                             <button type="submit" class="btn btn-click"
-                                style="background-color: black; padding: 5px 43px; color: white; font-weight: bold;">Book</button>
+                                 >Book</button>
                         </div>
                     </div>
                 
                     <!-- Card Two -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                             >
                             <div class="time">
                                 <p>1:00 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
+                            <p class="all-days"  >Some days</p>
                             <!-- Button sumbit -->
                             <button type="button" class="btn btn-click" data-toggle="modal" data-target="#CheckModalTwo"
-                                style="background-color: black; padding: 5px 9px; color: white; font-weight: bold;">
+                                 >
                                 Check & Book
                             </button>
                 
@@ -384,7 +384,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header card-text">
                                             <h5 class="modal-title" id="exampleModalLabel"
-                                                style="background-color: dodgerblue; padding: 7px 14px;">
+                                                 >
                                                 Available  1:00 PM
                                             </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -393,37 +393,37 @@
                                         </div>
                                         <div class="modal-body">
                                             <!-- Time booked -->
-                                            <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                            <span class="mr-3"  >Mon 17 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                            <span class="mr-3"  >Tue 18 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                            <span class="mr-3"  >Wed 19 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                            <span class="mr-3"  >Thu 20 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                            <span class="mr-3"  >Frid 21 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                            <span class="mr-3"  >Sat 22 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                            <span class="mr-3"  >Sun 23 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
@@ -443,32 +443,32 @@
                     </div>
                 
                     <!-- Card Three -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                             >
                             <div class="time">
                                 <p>1:30 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">All days</p>
+                            <p class="all-days"  >All days</p>
                             <!-- Button sumbit -->
                             <button type="submit" class="btn btn-click"
-                                style="background-color: black; padding: 5px 43px; color: white; font-weight: bold;">Book</button>
+                                 >Book</button>
                         </div>
                     </div>
                 
                     <!-- Card Four -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6  d-md-none d-lg-block">
+                        <div class="content-modal-card text-center"
+                             >
                             <div class="time">
                                 <p>1:30 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
+                            <p class="all-days"  >Some days</p>
                             <!-- Button sumbit -->
                             <button type="button" class="btn btn-click" data-toggle="modal" data-target="#CheckModalFour"
-                                style="background-color: black; padding: 5px 9px; color: white; font-weight: bold;">
+                                 >
                                 Check & Book
                             </button>
                 
@@ -478,7 +478,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header card-text">
                                             <h5 class="modal-title" id="exampleModalLabel"
-                                                style="background-color: dodgerblue; padding: 7px 14px;">
+                                                 >
                                                 Available  1:00 PM
                                             </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -487,37 +487,37 @@
                                         </div>
                                         <div class="modal-body">
                                             <!-- Time booked -->
-                                            <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                            <span class="mr-3">Mon 17 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                            <span class="mr-3"  >Tue 18 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                            <span class="mr-3"  >Wed 19 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                            <span class="mr-3"  >Thu 20 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                            <span class="mr-3"  >Frid 21 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                            <span class="mr-3"  >Sat 22 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                            <span class="mr-3"  >Sun 23 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
@@ -540,32 +540,32 @@
                 
                 <div class="row mb-3">
                     <!-- Card One -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                             >
                             <div class="time">
                                 <p>1:00 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">All days</p>
+                            <p class="all-days"  >All days</p>
                             <!-- Button sumbit -->
                             <button type="submit" class="btn btn-click"
-                                style="background-color: black; padding: 5px 43px; color: white; font-weight: bold;">Book</button>
+                                 >Book</button>
                         </div>
                     </div>
                 
                     <!-- Card Two -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                             >
                             <div class="time">
                                 <p>1:00 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
+                            <p class="all-days"  >Some days</p>
                             <!-- Button sumbit -->
                             <button type="button" class="btn btn-click" data-toggle="modal" data-target="#CheckModalFive"
-                                style="background-color: black; padding: 5px 9px; color: white; font-weight: bold;">
+                                 >
                                 Check & Book
                             </button>
                 
@@ -575,7 +575,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header card-text">
                                             <h5 class="modal-title" id="exampleModalLabel"
-                                                style="background-color: dodgerblue; padding: 7px 14px;">
+                                                 >
                                                 Available  1:00 PM
                                             </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -584,37 +584,37 @@
                                         </div>
                                         <div class="modal-body">
                                             <!-- Time booked -->
-                                            <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                            <span class="mr-3"  >Mon 17 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                            <span class="mr-3"  >Tue 18 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                            <span class="mr-3"  >Wed 19 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                            <span class="mr-3"  >Thu 20 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                            <span class="mr-3"  >Frid 21 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                            <span class="mr-3"  >Sat 22 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                            <span class="mr-3"  >Sun 23 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
@@ -635,32 +635,32 @@
                     </div>
                 
                     <!-- Card Three -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                             >
                             <div class="time">
                                 <p>1:30 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">All days</p>
+                            <p class="all-days"  >All days</p>
                             <!-- Button sumbit -->
                             <button type="submit" class="btn btn-click"
-                                style="background-color: black; padding: 5px 43px; color: white; font-weight: bold;">Book</button>
+                                 >Book</button>
                         </div>
                     </div>
                 
                     <!-- Card Four -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-md-none d-lg-block">
+                        <div class="content-modal-card text-center"
+                             >
                             <div class="time">
                                 <p>1:30 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
+                            <p class="all-days"  >Some days</p>
                             <!-- Button sumbit -->
                             <button type="button" class="btn btn-click" data-toggle="modal" data-target="#CheckModelSix"
-                                style="background-color: black; padding: 5px 9px; color: white; font-weight: bold;">
+                                 >
                                 Check & Book
                             </button>
                 
@@ -670,7 +670,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header card-text">
                                             <h5 class="modal-title" id="exampleModalLabel"
-                                                style="background-color: dodgerblue; padding: 7px 14px;">
+                                                 >
                                                 Available  1:00 PM
                                             </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -679,37 +679,37 @@
                                         </div>
                                         <div class="modal-body">
                                             <!-- Time booked -->
-                                            <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                            <span class="mr-3"  >Mon 17 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                            <span class="mr-3"  >Tue 18 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                            <span class="mr-3"  >Wed 19 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                            <span class="mr-3"  >Thu 20 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                            <span class="mr-3"  >Frid 21 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                            <span class="mr-3"  >Sat 22 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
                 
-                                            <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                            <span class="mr-3"  >Sun 23 Feb</span>
                                             <button class="btn btn-primary" type="submit">Book</button>
                 
                                             <hr>
@@ -734,7 +734,7 @@
                 <br>
 
                 <!-- Title booked time -->
-                <label for="" style="background-color: black; color: white; padding: 5px 50px;">
+                <label for="" class="time-booked-online">
                     Booked Time
                 </label>
                 <!-- End Title -->
@@ -747,18 +747,18 @@
                         <label for="" class="ml-4">Saturday </label>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -768,7 +768,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -778,37 +778,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -829,18 +829,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -850,7 +850,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -860,37 +860,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -911,18 +911,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-lg-block d-md-block">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -932,7 +932,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -942,37 +942,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -999,18 +999,18 @@
                         <label for="" class="ml-4">Sunday</label>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -1020,7 +1020,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -1030,37 +1030,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -1081,18 +1081,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -1102,7 +1102,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -1112,37 +1112,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -1163,18 +1163,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-lg-block d-md-block">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -1184,7 +1184,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -1194,37 +1194,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -1251,18 +1251,18 @@
                         <label for="" class="ml-4">Monday</label>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -1272,7 +1272,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -1282,37 +1282,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -1333,18 +1333,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -1354,7 +1354,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -1364,37 +1364,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -1415,18 +1415,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-lg-block d-md-block">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -1436,7 +1436,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -1446,37 +1446,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -1503,18 +1503,18 @@
                         <label for="" class="ml-4">Tuesday</label>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -1524,7 +1524,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -1534,37 +1534,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -1585,18 +1585,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -1606,7 +1606,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -1616,37 +1616,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -1667,18 +1667,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-lg-block d-md-block">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -1688,7 +1688,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -1698,37 +1698,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -1755,18 +1755,18 @@
                         <label for="" class="ml-4">Thursday</label>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -1776,7 +1776,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -1786,37 +1786,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -1837,18 +1837,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -1858,7 +1858,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -1868,37 +1868,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -1919,18 +1919,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-lg-block d-md-block">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -1940,7 +1940,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -1950,37 +1950,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -2007,18 +2007,18 @@
                         <label for="" class="ml-4">Wednesday</label>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -2028,7 +2028,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -2038,37 +2038,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -2089,18 +2089,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -2110,7 +2110,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -2120,37 +2120,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -2171,18 +2171,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-lg-block d-md-block">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -2192,7 +2192,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -2202,37 +2202,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -2259,18 +2259,18 @@
                         <label for="" class="ml-4">Friday </label>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -2280,7 +2280,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -2290,37 +2290,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -2341,18 +2341,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -2362,7 +2362,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -2372,37 +2372,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -2423,18 +2423,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-lg-block d-md-block">
+                        <div class="content-modal-card text-center"
+                         >
                         <div class="time">
                             <p>1:00 PM</p>
                         </div>
                         <!-- All days -->
-                        <p class="all-days" style="line-height: 5px; color: black;">2 Classes</p>
+                        <p class="all-days"  >2 Classes</p>
                         <!-- Button sumbit -->
                         <button type="button" class="btn btn-click" data-target="#CheckModalManage"
                             data-toggle="modal"
-                            style="font-size: 13.5px; background-color: black; padding: 5px -5px 5px 30.5px; color: white; font-weight: bold;">
+                             >
                             View & manage
                         </button>
 
@@ -2444,7 +2444,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style="background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked  1:00 PM
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -2454,37 +2454,37 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Time booked -->
-                                        <span class="mr-3" style="color: black;">Mon 17 Feb</span>
+                                        <span class="mr-3"  >Mon 17 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Tue 18 Feb</span>
+                                        <span class="mr-3"  >Tue 18 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Wed 19 Feb</span>
+                                        <span class="mr-3"  >Wed 19 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Thu 20 Feb</span>
+                                        <span class="mr-3"  >Thu 20 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Frid 21 Feb</span>
+                                        <span class="mr-3"  >Frid 21 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sat 22 Feb</span>
+                                        <span class="mr-3"  >Sat 22 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
 
-                                        <span class="mr-3" style="color: black;">Sun 23 Feb</span>
+                                        <span class="mr-3"  >Sun 23 Feb</span>
                                         <button class="btn btn-primary" type="submit">Cancel</button>
 
                                         <hr>
@@ -2509,8 +2509,8 @@
                 <!-- View all manage all classes -->
                 <div class="row">
                     <div class="col-12 ml-3">
-                        <button type="button" class="btn btn-primary mt-4" data-toggle="modal"
-                            data-target="#CheckModalClasses" style="background-color: black;">
+                        <button type="button" class="btn btn-primary model-classes mt-4" data-toggle="modal"
+                            data-target="#CheckModalClasses">
                             View & manage all classes
                         </button>
 
@@ -2520,7 +2520,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style=" color: white; background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Booked Classes
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -2536,26 +2536,26 @@
                                             <label for="" class="mb-2">Saturday 21 Feb</label>
                                             <div class="form-inline">
                                                 <div class="col-lg-3 col-md-12">
-                                                    <div class="content text-center"
-                                                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="content-modal-card text-center"
+                                                         >
                                                         <div class="time">
                                                             <p>1:00 PM</p>
                                                         </div>
                                                         <!-- Button sumbit -->
-                                                        <button type="submit" class="btn btn-click"
-                                                            style="background-color: black; padding: 5px 17.5px 5px; color: white; font-weight: bold;">Cancel</button>
+                                                        <button type="submit" class="btn btn-click custom-click"
+                                                             >Cancel</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-3 col-md-12">
-                                                    <div class="content text-center"
-                                                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="content-modal-card text-center"
+                                                         >
                                                         <div class="time">
                                                             <p>1:30 PM</p>
                                                         </div>
                                                         <!-- Button sumbit -->
-                                                        <button type="submit" class="btn btn-click"
-                                                            style="background-color: black; padding: 5px 17.5px 5px; color: white; font-weight: bold;">Cancel</button>
+                                                        <button type="submit" class="btn btn-click custom-click"
+                                                             >Cancel</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2565,26 +2565,26 @@
                                             <label for="" class="mt-3">Sunday 23 Feb</label>
                                             <div class="form-inline">
                                                 <div class="col-lg-3 col-md-12">
-                                                    <div class="content text-center"
-                                                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="content-modal-card text-center"
+                                                         >
                                                         <div class="time">
                                                             <p>1:00 PM</p>
                                                         </div>
                                                         <!-- Button sumbit -->
-                                                        <button type="submit" class="btn btn-click"
-                                                            style="background-color: black; padding: 5px 17.5px 5px; color: white; font-weight: bold;">Cancel</button>
+                                                        <button type="submit" class="btn btn-click custom-click"
+                                                             >Cancel</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-3 col-md-12">
-                                                    <div class="content text-center"
-                                                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="content-modal-card text-center"
+                                                         >
                                                         <div class="time">
                                                             <p>1:30 PM</p>
                                                         </div>
                                                         <!-- Button sumbit -->
-                                                        <button type="submit" class="btn btn-click"
-                                                            style="background-color: black; padding: 5px 17.5px 5px; color: white; font-weight: bold;">Cancel</button>
+                                                        <button type="submit" class="btn btn-click custom-click"
+                                                             >Cancel</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2594,26 +2594,26 @@
                                             <label for="" class="mt-3">Monday 28 Feb</label>
                                             <div class="form-inline">
                                                 <div class="col-lg-3 col-md-12">
-                                                    <div class="content text-center"
-                                                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="content-modal-card text-center"
+                                                         >
                                                         <div class="time">
                                                             <p>1:00 PM</p>
                                                         </div>
                                                         <!-- Button sumbit -->
-                                                        <button type="submit" class="btn btn-click"
-                                                            style="background-color: black; padding: 5px 17.5px 5px; color: white; font-weight: bold;">Cancel</button>
+                                                        <button type="submit" class="btn btn-click custom-click"
+                                                             >Cancel</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-3 col-md-12">
-                                                    <div class="content text-center"
-                                                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="content-modal-card text-center"
+                                                         >
                                                         <div class="time">
                                                             <p>1:30 PM</p>
                                                         </div>
                                                         <!-- Button sumbit -->
-                                                        <button type="submit" class="btn btn-click"
-                                                            style="background-color: black; padding: 5px 17.5px 5px; color: white; font-weight: bold;">Cancel</button>
+                                                        <button type="submit" class="btn btn-click custom-click"
+                                                             >Cancel</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2623,26 +2623,26 @@
                                             <label for="" class="mt-3">Thursday 1 Mar</label>
                                             <div class="form-inline">
                                                 <div class="col-lg-3 col-md-12">
-                                                    <div class="content text-center"
-                                                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="content-modal-card text-center"
+                                                         >
                                                         <div class="time">
                                                             <p>1:00 PM</p>
                                                         </div>
                                                         <!-- Button sumbit -->
-                                                        <button type="submit" class="btn btn-click"
-                                                            style="background-color: black; padding: 5px 17.5px 5px; color: white; font-weight: bold;">Cancel</button>
+                                                        <button type="submit" class="btn btn-click custom-click"
+                                                             >Cancel</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-3 col-md-12">
-                                                    <div class="content text-center"
-                                                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="content-modal-card text-center"
+                                                         >
                                                         <div class="time">
                                                             <p>1:30 PM</p>
                                                         </div>
                                                         <!-- Button sumbit -->
-                                                        <button type="submit" class="btn btn-click"
-                                                            style="background-color: black; padding: 5px 17.5px 5px; color: white; font-weight: bold;">Cancel</button>
+                                                        <button type="submit" class="btn btn-click custom-click"
+                                                             >Cancel</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2652,26 +2652,26 @@
                                             <label for="" class="mt-3">Friday 2 Mar</label>
                                             <div class="form-inline">
                                                 <div class="col-lg-3 col-md-12">
-                                                    <div class="content text-center"
-                                                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="content-modal-card text-center"
+                                                         >
                                                         <div class="time">
                                                             <p>1:00 PM</p>
                                                         </div>
                                                         <!-- Button sumbit -->
-                                                        <button type="submit" class="btn btn-click"
-                                                            style="background-color: black; padding: 5px 17.5px 5px; color: white; font-weight: bold;">Cancel</button>
+                                                        <button type="submit" class="btn btn-click custom-click"
+                                                             >Cancel</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-3 col-md-12">
-                                                    <div class="content text-center"
-                                                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="content-modal-card text-center"
+                                                         >
                                                         <div class="time">
                                                             <p>1:30 PM</p>
                                                         </div>
                                                         <!-- Button sumbit -->
-                                                        <button type="submit" class="btn btn-click"
-                                                            style="background-color: black; padding: 5px 17.5px 5px; color: white; font-weight: bold;">Cancel</button>
+                                                        <button type="submit" class="btn btn-click custom-click"
+                                                             >Cancel</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2681,26 +2681,26 @@
                                             <label for="" class="mt-3">Wednesday 3 Mar</label>
                                             <div class="form-inline">
                                                 <div class="col-lg-3 col-md-12">
-                                                    <div class="content text-center"
-                                                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="content-modal-card text-center"
+                                                         >
                                                         <div class="time">
                                                             <p>1:00 PM</p>
                                                         </div>
                                                         <!-- Button sumbit -->
-                                                        <button type="submit" class="btn btn-click"
-                                                            style="background-color: black; padding: 5px 17.5px 5px; color: white; font-weight: bold;">Cancel</button>
+                                                        <button type="submit" class="btn btn-click custom-click"
+                                                             >Cancel</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-3 col-md-12">
-                                                    <div class="content text-center"
-                                                        style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                    <div class="content-modal-card text-center"
+                                                         >
                                                         <div class="time">
                                                             <p>1:30 PM</p>
                                                         </div>
                                                         <!-- Button sumbit -->
-                                                        <button type="submit" class="btn btn-click"
-                                                            style="background-color: black; padding: 5px 17.5px 5px; color: white; font-weight: bold;">Cancel</button>
+                                                        <button type="submit" class="btn btn-click custom-click"
+                                                             >Cancel</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2738,8 +2738,8 @@
                 <!-- Button -->
                 <div class="row">
                     <div class="col-12">
-                        <button href="#" type="button" class="btn btn-primary" data-toggle="modal" data-target="#CheckModalPlan"
-                            style="padding: 7px 22px; background-color: dodgerblue;">
+                        <button href="#" type="button" class="btn btn-primary modalPlan" data-toggle="modal" data-target="#CheckModalPlan"
+                             >
                             Classes time plan
                         </button>
 
@@ -2749,7 +2749,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header card-text">
                                         <h5 class="modal-title" id="exampleModalLabel"
-                                            style=" color: white; background-color: dodgerblue; padding: 7px 14px;">
+                                             >
                                             Classes time plan
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -2763,8 +2763,8 @@
                                         <br>
                                         <div class="form-inline">
                                             <div class="col-lg-3 col-md-12">
-                                                <div class="content text-center"
-                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                <div class="content-modal-card text-center"
+                                                     >
                                                     <div class="time">
                                                         <p>1:00 PM</p>
                                                     </div>
@@ -2772,8 +2772,8 @@
                                             </div>
 
                                             <div class="col-lg-3 col-md-12">
-                                                <div class="content text-center"
-                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                <div class="content-modal-card text-center"
+                                                     >
                                                     <div class="time">
                                                         <p>1:30 PM</p>
                                                     </div>
@@ -2786,8 +2786,8 @@
                                         <br>
                                         <div class="form-inline">
                                             <div class="col-lg-3 col-md-12">
-                                                <div class="content text-center"
-                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                <div class="content-modal-card text-center"
+                                                     >
                                                     <div class="time">
                                                         <p>1:00 PM</p>
                                                     </div>
@@ -2795,8 +2795,8 @@
                                             </div>
 
                                             <div class="col-lg-3 col-md-12">
-                                                <div class="content text-center"
-                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                <div class="content-modal-card text-center"
+                                                     >
                                                     <div class="time">
                                                         <p>1:30 PM</p>
                                                     </div>
@@ -2809,8 +2809,8 @@
                                         <br>
                                         <div class="form-inline">
                                             <div class="col-lg-3 col-md-12">
-                                                <div class="content text-center"
-                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                <div class="content-modal-card text-center"
+                                                     >
                                                     <div class="time">
                                                         <p>1:00 PM</p>
                                                     </div>
@@ -2818,8 +2818,8 @@
                                             </div>
 
                                             <div class="col-lg-3 col-md-12">
-                                                <div class="content text-center"
-                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                <div class="content-modal-card text-center"
+                                                     >
                                                     <div class="time">
                                                         <p>1:30 PM</p>
                                                     </div>
@@ -2832,8 +2832,8 @@
                                         <br>
                                         <div class="form-inline">
                                             <div class="col-lg-3 col-md-12">
-                                                <div class="content text-center"
-                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                <div class="content-modal-card text-center"
+                                                     >
                                                     <div class="time">
                                                         <p>1:00 PM</p>
                                                     </div>
@@ -2841,8 +2841,8 @@
                                             </div>
 
                                             <div class="col-lg-3 col-md-12">
-                                                <div class="content text-center"
-                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                <div class="content-modal-card text-center"
+                                                     >
                                                     <div class="time">
                                                         <p>1:30 PM</p>
                                                     </div>
@@ -2855,8 +2855,8 @@
                                         <br>
                                         <div class="form-inline">
                                             <div class="col-lg-3 col-md-12">
-                                                <div class="content text-center"
-                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                <div class="content-modal-card text-center"
+                                                     >
                                                     <div class="time">
                                                         <p>1:00 PM</p>
                                                     </div>
@@ -2864,8 +2864,8 @@
                                             </div>
 
                                             <div class="col-lg-3 col-md-12">
-                                                <div class="content text-center"
-                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                <div class="content-modal-card text-center"
+                                                     >
                                                     <div class="time">
                                                         <p>1:30 PM</p>
                                                     </div>
@@ -2878,8 +2878,8 @@
                                         <br>
                                         <div class="form-inline">
                                             <div class="col-lg-3 col-md-12">
-                                                <div class="content text-center"
-                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                <div class="content-modal-card text-center"
+                                                     >
                                                     <div class="time">
                                                         <p>1:00 PM</p>
                                                     </div>
@@ -2887,8 +2887,8 @@
                                             </div>
 
                                             <div class="col-lg-3 col-md-12">
-                                                <div class="content text-center"
-                                                    style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                                                <div class="content-modal-card text-center"
+                                                     >
                                                     <div class="time">
                                                         <p>1:30 PM</p>
                                                     </div>
@@ -2904,16 +2904,16 @@
                                         <br>
 
                                         <div class="form-inline">
-                                            <a href="#" class="mr-4">
-                                                <img src="./assets/images/printer.png" alt="printer" style="height: 45px;">
+                                            <a href="#" class="mr-4 icon-png">
+                                                <img src="./assets/images/printer.png" alt="printer"  >
                                             </a>
 
-                                            <a href="#" class="mr-4">
-                                                <img src="./assets/images/excel.png" alt="excel" style="height: 45px;">
+                                            <a href="#" class="mr-4 icon-png">
+                                                <img src="./assets/images/excel.png" alt="excel"  >
                                             </a>
 
-                                            <a href="#">
-                                                <img src="./assets/images/pdf.png" alt="pdf" style="height: 45px;">
+                                            <a href="#" class="icon-png">
+                                                <img src="./assets/images/pdf.png" alt="pdf"  >
                                             </a>
                                         </div>
                                         <!-- End -->
@@ -2933,7 +2933,7 @@
                 <!-- Button -->
                 <div class="row mb-4">
                     <div class="col-12">
-                        <a href="#" class="btn filter-btn pro-btn" style="padding: 0 31.5px;">Confirm & pay <br>
+                        <a href="#" class="btn filter-btn pro-btn custom-pro-btn">Confirm & pay <br>
                             110.00 USD</a>
                     </div>
                 </div>
@@ -2942,10 +2942,10 @@
 
             <!-- Teacher info -->
             <div class="col-lg-4 col-md-12">
-                <div class="card text-center" style=" border-left: 1px solid gray; margin-top: 12px;">
-                    <div class="card-body">
+                <div class="card card-info-teachers text-center">
+                    <div class="card-body teacher-img">
                         <img src="./assets/images/professor_one.jpg" alt="professor_one"
-                            style="height: 120px; border-radius: 50%; margin: 20px 0;">
+                            >
                         <h5 class="card-title">Noura Hamdaan</h5>
                         <p class="card-text">
                             <i class="fas fa-map-marker-alt mr-1" style="color: dodgerblue;"></i>
@@ -2971,7 +2971,7 @@
                     </div>
                 </div>
 
-                <div class="line-bottom" style="border-bottom: 1px solid gray;"></div>
+                <div class="line-bottom Yline"></div>
 
 
             </div>

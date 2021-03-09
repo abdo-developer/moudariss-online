@@ -115,13 +115,17 @@ section.more-features .icon-title-text h5 {
 
 
 // Dropdpwn 
-.dropdown-menu.show {
+.dropdown-menu.show.drop-list-student {
     width: 100%;
     background-color: $color-transition;
 }
 
+.dropdown-menu.show {
+    background-color: $color-transition;
+}
+
 header.top_header nav ul .dropdown a.dropdown-item {
-    color: white;
+    color: black;
 }
 
 a.dropdown-item.line-drop {
@@ -212,6 +216,160 @@ small.local-global-teacher {
     .badge img {
         height: 35px; 
         float: left;
+    }
+
+    // Interface teacher
+    ul.navbar-nav.mr-auto.interface-teacher {
+        margin-left:18.5%; 
+        margin-top: -25px;
+    }
+
+    ul.navbar-nav.mr-auto.interface-teacher.c-white {
+        margin-left:18.5%; 
+        margin-top: -25px;
+    }
+
+    // Filter Phone
+    a.btn.btn-primary.mt-4.mb-2.ml-2 {
+        padding: 17px 34px;
+    }
+
+    .content-modal-card {
+        color: white; 
+        background-color: rgb(52, 159, 247); 
+        border-radius: 12px; font-weight: bold;
+    }
+
+    .form-card {
+        border: 0; 
+        padding: 0px  10px 5px 0; 
+        border-radius: 0.5px; 
+        margin-top: -19px;
+    }
+
+    .body-booking {
+        background-color: #5ec1fa;
+    }
+
+    .from-date-top {
+        width: 50%;
+    }
+
+    .pro-easy-mode {
+        background-color: black;
+    }
+
+    .filter-search-now {
+        margin-top: 10%;
+    }
+
+    .booking-section {
+        padding: 0 30px;
+    }
+
+    .line-bottom.xline {
+        border-bottom: 0.5px solid gray; 
+        margin-top: 5%; 
+        width: 120%; 
+        margin-left: -31px;
+    }
+
+    .writer {
+        color: black;
+    }
+
+    .more-writer {
+        margin-right: 36px;
+    }
+
+    .all-days {
+        line-height: 5px; 
+        color: black;
+    }
+
+    .btn.btn-click {
+        background-color: black; 
+        padding: 5px 43px; color: white; 
+        font-weight: bold;
+    }
+
+    button.btn.btn-click {
+        background-color: black; 
+        padding: 5px 9px; 
+        color: white; 
+        font-weight: bold;
+    }
+
+    .content-modal-card .modal.fade .modal-header h5 {
+        background-color: dodgerblue; 
+        padding: 7px 14px;
+    }
+
+    .modal-body span {
+        color: black;
+    }
+
+    .time-booked-online {
+        background-color: black; 
+        color: white; 
+        padding: 5px 50px;
+    }
+
+    .content-modal-card.text-center .btn.btn-click {
+        font-size: 13.5px; 
+        background-color: black; 
+        padding: 5px -5px 5px 30.5px; 
+        color: white; 
+        font-weight: bold;
+    }
+
+    button.model-classes {
+        background-color: black;
+    }
+
+    .modal-title #exampleModalLabel {
+        color: white; 
+        background-color: dodgerblue; 
+        padding: 7px 14px;
+    }
+
+    .custom-click {
+        background-color: black; 
+        padding: 5px 17.5px 5px; 
+        color: white; 
+        font-weight: bold;
+    }
+
+    .modalPlan {
+        padding: 7px 22px;
+        background-color: dodgerblue;
+    }
+
+    .form-inline .icon-png img {
+        height: 45px;
+    }
+
+    .custom-pro-btn {
+        padding: 0 31.5px;
+    }
+
+    .card-info-teachers {
+        border-left: 1px solid gray;
+        margin-top: 12px;
+    }
+
+    .card-body.teacher-img img {
+        height: 120px; 
+        border-radius: 50%; 
+        margin: 20px 0;
+    }
+
+    .line-bottom.Yline {
+        border-bottom: 1px solid gray;
+    }
+
+    .content-modal-card.text-center {
+        margin-top: 20px;
     }
 
 // Responsive website 
@@ -367,7 +525,7 @@ small.local-global-teacher {
     }
 
       // Btn promotions
-      ul.list-inline.mt-3.text-center li {
+    ul.list-inline.mt-3.text-center li {
         display: block;
     }
     ul.list-inline.mt-3.text-center li a {
@@ -380,7 +538,7 @@ small.local-global-teacher {
     }
 
      // Filter desktop none
-     .filter-desktop {
+    .filter-desktop {
         display: none;
     }
 
@@ -394,6 +552,43 @@ small.local-global-teacher {
 
     section.card {
         padding: 10px;
+    }
+
+     // navbar teacher
+    ul.navbar-nav.mr-auto.interface-teacher {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    ul.navbar-nav.mr-auto.interface-teacher .dropdown {
+        display: block;
+        margin-top: 12px;
+    }
+
+    ul.navbar-nav.mr-auto.interface-teacher.c-white {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    ul.navbar-nav.mr-auto.interface-teacher.c-white .dropdown {
+        display: block;
+        margin-top: 12px;
+    }
+
+    ul.list-inline.text-center.local-and-global-teacher {
+        margin: 5px;
+    }
+
+    .show-filter-phone {
+        margin: 0 50px;
+    }
+
+    .form-inline.male-famele {
+        display: block;
+    }
+
+    .container.content-section {
+        width: 100%;
     }
 
 }
@@ -555,11 +750,39 @@ small.local-global-teacher {
         margin-left: 25%;
     }
 
-    
     .btn-page-teacher {
         margin-top: 0;
     }
 
+     // navbar teacher
+    ul.navbar-nav.mr-auto.interface-teacher {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    ul.navbar-nav.mr-auto.interface-teacher .dropdown {
+        display: block;
+        margin-top: 12px;
+    }
+
+    ul.navbar-nav.mr-auto.interface-teacher.c-white {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    ul.navbar-nav.mr-auto.interface-teacher.c-white .dropdown {
+        display: block;
+        margin-top: 12px;
+    }
+
+     // Filter Phone
+     .show-filter-phone {
+        margin: 0 180px;
+    }
+
+    .container.content-section {
+        width: 100%;
+    }
 
 }
 
@@ -680,6 +903,32 @@ small.local-global-teacher {
         margin-top: 0;
     }
 
+    // navbar teacher
+    ul.navbar-nav.mr-auto.interface-teacher {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    ul.navbar-nav.mr-auto.interface-teacher .dropdown {
+        display: block;
+        margin-top: 12px;
+    }
+
+    ul.navbar-nav.mr-auto.interface-teacher.c-white {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    ul.navbar-nav.mr-auto.interface-teacher.c-white .dropdown {
+        display: block;
+        margin-top: 12px;
+    }
+
+    // Filter Phone
+    .show-filter-phone {
+        margin: 0 275px;
+    }
+
 
 }
 
@@ -777,6 +1026,15 @@ small.local-global-teacher {
         display: none;
     }
 
+    // List card teachers
+    .card-list-teachers {
+        text-align: center;
+    }
+
+    .price-stars-contracts {
+        text-align: center;
+    }
+
 
 }
 
@@ -796,6 +1054,15 @@ small.local-global-teacher {
     .filter-phone {
         display: none;
     }
+
+    // List card teachers
+    .card-list-teachers {
+        text-align: center;
+    }
+
+    .price-stars-contracts {
+        text-align: center;
+    }
 }
 
 @media (max-width: 2000px) and (min-width: 1400px) {
@@ -805,5 +1072,14 @@ small.local-global-teacher {
 
     .filter-phone {
         display: none;
+    }
+
+    // List card teachers
+    .card-list-teachers {
+        text-align: center;
+    }
+
+    .price-stars-contracts {
+        text-align: center;
     }
 }

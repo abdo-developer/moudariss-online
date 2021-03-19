@@ -34,6 +34,8 @@ header.top_header .sign_up {
 }
 
 .card.sign_up .btn-sign-up {
+    color: $color-antiquewhite;
+    font-weight: bold;
     background-color: $color-transition;
     padding: 12px 40px;
     border-radius: 25px;

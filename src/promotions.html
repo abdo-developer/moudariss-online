@@ -11,7 +11,7 @@
 
     <!-- Strat Header Page -->
     <header class="top_header">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg">
             <a href="#" class="navbar-brand">
                 <img src="./assets/images/Sign_in_logo.svg" alt="logo-brand">
             </a>
@@ -80,7 +80,7 @@
                         <h4 class="custom-heading text-center">packages and Promotions</h4>
                     </div>
                     <div class="description-paragraph">
-                        <p class="mb-4 text-center" style="margin-top: -8px;">
+                        <p class="mb-4 text-center">
                             Here you can choose your suitable plan for your private classes,
                             save time and money by selecting promotion, start by selecting your grade,
                             then book your package at special price.
@@ -105,7 +105,7 @@
         <div class="row">
 
             <!-- Star Filter -->
-            <div class="col-12 col-lg-3 bg-fliter" style="height: 100%;">
+            <div class="col-12 col-lg-3 bg-fliter" id="ShowFilter">
 
                 <form class="filter-search">
                     <!-- Start Levels, we have Six levels -->
@@ -262,13 +262,13 @@
                     <!-- End To teach me -->
                     <br>
                     <!-- Start Within the cost of -->
-                    <label for="" style="margin-top: 20px;">Within the cost of </label>
+                    <label for="" class="mt-4">Within the cost of </label>
                     <br>
 
                     <p>
                         <input type="text" id="Price" class="form-check-input" readonly>
                         <br>
-                        <span style="font-weight: bold;">Per one class</span>
+                        <span>Per one class</span>
                     </p>
 
                     <div id="slider-range-one"></div>
@@ -279,7 +279,7 @@
                     <p>
                         <input type="text" id="Promotions" class="form-check-input" readonly>
                         <br>
-                        <span style="font-weight: bold;">For the package</span>
+                        <span>For the package</span>
                     </p>
 
                     <div id="slider-range-promotion"></div>
@@ -344,14 +344,14 @@
                             <!-- I can have up to -->
                             <div class="drop-list">
                                 <label for="">I can have up to</label>
-                                <input type="number" class="form-control" style="height: 40px; width: 50%;">
+                                <input type="number" class="form-control form-have-up">
                                 <label for="">Classes per day</label>
                             </div>
 
                             <!-- Refernces no. -->
                             <div class="refernece-no">
                                 <label for="" class="mt-2">Ref. no.</label>
-                                <input type="text" class="form-control" style="height: 40px;">
+                                <input type="text" class="form-control">
                             </div>
                             <!-- Search now -->
                             <button type="submit" class="btn filter-btn form-control">Search Now</button>
@@ -397,22 +397,21 @@
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="item">
                                 <div class="heading">
-                                    <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
+                                    <h5 class="mt-2">Semesterly package</h5>
                                 </div>
 
                                 <!-- Start Classes -->
-                                <p class="text-center mt-2" style="font-weight: bold;">
+                                <p class="text-center mt-2">
                                     22 Classes
                                 </p>
                                 <!-- End Classes -->
 
                                 <!-- Start Counrty and price -->
-                                <div class="clearfix" style="margin: -14px 0;">
+                                <div class="clearfix mt-4 mb-4">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="image-flags">
-                                                <img src="./assets/images/egypt.svg" alt="egypt"
-                                                    style="height: 60px; margin-top: 10px;">
+                                                <img src="./assets/images/egypt.svg" alt="egypt">
                                                 <br>
                                                 <small class="local-global-teacher">Local teachers</small>
                                             </div>
@@ -433,22 +432,20 @@
                                 <br>
                                 <div class="to-teach">
                                     <span class="title">
-                                        <i class="fas fa-clipboard-list"
-                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                        <i class="fas fa-clipboard-list"></i>
                                         To teach
                                     </span>
 
                                     <br>
 
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         Math, Chimi, History and
-                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlan">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlan">more</a>
                                     </span>
 
                                 </div>
                                 <!-- Learning by language of -->
-                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                <div class="learning-by text-center">
                                     <p class="text-center">
                                         Learning by english language
                                     </p>
@@ -457,15 +454,13 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">
-                                        <i class="fas fa-graduation-cap"
-                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                    <p class="title text-left m-0">
+                                        <i class="fas fa-graduation-cap"></i>
                                         For student in
                                     </p>
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         1st GradeBiginner level and
-                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlan">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlan">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -484,7 +479,7 @@
                                 <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
-                                    <span class="week-day text-left" style="font-size: 15px;">
+                                    <span class="week-day text-left">
                                         Saturday, Sunday, Monday,
                                         Tuesday and Wednesday
                                     </span>
@@ -507,7 +502,7 @@
                                 <!-- Link list inline -->
                                 <ul class="list-inline mt-3 text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" type="submit" class="btn btn-primary">
+                                        <a href="#" type="submit" class="btn btn-primary ">
                                             Buy now
                                         </a>
                                     </li>
@@ -535,14 +530,13 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                <p class="text-center mt-2">
                                                     22 Classes
                                                 </p>
                                                 <!-- Start Counrty and price -->
-                                                <div class="clearfix" style="margin: -14px 0;">
-                                                    <div class="float-left">
-                                                        <img src="./assets/images/egypt.svg" alt="egypt"
-                                                            style="height: 60px; margin-top: 10px;">
+                                                <div class="clearfix mt-4 mb-4">
+                                                    <div class="float-left image-flags">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt">
                                                         <br>
                                                         <small class="local-global-teacher">Local teachers</small>
                                                     </div>
@@ -563,21 +557,20 @@
                                                 <br>
                                                 <div class="to-teach text-left">
                                                     <span class="title">
-                                                        <i class="fas fa-clipboard-list"
-                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        <i class="fas fa-clipboard-list"></i>
                                                         To teach
                                                     </span>
 
                                                     <br>
 
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         Math, Chimi, History
                                                         Philo, English, French
                                                     </span>
 
                                                 </div>
                                                 <!-- Learning by language of -->
-                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                <div class="learning-by text-center">
                                                     <p class="text-center">
                                                         Learning by english language
                                                     </p>
@@ -586,12 +579,11 @@
 
                                                 <!-- For student in -->
                                                 <div class="student-in text-left">
-                                                    <p class="title text-left" style="margin:0;">
-                                                        <i class="fas fa-graduation-cap"
-                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                    <p class="title text-left m-0">
+                                                        <i class="fas fa-graduation-cap"></i>
                                                         For student in
                                                     </p>
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         1st GradeBiginner level and Level second
                                                     </span>
 
@@ -600,7 +592,7 @@
                                                     <!-- More Details -->
                                                     <label for="" class="mb-0">Classes can be in</label>
                                                     <br>
-                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                    <span class="week-day text-left">
                                                         Saturday, Sunday, Monday,
                                                         Tuesday and Wednesday
                                                     </span>
@@ -631,8 +623,8 @@
                                                     <!-- End Price Promotion -->
 
                                                     <div class="buy-now text-center">
-                                                        <button href="#" type="submit" class="btn btn-primary"
-                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                        <button href="#" type="submit"
+                                                            class="btn btn-primary button-checkout">
                                                             Buy now
                                                         </button>
                                                     </div>
@@ -656,22 +648,21 @@
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="item">
                                 <div class="heading">
-                                    <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
+                                    <h5 class="mt-2">Semesterly package</h5>
                                 </div>
 
                                 <!-- Start Classes -->
-                                <p class="text-center mt-2" style="font-weight: bold;">
+                                <p class="text-center mt-2">
                                     22 Classes
                                 </p>
                                 <!-- End Classes -->
 
                                 <!-- Start Counrty and price -->
-                                <div class="clearfix" style="margin: -14px 0;">
+                                <div class="clearfix mt-4 mb-4">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="image-flags">
-                                                <img src="./assets/images/globe.svg" alt="globe"
-                                                    style="height: 60px; margin-top: 10px;">
+                                                <img src="./assets/images/globe.svg" alt="globe">
                                                 <br>
                                                 <small class="local-global-teacher">Local teachers</small>
                                             </div>
@@ -692,22 +683,20 @@
                                 <br>
                                 <div class="to-teach">
                                     <span class="title">
-                                        <i class="fas fa-clipboard-list"
-                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                        <i class="fas fa-clipboard-list"></i>
                                         To teach
                                     </span>
 
                                     <br>
 
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         Math, Chimi, History and
-                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanOne">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanOne">more</a>
                                     </span>
 
                                 </div>
                                 <!-- Learning by language of -->
-                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                <div class="learning-by text-center">
                                     <p class="text-center">
                                         Learning by english language
                                     </p>
@@ -716,15 +705,13 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">
-                                        <i class="fas fa-graduation-cap"
-                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                    <p class="title text-left m-0">
+                                        <i class="fas fa-graduation-cap"></i>
                                         For student in
                                     </p>
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         1st GradeBiginner level and
-                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanOne">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanOne">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -743,7 +730,7 @@
                                 <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
-                                    <span class="week-day text-left" style="font-size: 15px;">
+                                    <span class="week-day text-left">
                                         Saturday, Sunday, Monday,
                                         Tuesday and Wednesday
                                     </span>
@@ -766,7 +753,7 @@
                                 <!-- Link list inline -->
                                 <ul class="list-inline mt-3 text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" type="submit" class="btn btn-primary">
+                                        <a href="#" type="submit" class="btn btn-primary ">
                                             Buy now
                                         </a>
                                     </li>
@@ -794,14 +781,13 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                <p class="text-center mt-2">
                                                     22 Classes
                                                 </p>
                                                 <!-- Start Counrty and price -->
-                                                <div class="clearfix" style="margin: -14px 0;">
+                                                <div class="clearfix mt-4 mb-4">
                                                     <div class="float-left">
-                                                        <img src="./assets/images/globe.svg" alt="Global"
-                                                            style="height: 60px; margin-top: 10px;">
+                                                        <img src="./assets/images/globe.svg" alt="Global">
                                                         <br>
                                                         <small class="local-global-teacher">Local teachers</small>
                                                     </div>
@@ -819,21 +805,20 @@
                                                 <br>
                                                 <div class="to-teach text-left">
                                                     <span class="title">
-                                                        <i class="fas fa-clipboard-list"
-                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        <i class="fas fa-clipboard-list"></i>
                                                         To teach
                                                     </span>
 
                                                     <br>
 
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         Math, Chimi, History
                                                         Philo, English, French
                                                     </span>
 
                                                 </div>
                                                 <!-- Learning by language of -->
-                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                <div class="learning-by text-center">
                                                     <p class="text-center">
                                                         Learning by english language
                                                     </p>
@@ -842,12 +827,11 @@
 
                                                 <!-- For student in -->
                                                 <div class="student-in text-left">
-                                                    <p class="title text-left" style="margin:0;">
-                                                        <i class="fas fa-graduation-cap"
-                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                    <p class="title text-left m-0">
+                                                        <i class="fas fa-graduation-cap"></i>
                                                         For student in
                                                     </p>
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         1st GradeBiginner level and Level second
                                                     </span>
 
@@ -856,7 +840,7 @@
                                                     <!-- More Details -->
                                                     <label for="" class="mb-0">Classes can be in</label>
                                                     <br>
-                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                    <span class="week-day text-left">
                                                         Saturday, Sunday, Monday,
                                                         Tuesday and Wednesday
                                                     </span>
@@ -887,8 +871,8 @@
                                                     <!-- End Price Promotion -->
 
                                                     <div class="buy-now text-center">
-                                                        <button href="#" type="submit" class="btn btn-primary"
-                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                        <button href="#" type="submit"
+                                                            class="btn btn-primary button-checkout">
                                                             Buy now
                                                         </button>
                                                     </div>
@@ -912,22 +896,21 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 d-md-none d-lg-block">
                             <div class="item">
                                 <div class="heading">
-                                    <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
+                                    <h5 class="mt-2">Semesterly package</h5>
                                 </div>
 
                                 <!-- Start Classes -->
-                                <p class="text-center mt-2" style="font-weight: bold;">
+                                <p class="text-center mt-2">
                                     22 Classes
                                 </p>
                                 <!-- End Classes -->
 
                                 <!-- Start Counrty and price -->
-                                <div class="clearfix" style="margin: -14px 0;">
+                                <div class="clearfix mt-4 mb-4">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="image-flags">
-                                                <img src="./assets/images/egypt.svg" alt="egypt"
-                                                    style="height: 60px; margin-top: 10px;">
+                                                <img src="./assets/images/egypt.svg" alt="egypt">
                                                 <br>
                                                 <small class="local-global-teacher">Local teachers</small>
                                             </div>
@@ -948,22 +931,20 @@
                                 <br>
                                 <div class="to-teach">
                                     <span class="title">
-                                        <i class="fas fa-clipboard-list"
-                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                        <i class="fas fa-clipboard-list"></i>
                                         To teach
                                     </span>
 
                                     <br>
 
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         Math, Chimi, History and
-                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanTwo">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanTwo">more</a>
                                     </span>
 
                                 </div>
                                 <!-- Learning by language of -->
-                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                <div class="learning-by text-center">
                                     <p class="text-center">
                                         Learning by english language
                                     </p>
@@ -972,15 +953,13 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">
-                                        <i class="fas fa-graduation-cap"
-                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                    <p class="title text-left m-0">
+                                        <i class="fas fa-graduation-cap"></i>
                                         For student in
                                     </p>
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         1st GradeBiginner level and
-                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanTwo">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanTwo">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -999,7 +978,7 @@
                                 <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
-                                    <span class="week-day text-left" style="font-size: 15px;">
+                                    <span class="week-day text-left">
                                         Saturday, Sunday, Monday,
                                         Tuesday and Wednesday
                                     </span>
@@ -1022,7 +1001,7 @@
                                 <!-- Link list inline -->
                                 <ul class="list-inline mt-3 text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" type="submit" class="btn btn-primary">
+                                        <a href="#" type="submit" class="btn btn-primary ">
                                             Buy now
                                         </a>
                                     </li>
@@ -1051,14 +1030,13 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                <p class="text-center mt-2">
                                                     22 Classes
                                                 </p>
                                                 <!-- Start Counrty and price -->
-                                                <div class="clearfix" style="margin: -14px 0;">
+                                                <div class="clearfix mt-4 mb-4">
                                                     <div class="float-left">
-                                                        <img src="./assets/images/egypt.svg" alt="egypt"
-                                                            style="height: 60px; margin-top: 10px;">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt">
                                                         <br>
                                                         <small class="local-global-teacher">Local teachers</small>
                                                     </div>
@@ -1076,21 +1054,20 @@
                                                 <br>
                                                 <div class="to-teach text-left">
                                                     <span class="title">
-                                                        <i class="fas fa-clipboard-list"
-                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        <i class="fas fa-clipboard-list"></i>
                                                         To teach
                                                     </span>
 
                                                     <br>
 
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         Math, Chimi, History
                                                         Philo, English, French
                                                     </span>
 
                                                 </div>
                                                 <!-- Learning by language of -->
-                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                <div class="learning-by text-center">
                                                     <p class="text-center">
                                                         Learning by english language
                                                     </p>
@@ -1099,12 +1076,11 @@
 
                                                 <!-- For student in -->
                                                 <div class="student-in text-left">
-                                                    <p class="title text-left" style="margin:0;">
-                                                        <i class="fas fa-graduation-cap"
-                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                    <p class="title text-left m-0">
+                                                        <i class="fas fa-graduation-cap"></i>
                                                         For student in
                                                     </p>
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         1st GradeBiginner level and Level second
                                                     </span>
 
@@ -1113,7 +1089,7 @@
                                                     <!-- More Details -->
                                                     <label for="" class="mb-0">Classes can be in</label>
                                                     <br>
-                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                    <span class="week-day text-left">
                                                         Saturday, Sunday, Monday,
                                                         Tuesday and Wednesday
                                                     </span>
@@ -1144,8 +1120,8 @@
                                                     <!-- End Price Promotion -->
 
                                                     <div class="buy-now text-center">
-                                                        <button href="#" type="submit" class="btn btn-primary"
-                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                        <button href="#" type="submit"
+                                                            class="btn btn-primary button-checkout">
                                                             Buy now
                                                         </button>
                                                     </div>
@@ -1172,22 +1148,21 @@
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="item">
                                 <div class="heading">
-                                    <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
+                                    <h5 class="mt-2">Semesterly package</h5>
                                 </div>
 
                                 <!-- Start Classes -->
-                                <p class="text-center mt-2" style="font-weight: bold;">
+                                <p class="text-center mt-2">
                                     22 Classes
                                 </p>
                                 <!-- End Classes -->
 
                                 <!-- Start Counrty and price -->
-                                <div class="clearfix" style="margin: -14px 0;">
+                                <div class="clearfix mt-4 mb-4">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="image-flags">
-                                                <img src="./assets/images/egypt.svg" alt="egypt"
-                                                    style="height: 60px; margin-top: 10px;">
+                                                <img src="./assets/images/egypt.svg" alt="egypt">
                                                 <br>
                                                 <small class="local-global-teacher">Local teachers</small>
                                             </div>
@@ -1208,22 +1183,20 @@
                                 <br>
                                 <div class="to-teach">
                                     <span class="title">
-                                        <i class="fas fa-clipboard-list"
-                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                        <i class="fas fa-clipboard-list"></i>
                                         To teach
                                     </span>
 
                                     <br>
 
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         Math, Chimi, History and
-                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlan">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlan">more</a>
                                     </span>
 
                                 </div>
                                 <!-- Learning by language of -->
-                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                <div class="learning-by text-center">
                                     <p class="text-center">
                                         Learning by english language
                                     </p>
@@ -1232,15 +1205,13 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">
-                                        <i class="fas fa-graduation-cap"
-                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                    <p class="title text-left m-0">
+                                        <i class="fas fa-graduation-cap"></i>
                                         For student in
                                     </p>
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         1st GradeBiginner level and
-                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlan">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlan">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -1259,7 +1230,7 @@
                                 <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
-                                    <span class="week-day text-left" style="font-size: 15px;">
+                                    <span class="week-day text-left">
                                         Saturday, Sunday, Monday,
                                         Tuesday and Wednesday
                                     </span>
@@ -1282,7 +1253,7 @@
                                 <!-- Link list inline -->
                                 <ul class="list-inline mt-3 text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" type="submit" class="btn btn-primary">
+                                        <a href="#" type="submit" class="btn btn-primary ">
                                             Buy now
                                         </a>
                                     </li>
@@ -1310,14 +1281,13 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                <p class="text-center mt-2">
                                                     22 Classes
                                                 </p>
                                                 <!-- Start Counrty and price -->
-                                                <div class="clearfix" style="margin: -14px 0;">
+                                                <div class="clearfix mt-4 mb-4">
                                                     <div class="float-left">
-                                                        <img src="./assets/images/egypt.svg" alt="egypt"
-                                                            style="height: 60px; margin-top: 10px;">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt">
                                                         <br>
                                                         <small class="local-global-teacher">Local teachers</small>
                                                     </div>
@@ -1335,21 +1305,20 @@
                                                 <br>
                                                 <div class="to-teach text-left">
                                                     <span class="title">
-                                                        <i class="fas fa-clipboard-list"
-                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        <i class="fas fa-clipboard-list"></i>
                                                         To teach
                                                     </span>
 
                                                     <br>
 
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         Math, Chimi, History
                                                         Philo, English, French
                                                     </span>
 
                                                 </div>
                                                 <!-- Learning by language of -->
-                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                <div class="learning-by text-center">
                                                     <p class="text-center">
                                                         Learning by english language
                                                     </p>
@@ -1358,12 +1327,11 @@
 
                                                 <!-- For student in -->
                                                 <div class="student-in text-left">
-                                                    <p class="title text-left" style="margin:0;">
-                                                        <i class="fas fa-graduation-cap"
-                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                    <p class="title text-left m-0">
+                                                        <i class="fas fa-graduation-cap"></i>
                                                         For student in
                                                     </p>
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         1st GradeBiginner level and Level second
                                                     </span>
 
@@ -1372,7 +1340,7 @@
                                                     <!-- More Details -->
                                                     <label for="" class="mb-0">Classes can be in</label>
                                                     <br>
-                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                    <span class="week-day text-left">
                                                         Saturday, Sunday, Monday,
                                                         Tuesday and Wednesday
                                                     </span>
@@ -1403,8 +1371,8 @@
                                                     <!-- End Price Promotion -->
 
                                                     <div class="buy-now text-center">
-                                                        <button href="#" type="submit" class="btn btn-primary"
-                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                        <button href="#" type="submit"
+                                                            class="btn btn-primary button-checkout">
                                                             Buy now
                                                         </button>
                                                     </div>
@@ -1428,22 +1396,21 @@
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="item">
                                 <div class="heading">
-                                    <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
+                                    <h5 class="mt-2">Semesterly package</h5>
                                 </div>
 
                                 <!-- Start Classes -->
-                                <p class="text-center mt-2" style="font-weight: bold;">
+                                <p class="text-center mt-2">
                                     22 Classes
                                 </p>
                                 <!-- End Classes -->
 
                                 <!-- Start Counrty and price -->
-                                <div class="clearfix" style="margin: -14px 0;">
+                                <div class="clearfix mt-4 mb-4">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="image-flags">
-                                                <img src="./assets/images/egypt.svg" alt="egypt"
-                                                    style="height: 60px; margin-top: 10px;">
+                                                <img src="./assets/images/egypt.svg" alt="egypt">
                                                 <br>
                                                 <small class="local-global-teacher">Local teachers</small>
                                             </div>
@@ -1464,22 +1431,20 @@
                                 <br>
                                 <div class="to-teach">
                                     <span class="title">
-                                        <i class="fas fa-clipboard-list"
-                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                        <i class="fas fa-clipboard-list"></i>
                                         To teach
                                     </span>
 
                                     <br>
 
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         Math, Chimi, History and
-                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanOne">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanOne">more</a>
                                     </span>
 
                                 </div>
                                 <!-- Learning by language of -->
-                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                <div class="learning-by text-center">
                                     <p class="text-center">
                                         Learning by english language
                                     </p>
@@ -1488,15 +1453,13 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">
-                                        <i class="fas fa-graduation-cap"
-                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                    <p class="title text-left m-0">
+                                        <i class="fas fa-graduation-cap"></i>
                                         For student in
                                     </p>
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         1st GradeBiginner level and
-                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanOne">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanOne">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -1515,7 +1478,7 @@
                                 <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
-                                    <span class="week-day text-left" style="font-size: 15px;">
+                                    <span class="week-day text-left">
                                         Saturday, Sunday, Monday,
                                         Tuesday and Wednesday
                                     </span>
@@ -1538,7 +1501,7 @@
                                 <!-- Link list inline -->
                                 <ul class="list-inline mt-3 text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" type="submit" class="btn btn-primary">
+                                        <a href="#" type="submit" class="btn btn-primary ">
                                             Buy now
                                         </a>
                                     </li>
@@ -1566,14 +1529,13 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                <p class="text-center mt-2">
                                                     22 Classes
                                                 </p>
                                                 <!-- Start Counrty and price -->
-                                                <div class="clearfix" style="margin: -14px 0;">
+                                                <div class="clearfix mt-4 mb-4">
                                                     <div class="float-left">
-                                                        <img src="./assets/images/globe.svg" alt="Global"
-                                                            style="height: 60px; margin-top: 10px;">
+                                                        <img src="./assets/images/globe.svg" alt="Global">
                                                         <br>
                                                         <small class="local-global-teacher">Local teachers</small>
                                                     </div>
@@ -1591,21 +1553,20 @@
                                                 <br>
                                                 <div class="to-teach text-left">
                                                     <span class="title">
-                                                        <i class="fas fa-clipboard-list"
-                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        <i class="fas fa-clipboard-list"></i>
                                                         To teach
                                                     </span>
 
                                                     <br>
 
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         Math, Chimi, History
                                                         Philo, English, French
                                                     </span>
 
                                                 </div>
                                                 <!-- Learning by language of -->
-                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                <div class="learning-by text-center">
                                                     <p class="text-center">
                                                         Learning by english language
                                                     </p>
@@ -1614,12 +1575,11 @@
 
                                                 <!-- For student in -->
                                                 <div class="student-in text-left">
-                                                    <p class="title text-left" style="margin:0;">
-                                                        <i class="fas fa-graduation-cap"
-                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                    <p class="title text-left m-0">
+                                                        <i class="fas fa-graduation-cap"></i>
                                                         For student in
                                                     </p>
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         1st GradeBiginner level and Level second
                                                     </span>
 
@@ -1628,7 +1588,7 @@
                                                     <!-- More Details -->
                                                     <label for="" class="mb-0">Classes can be in</label>
                                                     <br>
-                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                    <span class="week-day text-left">
                                                         Saturday, Sunday, Monday,
                                                         Tuesday and Wednesday
                                                     </span>
@@ -1659,8 +1619,8 @@
                                                     <!-- End Price Promotion -->
 
                                                     <div class="buy-now text-center">
-                                                        <button href="#" type="submit" class="btn btn-primary"
-                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                        <button href="#" type="submit"
+                                                            class="btn btn-primary button-checkout">
                                                             Buy now
                                                         </button>
                                                     </div>
@@ -1684,22 +1644,21 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 d-md-none d-lg-block">
                             <div class="item">
                                 <div class="heading">
-                                    <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
+                                    <h5 class="mt-2">Semesterly package</h5>
                                 </div>
 
                                 <!-- Start Classes -->
-                                <p class="text-center mt-2" style="font-weight: bold;">
+                                <p class="text-center mt-2">
                                     22 Classes
                                 </p>
                                 <!-- End Classes -->
 
                                 <!-- Start Counrty and price -->
-                                <div class="clearfix" style="margin: -14px 0;">
+                                <div class="clearfix mt-4 mb-4">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="image-flags">
-                                                <img src="./assets/images/egypt.svg" alt="egypt"
-                                                    style="height: 60px; margin-top: 10px;">
+                                                <img src="./assets/images/egypt.svg" alt="egypt">
                                                 <br>
                                                 <small class="local-global-teacher">Local teachers</small>
                                             </div>
@@ -1720,22 +1679,20 @@
                                 <br>
                                 <div class="to-teach">
                                     <span class="title">
-                                        <i class="fas fa-clipboard-list"
-                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                        <i class="fas fa-clipboard-list"></i>
                                         To teach
                                     </span>
 
                                     <br>
 
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         Math, Chimi, History and
-                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanTwo">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanTwo">more</a>
                                     </span>
 
                                 </div>
                                 <!-- Learning by language of -->
-                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                <div class="learning-by text-center">
                                     <p class="text-center">
                                         Learning by english language
                                     </p>
@@ -1744,15 +1701,13 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">
-                                        <i class="fas fa-graduation-cap"
-                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                    <p class="title text-left m-0">
+                                        <i class="fas fa-graduation-cap"></i>
                                         For student in
                                     </p>
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         1st GradeBiginner level and
-                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanTwo">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanTwo">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -1771,7 +1726,7 @@
                                 <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
-                                    <span class="week-day text-left" style="font-size: 15px;">
+                                    <span class="week-day text-left">
                                         Saturday, Sunday, Monday,
                                         Tuesday and Wednesday
                                     </span>
@@ -1794,7 +1749,7 @@
                                 <!-- Link list inline -->
                                 <ul class="list-inline mt-3 text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" type="submit" class="btn btn-primary">
+                                        <a href="#" type="submit" class="btn btn-primary ">
                                             Buy now
                                         </a>
                                     </li>
@@ -1823,14 +1778,13 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                <p class="text-center mt-2">
                                                     22 Classes
                                                 </p>
                                                 <!-- Start Counrty and price -->
-                                                <div class="clearfix" style="margin: -14px 0;">
+                                                <div class="clearfix mt-4 mb-4">
                                                     <div class="float-left">
-                                                        <img src="./assets/images/egypt.svg" alt="egypt"
-                                                            style="height: 60px; margin-top: 10px;">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt">
                                                         <br>
                                                         <small class="local-global-teacher">Local teachers</small>
                                                     </div>
@@ -1848,21 +1802,20 @@
                                                 <br>
                                                 <div class="to-teach text-left">
                                                     <span class="title">
-                                                        <i class="fas fa-clipboard-list"
-                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        <i class="fas fa-clipboard-list"></i>
                                                         To teach
                                                     </span>
 
                                                     <br>
 
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         Math, Chimi, History
                                                         Philo, English, French
                                                     </span>
 
                                                 </div>
                                                 <!-- Learning by language of -->
-                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                <div class="learning-by text-center">
                                                     <p class="text-center">
                                                         Learning by english language
                                                     </p>
@@ -1871,12 +1824,11 @@
 
                                                 <!-- For student in -->
                                                 <div class="student-in text-left">
-                                                    <p class="title text-left" style="margin:0;">
-                                                        <i class="fas fa-graduation-cap"
-                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                    <p class="title text-left m-0">
+                                                        <i class="fas fa-graduation-cap"></i>
                                                         For student in
                                                     </p>
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         1st GradeBiginner level and Level second
                                                     </span>
 
@@ -1885,7 +1837,7 @@
                                                     <!-- More Details -->
                                                     <label for="" class="mb-0">Classes can be in</label>
                                                     <br>
-                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                    <span class="week-day text-left">
                                                         Saturday, Sunday, Monday,
                                                         Tuesday and Wednesday
                                                     </span>
@@ -1916,8 +1868,8 @@
                                                     <!-- End Price Promotion -->
 
                                                     <div class="buy-now text-center">
-                                                        <button href="#" type="submit" class="btn btn-primary"
-                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                        <button href="#" type="submit"
+                                                            class="btn btn-primary button-checkout">
                                                             Buy now
                                                         </button>
                                                     </div>
@@ -1944,22 +1896,21 @@
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="item">
                                 <div class="heading">
-                                    <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
+                                    <h5 class="mt-2">Semesterly package</h5>
                                 </div>
 
                                 <!-- Start Classes -->
-                                <p class="text-center mt-2" style="font-weight: bold;">
+                                <p class="text-center mt-2">
                                     22 Classes
                                 </p>
                                 <!-- End Classes -->
 
                                 <!-- Start Counrty and price -->
-                                <div class="clearfix" style="margin: -14px 0;">
+                                <div class="clearfix mt-4 mb-4">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="image-flags">
-                                                <img src="./assets/images/egypt.svg" alt="egypt"
-                                                    style="height: 60px; margin-top: 10px;">
+                                                <img src="./assets/images/egypt.svg" alt="egypt">
                                                 <br>
                                                 <small class="local-global-teacher">Local teachers</small>
                                             </div>
@@ -1980,22 +1931,20 @@
                                 <br>
                                 <div class="to-teach">
                                     <span class="title">
-                                        <i class="fas fa-clipboard-list"
-                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                        <i class="fas fa-clipboard-list"></i>
                                         To teach
                                     </span>
 
                                     <br>
 
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         Math, Chimi, History and
-                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlan">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlan">more</a>
                                     </span>
 
                                 </div>
                                 <!-- Learning by language of -->
-                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                <div class="learning-by text-center">
                                     <p class="text-center">
                                         Learning by english language
                                     </p>
@@ -2004,15 +1953,13 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">
-                                        <i class="fas fa-graduation-cap"
-                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                    <p class="title text-left m-0">
+                                        <i class="fas fa-graduation-cap"></i>
                                         For student in
                                     </p>
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         1st GradeBiginner level and
-                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlan">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlan">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -2031,7 +1978,7 @@
                                 <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
-                                    <span class="week-day text-left" style="font-size: 15px;">
+                                    <span class="week-day text-left">
                                         Saturday, Sunday, Monday,
                                         Tuesday and Wednesday
                                     </span>
@@ -2054,7 +2001,7 @@
                                 <!-- Link list inline -->
                                 <ul class="list-inline mt-3 text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" type="submit" class="btn btn-primary">
+                                        <a href="#" type="submit" class="btn btn-primary ">
                                             Buy now
                                         </a>
                                     </li>
@@ -2082,14 +2029,13 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                <p class="text-center mt-2">
                                                     22 Classes
                                                 </p>
                                                 <!-- Start Counrty and price -->
-                                                <div class="clearfix" style="margin: -14px 0;">
+                                                <div class="clearfix mt-4 mb-4">
                                                     <div class="float-left">
-                                                        <img src="./assets/images/egypt.svg" alt="egypt"
-                                                            style="height: 60px; margin-top: 10px;">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt">
                                                         <br>
                                                         <small class="local-global-teacher">Local teachers</small>
                                                     </div>
@@ -2107,21 +2053,20 @@
                                                 <br>
                                                 <div class="to-teach text-left">
                                                     <span class="title">
-                                                        <i class="fas fa-clipboard-list"
-                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        <i class="fas fa-clipboard-list"></i>
                                                         To teach
                                                     </span>
 
                                                     <br>
 
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         Math, Chimi, History
                                                         Philo, English, French
                                                     </span>
 
                                                 </div>
                                                 <!-- Learning by language of -->
-                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                <div class="learning-by text-center">
                                                     <p class="text-center">
                                                         Learning by english language
                                                     </p>
@@ -2130,12 +2075,11 @@
 
                                                 <!-- For student in -->
                                                 <div class="student-in text-left">
-                                                    <p class="title text-left" style="margin:0;">
-                                                        <i class="fas fa-graduation-cap"
-                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                    <p class="title text-left m-0">
+                                                        <i class="fas fa-graduation-cap"></i>
                                                         For student in
                                                     </p>
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         1st GradeBiginner level and Level second
                                                     </span>
 
@@ -2144,7 +2088,7 @@
                                                     <!-- More Details -->
                                                     <label for="" class="mb-0">Classes can be in</label>
                                                     <br>
-                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                    <span class="week-day text-left">
                                                         Saturday, Sunday, Monday,
                                                         Tuesday and Wednesday
                                                     </span>
@@ -2175,8 +2119,8 @@
                                                     <!-- End Price Promotion -->
 
                                                     <div class="buy-now text-center">
-                                                        <button href="#" type="submit" class="btn btn-primary"
-                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                        <button href="#" type="submit"
+                                                            class="btn btn-primary button-checkout">
                                                             Buy now
                                                         </button>
                                                     </div>
@@ -2200,22 +2144,21 @@
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="item">
                                 <div class="heading">
-                                    <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
+                                    <h5 class="mt-2">Semesterly package</h5>
                                 </div>
 
                                 <!-- Start Classes -->
-                                <p class="text-center mt-2" style="font-weight: bold;">
+                                <p class="text-center mt-2">
                                     22 Classes
                                 </p>
                                 <!-- End Classes -->
 
                                 <!-- Start Counrty and price -->
-                                <div class="clearfix" style="margin: -14px 0;">
+                                <div class="clearfix mt-4 mb-4">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="image-flags">
-                                                <img src="./assets/images/egypt.svg" alt="egypt"
-                                                    style="height: 60px; margin-top: 10px;">
+                                                <img src="./assets/images/egypt.svg" alt="egypt">
                                                 <br>
                                                 <small class="local-global-teacher">Local teachers</small>
                                             </div>
@@ -2236,22 +2179,20 @@
                                 <br>
                                 <div class="to-teach">
                                     <span class="title">
-                                        <i class="fas fa-clipboard-list"
-                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                        <i class="fas fa-clipboard-list"></i>
                                         To teach
                                     </span>
 
                                     <br>
 
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         Math, Chimi, History and
-                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanOne">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanOne">more</a>
                                     </span>
 
                                 </div>
                                 <!-- Learning by language of -->
-                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                <div class="learning-by text-center">
                                     <p class="text-center">
                                         Learning by english language
                                     </p>
@@ -2260,15 +2201,13 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">
-                                        <i class="fas fa-graduation-cap"
-                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                    <p class="title text-left m-0">
+                                        <i class="fas fa-graduation-cap"></i>
                                         For student in
                                     </p>
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         1st GradeBiginner level and
-                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanOne">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanOne">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -2287,7 +2226,7 @@
                                 <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
-                                    <span class="week-day text-left" style="font-size: 15px;">
+                                    <span class="week-day text-left">
                                         Saturday, Sunday, Monday,
                                         Tuesday and Wednesday
                                     </span>
@@ -2310,7 +2249,7 @@
                                 <!-- Link list inline -->
                                 <ul class="list-inline mt-3 text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" type="submit" class="btn btn-primary">
+                                        <a href="#" type="submit" class="btn btn-primary ">
                                             Buy now
                                         </a>
                                     </li>
@@ -2338,14 +2277,13 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                <p class="text-center mt-2">
                                                     22 Classes
                                                 </p>
                                                 <!-- Start Counrty and price -->
-                                                <div class="clearfix" style="margin: -14px 0;">
+                                                <div class="clearfix mt-4 mb-4">
                                                     <div class="float-left">
-                                                        <img src="./assets/images/globe.svg" alt="Global"
-                                                            style="height: 60px; margin-top: 10px;">
+                                                        <img src="./assets/images/globe.svg" alt="Global">
                                                         <br>
                                                         <small class="local-global-teacher">Local teachers</small>
                                                     </div>
@@ -2363,21 +2301,20 @@
                                                 <br>
                                                 <div class="to-teach text-left">
                                                     <span class="title">
-                                                        <i class="fas fa-clipboard-list"
-                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        <i class="fas fa-clipboard-list"></i>
                                                         To teach
                                                     </span>
 
                                                     <br>
 
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         Math, Chimi, History
                                                         Philo, English, French
                                                     </span>
 
                                                 </div>
                                                 <!-- Learning by language of -->
-                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                <div class="learning-by text-center">
                                                     <p class="text-center">
                                                         Learning by english language
                                                     </p>
@@ -2386,12 +2323,11 @@
 
                                                 <!-- For student in -->
                                                 <div class="student-in text-left">
-                                                    <p class="title text-left" style="margin:0;">
-                                                        <i class="fas fa-graduation-cap"
-                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                    <p class="title text-left m-0">
+                                                        <i class="fas fa-graduation-cap"></i>
                                                         For student in
                                                     </p>
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         1st GradeBiginner level and Level second
                                                     </span>
 
@@ -2400,7 +2336,7 @@
                                                     <!-- More Details -->
                                                     <label for="" class="mb-0">Classes can be in</label>
                                                     <br>
-                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                    <span class="week-day text-left">
                                                         Saturday, Sunday, Monday,
                                                         Tuesday and Wednesday
                                                     </span>
@@ -2431,8 +2367,8 @@
                                                     <!-- End Price Promotion -->
 
                                                     <div class="buy-now text-center">
-                                                        <button href="#" type="submit" class="btn btn-primary"
-                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                        <button href="#" type="submit"
+                                                            class="btn btn-primary button-checkout">
                                                             Buy now
                                                         </button>
                                                     </div>
@@ -2456,22 +2392,21 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 d-md-none d-lg-block">
                             <div class="item">
                                 <div class="heading">
-                                    <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
+                                    <h5 class="mt-2">Semesterly package</h5>
                                 </div>
 
                                 <!-- Start Classes -->
-                                <p class="text-center mt-2" style="font-weight: bold;">
+                                <p class="text-center mt-2">
                                     22 Classes
                                 </p>
                                 <!-- End Classes -->
 
                                 <!-- Start Counrty and price -->
-                                <div class="clearfix" style="margin: -14px 0;">
+                                <div class="clearfix mt-4 mb-4">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="image-flags">
-                                                <img src="./assets/images/egypt.svg" alt="egypt"
-                                                    style="height: 60px; margin-top: 10px;">
+                                                <img src="./assets/images/egypt.svg" alt="egypt">
                                                 <br>
                                                 <small class="local-global-teacher">Local teachers</small>
                                             </div>
@@ -2492,22 +2427,20 @@
                                 <br>
                                 <div class="to-teach">
                                     <span class="title">
-                                        <i class="fas fa-clipboard-list"
-                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                        <i class="fas fa-clipboard-list"></i>
                                         To teach
                                     </span>
 
                                     <br>
 
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         Math, Chimi, History and
-                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanTwo">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanTwo">more</a>
                                     </span>
 
                                 </div>
                                 <!-- Learning by language of -->
-                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                <div class="learning-by text-center">
                                     <p class="text-center">
                                         Learning by english language
                                     </p>
@@ -2516,15 +2449,13 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">
-                                        <i class="fas fa-graduation-cap"
-                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                    <p class="title text-left m-0">
+                                        <i class="fas fa-graduation-cap"></i>
                                         For student in
                                     </p>
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         1st GradeBiginner level and
-                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanTwo">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanTwo">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -2543,7 +2474,7 @@
                                 <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
-                                    <span class="week-day text-left" style="font-size: 15px;">
+                                    <span class="week-day text-left">
                                         Saturday, Sunday, Monday,
                                         Tuesday and Wednesday
                                     </span>
@@ -2566,7 +2497,7 @@
                                 <!-- Link list inline -->
                                 <ul class="list-inline mt-3 text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" type="submit" class="btn btn-primary">
+                                        <a href="#" type="submit" class="btn btn-primary ">
                                             Buy now
                                         </a>
                                     </li>
@@ -2595,14 +2526,13 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                <p class="text-center mt-2">
                                                     22 Classes
                                                 </p>
                                                 <!-- Start Counrty and price -->
-                                                <div class="clearfix" style="margin: -14px 0;">
+                                                <div class="clearfix mt-4 mb-4">
                                                     <div class="float-left">
-                                                        <img src="./assets/images/egypt.svg" alt="egypt"
-                                                            style="height: 60px; margin-top: 10px;">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt">
                                                         <br>
                                                         <small class="local-global-teacher">Local teachers</small>
                                                     </div>
@@ -2620,21 +2550,20 @@
                                                 <br>
                                                 <div class="to-teach text-left">
                                                     <span class="title">
-                                                        <i class="fas fa-clipboard-list"
-                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        <i class="fas fa-clipboard-list"></i>
                                                         To teach
                                                     </span>
 
                                                     <br>
 
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         Math, Chimi, History
                                                         Philo, English, French
                                                     </span>
 
                                                 </div>
                                                 <!-- Learning by language of -->
-                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                <div class="learning-by text-center">
                                                     <p class="text-center">
                                                         Learning by english language
                                                     </p>
@@ -2643,12 +2572,11 @@
 
                                                 <!-- For student in -->
                                                 <div class="student-in text-left">
-                                                    <p class="title text-left" style="margin:0;">
-                                                        <i class="fas fa-graduation-cap"
-                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                    <p class="title text-left m-0">
+                                                        <i class="fas fa-graduation-cap"></i>
                                                         For student in
                                                     </p>
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         1st GradeBiginner level and Level second
                                                     </span>
 
@@ -2657,7 +2585,7 @@
                                                     <!-- More Details -->
                                                     <label for="" class="mb-0">Classes can be in</label>
                                                     <br>
-                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                    <span class="week-day text-left">
                                                         Saturday, Sunday, Monday,
                                                         Tuesday and Wednesday
                                                     </span>
@@ -2688,8 +2616,8 @@
                                                     <!-- End Price Promotion -->
 
                                                     <div class="buy-now text-center">
-                                                        <button href="#" type="submit" class="btn btn-primary"
-                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                        <button href="#" type="submit"
+                                                            class="btn btn-primary button-checkout">
                                                             Buy now
                                                         </button>
                                                     </div>
@@ -2716,22 +2644,21 @@
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="item">
                                 <div class="heading">
-                                    <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
+                                    <h5 class="mt-2">Semesterly package</h5>
                                 </div>
 
                                 <!-- Start Classes -->
-                                <p class="text-center mt-2" style="font-weight: bold;">
+                                <p class="text-center mt-2">
                                     22 Classes
                                 </p>
                                 <!-- End Classes -->
 
                                 <!-- Start Counrty and price -->
-                                <div class="clearfix" style="margin: -14px 0;">
+                                <div class="clearfix mt-4 mb-4">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="image-flags">
-                                                <img src="./assets/images/egypt.svg" alt="egypt"
-                                                    style="height: 60px; margin-top: 10px;">
+                                                <img src="./assets/images/egypt.svg" alt="egypt">
                                                 <br>
                                                 <small class="local-global-teacher">Local teachers</small>
                                             </div>
@@ -2752,22 +2679,20 @@
                                 <br>
                                 <div class="to-teach">
                                     <span class="title">
-                                        <i class="fas fa-clipboard-list"
-                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                        <i class="fas fa-clipboard-list"></i>
                                         To teach
                                     </span>
 
                                     <br>
 
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         Math, Chimi, History and
-                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlan">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlan">more</a>
                                     </span>
 
                                 </div>
                                 <!-- Learning by language of -->
-                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                <div class="learning-by text-center">
                                     <p class="text-center">
                                         Learning by english language
                                     </p>
@@ -2776,15 +2701,13 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">
-                                        <i class="fas fa-graduation-cap"
-                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                    <p class="title text-left m-0">
+                                        <i class="fas fa-graduation-cap"></i>
                                         For student in
                                     </p>
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         1st GradeBiginner level and
-                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlan">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlan">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -2803,7 +2726,7 @@
                                 <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
-                                    <span class="week-day text-left" style="font-size: 15px;">
+                                    <span class="week-day text-left">
                                         Saturday, Sunday, Monday,
                                         Tuesday and Wednesday
                                     </span>
@@ -2826,7 +2749,7 @@
                                 <!-- Link list inline -->
                                 <ul class="list-inline mt-3 text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" type="submit" class="btn btn-primary">
+                                        <a href="#" type="submit" class="btn btn-primary ">
                                             Buy now
                                         </a>
                                     </li>
@@ -2854,14 +2777,13 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                <p class="text-center mt-2">
                                                     22 Classes
                                                 </p>
                                                 <!-- Start Counrty and price -->
-                                                <div class="clearfix" style="margin: -14px 0;">
+                                                <div class="clearfix mt-4 mb-4">
                                                     <div class="float-left">
-                                                        <img src="./assets/images/egypt.svg" alt="egypt"
-                                                            style="height: 60px; margin-top: 10px;">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt">
                                                         <br>
                                                         <small class="local-global-teacher">Local teachers</small>
                                                     </div>
@@ -2879,21 +2801,20 @@
                                                 <br>
                                                 <div class="to-teach text-left">
                                                     <span class="title">
-                                                        <i class="fas fa-clipboard-list"
-                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        <i class="fas fa-clipboard-list"></i>
                                                         To teach
                                                     </span>
 
                                                     <br>
 
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         Math, Chimi, History
                                                         Philo, English, French
                                                     </span>
 
                                                 </div>
                                                 <!-- Learning by language of -->
-                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                <div class="learning-by text-center">
                                                     <p class="text-center">
                                                         Learning by english language
                                                     </p>
@@ -2902,12 +2823,11 @@
 
                                                 <!-- For student in -->
                                                 <div class="student-in text-left">
-                                                    <p class="title text-left" style="margin:0;">
-                                                        <i class="fas fa-graduation-cap"
-                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                    <p class="title text-left m-0">
+                                                        <i class="fas fa-graduation-cap"></i>
                                                         For student in
                                                     </p>
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         1st GradeBiginner level and Level second
                                                     </span>
 
@@ -2916,7 +2836,7 @@
                                                     <!-- More Details -->
                                                     <label for="" class="mb-0">Classes can be in</label>
                                                     <br>
-                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                    <span class="week-day text-left">
                                                         Saturday, Sunday, Monday,
                                                         Tuesday and Wednesday
                                                     </span>
@@ -2947,8 +2867,8 @@
                                                     <!-- End Price Promotion -->
 
                                                     <div class="buy-now text-center">
-                                                        <button href="#" type="submit" class="btn btn-primary"
-                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                        <button href="#" type="submit"
+                                                            class="btn btn-primary button-checkout">
                                                             Buy now
                                                         </button>
                                                     </div>
@@ -2972,22 +2892,21 @@
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="item">
                                 <div class="heading">
-                                    <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
+                                    <h5 class="mt-2">Semesterly package</h5>
                                 </div>
 
                                 <!-- Start Classes -->
-                                <p class="text-center mt-2" style="font-weight: bold;">
+                                <p class="text-center mt-2">
                                     22 Classes
                                 </p>
                                 <!-- End Classes -->
 
                                 <!-- Start Counrty and price -->
-                                <div class="clearfix" style="margin: -14px 0;">
+                                <div class="clearfix mt-4 mb-4">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="image-flags">
-                                                <img src="./assets/images/egypt.svg" alt="egypt"
-                                                    style="height: 60px; margin-top: 10px;">
+                                                <img src="./assets/images/egypt.svg" alt="egypt">
                                                 <br>
                                                 <small class="local-global-teacher">Local teachers</small>
                                             </div>
@@ -3008,22 +2927,20 @@
                                 <br>
                                 <div class="to-teach">
                                     <span class="title">
-                                        <i class="fas fa-clipboard-list"
-                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                        <i class="fas fa-clipboard-list"></i>
                                         To teach
                                     </span>
 
                                     <br>
 
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         Math, Chimi, History and
-                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanOne">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanOne">more</a>
                                     </span>
 
                                 </div>
                                 <!-- Learning by language of -->
-                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                <div class="learning-by text-center">
                                     <p class="text-center">
                                         Learning by english language
                                     </p>
@@ -3032,15 +2949,13 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">
-                                        <i class="fas fa-graduation-cap"
-                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                    <p class="title text-left m-0">
+                                        <i class="fas fa-graduation-cap"></i>
                                         For student in
                                     </p>
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         1st GradeBiginner level and
-                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanOne">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanOne">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -3059,7 +2974,7 @@
                                 <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
-                                    <span class="week-day text-left" style="font-size: 15px;">
+                                    <span class="week-day text-left">
                                         Saturday, Sunday, Monday,
                                         Tuesday and Wednesday
                                     </span>
@@ -3082,7 +2997,7 @@
                                 <!-- Link list inline -->
                                 <ul class="list-inline mt-3 text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" type="submit" class="btn btn-primary">
+                                        <a href="#" type="submit" class="btn btn-primary ">
                                             Buy now
                                         </a>
                                     </li>
@@ -3110,14 +3025,13 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                <p class="text-center mt-2">
                                                     22 Classes
                                                 </p>
                                                 <!-- Start Counrty and price -->
-                                                <div class="clearfix" style="margin: -14px 0;">
+                                                <div class="clearfix mt-4 mb-4">
                                                     <div class="float-left">
-                                                        <img src="./assets/images/globe.svg" alt="Global"
-                                                            style="height: 60px; margin-top: 10px;">
+                                                        <img src="./assets/images/globe.svg" alt="Global">
                                                         <br>
                                                         <small class="local-global-teacher">Local teachers</small>
                                                     </div>
@@ -3135,21 +3049,20 @@
                                                 <br>
                                                 <div class="to-teach text-left">
                                                     <span class="title">
-                                                        <i class="fas fa-clipboard-list"
-                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        <i class="fas fa-clipboard-list"></i>
                                                         To teach
                                                     </span>
 
                                                     <br>
 
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         Math, Chimi, History
                                                         Philo, English, French
                                                     </span>
 
                                                 </div>
                                                 <!-- Learning by language of -->
-                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                <div class="learning-by text-center">
                                                     <p class="text-center">
                                                         Learning by english language
                                                     </p>
@@ -3158,12 +3071,11 @@
 
                                                 <!-- For student in -->
                                                 <div class="student-in text-left">
-                                                    <p class="title text-left" style="margin:0;">
-                                                        <i class="fas fa-graduation-cap"
-                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                    <p class="title text-left m-0">
+                                                        <i class="fas fa-graduation-cap"></i>
                                                         For student in
                                                     </p>
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         1st GradeBiginner level and Level second
                                                     </span>
 
@@ -3172,7 +3084,7 @@
                                                     <!-- More Details -->
                                                     <label for="" class="mb-0">Classes can be in</label>
                                                     <br>
-                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                    <span class="week-day text-left">
                                                         Saturday, Sunday, Monday,
                                                         Tuesday and Wednesday
                                                     </span>
@@ -3203,8 +3115,8 @@
                                                     <!-- End Price Promotion -->
 
                                                     <div class="buy-now text-center">
-                                                        <button href="#" type="submit" class="btn btn-primary"
-                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                        <button href="#" type="submit"
+                                                            class="btn btn-primary button-checkout">
                                                             Buy now
                                                         </button>
                                                     </div>
@@ -3228,22 +3140,21 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 d-md-none d-lg-block">
                             <div class="item">
                                 <div class="heading">
-                                    <h5 class="mt-2" style="font-size: 19px;">Semesterly package</h5>
+                                    <h5 class="mt-2">Semesterly package</h5>
                                 </div>
 
                                 <!-- Start Classes -->
-                                <p class="text-center mt-2" style="font-weight: bold;">
+                                <p class="text-center mt-2">
                                     22 Classes
                                 </p>
                                 <!-- End Classes -->
 
                                 <!-- Start Counrty and price -->
-                                <div class="clearfix" style="margin: -14px 0;">
+                                <div class="clearfix mt-4 mb-4">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="image-flags">
-                                                <img src="./assets/images/egypt.svg" alt="egypt"
-                                                    style="height: 60px; margin-top: 10px;">
+                                                <img src="./assets/images/egypt.svg" alt="egypt">
                                                 <br>
                                                 <small class="local-global-teacher">Local teachers</small>
                                             </div>
@@ -3264,22 +3175,20 @@
                                 <br>
                                 <div class="to-teach">
                                     <span class="title">
-                                        <i class="fas fa-clipboard-list"
-                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                        <i class="fas fa-clipboard-list"></i>
                                         To teach
                                     </span>
 
                                     <br>
 
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         Math, Chimi, History and
-                                        <a href="#" style="font-size: 16px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanTwo">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanTwo">more</a>
                                     </span>
 
                                 </div>
                                 <!-- Learning by language of -->
-                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                <div class="learning-by text-center">
                                     <p class="text-center">
                                         Learning by english language
                                     </p>
@@ -3288,15 +3197,13 @@
 
                                 <!-- For student in -->
                                 <div class="student-in">
-                                    <p class="title text-left" style="margin:0;">
-                                        <i class="fas fa-graduation-cap"
-                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                    <p class="title text-left m-0">
+                                        <i class="fas fa-graduation-cap"></i>
                                         For student in
                                     </p>
-                                    <span style="font-size: 15px;">
+                                    <span>
                                         1st GradeBiginner level and
-                                        <a href="#" style="font-size: 15px; text-decoration: none;" data-toggle="modal"
-                                            data-target="#CheckModalPlanTwo">more</a>
+                                        <a href="#" data-toggle="modal" data-target="#CheckModalPlanTwo">more</a>
                                     </span>
 
                                     <!-- Price Promotion -->
@@ -3315,7 +3222,7 @@
                                 <div class="collapse" id="collapsePromotions">
                                     <label for="">Classes can be in</label>
                                     <br>
-                                    <span class="week-day text-left" style="font-size: 15px;">
+                                    <span class="week-day text-left">
                                         Saturday, Sunday, Monday,
                                         Tuesday and Wednesday
                                     </span>
@@ -3338,7 +3245,7 @@
                                 <!-- Link list inline -->
                                 <ul class="list-inline mt-3 text-center">
                                     <li class="list-inline-item">
-                                        <a href="#" type="submit" class="btn btn-primary">
+                                        <a href="#" type="submit" class="btn btn-primary ">
                                             Buy now
                                         </a>
                                     </li>
@@ -3367,14 +3274,13 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <p class="text-center mt-2" style="font-weight: bold;">
+                                                <p class="text-center mt-2">
                                                     22 Classes
                                                 </p>
                                                 <!-- Start Counrty and price -->
-                                                <div class="clearfix" style="margin: -14px 0;">
+                                                <div class="clearfix mt-4 mb-4">
                                                     <div class="float-left">
-                                                        <img src="./assets/images/egypt.svg" alt="egypt"
-                                                            style="height: 60px; margin-top: 10px;">
+                                                        <img src="./assets/images/egypt.svg" alt="egypt">
                                                         <br>
                                                         <small class="local-global-teacher">Local teachers</small>
                                                     </div>
@@ -3392,21 +3298,20 @@
                                                 <br>
                                                 <div class="to-teach text-left">
                                                     <span class="title">
-                                                        <i class="fas fa-clipboard-list"
-                                                            style="font-size: 20px; color: dodgerblue; font-weight: bold;"></i>
+                                                        <i class="fas fa-clipboard-list"></i>
                                                         To teach
                                                     </span>
 
                                                     <br>
 
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         Math, Chimi, History
                                                         Philo, English, French
                                                     </span>
 
                                                 </div>
                                                 <!-- Learning by language of -->
-                                                <div class="learning-by text-center" style="background: dodgerblue;">
+                                                <div class="learning-by text-center">
                                                     <p class="text-center">
                                                         Learning by english language
                                                     </p>
@@ -3415,12 +3320,11 @@
 
                                                 <!-- For student in -->
                                                 <div class="student-in text-left">
-                                                    <p class="title text-left" style="margin:0;">
-                                                        <i class="fas fa-graduation-cap"
-                                                            style="font-size: 20px; color: dodgerblue;"></i>
+                                                    <p class="title text-left m-0">
+                                                        <i class="fas fa-graduation-cap"></i>
                                                         For student in
                                                     </p>
-                                                    <span style="font-size: 15px;">
+                                                    <span>
                                                         1st GradeBiginner level and Level second
                                                     </span>
 
@@ -3429,7 +3333,7 @@
                                                     <!-- More Details -->
                                                     <label for="" class="mb-0">Classes can be in</label>
                                                     <br>
-                                                    <span class="week-day text-left" style="font-size: 15px;">
+                                                    <span class="week-day text-left">
                                                         Saturday, Sunday, Monday,
                                                         Tuesday and Wednesday
                                                     </span>
@@ -3460,8 +3364,8 @@
                                                     <!-- End Price Promotion -->
 
                                                     <div class="buy-now text-center">
-                                                        <button href="#" type="submit" class="btn btn-primary"
-                                                            style="padding: 11px 22px; background-color: dodgerblue;">
+                                                        <button href="#" type="submit"
+                                                            class="btn btn-primary button-checkout">
                                                             Buy now
                                                         </button>
                                                     </div>

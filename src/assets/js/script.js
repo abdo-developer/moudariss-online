@@ -83,8 +83,25 @@ jQuery(function () {
         // More country
         $("#country-more").countrySelect();
 
-        // Time x:00
-        // $("#number").intlTelInput(); 
+    //  Within the cost of  
+
+    $("#slider-range-three").slider({
+        range: true,
+        min: 50,
+        max: 1000,
+        values: [50, 1000],
+        slide: function (event, ui) {
+            $("#Price-three").val(ui.values[0] + " Dollar " + "  -  " + ui.values[1] + " Dollar ");
+        }
+    });
+    $("#Price-three").val($("#slider-range-three").slider("values", 0) + " Dollar" +
+        "  -  " + $("#slider-range-three").slider("values", 1) + " Dollar ");
+    
+
+
+        // With stars rating
+
+
 
 });
 

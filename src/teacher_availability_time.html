@@ -7,7 +7,7 @@
     <title>Moudariss | Teacher Time Booking</title>
 </head>
 
-<body style="background-color: #5ec1fa;">
+<body class="body-booking ">
 
     <!-- Strat Header Page -->
     <header class="top_header">
@@ -69,7 +69,7 @@
     <!-- End Hedaer Page -->
 
     <!-- Teachers Time Booking -->
-    <div class="container" style="width: 990px;">
+    <div class="container content-section">
         <div class="row bg-white mt-4">
             <!--  booking confirmation -->
             <div class="col-12 text-center">
@@ -78,24 +78,146 @@
 
             <br>
 
+            <!-- Teacher info -->
+            <div class="col-lg-4 col-md-12 d-lg-none d-md-block">
+                <div class="card custom-teacher-info text-center">
+                    <div class="card-body">
+                        <img src="./assets/images/professor_one.jpg" alt="professor_one">
+                        <h5 class="card-title">Noura Hamdaan</h5>
+                        <p class="card-text">
+                            <i class="fas fa-map-marker-alt mr-1"></i>
+                            Maroc, Casablanca
+                        </p>
+
+                        <div class="stars">
+                            <div class="star">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star"></i>
+                                <small>211 (Vote)</small>
+                            </div>
+                        </div>
+                        <!-- ID teacher -->
+                        <label for="">
+                            Teacher ID number :
+                            <span>9987604</span>
+                        </label>
+                        <!-- end -->
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- End teacher info -->
+
             <!-- End booking submit -->
-            <div class="col-lg-8 col-md-12" style="padding: 0 30px;">
+            <div class="col-lg-8 col-md-12 booking-section">
+
+
+                <!-- Header section Show all device mobile -->
+                <div class="card d-lg-none d-md-block time-booking-card">
+                    <form class="filter-search mt-4">
+                        <div class="form-datetime">
+                            <!-- fORM -->
+                            <div class="">
+                                <p class="mt-2 mb-2">From</p>
+                                <input type="date" class="form-control" name="" id="">
+                            </div>
+
+                            <!-- fORM TO -->
+                            <div class="">
+                                <p class="mt-2 mb-2">To</p>
+                                <input type="date" class="form-control" name="" id="">
+                            </div>
+
+                            <!-- Change Mode -->
+                            <a href="#" class="btn filter-btn pro-btn mb-4 bg-black">
+                                Use time map
+                            </a>
+
+                        </div>
+
+                        <br>
+
+                        <!-- Select day -->
+                        <div class="select-day">
+                            <label for="">Select Days: </label>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Saturday
+                                </label>
+                            </div>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Sunday
+                                </label>
+                            </div>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Monday
+                                </label>
+                            </div>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Tuesday
+                                </label>
+                            </div>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Thursday
+                                </label>
+                            </div>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Friday
+                                </label>
+                            </div>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Wednesday
+                                </label>
+                            </div>
+                        </div>
+                        <!-- end select day -->
+                    </form>
+
+                </div>
+                <!-- End Header top -->
+
+
                 <!-- Header section -->
-                <div class="card" style="border: 0; padding: 0px  10px 5px 0; border-radius: 0.5px; margin-top: -19px;">
-                    <form class="filter-search" style="margin-top: 10%;">
+                <div class="card d-lg-block d-md-none d-sm-none time-booking-card">
+                    <form class="filter-search hide-section mt-4">
                         <div class="form-datetime">
                             <div class="form-inline">
-                                <p class="mt-2 mb-2 mr-3" style="color: black;">From</p>
-                                <input type="date" class="form-control" name="" id="" style="width: 50%;">
-                                <a href="#" class="btn filter-btn pro-btn mb-4 ml-4" style="background-color: black;">
+                                <p class="mt-2 mb-2 mr-3">From</p>
+                                <input type="date" class="form-control input-custom" name="" id="">
+                                <a href="#" class="btn filter-btn pro-btn mb-4 ml-4 bg-black">
                                     Use time map
                                 </a>
                             </div>
 
                             <!-- fORM TO -->
                             <div class="form-inline">
-                                <p class="mt-2 mb-2" style="color: black; margin-right: 36px;">To</p>
-                                <input type="date" class="form-control" name="" id="" style="width: 50%;">
+                                <p class="mt-2 mb-2 custom-from-to">To</p>
+                                <input type="date" class="form-control input-custom" name="" id="">
                             </div>
                         </div>
 
@@ -147,157 +269,156 @@
                         </div>
                         <!-- end select day -->
                     </form>
-                    <div class="line-bottom"
-                        style="border-bottom: 0.5px solid gray; margin-top: 5%; width: 120%; margin-left: -31px;">
-                    </div>
+
                 </div>
                 <!-- End Header top -->
+
+                <br>
+                <hr>
 
                 <!-- Title -->
                 <label for="" class="mt-2 mb-3">Available time :</label>
 
                 <div class="row">
                     <!-- Card One -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="padding:18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content custom-content-card mb-3 text-center">
                             <div class="time">
                                 <p>1:00 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">All days</p>
+                            <p class="all-days">All days</p>
                         </div>
                     </div>
 
                     <!-- Card Two -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content custom-content-cards mb-3 text-center">
                             <div class="time">
                                 <p>1:00 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
+                            <p class="all-days">Some days</p>
                             <!-- Button sumbit -->
-                            <button type="button" class="btn btn-click" data-toggle="modal" data-target="#ModelAvailable"
-                                style="background-color: black; padding: 5px 44px; color: white; font-weight: bold;">
+                            <button type="button" class="btn btn-click" data-toggle="modal" id="custom-btn"
+                                data-target="#ModelAvailable">
                                 View
                             </button>
 
                             <!-- Modal -->
-                                <div class="modal fade" id="ModelAvailable" tabindex="-1" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header card-text">
-                                                <h5 class="modal-title" id="exampleModalLabel" style="background-color: dodgerblue; padding: 7px 14px;">
-                                                    Available
-                                                    <br>
-                                                    1:30 PM
-                                                </h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body text-left">
-                                                <!-- Days -->
-                                                <span class="mr-3" style="color: black;">Sat 20 Feb</span>
-                                                <hr>
+                            <div class="modal fade" id="ModelAvailable" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header card-text">
+                                            <h5 class="modal-title" id="exampleModalLabel">
+                                                Available
+                                                <br>
+                                                1:30 PM
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-left">
+                                            <!-- Days -->
+                                            <span class="mr-3">Sat 20 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Sun 21 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Sun 21 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Wed 22 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Wed 22 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Fri 23 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Fri 23 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Mon 27 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Mon 27 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Tue 28 Feb</span>
+                                            <span class="mr-3">Tue 28 Feb</span>
 
-                                                <!-- End -->
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </div>
+                                            <!-- End -->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             <!-- End Modal -->
 
                         </div>
                     </div>
 
                     <!-- Card Three -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="padding: 18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content custom-content-card mb-3 text-center">
                             <div class="time">
                                 <p>1:30 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">All days</p>
+                            <p class="all-days">All days</p>
                         </div>
                     </div>
 
                     <!-- Card Four -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-lg-block d-md-none">
+                        <div class="content custom-content-cards mb-3 text-center">
                             <div class="time">
                                 <p>1:30 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
+                            <p class="all-days">Some days</p>
                             <!-- Button sumbit -->
-                            <button type="button" class="btn btn-click" data-toggle="modal" data-target="#ModelAvailable"
-                                style="background-color: black; padding: 5px 44px; color: white; font-weight: bold;">
+                            <button type="button" class="btn btn-click" data-toggle="modal" id="custom-btn"
+                                data-target="#ModelAvailable">
                                 View
                             </button>
 
                             <!-- Modal -->
-                                <div class="modal fade" id="ModelAvailable" tabindex="-1" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header card-text">
-                                                <h5 class="modal-title" id="exampleModalLabel" style="background-color: dodgerblue; padding: 7px 14px;">
-                                                    Available
-                                                    <br>
-                                                    1:30 PM
-                                                </h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body text-left">
-                                                <!-- Days -->
-                                                <span class="mr-3" style="color: black;">Sat 20 Feb</span>
-                                                <hr>
+                            <div class="modal fade" id="ModelAvailable" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header card-text">
+                                            <h5 class="modal-title" id="exampleModalLabel">
+                                                Available
+                                                <br>
+                                                1:30 PM
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-left">
+                                            <!-- Days -->
+                                            <span class="mr-3">Sat 20 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Sun 21 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Sun 21 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Wed 22 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Wed 22 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Fri 23 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Fri 23 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Mon 27 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Mon 27 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Tue 28 Feb</span>
+                                            <span class="mr-3">Tue 28 Feb</span>
 
-                                                <!-- End -->
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </div>
+                                            <!-- End -->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             <!-- End Modal -->
 
                         </div>
@@ -306,146 +427,144 @@
 
                 <div class="row row mt-4 mb-4">
                     <!-- Card One -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="padding:18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content custom-content-card mb-3 text-center">
                             <div class="time">
                                 <p>1:00 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">All days</p>
+                            <p class="all-days">All days</p>
                         </div>
                     </div>
 
                     <!-- Card Two -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content custom-content-cards mb-3 text-center">
                             <div class="time">
                                 <p>1:00 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
+                            <p class="all-days">Some days</p>
                             <!-- Button sumbit -->
-                            <button type="button" class="btn btn-click" data-toggle="modal" data-target="#ModelAvailable"
-                                style="background-color: black; padding: 5px 44px; color: white; font-weight: bold;">
+                            <button type="button" class="btn btn-click" data-toggle="modal" id="custom-btn"
+                                data-target="#ModelAvailable">
                                 View
                             </button>
 
                             <!-- Modal -->
-                                <div class="modal fade" id="ModelAvailable" tabindex="-1" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header card-text">
-                                                <h5 class="modal-title" id="exampleModalLabel" style="background-color: dodgerblue; padding: 7px 14px;">
-                                                    Available
-                                                    <br>
-                                                    1:30 PM
-                                                </h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body text-left">
-                                                <!-- Days -->
-                                                <span class="mr-3" style="color: black;">Sat 20 Feb</span>
-                                                <hr>
+                            <div class="modal fade" id="ModelAvailable" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header card-text">
+                                            <h5 class="modal-title" id="exampleModalLabel">
+                                                Available
+                                                <br>
+                                                1:30 PM
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-left">
+                                            <!-- Days -->
+                                            <span class="mr-3">Sat 20 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Sun 21 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Sun 21 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Wed 22 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Wed 22 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Fri 23 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Fri 23 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Mon 27 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Mon 27 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Tue 28 Feb</span>
+                                            <span class="mr-3">Tue 28 Feb</span>
 
-                                                <!-- End -->
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </div>
+                                            <!-- End -->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             <!-- End Modal -->
 
                         </div>
                     </div>
 
                     <!-- Card Three -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="padding: 18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content custom-content-card mb-3 text-center">
                             <div class="time">
                                 <p>1:30 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">All days</p>
+                            <p class="all-days">All days</p>
                         </div>
                     </div>
 
                     <!-- Card Four -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-lg-block d-md-none">
+                        <div class="content custom-content-cards mb-3 text-center">
                             <div class="time">
                                 <p>1:30 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
+                            <p class="all-days">Some days</p>
                             <!-- Button sumbit -->
-                            <button type="button" class="btn btn-click" data-target="#ModelAvailable" data-toggle="modal"
-                                style="background-color: black; padding: 5px 44px; color: white; font-weight: bold;">
+                            <button type="button" class="btn btn-click" data-target="#ModelAvailable"
+                                data-toggle="modal">
                                 View
                             </button>
-                            
+
                             <!-- Modal -->
-                                <div class="modal fade" id="ModelAvailable" tabindex="-1" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header card-text">
-                                                <h5 class="modal-title" id="exampleModalLabel" style="background-color: dodgerblue; padding: 7px 14px;">
-                                                    Available
-                                                    <br>
-                                                    1:30 PM
-                                                </h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body text-left">
-                                                <!-- Days -->
-                                                <span class="mr-3" style="color: black;">Sat 20 Feb</span>
-                                                <hr>
+                            <div class="modal fade" id="ModelAvailable" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header card-text">
+                                            <h5 class="modal-title" id="exampleModalLabel">
+                                                Available
+                                                <br>
+                                                1:30 PM
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-left">
+                                            <!-- Days -->
+                                            <span class="mr-3">Sat 20 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Sun 21 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Sun 21 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Wed 22 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Wed 22 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Fri 23 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Fri 23 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Mon 27 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Mon 27 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Tue 28 Feb</span>
+                                            <span class="mr-3">Tue 28 Feb</span>
 
-                                                <!-- End -->
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </div>
+                                            <!-- End -->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             <!-- End Modal -->
 
                         </div>
@@ -454,146 +573,144 @@
 
                 <div class="row mb-4">
                     <!-- Card One -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="padding:18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content custom-content-card mb-3 text-center">
                             <div class="time">
                                 <p>1:00 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">All days</p>
+                            <p class="all-days">All days</p>
                         </div>
                     </div>
 
                     <!-- Card Two -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content custom-content-cards mb-3 text-center">
                             <div class="time">
                                 <p>1:00 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
+                            <p class="all-days">Some days</p>
                             <!-- Button sumbit -->
-                            <button type="submit" class="btn btn-click" data-toggle="modal" data-target="#ModelAvailable"
-                                style="background-color: black; padding: 5px 44px; color: white; font-weight: bold;">
+                            <button type="submit" class="btn btn-click" data-toggle="modal"
+                                data-target="#ModelAvailable">
                                 View
                             </button>
 
                             <!-- Modal -->
-                                <div class="modal fade" id="ModelAvailable" tabindex="-1" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header card-text">
-                                                <h5 class="modal-title" id="exampleModalLabel" style="background-color: dodgerblue; padding: 7px 14px;">
-                                                    Available
-                                                    <br>
-                                                    1:30 PM
-                                                </h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body text-left">
-                                                <!-- Days -->
-                                                <span class="mr-3" style="color: black;">Sat 20 Feb</span>
-                                                <hr>
+                            <div class="modal fade" id="ModelAvailable" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header card-text">
+                                            <h5 class="modal-title" id="exampleModalLabel">
+                                                Available
+                                                <br>
+                                                1:30 PM
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-left">
+                                            <!-- Days -->
+                                            <span class="mr-3">Sat 20 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Sun 21 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Sun 21 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Wed 22 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Wed 22 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Fri 23 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Fri 23 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Mon 27 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Mon 27 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Tue 28 Feb</span>
+                                            <span class="mr-3">Tue 28 Feb</span>
 
-                                                <!-- End -->
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </div>
+                                            <!-- End -->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             <!-- End Modal -->
 
                         </div>
                     </div>
 
                     <!-- Card Three -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="padding: 18px; color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="content custom-content-card mb-3 text-center">
                             <div class="time">
                                 <p>1:30 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">All days</p>
+                            <p class="all-days">All days</p>
                         </div>
                     </div>
 
                     <!-- Card Four -->
-                    <div class="col-lg-3 col-md-12">
-                        <div class="content text-center"
-                            style="color: white; background-color: rgb(52, 159, 247); border-radius: 12px; font-weight: bold;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-lg-block d-md-none">
+                        <div class="content custom-content-cards mb-3 text-center">
                             <div class="time">
                                 <p>1:30 PM</p>
                             </div>
                             <!-- All days -->
-                            <p class="all-days" style="line-height: 5px; color: black;">Some days</p>
+                            <p class="all-days">Some days</p>
                             <!-- Button sumbit -->
-                            <button type="submit" class="btn btn-click" data-target="#ModelAvailable" data-toggle="modal"
-                                style="background-color: black; padding: 5px 44px; color: white; font-weight: bold;">
+                            <button type="submit" class="btn btn-click" data-target="#ModelAvailable"
+                                data-toggle="modal">
                                 View
                             </button>
 
                             <!-- Modal -->
-                                <div class="modal fade" id="ModelAvailable" tabindex="-1" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header card-text">
-                                                <h5 class="modal-title" id="exampleModalLabel" style="background-color: dodgerblue; padding: 7px 14px;">
-                                                    Available
-                                                    <br>
-                                                    1:30 PM
-                                                </h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body text-left">
-                                                <!-- Days -->
-                                                <span class="mr-3" style="color: black;">Sat 20 Feb</span>
-                                                <hr>
+                            <div class="modal fade" id="ModelAvailable" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header card-text">
+                                            <h5 class="modal-title" id="exampleModalLabel">
+                                                Available
+                                                <br>
+                                                1:30 PM
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-left">
+                                            <!-- Days -->
+                                            <span class="mr-3">Sat 20 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Sun 21 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Sun 21 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Wed 22 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Wed 22 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Fri 23 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Fri 23 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Mon 27 Feb</span>
-                                                <hr>
+                                            <span class="mr-3">Mon 27 Feb</span>
+                                            <hr>
 
-                                                <span class="mr-3" style="color: black;">Tue 28 Feb</span>
+                                            <span class="mr-3">Tue 28 Feb</span>
 
-                                                <!-- End -->
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </div>
+                                            <!-- End -->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             <!-- End Modal -->
 
                         </div>
@@ -603,14 +720,13 @@
             </div>
 
             <!-- Teacher info -->
-            <div class="col-lg-4 col-md-12">
-                <div class="card text-center" style=" border-left: 1px solid gray; margin-top: 12px;">
-                    <div class="card-body">
-                        <img src="./assets/images/professor_one.jpg" alt="professor_one"
-                            style="height: 120px; border-radius: 50%; margin: 20px 0;">
+            <div class="col-lg-4 col-md-12 d-lg-block d-md-none d-sm-none hide-section">
+                <div class="card text-center">
+                    <div class="card-body professor_teach">
+                        <img src="./assets/images/professor_one.jpg" alt="professor_one">
                         <h5 class="card-title">Noura Hamdaan</h5>
                         <p class="card-text">
-                            <i class="fas fa-map-marker-alt mr-1" style="color: dodgerblue;"></i>
+                            <i class="fas fa-map-marker-alt mr-1"></i>
                             Maroc, Casablanca
                         </p>
 
@@ -633,11 +749,10 @@
                     </div>
                 </div>
 
-                <div class="line-bottom" style="border-bottom: 1px solid gray;"></div>
-
 
             </div>
             <!-- End teacher info -->
+
         </div>
 
     </div>

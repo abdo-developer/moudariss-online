@@ -254,10 +254,11 @@ module.exports = {
 
       // End More Pages
 
-      // Filter-deive-mobile
+
+      // Testing pages
       new HtmlWebpackPlugin({
-        filename: "filter_phone.html",
-        template: "./src/filter_phone.html"
+        filename: "testing.html",
+        template: "./src/testing.html"
       }),
 
       new HtmlWebpackPlugin({

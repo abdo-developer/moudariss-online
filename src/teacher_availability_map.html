@@ -7,7 +7,7 @@
     <title>Moudariss | Teacher Time Booking</title>
 </head>
 
-<body style="background-color: #5ec1fa;">
+<body class="body-booking">
 
     <!-- Strat Header Page -->
     <header class="top_header">
@@ -69,7 +69,7 @@
     <!-- End Hedaer Page -->
 
     <!-- Teachers reservation page -->
-    <div class="container" style="width: 990px;">
+    <div class="container content-section">
         <div class="row bg-white mt-4">
             <!--  booking confirmation -->
             <div class="col-12 text-center">
@@ -78,24 +78,147 @@
 
             <br>
 
+            <!-- Teacher info -->
+            <div class="col-lg-4 col-md-12 d-lg-none d-md-block">
+                <div class="card custom-teacher-info text-center">
+                    <div class="card-body">
+                        <img src="./assets/images/professor_one.jpg" alt="professor_one">
+                        <h5 class="card-title">Noura Hamdaan</h5>
+                        <p class="card-text">
+                            <i class="fas fa-map-marker-alt mr-1"></i>
+                            Maroc, Casablanca
+                        </p>
+
+                        <div class="stars">
+                            <div class="star">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star"></i>
+                                <small>211 (Vote)</small>
+                            </div>
+                        </div>
+                        <!-- ID teacher -->
+                        <label for="">
+                            Teacher ID number :
+                            <span>9987604</span>
+                        </label>
+                        <!-- end -->
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <!-- End teacher info -->
+
             <!-- End booking submit -->
-            <div class="col-lg-8 col-md-12" style="padding: 0 30px;">
+            <div class="col-lg-8 col-md-12 booking-section">
+
+
+                <!-- Header section Show all device mobile -->
+                <div class="card custom-card-section d-lg-none d-md-block">
+                    <form class="filter-search mt-4">
+                        <div class="form-datetime">
+                            <!-- fORM -->
+                            <div class="">
+                                <p class="mt-2 mb-2">From</p>
+                                <input type="date" class="form-control" name="" id="">
+                            </div>
+
+                            <!-- fORM TO -->
+                            <div class="">
+                                <p class="mt-2 mb-2">To</p>
+                                <input type="date" class="form-control" name="" id="">
+                            </div>
+
+                            <!-- Change Mode -->
+                            <a href="#" class="btn filter-btn pro-btn bg-black mb-4">
+                                Use time map
+                            </a>
+
+                        </div>
+
+                        <br>
+
+                        <!-- Select day -->
+                        <div class="select-day">
+                            <label for="">Select Days: </label>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Saturday
+                                </label>
+                            </div>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Sunday
+                                </label>
+                            </div>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Monday
+                                </label>
+                            </div>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Tuesday
+                                </label>
+                            </div>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Thursday
+                                </label>
+                            </div>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Friday
+                                </label>
+                            </div>
+
+                            <div class="form-box">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <label class="form-check-label" for="">
+                                    Wednesday
+                                </label>
+                            </div>
+                        </div>
+                        <!-- end select day -->
+                    </form>
+
+                </div>
+                <!-- End Header top -->
+
+
                 <!-- Header section -->
-                <div class="card" style="border: 0; padding: 0px  10px 5px 0; border-radius: 0.5px; margin-top: -19px;">
-                    <form class="filter-search" style="margin-top: 10%;">
+                <div class="card custom-card-section d-lg-block d-md-none d-sm-none">
+                    <form class="filter-search hide-section mt-4">
                         <div class="form-datetime">
                             <div class="form-inline">
-                                <p class="mt-2 mb-2 mr-3" style="color: black;">From</p>
-                                <input type="date" class="form-control" name="" id="" style="width: 50%;">
-                                <a href="#" class="btn filter-btn pro-btn mb-4 ml-4" style="background-color: black;">
+                                <p class="mt-2 mb-2 mr-3">From</p>
+                                <input type="date" class="form-control custom-input" name="" id="">
+                                <a href="#" class="btn filter-btn pro-btn bg-black mb-4 ml-4">
                                     Use easy mode
                                 </a>
                             </div>
 
                             <!-- fORM TO -->
                             <div class="form-inline">
-                                <p class="mt-2 mb-2" style="color: black; margin-right: 36px;">To</p>
-                                <input type="date" class="form-control" name="" id="" style="width: 50%;">
+                                <p class="mt-2 mb-2 custom-from-to">To</p>
+                                <input type="date" class="form-control custom-input" name="" id="">
                             </div>
                         </div>
 
@@ -147,11 +270,11 @@
                         </div>
                         <!-- end select day -->
                     </form>
-                    <div class="line-bottom"
-                        style="border-bottom: 0.5px solid gray; margin-top: 5%; width: 120%; margin-left: -31px;">
-                    </div>
+
                 </div>
                 <!-- End Header top -->
+                <br>
+                <hr>
 
                 <!-- Title -->
                 <label for="" class="mt-2 mb-3">Available time :</label>
@@ -162,10 +285,9 @@
                         <p class="">Sat 14 Feb</p>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 1:00
                                 <br>
                                 PM
@@ -173,10 +295,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 1:30
                                 <br>
                                 PM
@@ -184,10 +305,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-md-block mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 2:00
                                 <br>
                                 PM
@@ -202,10 +322,9 @@
                         <p class="">Sat 14 Feb</p>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 1:00
                                 <br>
                                 PM
@@ -213,10 +332,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 1:30
                                 <br>
                                 PM
@@ -224,10 +342,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-md-block mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 2:00
                                 <br>
                                 PM
@@ -242,10 +359,9 @@
                         <p class="">Sat 14 Feb</p>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 1:00
                                 <br>
                                 PM
@@ -253,10 +369,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 2:00
                                 <br>
                                 PM
@@ -264,10 +379,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-md-block mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 1:30
                                 <br>
                                 PM
@@ -282,10 +396,9 @@
                         <p class="">Sat 14 Feb</p>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 1:30
                                 <br>
                                 PM
@@ -293,10 +406,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 1:00
                                 <br>
                                 PM
@@ -304,91 +416,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                2:00
-                                <br>
-                                PM
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row mt-4 mb-3">
-                    <div class="col-lg-3 col-md-12">
-                        <p class="">Sat 14 Feb</p>
-                    </div>
-
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                1:00
-                                <br>
-                                PM
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                1:30
-                                <br>
-                                PM
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                1:30
-                                <br>
-                                PM
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row mt-4 mb-3">
-                    <div class="col-lg-3 col-md-12">
-                        <p class="">Sat 14 Feb</p>
-                    </div>
-
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                1:00
-                                <br>
-                                PM
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
-                                1:30
-                                <br>
-                                PM
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-md-block mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 2:00
                                 <br>
                                 PM
@@ -403,10 +433,9 @@
                         <p class="">Sat 14 Feb</p>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 1:00
                                 <br>
                                 PM
@@ -414,10 +443,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 1:30
                                 <br>
                                 PM
@@ -425,10 +453,83 @@
                         </div>
                     </div>
 
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-md-block mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
+                                1:30
+                                <br>
+                                PM
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-4 mb-3">
                     <div class="col-lg-3 col-md-12">
-                        <div class="time-date mr-2 text-center"
-                            style="border: 3px solid rgb(34, 125, 245); padding: 0px 10px;">
-                            <p class="time" style="margin-top: 10px;color: dodgerblue;">
+                        <p class="">Sat 14 Feb</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
+                                1:00
+                                <br>
+                                PM
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
+                                1:30
+                                <br>
+                                PM
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-md-block mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
+                                2:00
+                                <br>
+                                PM
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-4 mb-3">
+                    <div class="col-lg-3 col-md-12">
+                        <p class="">Sat 14 Feb</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
+                                1:00
+                                <br>
+                                PM
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
+                                1:30
+                                <br>
+                                PM
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-sm-none d-md-block mb-3">
+                        <div class="time-date custom-time-date mr-2 text-center">
+                            <p class="time custom-times">
                                 2:00
                                 <br>
                                 PM
@@ -441,14 +542,13 @@
             </div>
 
             <!-- Teacher info -->
-            <div class="col-lg-4 col-md-12">
-                <div class="card text-center" style=" border-left: 1px solid gray; margin-top: 12px;">
+            <div class="col-lg-4 col-md-12 d-lg-block d-md-none d-sm-none hide-section">
+                <div class="card custom-card-desktop text-center">
                     <div class="card-body">
-                        <img src="./assets/images/professor_one.jpg" alt="professor_one"
-                            style="height: 120px; border-radius: 50%; margin: 20px 0;">
+                        <img src="./assets/images/professor_one.jpg" alt="professor_one">
                         <h5 class="card-title">Noura Hamdaan</h5>
                         <p class="card-text">
-                            <i class="fas fa-map-marker-alt mr-1" style="color: dodgerblue;"></i>
+                            <i class="fas fa-map-marker-alt mr-1"></i>
                             Maroc, Casablanca
                         </p>
 
@@ -471,11 +571,12 @@
                     </div>
                 </div>
 
-                <div class="line-bottom" style="border-bottom: 1px solid gray;"></div>
+
 
 
             </div>
             <!-- End teacher info -->
+
         </div>
 
     </div>

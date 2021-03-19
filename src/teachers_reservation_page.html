@@ -7,7 +7,7 @@
     <title>Moudariss | Teachers reservation page</title>
 </head>
 
-<body style="background-color: #5ec1fa;">
+<body class="body-booking">
 
     <!-- Strat Header Page -->
     <header class="top_header">
@@ -74,24 +74,22 @@
         <div class="row bg-white mt-4">
             <!-- booking confirmation -->
             <div class="col-12 text-center mb-4">
-                <a href="#" class="btn filter-btn pro-btn"
-                    style="background-color: deepskyblue; font-weight: normal;">Teacher Booking Confirmation</a>
+                <a href="#" class="btn filter-btn pro-btn bg-primary">Teacher Booking Confirmation</a>
             </div>
             <!-- booking confirmation -->
 
 
             <!-- Device Mobile phone   -->
             <div class="col-lg-4 col-md-12 d-lg-none d-md-block">
-                <div class="card text-center" style="border: 0; margin-top: 12px;">
+                <div class="card custom-teacher-info info-card-teacher text-center">
                     <!-- Teacher info -->
                     <label for="">Teacher info</label>
                     <!-- End -->
                     <div class="card-body">
-                        <img src="./assets/images/professor_one.jpg" alt="professor_one"
-                            style="height: 120px; border-radius: 50%; margin: 20px 0;">
+                        <img src="./assets/images/professor_one.jpg" alt="professor_one">
                         <h5 class="card-title">Noura Hamdaan</h5>
                         <p class="card-text">
-                            <i class="fas fa-map-marker-alt mr-1" style="color: dodgerblue;"></i>
+                            <i class="fas fa-map-marker-alt mr-1"></i>
                             Maroc, Casablanca
                         </p>
 
@@ -109,8 +107,8 @@
                         <br>
 
                         <!-- I have experience -->
-                        <h6 class="title-larg text-center">
-                            <img src="./assets/images/badge.svg" class="float-left" alt="badge" style="height: 45px;">
+                        <h6 class="title-larg badge-sizes text-center">
+                            <img src="./assets/images/badge.svg" class="float-left" alt="badge">
                             I have 8 years of experience
                             <br>
                             I am in advanced level
@@ -119,7 +117,7 @@
                         <br>
                         <!-- ID teacher -->
                         <div class="ID-num">
-                            <p class="id-teacher" style="font-weight: bold;">
+                            <p class="id-teacher">
                                 Teacher ID number : 99776024
                             </p>
                         </div>
@@ -130,19 +128,18 @@
             <!-- Device Mobile phone -->
 
 
-            <div class="col-lg-8 col-md-12" style="padding: 0 40px;">
-                <div class="card"
-                    style="border: 0; margin-top: 12px; border-right: 1px solid gray; padding: 0px  10px 5px 0; border-radius: 0.5px;">
+            <div class="col-lg-8 col-md-12 custom-column">
+                <div class="card form-card">
                     <form class="filter-search">
                         <div class="form-group form-check">
-                            <label for="" style="margin-top: 15px;">I am </label>
+                            <label for="" class="mt-4">I am </label>
 
                             <br>
 
                             <div class="form-inline male-famele">
                                 <!-- I am Male : Student -->
-                                <div class="text-center">
-                                    <img src="./assets/images/student-male.svg" alt="aaa" style="height: 50px;">
+                                <div class="text-center image-height">
+                                    <img src="./assets/images/student-male.svg" alt="img">
                                 </div>
                                 <div class="text-center">
                                     <label for="RadioStudent1">Student</label>
@@ -150,8 +147,8 @@
                                 </div>
 
                                 <!-- I am Female : Student -->
-                                <div class="text-center">
-                                    <img src="./assets/images/student.svg" alt="aaa" style="height: 50px;">
+                                <div class="text-center image-height">
+                                    <img src="./assets/images/student.svg" alt="img">
                                 </div>
                                 <div class="text-center">
                                     <label for="RadioStudent2">Student</label>
@@ -165,7 +162,7 @@
                         <!-- My name -->
                         <div class="name_student">
                             <label for="">My name is</label>
-                            <input type="text" class="form-control" name="" id="" style="height: 35px; width: 50%;">
+                            <input type="text" class="form-control input-custom" name="" id="">
                         </div>
                         <!-- end name -->
                         <hr>
@@ -264,7 +261,7 @@
                             <!-- To teach me -->
                             <div class="tach-me">
                                 <label for="">To teach me</label>
-                                <select name="" id="" class="form-control" style="width: 50%;">
+                                <select name="" id="" class="form-control input-custom">
                                     <option value="" disabled="" selected="">Select to teach me</option>
                                     <option value="">English</option>
                                     <option value="">Arabic</option>
@@ -279,15 +276,14 @@
                             <!-- For number -->
                             <div class="for-number">
                                 <label for="">For number of</label>
-                                <input type="number" class="form-control d-inline" name="" id=""
-                                    style="height: 35px; width: 20%; margin: 0 8px;">
+                                <input type="number" class="form-control d-inline custom-input-num" name="" id="">
                                 <label for="" class="d-inline">Classes</label>
                             </div>
                             <!-- End For number -->
 
                             <!-- Contract details -->
-                            <div class="learning-by text-center" style="background: rgb(59, 154, 248);">
-                                <p class="text-center" style="color: white; margin:15px 0 ;">
+                            <div class="learning-by text-center">
+                                <p class="text-center">
                                     Contract details
                                 </p>
                             </div>
@@ -353,15 +349,14 @@
                 </div>
 
                 <!-- Students info -->
-                <div class="info-students">
+                <div class="info-students d-lg-none">
                     <!-- Student info -->
                     <div class="info-student text-left">
                         <label for="">Student info</label>
                         <!-- Student info and image -->
-                        <p class="type-student">
+                        <p class="type-student custom-type-student">
                             Student
-                            <img src="./assets/images/student-male.svg" alt="Student"
-                                style="height: 50px; margin-left: 12px;">
+                            <img src="./assets/images/student-male.svg" alt="Student">
                         </p>
                         <br>
                         <!-- Label info -->
@@ -411,19 +406,19 @@
                     <!-- Share now -->
                     <div class="form-inline share">
                         <label for="">
-                            <i class="fas fa-share-alt mr-2" style="color: dodgerblue; font-size: 20px;"></i>
+                            <i class="fas fa-share-alt mr-2"></i>
                             Share
                         </label>
                         <!-- icon link and whatssapp -->
                         <span>
                             <a href="#">
-                                <i class="fab fa-whatsapp ml-3" style="font-size: 20px;"></i>
+                                <i class="fab fa-whatsapp ml-3"></i>
                             </a>
                         </span>
                         <!-- Link share -->
                         <span>
                             <a href="#">
-                                <i class="fas fa-link ml-2" style="font-size: 20px;"></i>
+                                <i class="fas fa-link ml-2"></i>
                             </a>
                         </span>
                         <!--Finish icon link and whatssapp -->
@@ -435,17 +430,16 @@
             </div>
 
             <!-- Device Pc   -->
-            <div class="col-lg-4 col-md-12 d-md-none d-sm-none d-lg-block">
-                <div class="card text-center" style="border: 0; margin-top: 12px;">
+            <div class="col-lg-4 col-md-12 d-md-none d-sm-none d-lg-block hide-section">
+                <div class="card custom-teacher-info info-card-teacher text-center">
                     <!-- Teacher info -->
                     <label for="">Teacher info</label>
                     <!-- End -->
                     <div class="card-body">
-                        <img src="./assets/images/professor_one.jpg" alt="professor_one"
-                            style="height: 120px; border-radius: 50%; margin: 20px 0;">
+                        <img src="./assets/images/professor_one.jpg" alt="professor_one">
                         <h5 class="card-title">Noura Hamdaan</h5>
                         <p class="card-text">
-                            <i class="fas fa-map-marker-alt mr-1" style="color: dodgerblue;"></i>
+                            <i class="fas fa-map-marker-alt mr-1"></i>
                             Maroc, Casablanca
                         </p>
 
@@ -463,8 +457,8 @@
                         <br>
 
                         <!-- I have experience -->
-                        <h6 class="title-larg text-center">
-                            <img src="./assets/images/badge.svg" class="float-left" alt="badge" style="height: 45px;">
+                        <h6 class="title-larg badge-sizes text-center">
+                            <img src="./assets/images/badge.svg" class="float-left" alt="badge">
                             I have 8 years of experience
                             <br>
                             I am in advanced level
@@ -473,7 +467,7 @@
                         <br>
                         <!-- ID teacher -->
                         <div class="ID-num">
-                            <p class="id-teacher" style="font-weight: bold;">
+                            <p class="id-teacher">
                                 Teacher ID number : 99776024
                             </p>
                         </div>
@@ -485,10 +479,9 @@
                         <div class="info-student text-left">
                             <label for="">Student info</label>
                             <!-- Student info and image -->
-                            <p class="type-student">
+                            <p class="type-student custom-type-student">
                                 Student
-                                <img src="./assets/images/student-male.svg" alt="Student"
-                                    style="height: 50px; margin-left: 12px;">
+                                <img src="./assets/images/student-male.svg" alt="Student">
                             </p>
                             <br>
                             <!-- Label info -->
@@ -538,19 +531,19 @@
                         <!-- Share now -->
                         <div class="form-inline share">
                             <label for="">
-                                <i class="fas fa-share-alt mr-2" style="color: dodgerblue; font-size: 20px;"></i>
+                                <i class="fas fa-share-alt mr-2"></i>
                                 Share
                             </label>
                             <!-- icon link and whatssapp -->
                             <span>
                                 <a href="#">
-                                    <i class="fab fa-whatsapp ml-3" style="font-size: 20px;"></i>
+                                    <i class="fab fa-whatsapp ml-3"></i>
                                 </a>
                             </span>
                             <!-- Link share -->
                             <span>
                                 <a href="#">
-                                    <i class="fas fa-link ml-2" style="font-size: 20px;"></i>
+                                    <i class="fas fa-link ml-2"></i>
                                 </a>
                             </span>
                             <!--Finish icon link and whatssapp -->

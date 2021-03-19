@@ -69,10 +69,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="title-column">
-                        <h4 class="custom-heading text-center" style="margin-top: -5px;">Monthly package</h4>
+                        <h4 class="custom-heading text-center">Monthly package</h4>
                     </div>
                     <div class="description-paragraph">
-                        <p class="mb-4 text-center" style="margin-top: -8px; font-weight: bold;">
+                        <p class="mb-4 text-center">
                             Select one of the teachers
                         </p>
                     </div>
@@ -87,7 +87,7 @@
         <div class="row">
 
             <!-- Star Filter -->
-            <div class="col-12 col-lg-3 bg-fliter" style="height: 100%;">
+            <div class="col-12 col-lg-3 bg-fliter" id="ShowFilter">
                 <form class="filter-search">
                     <div class="title-form">
                         <h4 class="custom-title mt-2">I want to select</h4>
@@ -100,8 +100,8 @@
                                 <label for="RadioStudent1">Teacher</label>
                                 <input type="checkbox" class="form-check-input" id="" name="">
                             </div>
-                            <div class="text-center">
-                                <img src="./assets/images/teacher-famme.svg" alt="Teacher" style="height: 50px;">
+                            <div class="text-center image-height">
+                                <img src="./assets/images/teacher-famme.svg" alt="Teacher">
                             </div>
 
 
@@ -110,8 +110,8 @@
                                 <label for="">Teacher</label>
                                 <input type="checkbox" class="form-check-input" id="" name="">
                             </div>
-                            <div class="text-center">
-                                <img src="./assets/images/teacher-homme.svg" alt="teacher" style="height: 50px;">
+                            <div class="text-center image-height">
+                                <img src="./assets/images/teacher-homme.svg" alt="teacher">
                             </div>
 
                         </div>
@@ -151,9 +151,9 @@
                             <br>
 
                             <div class="form-datetime">
-                                <input type="date" class="form-control" name="" id="" style="width: 100%;">
-                                <p class="mt-2 mb-2" style="color: black;">To</p>
-                                <input type="date" class="form-control" name="" id="" style="width: 100%;">
+                                <input type="date" class="form-control" name="" id="">
+                                <p class="mt-2 mb-2 from-to">To</p>
+                                <input type="date" class="form-control" name="" id="">
                             </div>
                             <!-- End from date -->
                             <br>
@@ -177,10 +177,10 @@
                             <br>
 
                             <div class="form-group">
-                                <div class="time" id="" style="margin-top: 10px;">
-                                    <label style="margin: 8px 0;">From</label>
+                                <div class="time mt-4" id="">
+                                    <label class="mt-4 mb-4">From</label>
                                     <input type="time" class="form-control" name="datetimepicker" id="datetimepicker">
-                                    <label style="margin: 8px 0;">To</label>
+                                    <label class="mt-4 mb-4">To</label>
                                     <input type="time" class="form-control" name="datetimepicker" id="datetimepicker">
                                 </div>
                             </div>
@@ -207,9 +207,10 @@
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_one.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-12 col-md-12 text-center">
+                                        <div class="image-circle-one">
+                                            <img src="./assets/images/professor_one.jpg" alt="professor">
+                                        </div>
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -217,25 +218,23 @@
                                                 <span class="country">Maroc</span>
                                             </p>
                                         </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star" style="margin-top: 50%;">
+                                        <div class="text-center star">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <br>
                                     </div>
+                                    <!-- Price and stars -->
+
                                 </div>
                             </div>
                             <!-- Card body -->
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-left" style="font-size: 15px;">
+                                    <p class="text-left">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -273,9 +272,10 @@
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_two.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-12 col-md-12 text-center">
+                                        <div class="image-circle-one">
+                                            <img src="./assets/images/professor_one.jpg" alt="professor">
+                                        </div>
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -283,25 +283,23 @@
                                                 <span class="country">Maroc</span>
                                             </p>
                                         </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star" style="margin-top: 50%;">
+                                        <div class="text-center star">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <br>
                                     </div>
+                                    <!-- Price and stars -->
+
                                 </div>
                             </div>
                             <!-- Card body -->
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-left" style="font-size: 15px;">
+                                    <p class="text-left">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -335,13 +333,14 @@
                     </div>
 
                     <!-- Therth card teacher -->
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12 d-md-none d-lg-block">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_three.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-12 col-md-12 text-center">
+                                        <div class="image-circle-one">
+                                            <img src="./assets/images/professor_one.jpg" alt="professor">
+                                        </div>
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -349,25 +348,23 @@
                                                 <span class="country">Maroc</span>
                                             </p>
                                         </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star" style="margin-top: 50%;">
+                                        <div class="text-center star">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <br>
                                     </div>
+                                    <!-- Price and stars -->
+
                                 </div>
                             </div>
                             <!-- Card body -->
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-left" style="font-size: 15px;">
+                                    <p class="text-left">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -402,16 +399,17 @@
                 </div>
                 <!-- End Row -->
 
-                 <!-- Row -->
-                 <div class="row">
+                <!-- Row -->
+                <div class="row">
                     <!-- First card teacher -->
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_one.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-12 col-md-12 text-center">
+                                        <div class="image-circle-one">
+                                            <img src="./assets/images/professor_one.jpg" alt="professor">
+                                        </div>
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -419,25 +417,23 @@
                                                 <span class="country">Maroc</span>
                                             </p>
                                         </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star" style="margin-top: 50%;">
+                                        <div class="text-center star">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <br>
                                     </div>
+                                    <!-- Price and stars -->
+
                                 </div>
                             </div>
                             <!-- Card body -->
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-left" style="font-size: 15px;">
+                                    <p class="text-left">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -475,9 +471,10 @@
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_two.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-12 col-md-12 text-center">
+                                        <div class="image-circle-one">
+                                            <img src="./assets/images/professor_one.jpg" alt="professor">
+                                        </div>
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -485,25 +482,23 @@
                                                 <span class="country">Maroc</span>
                                             </p>
                                         </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star" style="margin-top: 50%;">
+                                        <div class="text-center star">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <br>
                                     </div>
+                                    <!-- Price and stars -->
+
                                 </div>
                             </div>
                             <!-- Card body -->
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-left" style="font-size: 15px;">
+                                    <p class="text-left">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -537,13 +532,14 @@
                     </div>
 
                     <!-- Therth card teacher -->
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12 d-md-none d-lg-block">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_three.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-12 col-md-12 text-center">
+                                        <div class="image-circle-one">
+                                            <img src="./assets/images/professor_one.jpg" alt="professor">
+                                        </div>
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -551,25 +547,23 @@
                                                 <span class="country">Maroc</span>
                                             </p>
                                         </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star" style="margin-top: 50%;">
+                                        <div class="text-center star">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <br>
                                     </div>
+                                    <!-- Price and stars -->
+
                                 </div>
                             </div>
                             <!-- Card body -->
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-left" style="font-size: 15px;">
+                                    <p class="text-left">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -604,16 +598,17 @@
                 </div>
                 <!-- End Row -->
 
-                 <!-- Row -->
-                 <div class="row">
+                <!-- Row -->
+                <div class="row">
                     <!-- First card teacher -->
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_one.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-12 col-md-12 text-center">
+                                        <div class="image-circle-one">
+                                            <img src="./assets/images/professor_one.jpg" alt="professor">
+                                        </div>
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -621,25 +616,23 @@
                                                 <span class="country">Maroc</span>
                                             </p>
                                         </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star" style="margin-top: 50%;">
+                                        <div class="text-center star">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <br>
                                     </div>
+                                    <!-- Price and stars -->
+
                                 </div>
                             </div>
                             <!-- Card body -->
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-left" style="font-size: 15px;">
+                                    <p class="text-left">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -677,9 +670,10 @@
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_two.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-12 col-md-12 text-center">
+                                        <div class="image-circle-one">
+                                            <img src="./assets/images/professor_one.jpg" alt="professor">
+                                        </div>
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -687,25 +681,23 @@
                                                 <span class="country">Maroc</span>
                                             </p>
                                         </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star" style="margin-top: 50%;">
+                                        <div class="text-center star">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <br>
                                     </div>
+                                    <!-- Price and stars -->
+
                                 </div>
                             </div>
                             <!-- Card body -->
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-left" style="font-size: 15px;">
+                                    <p class="text-left">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -739,13 +731,14 @@
                     </div>
 
                     <!-- Therth card teacher -->
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12 d-md-none d-lg-block">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <img src="./assets/images/professor_three.jpg"
-                                            style="height: 100px; border-radius: 50%;" alt="professor">
+                                    <div class="col-lg-12 col-md-12 text-center">
+                                        <div class="image-circle-one">
+                                            <img src="./assets/images/professor_one.jpg" alt="professor">
+                                        </div>
                                         <div class="name-country text-center">
                                             <p class="name-prof">
                                                 Noura Hamdan
@@ -753,25 +746,23 @@
                                                 <span class="country">Maroc</span>
                                             </p>
                                         </div>
-                                    </div>
-                                    <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="float-left star" style="margin-top: 50%;">
+                                        <div class="text-center star">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <br>
                                     </div>
+                                    <!-- Price and stars -->
+
                                 </div>
                             </div>
                             <!-- Card body -->
                             <div class="card-body">
                                 <!-- Description -->
                                 <div class="description-cv">
-                                    <p class="text-left" style="font-size: 15px;">
+                                    <p class="text-left">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </p>
                                 </div>
@@ -839,7 +830,7 @@
     <!-- End Star Search the teachers-->
 
     <hr>
-    
+
     <!-- Footer Page -->
     <footer class="latest-footer" id="latest-footer">
         <div class="container">

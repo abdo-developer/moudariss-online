@@ -11,7 +11,7 @@
 
     <!-- Strat Header Page -->
     <header class="top_header">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg">
             <a href="#" class="navbar-brand">
                 <img src="./assets/images/Sign_in_logo.svg" alt="logo-brand">
             </a>
@@ -80,7 +80,7 @@
                         <h4 class="custom-heading text-center">Choose your teachers</h4>
                     </div>
                     <div class="description-paragraph">
-                        <p class="mb-4 text-center" style="margin-top: -8px;">
+                        <p class="mb-4 text-center">
                             Learning has NO limitation, though your mobile or PC, you can book your private teacher and
                             start your interactive virtual class from your home .
                         </p>
@@ -105,8 +105,8 @@
 
 
             <!-- Star Filter Phone -->
-            <div class="filter-phone">
-                
+            <div class="filter-phone d-lg-none d-md-block">
+
                 <div class="text-center show-filter-phone">
                     <a class="btn btn-primary mt-4 mb-2 ml-2" data-toggle="collapse" href="#ShowFilter" role="button"
                         aria-expanded="false">
@@ -115,18 +115,18 @@
                     </a>
                 </div>
 
-                <div class="col-12 col-lg-3 bg-white collapse" id="ShowFilter" style="height: 100%;">
+                <div class="col-12 col-lg-3 bg-white collapse" id="ShowFilter">
 
                     <form class="filter-search">
                         <div class="form-group form-check">
-                            <label for="" style="margin-top: 15px;">I am </label>
+                            <label for="" class="mt-4">I am </label>
 
                             <br>
 
                             <div class="form-inline">
                                 <!-- I am Male : Student -->
-                                <div class="text-center">
-                                    <img src="./assets/images/student-male.svg" alt="aaa" style="height: 50px;">
+                                <div class="text-center image-height">
+                                    <img src="./assets/images/student-male.svg" alt="image">
                                 </div>
                                 <div class="text-center">
                                     <label for="RadioStudent1">Student</label>
@@ -134,8 +134,8 @@
                                 </div>
 
                                 <!-- I am Female : Student -->
-                                <div class="text-center">
-                                    <img src="./assets/images/student.svg" alt="aaa" style="height: 50px;">
+                                <div class="text-center image-height">
+                                    <img src="./assets/images/student.svg" alt="image">
                                 </div>
                                 <div class="text-center">
                                     <label for="RadioStudent2">Student</label>
@@ -224,8 +224,8 @@
                                     <label for="RadioStudent1">Teacher</label>
                                     <input type="checkbox" class="form-check-input" id="" name="">
                                 </div>
-                                <div class="text-center">
-                                    <img src="./assets/images/teacher-famme.svg" alt="Teacher" style="height: 50px;">
+                                <div class="text-center image-height">
+                                    <img src="./assets/images/teacher-famme.svg" alt="Teacher">
                                 </div>
 
 
@@ -234,8 +234,8 @@
                                     <label for="">Teacher</label>
                                     <input type="checkbox" class="form-check-input" id="" name="">
                                 </div>
-                                <div class="text-center">
-                                    <img src="./assets/images/teacher-homme.svg" alt="teacher" style="height: 50px;">
+                                <div class="text-center image-height">
+                                    <img src="./assets/images/teacher-homme.svg" alt="teacher">
                                 </div>
 
                             </div>
@@ -299,13 +299,13 @@
                             </a>
                         </div>
                         <!-- Start Within the cost of -->
-                        <label for="" style="margin-top: 20px;">Within the cost of </label>
+                        <label for="" class="mt-4">Within the cost of </label>
                         <br>
 
                         <p>
                             <input type="text" id="Price" class="form-check-input" readonly>
                             <br>
-                            <span style="font-weight: bold;">Per one class</span>
+                            <span>Per one class</span>
                         </p>
 
                         <div id="slider-range-one"></div>
@@ -354,9 +354,9 @@
                                 <br>
 
                                 <div class="form-datetime">
-                                    <input type="date" class="form-control" name="" id="" style="width: 100%;">
-                                    <p class="mt-2 mb-2" style="color: black;">To</p>
-                                    <input type="date" class="form-control" name="" id="" style="width: 100%;">
+                                    <input type="date" class="form-control" name="" id="">
+                                    <p class="mt-2 mb-2">To</p>
+                                    <input type="date" class="form-control" name="" id="">
                                 </div>
                                 <!-- End from date -->
                                 <br>
@@ -380,11 +380,11 @@
                                 <br>
 
                                 <div class="form-group">
-                                    <div class="time" id="" style="margin-top: 10px;">
-                                        <label style="margin: 8px 0;">From</label>
+                                    <div class="time mt-4" id="">
+                                        <label class="mt-4 mb-4">From</label>
                                         <input type="time" class="form-control" name="datetimepicker"
                                             id="datetimepicker">
-                                        <label style="margin: 8px 0;">To</label>
+                                        <label class="mt-4 mb-4">To</label>
                                         <input type="time" class="form-control" name="datetimepicker"
                                             id="datetimepicker">
                                     </div>
@@ -420,18 +420,19 @@
 
 
             <!-- Star Filter -->
-            <div class="col-12 col-lg-3 bg-fliter filter-desktop" style="height: 100%;">
+            <div class="col-12 col-lg-3 bg-fliter filter-desktop d-lg-block d-md-none d-sm-none hide-section"
+                id="ShowFilter">
 
                 <form class="filter-search">
                     <div class="form-group form-check">
-                        <label for="" style="margin-top: 15px;">I am </label>
+                        <label for="" class="mt-4">I am </label>
 
                         <br>
 
                         <div class="form-inline">
                             <!-- I am Male : Student -->
-                            <div class="text-center">
-                                <img src="./assets/images/student-male.svg" alt="aaa" style="height: 50px;">
+                            <div class="text-center image-height">
+                                <img src="./assets/images/student-male.svg" alt="image">
                             </div>
                             <div class="text-center">
                                 <label for="RadioStudent1">Student</label>
@@ -439,8 +440,8 @@
                             </div>
 
                             <!-- I am Female : Student -->
-                            <div class="text-center">
-                                <img src="./assets/images/student.svg" alt="aaa" style="height: 50px;">
+                            <div class="text-center image-height">
+                                <img src="./assets/images/student.svg" alt="image">
                             </div>
                             <div class="text-center">
                                 <label for="RadioStudent2">Student</label>
@@ -529,8 +530,8 @@
                                 <label for="RadioStudent1">Teacher</label>
                                 <input type="checkbox" class="form-check-input" id="" name="">
                             </div>
-                            <div class="text-center">
-                                <img src="./assets/images/teacher-famme.svg" alt="Teacher" style="height: 50px;">
+                            <div class="text-center image-height">
+                                <img src="./assets/images/teacher-famme.svg" alt="Teacher">
                             </div>
 
 
@@ -539,8 +540,8 @@
                                 <label for="">Teacher</label>
                                 <input type="checkbox" class="form-check-input" id="" name="">
                             </div>
-                            <div class="text-center">
-                                <img src="./assets/images/teacher-homme.svg" alt="teacher" style="height: 50px;">
+                            <div class="text-center image-height">
+                                <img src="./assets/images/teacher-homme.svg" alt="teacher">
                             </div>
 
                         </div>
@@ -604,16 +605,16 @@
                         </a>
                     </div>
                     <!-- Start Within the cost of -->
-                    <label for="" style="margin-top: 20px;">Within the cost of </label>
+                    <label for="" class="mt-4">Within the cost of </label>
                     <br>
 
                     <p>
-                        <input type="text" id="Price" class="form-check-input" readonly>
+                        <input type="text" id="Price-three" class="form-check-input" readonly>
                         <br>
-                        <span style="font-weight: bold;">Per one class</span>
+                        <span>Per one class</span>
                     </p>
 
-                    <div id="slider-range-one"></div>
+                    <div id="slider-range-three"></div>
                     <!-- End Within the cost of -->
 
                     <!-- Search now -->
@@ -659,9 +660,9 @@
                             <br>
 
                             <div class="form-datetime">
-                                <input type="date" class="form-control" name="" id="" style="width: 100%;">
-                                <p class="mt-2 mb-2" style="color: black;">To</p>
-                                <input type="date" class="form-control" name="" id="" style="width: 100%;">
+                                <input type="date" class="form-control" name="" id="">
+                                <p class="mt-2 mb-2">To</p>
+                                <input type="date" class="form-control" name="" id="">
                             </div>
                             <!-- End from date -->
                             <br>
@@ -685,10 +686,10 @@
                             <br>
 
                             <div class="form-group">
-                                <div class="time" id="" style="margin-top: 10px;">
-                                    <label style="margin: 8px 0;">From</label>
+                                <div class="time mt-4" id="">
+                                    <label class="mt-4 mb-4">From</label>
                                     <input type="time" class="form-control" name="datetimepicker" id="datetimepicker">
-                                    <label style="margin: 8px 0;">To</label>
+                                    <label class="mt-4 mb-4">To</label>
                                     <input type="time" class="form-control" name="datetimepicker" id="datetimepicker">
                                 </div>
                             </div>
@@ -740,11 +741,12 @@
                 <div class="row">
 
                     <!-- First Techers -->
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12 card-list-teachers image_prof">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-6 col-6 text-center card-list-teachers image_prof">
                                         <img src="./assets/images/professor_one.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
@@ -755,7 +757,7 @@
                                         </div>
                                     </div>
                                     <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12 price-stars-contracts">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 price-stars-contracts">
                                         <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -824,11 +826,12 @@
                     </div>
 
                     <!-- Seconde teacher -->
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12 card-list-teachers image_prof">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-6 col-6 text-center rd-list-teachers image_prof">
                                         <img src="./assets/images/professor_two.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
@@ -839,7 +842,7 @@
                                         </div>
                                     </div>
                                     <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12 price-stars-contracts">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 price-stars-contracts">
                                         <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -915,11 +918,12 @@
                 <div class="row">
 
                     <!-- First Techers -->
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12 card-list-teachers image_prof">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-6 col-6 text-center card-list-teachers image_prof">
                                         <img src="./assets/images/professor_one.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
@@ -930,7 +934,7 @@
                                         </div>
                                     </div>
                                     <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12 price-stars-contracts">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 price-stars-contracts">
                                         <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -1000,11 +1004,11 @@
                     </div>
 
                     <!-- Seconde teacher -->
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12 card-list-teachers image_prof">
+                                    <div class="col-lg-6 col-md-6 col-6 text-center card-list-teachers image_prof">
                                         <img src="./assets/images/professor_two.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
@@ -1015,7 +1019,7 @@
                                         </div>
                                     </div>
                                     <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12 price-stars-contracts">
+                                    <div class="col-lg-6 col-md-6 col-6 price-stars-contracts">
                                         <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -1091,11 +1095,12 @@
                 <div class="row">
 
                     <!-- First Techers -->
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12 card-list-teachers image_prof">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-6 col-6 text-center card-list-teachers image_prof">
                                         <img src="./assets/images/professor_one.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
@@ -1106,7 +1111,7 @@
                                         </div>
                                     </div>
                                     <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12 price-stars-contracts">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 price-stars-contracts">
                                         <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -1176,11 +1181,12 @@
                     </div>
 
                     <!-- Seconde teacher -->
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12 card-list-teachers image_prof">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-6 col-6 text-center card-list-teachers image_prof">
                                         <img src="./assets/images/professor_two.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
@@ -1191,7 +1197,7 @@
                                         </div>
                                     </div>
                                     <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12 price-stars-contracts">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 price-stars-contracts">
                                         <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -1267,11 +1273,12 @@
                 <div class="row">
 
                     <!-- First Techers -->
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12 card-list-teachers image_prof">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-6 col-6 text-center card-list-teachers image_prof">
                                         <img src="./assets/images/professor_one.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
@@ -1282,7 +1289,7 @@
                                         </div>
                                     </div>
                                     <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12 price-stars-contracts">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 price-stars-contracts">
                                         <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -1352,11 +1359,12 @@
                     </div>
 
                     <!-- Seconde teacher -->
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12 card-list-teachers image_prof">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-6 col-6 text-center card-list-teachers image_prof">
                                         <img src="./assets/images/professor_two.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
@@ -1367,7 +1375,7 @@
                                         </div>
                                     </div>
                                     <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12 price-stars-contracts">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 price-stars-contracts">
                                         <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -1441,11 +1449,12 @@
                 <div class="row">
 
                     <!-- First Techers -->
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12 card-list-teachers image_prof">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-6 col-6 text-center card-list-teachers image_prof">
                                         <img src="./assets/images/professor_one.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
@@ -1456,7 +1465,7 @@
                                         </div>
                                     </div>
                                     <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12 price-stars-contracts">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 price-stars-contracts">
                                         <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -1526,11 +1535,12 @@
                     </div>
 
                     <!-- Seconde teacher -->
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="card card-teachers">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12 card-list-teachers image_prof">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-sm-6 col-6 text-center card-list-teachers image_prof">
                                         <img src="./assets/images/professor_two.jpg" alt="professor">
                                         <div class="name-country text-center">
                                             <p class="name-prof">
@@ -1541,7 +1551,7 @@
                                         </div>
                                     </div>
                                     <!-- Price and stars -->
-                                    <div class="col-lg-6 col-md-12 price-stars-contracts">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 price-stars-contracts">
                                         <div class="star-teachers">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
